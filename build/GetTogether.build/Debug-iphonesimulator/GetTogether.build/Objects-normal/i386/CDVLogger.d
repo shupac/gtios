@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.console/CDVLogger.m \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.console/CDVLogger.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h \
+  /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h

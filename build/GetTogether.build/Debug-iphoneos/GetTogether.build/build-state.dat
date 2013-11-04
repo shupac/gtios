@@ -1,0 +1,830 @@
+TGetTogether
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Info.plist /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/GetTogether-Info.plist
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist build/device/GetTogether.app/ResourceRules.plist
+cPhaseScriptExecution Copy\ www\ directory /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Script-304B58A110DAC018002A0835.sh
+cCpResource GetTogether/config.xml build/device/GetTogether.app/config.xml
+cCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon-72.png GetTogether/Resources/icons/icon-72.png
+cCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon@2x.png GetTogether/Resources/icons/icon@2x.png
+cCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon.png GetTogether/Resources/icons/icon.png
+cCopyStringsFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/en.lproj/Localizable.strings GetTogether/Resources/en.lproj/Localizable.strings
+cCopyStringsFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/es.lproj/Localizable.strings GetTogether/Resources/es.lproj/Localizable.strings
+cCompileXIB /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.xib
+cCopyStringsFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/de.lproj/Localizable.strings GetTogether/Resources/de.lproj/Localizable.strings
+cCopyStringsFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/se.lproj/Localizable.strings GetTogether/Resources/se.lproj/Localizable.strings
+cCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Landscape@2x~ipad.png GetTogether/Resources/splash/Default-Landscape@2x~ipad.png
+cCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Portrait@2x~ipad.png GetTogether/Resources/splash/Default-Portrait@2x~ipad.png
+cCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Landscape~ipad.png GetTogether/Resources/splash/Default-Landscape~ipad.png
+cCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Portrait~ipad.png GetTogether/Resources/splash/Default-Portrait~ipad.png
+cCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default@2x~iphone.png GetTogether/Resources/splash/Default@2x~iphone.png
+cCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default~iphone.png GetTogether/Resources/splash/Default~iphone.png
+cCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-568h@2x~iphone.png GetTogether/Resources/splash/Default-568h@2x~iphone.png
+cCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon-72@2x.png GetTogether/Resources/icons/icon-72@2x.png
+cProcessPCH /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/GetTogether-Prefix-errjpezfvpibftbjzzocuctbqfir/GetTogether-Prefix.pch.pch GetTogether/GetTogether-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/main.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/AppDelegate.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/MainViewController.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLogger.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.console/CDVLogger.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLocation.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.geolocation/CDVLocation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVSplashScreen.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.splashscreen/CDVSplashScreen.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/GetTogether normal armv7
+cGenerateDSYMFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app.dSYM /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/GetTogether
+cProcessProductPackaging /Users/hongxuliu/Library/MobileDevice/Provisioning\ Profiles/9B72C345-27B6-49E3-BB1E-68C2B7B6FB78.mobileprovision /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/embedded.mobileprovision
+cTouch /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether.xcent
+cCodeSign /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk
+c00000000525642EE0000000000000110
+t1381384942
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist
+c0000000052743A160000000000000094
+t1383348758
+s148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist
+c0000000052743A160000000000000096
+t1383348758
+s150
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/SDKSettings.plist
+c0000000052743A16000000000000036B
+t1383348758
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000052743A1700000000000001A0
+t1383348759
+s416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c0000000052743A170000000000075BB0
+t1383348759
+s482224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000052743A1900000000004D63C0
+t1383348761
+s5071808
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c0000000052743A190000000000146100
+t1383348761
+s1335552
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c0000000052743A1A0000000000210C80
+t1383348762
+s2165888
+
+N/Users/hongxuliu/Library/MobileDevice/Provisioning Profiles/9B72C345-27B6-49E3-BB1E-68C2B7B6FB78.mobileprovision
+c0000000052744D000000000000001D01
+t1383353600
+s7425
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/AppDelegate.m
+c0000000052745F6500000000000013AD
+t1383358309
+s5037
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.m
+c0000000052745F65000000000000126C
+t1383358309
+s4716
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.xib
+c0000000052745F650000000000001759
+t1383358309
+s5977
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/GetTogether-Info.plist
+c000000005275818C00000000000007A4
+t1383432588
+s1956
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/GetTogether-Prefix.pch
+c0000000052745F6500000000000003C7
+t1383358309
+s967
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.console/CDVLogger.m
+c0000000052745F660000000000000490
+t1383358310
+s1168
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.geolocation/CDVLocation.m
+c0000000052745F6700000000000033EB
+t1383358311
+s13291
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.splashscreen/CDVSplashScreen.m
+c0000000052745F680000000000002136
+t1383358312
+s8502
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/de.lproj/Localizable.strings
+c0000000052745F6500000000000004BF
+t1383358309
+s1215
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/en.lproj/Localizable.strings
+c0000000052745F6500000000000004AA
+t1383358309
+s1194
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/es.lproj/Localizable.strings
+c0000000052745F6500000000000004B7
+t1383358309
+s1207
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon-72.png
+c0000000052745F650000000000001350
+t1383358309
+s4944
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon-72@2x.png
+c0000000052745F650000000000002DBA
+t1383358309
+s11706
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon.png
+c0000000052745F650000000000000F3E
+t1383358309
+s3902
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon@2x.png
+c0000000052745F650000000000001EBD
+t1383358309
+s7869
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/se.lproj/Localizable.strings
+c0000000052745F6500000000000004AB
+t1383358309
+s1195
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-568h@2x~iphone.png
+c0000000052745F6500000000000085B1
+t1383358309
+s34225
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Landscape@2x~ipad.png
+c0000000052745F650000000000012DF4
+t1383358309
+s77300
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Landscape~ipad.png
+c0000000052745F650000000000008877
+t1383358309
+s34935
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Portrait@2x~ipad.png
+c0000000052745F650000000000012B02
+t1383358309
+s76546
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Portrait~ipad.png
+c0000000052745F6500000000000085E6
+t1383358309
+s34278
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default@2x~iphone.png
+c0000000052745F650000000000007323
+t1383358309
+s29475
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default~iphone.png
+c0000000052745F65000000000000289A
+t1383358309
+s10394
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/config.xml
+c000000005275818F00000000000009D1
+t1383432591
+s2513
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/main.m
+c0000000052746BAD000000000000045D
+t1383361453
+s1117
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether.xcent
+t1383432600
+s428
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/AppDelegate.o
+t1383432600
+s78024
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLocation.o
+t1383432600
+s100664
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLogger.o
+t1383432600
+s44160
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVSplashScreen.o
+t1383432600
+s75332
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/GetTogether.LinkFileList
+c0000000052758194000000000000038C
+t1383432596
+s908
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/MainViewController.o
+t1383432600
+s53272
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/main.o
+t1383432600
+s3124
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Script-304B58A110DAC018002A0835.sh
+c0000000052758194000000000000002D
+t1383432596
+s45
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app
+t1383432600
+s816
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app.dSYM
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-568h@2x~iphone.png
+t1383432597
+s61990
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Landscape@2x~ipad.png
+t1383432597
+s143186
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Landscape~ipad.png
+t1383432596
+s65305
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Portrait@2x~ipad.png
+t1383432597
+s136924
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Portrait~ipad.png
+t1383432596
+s63460
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default@2x~iphone.png
+t1383432597
+s55319
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default~iphone.png
+t1383432597
+s20021
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/GetTogether
+t1383432600
+s327764
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Info.plist
+t1383432596
+s1405
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/MainViewController.nib
+t1383432599
+s1332
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/PkgInfo
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/ResourceRules.plist
+t1383432596
+s150
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/config.xml
+t1383432596
+s2513
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/de.lproj/Localizable.strings
+t1383432596
+s280
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/embedded.mobileprovision
+t1383432600
+s7425
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/en.lproj/Localizable.strings
+t1383432596
+s166
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/es.lproj/Localizable.strings
+t1383432596
+s334
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon-72.png
+t1383432596
+s8045
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon-72@2x.png
+t1383432597
+s17926
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon.png
+t1383432596
+s5977
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon@2x.png
+t1383432596
+s13012
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/se.lproj/Localizable.strings
+t1383432596
+s283
+
+N/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/libCordova.a
+c000000005275819400000000000E3BC0
+t1383432596
+s932800
+
+N/var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/GetTogether-Prefix-errjpezfvpibftbjzzocuctbqfir/GetTogether-Prefix.pch.pch
+t1383418734
+s5280164
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesdf500814b925b841^c4270914b925b841^---0#1#1#--18"Check dependencies36"979F8280-CC83-4D1B-ABF4-7249FEAC337C-
+
+CCodeSign /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app
+s405125400.938349
+e405125404.240055
+r1
+xCodeSign
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"CodeSign build/device/GetTogether.app37"CodeSign build/device/GetTogether.app1767f018b925b841^478d3d1cb925b841^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/0000000000000000^1270"CodeSign build/device/GetTogether.app    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    Using code signing identity "iPhone Developer: Hongxu Liu (5R945YSG69)" and provisioning profile "iOS Team Provisioning Profile: *" (9B72C345-27B6-49E3-BB1E-68C2B7B6FB78)    codesign --force --sign 53CCC76B80EF41DFD186CB4AB9B37CAEB14B8E50 --resource-rules=/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/ResourceRules.plist --entitlements /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether.xcent /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app36"3FC96D92-71E6-4B0E-A92E-127C6E28EFE3-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/AppDelegate.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405125400.338888
+e405125400.484340
+r1
+xCompileC
+xbuild/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/AppDelegate.o
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/AppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/AppDelegate.m
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/AppDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/AppDelegate.m203"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/AppDelegate.o GetTogether/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerd4f35618b925b841^60017c18b925b841^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/AppDelegate.m0000000000000000^3971"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/AppDelegate.o GetTogether/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/usr/local/lib/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/UninstalledProducts/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources/armv7 -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/GetTogether-Prefix-errjpezfvpibftbjzzocuctbqfir/GetTogether-Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/AppDelegate.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/AppDelegate.dia -c /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/AppDelegate.m -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/AppDelegate.o36"9EDC65E0-6430-47F3-AAB4-806F6795B2B0-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLocation.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.geolocation/CDVLocation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405125400.484815
+e405125400.607086
+r1
+xCompileC
+xbuild/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLocation.o
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.geolocation/CDVLocation.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.geolocation/CDVLocation.m
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.geolocation/CDVLocation.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVShared.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Compile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.geolocation/CDVLocation.m234"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLocation.o GetTogether/Plugins/org.apache.cordova.geolocation/CDVLocation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilercf487c18b925b841^d76a9b18b925b841^---0#0#1#-19%DVTDocumentLocation2@130"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.geolocation/CDVLocation.m0000000000000000^4033"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLocation.o GetTogether/Plugins/org.apache.cordova.geolocation/CDVLocation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/usr/local/lib/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/UninstalledProducts/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources/armv7 -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/GetTogether-Prefix-errjpezfvpibftbjzzocuctbqfir/GetTogether-Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLocation.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLocation.dia -c /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.geolocation/CDVLocation.m -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLocation.o36"4C354020-51DD-4527-8B60-2DFFA2CD61E5-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLogger.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.console/CDVLogger.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405125400.462222
+e405125400.531103
+r1
+xCompileC
+xbuild/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLogger.o
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.console/CDVLogger.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.console/CDVLogger.m
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.console/CDVLogger.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDV.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVURLProtocol.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVDebug.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVLocalStorage.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVTimer.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/NSData+Base64.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/NSDictionary+Extensions.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/UIDevice+Extensions.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVJSON.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Compile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.console/CDVLogger.m226"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLogger.o GetTogether/Plugins/org.apache.cordova.console/CDVLogger.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler3d7f7618b925b841^3cfa8718b925b841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.console/CDVLogger.m0000000000000000^4013"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLogger.o GetTogether/Plugins/org.apache.cordova.console/CDVLogger.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/usr/local/lib/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/UninstalledProducts/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources/armv7 -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/GetTogether-Prefix-errjpezfvpibftbjzzocuctbqfir/GetTogether-Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLogger.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLogger.dia -c /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.console/CDVLogger.m -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLogger.o36"1B03019D-9C4E-4084-9CF7-8DA0A15CE01D-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVSplashScreen.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.splashscreen/CDVSplashScreen.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405125400.531469
+e405125400.627791
+r1
+xCompileC
+xbuild/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVSplashScreen.o
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.splashscreen/CDVSplashScreen.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.splashscreen/CDVSplashScreen.m
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.splashscreen/CDVSplashScreen.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"Compile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.splashscreen/CDVSplashScreen.m243"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVSplashScreen.o GetTogether/Plugins/org.apache.cordova.splashscreen/CDVSplashScreen.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler732b8818b925b841^ccb5a018b925b841^---0#0#1#-19%DVTDocumentLocation2@135"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.splashscreen/CDVSplashScreen.m0000000000000000^4059"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVSplashScreen.o GetTogether/Plugins/org.apache.cordova.splashscreen/CDVSplashScreen.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/usr/local/lib/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/UninstalledProducts/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources/armv7 -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/GetTogether-Prefix-errjpezfvpibftbjzzocuctbqfir/GetTogether-Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVSplashScreen.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVSplashScreen.dia -c /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Plugins/org.apache.cordova.splashscreen/CDVSplashScreen.m -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVSplashScreen.o36"FD011933-C6A6-4439-9252-D30193FE3A2E-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/MainViewController.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405125400.392430
+e405125400.461950
+r1
+xCompileC
+xbuild/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/MainViewController.o
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.m
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.m217"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/MainViewController.o GetTogether/Classes/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerd5946418b925b841^d0427618b925b841^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.m0000000000000000^4013"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/MainViewController.o GetTogether/Classes/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/usr/local/lib/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/UninstalledProducts/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources/armv7 -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/GetTogether-Prefix-errjpezfvpibftbjzzocuctbqfir/GetTogether-Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/MainViewController.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/MainViewController.dia -c /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.m -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/MainViewController.o36"CCB9A307-3319-4240-BB3D-D3BA2D6461E3-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/main.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405125400.338671
+e405125400.392111
+r1
+xCompileC
+xbuild/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/main.o
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/main.m181"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/main.o GetTogether/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler5ddc5618b925b841^63616418b925b841^---0#0#1#-19%DVTDocumentLocation2@84"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/main.m0000000000000000^3913"CompileC build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/main.o GetTogether/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/usr/local/lib/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/UninstalledProducts/include -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources/armv7 -I/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/GetTogether-Prefix-errjpezfvpibftbjzzocuctbqfir/GetTogether-Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/main.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/main.dia -c /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/main.m -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/main.o36"345C91C3-73C2-4327-B4BB-2EF35BC4EE05-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCompileXIB /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.xib
+s405125396.494801
+e405125400.337463
+r1
+xCompileXIB
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.xib
+o2013-11-02 15:49:59.431 Interface Builder Cocoa Touch Tool[56134:303] CFPreferences: user home directory at file:///Users/hongxuliu/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compiling /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.xib53"CompileXIB GetTogether/Classes/MainViewController.xib5bcd7e14b925b841^9d655618b925b841^-234"2013-11-02 15:49:59.431 Interface Builder Cocoa Touch Tool[56134:303] CFPreferences: user home directory at file:///Users/hongxuliu/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#1#-19%DVTDocumentLocation2@108"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.xib0000000000000000^1019"CompileXIB GetTogether/Classes/MainViewController.xib    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.0 --output-format human-readable-text --compile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/MainViewController.nib /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Classes/MainViewController.xib36"D5B74D84-24E0-481E-9D21-7FB967F2DFF3-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-568h@2x~iphone.png GetTogether/Resources/splash/Default-568h@2x~iphone.png
+s405125397.152284
+e405125397.302901
+r1
+xCopyPNGFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-568h@2x~iphone.png
+xGetTogether/Resources/splash/Default-568h@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"CopyPNGFile build/device/GetTogether.app/Default-568h@2x~iphone.png GetTogether/Resources/splash/Default-568h@2x~iphone.png123"CopyPNGFile build/device/GetTogether.app/Default-568h@2x~iphone.png GetTogether/Resources/splash/Default-568h@2x~iphone.png4c1a2715b925b841^2a8c4d15b925b841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-568h@2x~iphone.png0000000000000000^957"CopyPNGFile build/device/GetTogether.app/Default-568h@2x~iphone.png GetTogether/Resources/splash/Default-568h@2x~iphone.png    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-568h@2x~iphone.png /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-568h@2x~iphone.png36"4215B63F-7F67-4FCB-A47B-53DFE1584BBC-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Landscape@2x~ipad.png GetTogether/Resources/splash/Default-Landscape@2x~ipad.png
+s405125396.554475
+e405125397.415303
+r1
+xCopyPNGFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Landscape@2x~ipad.png
+xGetTogether/Resources/splash/Default-Landscape@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"CopyPNGFile build/device/GetTogether.app/Default-Landscape@2x~ipad.png GetTogether/Resources/splash/Default-Landscape@2x~ipad.png129"CopyPNGFile build/device/GetTogether.app/Default-Landscape@2x~ipad.png GetTogether/Resources/splash/Default-Landscape@2x~ipad.png49148e14b925b841^e9636a15b925b841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Landscape@2x~ipad.png0000000000000000^969"CopyPNGFile build/device/GetTogether.app/Default-Landscape@2x~ipad.png GetTogether/Resources/splash/Default-Landscape@2x~ipad.png    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Landscape@2x~ipad.png /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Landscape@2x~ipad.png36"39CCEC1C-58B6-4A42-9CF9-13B5059937D8-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Landscape~ipad.png GetTogether/Resources/splash/Default-Landscape~ipad.png
+s405125396.564878
+e405125396.770195
+r1
+xCopyPNGFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Landscape~ipad.png
+xGetTogether/Resources/splash/Default-Landscape~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"CopyPNGFile build/device/GetTogether.app/Default-Landscape~ipad.png GetTogether/Resources/splash/Default-Landscape~ipad.png123"CopyPNGFile build/device/GetTogether.app/Default-Landscape~ipad.png GetTogether/Resources/splash/Default-Landscape~ipad.png535c9114b925b841^be30c514b925b841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Landscape~ipad.png0000000000000000^957"CopyPNGFile build/device/GetTogether.app/Default-Landscape~ipad.png GetTogether/Resources/splash/Default-Landscape~ipad.png    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Landscape~ipad.png /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Landscape~ipad.png36"65F4474E-2BB8-49F7-9FF8-ADBEBC3D9E7E-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Portrait@2x~ipad.png GetTogether/Resources/splash/Default-Portrait@2x~ipad.png
+s405125396.565841
+e405125397.439788
+r1
+xCopyPNGFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Portrait@2x~ipad.png
+xGetTogether/Resources/splash/Default-Portrait@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"CopyPNGFile build/device/GetTogether.app/Default-Portrait@2x~ipad.png GetTogether/Resources/splash/Default-Portrait@2x~ipad.png127"CopyPNGFile build/device/GetTogether.app/Default-Portrait@2x~ipad.png GetTogether/Resources/splash/Default-Portrait@2x~ipad.pnge8f89014b925b841^61a77015b925b841^---0#0#1#-19%DVTDocumentLocation2@123"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Portrait@2x~ipad.png0000000000000000^965"CopyPNGFile build/device/GetTogether.app/Default-Portrait@2x~ipad.png GetTogether/Resources/splash/Default-Portrait@2x~ipad.png    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Portrait@2x~ipad.png /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Portrait@2x~ipad.png36"CEBD874D-F855-40D7-AC8C-389845E42EBB-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Portrait~ipad.png GetTogether/Resources/splash/Default-Portrait~ipad.png
+s405125396.771600
+e405125396.935389
+r1
+xCopyPNGFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Portrait~ipad.png
+xGetTogether/Resources/splash/Default-Portrait~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"CopyPNGFile build/device/GetTogether.app/Default-Portrait~ipad.png GetTogether/Resources/splash/Default-Portrait~ipad.png121"CopyPNGFile build/device/GetTogether.app/Default-Portrait~ipad.png GetTogether/Resources/splash/Default-Portrait~ipad.png77a1c514b925b841^0b7eef14b925b841^---0#0#1#-19%DVTDocumentLocation2@120"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Portrait~ipad.png0000000000000000^953"CopyPNGFile build/device/GetTogether.app/Default-Portrait~ipad.png GetTogether/Resources/splash/Default-Portrait~ipad.png    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default-Portrait~ipad.png /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default-Portrait~ipad.png36"55C0D2A2-AB8F-4E0E-83B5-E1E2A2E2AF9A-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default@2x~iphone.png GetTogether/Resources/splash/Default@2x~iphone.png
+s405125396.936653
+e405125397.081864
+r1
+xCopyPNGFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default@2x~iphone.png
+xGetTogether/Resources/splash/Default@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"CopyPNGFile build/device/GetTogether.app/Default@2x~iphone.png GetTogether/Resources/splash/Default@2x~iphone.png113"CopyPNGFile build/device/GetTogether.app/Default@2x~iphone.png GetTogether/Resources/splash/Default@2x~iphone.png64e5ef14b925b841^36061515b925b841^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default@2x~iphone.png0000000000000000^937"CopyPNGFile build/device/GetTogether.app/Default@2x~iphone.png GetTogether/Resources/splash/Default@2x~iphone.png    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default@2x~iphone.png /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default@2x~iphone.png36"57D46CAF-AD46-420A-A159-96EDD873EED0-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default~iphone.png GetTogether/Resources/splash/Default~iphone.png
+s405125397.082287
+e405125397.152033
+r1
+xCopyPNGFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default~iphone.png
+xGetTogether/Resources/splash/Default~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"CopyPNGFile build/device/GetTogether.app/Default~iphone.png GetTogether/Resources/splash/Default~iphone.png107"CopyPNGFile build/device/GetTogether.app/Default~iphone.png GetTogether/Resources/splash/Default~iphone.pngb8731515b925b841^77f52615b925b841^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default~iphone.png0000000000000000^925"CopyPNGFile build/device/GetTogether.app/Default~iphone.png GetTogether/Resources/splash/Default~iphone.png    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/splash/Default~iphone.png /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Default~iphone.png36"4CF4B7B6-2ABC-40C7-BB7C-4C47AD8DB166-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon-72.png GetTogether/Resources/icons/icon-72.png
+s405125396.480709
+e405125396.563622
+r1
+xCopyPNGFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon-72.png
+xGetTogether/Resources/icons/icon-72.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"CopyPNGFile build/device/GetTogether.app/icon-72.png GetTogether/Resources/icons/icon-72.png92"CopyPNGFile build/device/GetTogether.app/icon-72.png GetTogether/Resources/icons/icon-72.pnge55f7b14b925b841^11559014b925b841^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon-72.png0000000000000000^895"CopyPNGFile build/device/GetTogether.app/icon-72.png GetTogether/Resources/icons/icon-72.png    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon-72.png /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon-72.png36"588232A4-2327-44CD-9BEC-EB787CA58EA5-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon-72@2x.png GetTogether/Resources/icons/icon-72@2x.png
+s405125397.304240
+e405125397.361044
+r1
+xCopyPNGFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon-72@2x.png
+xGetTogether/Resources/icons/icon-72@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"CopyPNGFile build/device/GetTogether.app/icon-72@2x.png GetTogether/Resources/icons/icon-72@2x.png98"CopyPNGFile build/device/GetTogether.app/icon-72@2x.png GetTogether/Resources/icons/icon-72@2x.pngdd434e15b925b841^9a7b5c15b925b841^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon-72@2x.png0000000000000000^907"CopyPNGFile build/device/GetTogether.app/icon-72@2x.png GetTogether/Resources/icons/icon-72@2x.png    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon-72@2x.png /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon-72@2x.png36"9BD2E53F-A3E0-45D6-925D-01F1803E1500-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon.png GetTogether/Resources/icons/icon.png
+s405125396.484041
+e405125396.547461
+r1
+xCopyPNGFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon.png
+xGetTogether/Resources/icons/icon.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"CopyPNGFile build/device/GetTogether.app/icon.png GetTogether/Resources/icons/icon.png86"CopyPNGFile build/device/GetTogether.app/icon.png GetTogether/Resources/icons/icon.pngb54e7c14b925b841^f1298c14b925b841^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon.png0000000000000000^883"CopyPNGFile build/device/GetTogether.app/icon.png GetTogether/Resources/icons/icon.png    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon.png /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon.png36"EF01E3B6-3267-4266-B1B5-B2E538D6C385-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyPNGFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon@2x.png GetTogether/Resources/icons/icon@2x.png
+s405125396.483888
+e405125396.564622
+r1
+xCopyPNGFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon@2x.png
+xGetTogether/Resources/icons/icon@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"CopyPNGFile build/device/GetTogether.app/icon@2x.png GetTogether/Resources/icons/icon@2x.png92"CopyPNGFile build/device/GetTogether.app/icon@2x.png GetTogether/Resources/icons/icon@2x.png5dfe7b14b925b841^db319114b925b841^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon@2x.png0000000000000000^895"CopyPNGFile build/device/GetTogether.app/icon@2x.png GetTogether/Resources/icons/icon@2x.png    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/icons/icon@2x.png /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/icon@2x.png36"EF6C70DF-19E8-4E6D-BAA5-FEAE3A350CA9-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyStringsFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/de.lproj/Localizable.strings GetTogether/Resources/de.lproj/Localizable.strings
+s405125396.547823
+e405125396.550294
+r1
+xCopyStringsFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/de.lproj/Localizable.strings
+xGetTogether/Resources/de.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy GetTogether/Resources/de.lproj/Localizable.strings124"CopyStringsFile build/device/GetTogether.app/de.lproj/Localizable.strings GetTogether/Resources/de.lproj/Localizable.strings4f5a8c14b925b841^33e08c14b925b841^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/de.lproj/Localizable.strings0000000000000000^858"CopyStringsFile build/device/GetTogether.app/de.lproj/Localizable.strings GetTogether/Resources/de.lproj/Localizable.strings    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/de.lproj -- GetTogether/Resources/de.lproj/Localizable.strings36"D98998BE-0ABD-4BFD-9381-D38F1282230D-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyStringsFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/en.lproj/Localizable.strings GetTogether/Resources/en.lproj/Localizable.strings
+s405125396.484699
+e405125396.488071
+r1
+xCopyStringsFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/en.lproj/Localizable.strings
+xGetTogether/Resources/en.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy GetTogether/Resources/en.lproj/Localizable.strings124"CopyStringsFile build/device/GetTogether.app/en.lproj/Localizable.strings GetTogether/Resources/en.lproj/Localizable.strings47397c14b925b841^b85c7d14b925b841^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/en.lproj/Localizable.strings0000000000000000^858"CopyStringsFile build/device/GetTogether.app/en.lproj/Localizable.strings GetTogether/Resources/en.lproj/Localizable.strings    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/en.lproj -- GetTogether/Resources/en.lproj/Localizable.strings36"C01CAFCF-EFF6-4B8D-839D-8F70D5EE05F7-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyStringsFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/es.lproj/Localizable.strings GetTogether/Resources/es.lproj/Localizable.strings
+s405125396.489018
+e405125396.492729
+r1
+xCopyStringsFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/es.lproj/Localizable.strings
+xGetTogether/Resources/es.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy GetTogether/Resources/es.lproj/Localizable.strings124"CopyStringsFile build/device/GetTogether.app/es.lproj/Localizable.strings GetTogether/Resources/es.lproj/Localizable.stringsb5517d14b925b841^ab247e14b925b841^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/es.lproj/Localizable.strings0000000000000000^858"CopyStringsFile build/device/GetTogether.app/es.lproj/Localizable.strings GetTogether/Resources/es.lproj/Localizable.strings    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/es.lproj -- GetTogether/Resources/es.lproj/Localizable.strings36"DF613E06-89F9-42BC-90EB-D8B7ED182179-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCopyStringsFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/se.lproj/Localizable.strings GetTogether/Resources/se.lproj/Localizable.strings
+s405125396.551105
+e405125396.554182
+r1
+xCopyStringsFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/se.lproj/Localizable.strings
+xGetTogether/Resources/se.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy GetTogether/Resources/se.lproj/Localizable.strings124"CopyStringsFile build/device/GetTogether.app/se.lproj/Localizable.strings GetTogether/Resources/se.lproj/Localizable.stringscf4b8d14b925b841^0af48d14b925b841^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/Resources/se.lproj/Localizable.strings0000000000000000^858"CopyStringsFile build/device/GetTogether.app/se.lproj/Localizable.strings GetTogether/Resources/se.lproj/Localizable.strings    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/se.lproj -- GetTogether/Resources/se.lproj/Localizable.strings36"55D28FB7-162D-442B-805B-F7349C959081-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist build/device/GetTogether.app/ResourceRules.plist
+s405125396.040053
+e405125396.041429
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist
+xbuild/device/GetTogether.app/ResourceRules.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/device/GetTogether.app/ResourceRules.plist181"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist build/device/GetTogether.app/ResourceRules.plist705c0a14b925b841^4da20a14b925b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/ResourceRules.plist0034f4c8ddffdf42^996"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist build/device/GetTogether.app/ResourceRules.plist    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app36"702BC449-86D8-4BB8-9F83-9EB1748916AD-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CCpResource GetTogether/config.xml build/device/GetTogether.app/config.xml
+s405125396.480485
+e405125396.482209
+r1
+xCpResource
+xGetTogether/config.xml
+xbuild/device/GetTogether.app/config.xml
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy build/device/GetTogether.app/config.xml73"CpResource GetTogether/config.xml build/device/GetTogether.app/config.xmlda3b7b14b925b841^8a747b14b925b841^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/config.xml0034f4c8ddffdf42^848"CpResource GetTogether/config.xml build/device/GetTogether.app/config.xml    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/config.xml /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app36"2D222A96-2E9A-476D-B2AA-A3F406769532-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CGenerateDSYMFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app.dSYM /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/GetTogether
+s405125400.854063
+e405125400.920811
+r1
+xGenerateDSYMFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app.dSYM
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/GetTogether
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Generate /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app.dSYM91"GenerateDSYMFile build/device/GetTogether.app.dSYM build/device/GetTogether.app/GetTogetheradc2da18b925b841^5ed7eb18b925b841^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app.dSYM0034f4c8ddffdf42^880"GenerateDSYMFile build/device/GetTogether.app.dSYM build/device/GetTogether.app/GetTogether    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/GetTogether -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app.dSYM36"F4BC85EF-99B9-4E36-9973-D155C53F5C2F-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CLd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/GetTogether normal armv7
+s405125400.629363
+e405125400.852969
+r1
+xLd
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/GetTogether
+xnormal
+xarmv7
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/GetTogether.LinkFileList
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/libCordova.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/crt1.3.1.o
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/main.o
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/AppDelegate.o
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/MainViewController.o
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLogger.o
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVLocation.o
+d/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/CDVSplashScreen.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphoneos.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Link /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/GetTogether56"Ld build/device/GetTogether.app/GetTogether normal armv7a033a118b925b841^e65cda18b925b841^---0#0#1#--1922"Ld build/device/GetTogether.app/GetTogether normal armv7    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -L/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -F/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device -filelist /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/GetTogether.LinkFileList -dead_strip -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=5.0 -framework AssetsLibrary /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/libCordova.a -framework CoreGraphics -framework MobileCoreServices -framework CoreLocation -Xlinker -dependency_info -Xlinker /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/GetTogether_dependency_info.dat -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/GetTogether36"0DA22EB5-AC1B-435E-9FA7-A7FE371070BB-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CPhaseScriptExecution Copy\ www\ directory /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Script-304B58A110DAC018002A0835.sh
+s405125396.043029
+e405125396.479798
+r1
+xPhaseScriptExecution
+xCopy www directory
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Script-304B58A110DAC018002A0835.sh
+o
+oreal	0m0.402s
+ouser	0m0.144s
+osys	0m0.233s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'133"PhaseScriptExecution Copy\ www\ directory build/GetTogether.build/Debug-iphoneos/GetTogether.build/Script-304B58A110DAC018002A0835.shdb510c14b925b841^99d67a14b925b841^-42"real	0m0.402suser	0m0.144ssys	0m0.233s3(21%IDEActivityLogMessage2@14"real	0m0.402s-405125396#1#14#-0#-----2@14"user	0m0.144s-405125396#15#14#-0#-----2@13"sys	0m0.233s-405125396#29#13#-0#-----0#0#1#--22980"PhaseScriptExecution Copy\ www\ directory build/GetTogether.build/Debug-iphoneos/GetTogether.build/Script-304B58A110DAC018002A0835.sh    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER hongxuliu    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv ALWAYS_USE_SEPARATE_HEADERMAPS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS armv7    setenv ARCHS_STANDARD "armv7 armv7s"    setenv ARCHS_STANDARD_32_64_BIT "armv7 armv7s"    setenv ARCHS_STANDARD_32_BIT "armv7 armv7s"    setenv ARCHS_STANDARD_64_BIT arm64    setenv ARCHS_STANDARD_INCLUDING_64_BIT "armv7 armv7s arm64"    setenv ARCHS_UNIVERSAL_IPHONE_OS "armv7 armv7s"    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build    setenv BUILD_ROOT /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device    setenv CACHE_ROOT /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode    setenv CCHROOT /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_BOOL_CONVERSION YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_EMPTY_BODY YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app    setenv CODE_SIGNING_ALLOWED YES    setenv CODE_SIGNING_REQUIRED YES    setenv CODE_SIGN_CONTEXT_CLASS XCiPhoneOSCodeSignContext    setenv CODE_SIGN_IDENTITY "iPhone Developer"    setenv COLOR_DIAGNOSTICS NO    setenv COMBINE_HIDPI_IMAGES NO    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device    setenv CONFIGURATION_TEMP_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos    setenv CONTENTS_FOLDER_PATH GetTogether.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CREATE_INFOPLIST_SECTION_IN_BINARY NO    setenv CURRENT_ARCH armv7    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEFAULT_KEXT_INSTALL_PATH /System/Library/Extensions    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH GetTogether.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/GetTogether.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME GetTogether.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device    setenv EFFECTIVE_PLATFORM_NAME -iphoneos    setenv EMBEDDED_PROFILE_NAME embedded.mobileprovision    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENTITLEMENTS_ALLOWED YES    setenv ENTITLEMENTS_REQUIRED YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH GetTogether.app/Executables    setenv EXECUTABLE_FOLDER_PATH GetTogether.app    setenv EXECUTABLE_NAME GetTogether    setenv EXECUTABLE_PATH GetTogether.app/GetTogether    setenv FILE_LIST /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH GetTogether.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME GetTogether.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER GetTogether/GetTogether-Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNDECLARED_SELECTOR YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_FUNCTION YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/include \"/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/usr/local/lib/include\" \"/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/UninstalledProducts/include\" \"/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE GetTogether/GetTogether-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH GetTogether.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH GetTogether.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/GetTogether.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER hongxuliu    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/GetTogether.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH GetTogether.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_DEPENDENCY_INFO_FILE /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/GetTogether_dependency_info.dat    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether-LinkMap-normal-armv7.txt    setenv LD_NO_PIE NO    setenv LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER YES    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_KEXT_INSTALL_PATH /Library/Extensions    setenv LIBRARY_SEARCH_PATHS "/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_armv7 /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal/armv7/GetTogether.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH GetTogether.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 13A603    setenv MAC_OS_X_VERSION_ACTUAL 1090    setenv MAC_OS_X_VERSION_MAJOR 1090    setenv MAC_OS_X_VERSION_MINOR 0900    setenv MODULE_CACHE_DIR /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/ModuleCache    setenv NATIVE_ARCH armv7    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Objects-normal    setenv OBJROOT /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load \"/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/libCordova.a\" -ObjC"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH GetTogether.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/PkgInfo    setenv PKGINFO_PATH GetTogether.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform    setenv PLATFORM_NAME iphoneos    setenv PLATFORM_PREFERRED_ARCH arm64    setenv PLATFORM_PRODUCT_BUILD_VERSION 11B508    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH GetTogether.app/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH GetTogether.app/PrivateHeaders    setenv PRODUCT_NAME GetTogether    setenv PRODUCT_SETTINGS_PATH /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/GetTogether-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT GetTogether    setenv PROJECT_DERIVED_FILE_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/DerivedSources    setenv PROJECT_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PROJECT_FILE_PATH /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether.xcodeproj    setenv PROJECT_NAME GetTogether    setenv PROJECT_TEMP_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build    setenv PROJECT_TEMP_ROOT /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build    setenv PROVISIONING_PROFILE_REQUIRED YES    setenv PUBLIC_HEADERS_FOLDER_PATH GetTogether.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv RESOURCE_RULES_REQUIRED YES    setenv REZ_COLLECTOR_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device "    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH GetTogether.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk    setenv SDK_NAME iphoneos7.0    setenv SDK_PRODUCT_BUILD_VERSION 11B508    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH GetTogether.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH GetTogether.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv SRCROOT /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES 1,2    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_KEXT_INSTALL_PATH /System/Library/Extensions    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1,2    setenv TARGETNAME GetTogether    setenv TARGET_BUILD_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device    setenv TARGET_NAME GetTogether    setenv TARGET_TEMP_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build    setenv TEMP_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build    setenv TEMP_FILES_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build    setenv TEMP_FILE_DIR /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build    setenv TEMP_ROOT /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH GetTogether.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER hongxuliu    setenv USER_APPS_DIR /Users/hongxuliu/Applications    setenv USER_LIBRARY_DIR /Users/hongxuliu/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "armv7 armv7s"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH GetTogether.app/version.plist    setenv VERSION_INFO_BUILDER hongxuliu    setenv VERSION_INFO_FILE GetTogether_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:GetTogether  PROJECT:GetTogether-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME GetTogether.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 5A2053    setenv XCODE_VERSION_ACTUAL 0501    setenv XCODE_VERSION_MAJOR 0500    setenv XCODE_VERSION_MINOR 0500    setenv XPCSERVICES_FOLDER_PATH GetTogether.app/XPCServices    setenv YACC yacc    setenv arch armv7    setenv variant normal    /bin/sh -c /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/Script-304B58A110DAC018002A0835.sh36"024C0D37-3776-4CFB-812C-25087284D1F7-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CProcessInfoPlistFile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Info.plist /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/GetTogether-Info.plist
+s405125396.036891
+e405125396.039439
+r1
+xProcessInfoPlistFile
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Info.plist
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/GetTogether-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Process /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/GetTogether-Info.plist95"ProcessInfoPlistFile build/device/GetTogether.app/Info.plist GetTogether/GetTogether-Info.plist2e8f0914b925b841^87190a14b925b841^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/GetTogether-Info.plist0000000000000000^1103"ProcessInfoPlistFile build/device/GetTogether.app/Info.plist GetTogether/GetTogether-Info.plist    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-infoPlistUtility /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/GetTogether/GetTogether-Info.plist -genpkginfo /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/ResourceRules.plist -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/Info.plist36"17AC7E4C-EBEE-4AB7-A82E-3B2825709107-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CProcessPCH /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/GetTogether-Prefix-errjpezfvpibftbjzzocuctbqfir/GetTogether-Prefix.pch.pch GetTogether/GetTogether-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether.xcent
+s405125400.933183
+e405125400.937304
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether.xcent
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection219"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether.xcent219"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether.xcent5cffee18b925b841^88f4ef18b925b841^---0#0#1#-19%DVTDocumentLocation2@140"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether.xcent0034f4c8ddffdf42^1032"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether.xcent    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/GetTogether.build/Debug-iphoneos/GetTogether.build/GetTogether.xcent36"E96F6324-A10D-4E3F-8ED6-0AEB181CC980-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CProcessProductPackaging /Users/hongxuliu/Library/MobileDevice/Provisioning\ Profiles/9B72C345-27B6-49E3-BB1E-68C2B7B6FB78.mobileprovision /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/embedded.mobileprovision
+s405125400.921859
+e405125400.925226
+r1
+xProcessProductPackaging
+x/Users/hongxuliu/Library/MobileDevice/Provisioning Profiles/9B72C345-27B6-49E3-BB1E-68C2B7B6FB78.mobileprovision
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/embedded.mobileprovision
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection191"ProcessProductPackaging /Users/hongxuliu/Library/MobileDevice/Provisioning\ Profiles/9B72C345-27B6-49E3-BB1E-68C2B7B6FB78.mobileprovision build/device/GetTogether.app/embedded.mobileprovision191"ProcessProductPackaging /Users/hongxuliu/Library/MobileDevice/Provisioning\ Profiles/9B72C345-27B6-49E3-BB1E-68C2B7B6FB78.mobileprovision build/device/GetTogether.app/embedded.mobileprovisiondd22ec18b925b841^f0dbec18b925b841^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/embedded.mobileprovision0034f4c8ddffdf42^950"ProcessProductPackaging /Users/hongxuliu/Library/MobileDevice/Provisioning\ Profiles/9B72C345-27B6-49E3-BB1E-68C2B7B6FB78.mobileprovision build/device/GetTogether.app/embedded.mobileprovision    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-productPackagingUtility /Users/hongxuliu/Library/MobileDevice/Provisioning\ Profiles/9B72C345-27B6-49E3-BB1E-68C2B7B6FB78.mobileprovision -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app/embedded.mobileprovision36"69744B3F-940A-45DA-B4D0-B15298E6FE7B-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+
+CTouch /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app
+s405125400.927068
+e405125400.932511
+r1
+xTouch
+x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Touch /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app34"Touch build/device/GetTogether.appa967ed18b925b841^f5b9ee18b925b841^---0#0#1#--637"Touch build/device/GetTogether.app    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/device/GetTogether.app36"04880F04-EBA5-4E39-8644-E60D77AC157A-
+b5082F738-F86B-4D3D-9CCF-67799E4F7F7F
+

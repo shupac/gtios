@@ -1,0 +1,28 @@
+<div
+  id="leftSliver"
+  ng-swipe-right="showRooms=true">
+</div>
+
+<div
+  id="rooms"
+  ng-show="showRooms"
+  ng-swipe-left="showRooms=false">
+  Logged in as {{username}}
+  <button ng-click="logout()">Log Out</button>
+</div>
+
+<div
+  id="rightSliver"
+  ng-swipe-left="showChat=true">
+</div>
+
+<div
+  id="chat"
+  ng-show="showChat"
+  ng-swipe-right="showChat=false">
+  Chats
+</div>
+
+<div
+  id="map-canvas">
+</div>

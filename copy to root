@@ -1,0 +1,4 @@
+#!/bin/sh
+cd /Users/hongxuliu/dropbox/mobile
+pwd
+grunt copy

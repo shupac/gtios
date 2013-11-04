@@ -1,0 +1,1184 @@
+TCordovaLib
+v6
+r1
+cCheck dependencies
+cCpHeader Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
+cCpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+cCpHeader Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
+cCpHeader Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+cCpHeader Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+cCpHeader Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
+cCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+cCpHeader Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+cCpHeader Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
+cCpHeader Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+cCpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDV.h
+cCpHeader Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+cCpHeader Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+cCpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
+cCpHeader Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
+cCpHeader Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
+cCpHeader Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+cCpHeader Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+cCpHeader Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h
+cCpHeader Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+cCpHeader Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
+cCpHeader Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
+cCpHeader Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
+cCpHeader Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
+cCpHeader Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
+cProcessPCH /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVShared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/libCordova.a normal i386
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+c00000000525642F10000000000000176
+t1381384945
+s374
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
+c0000000052743A4000000000000003B5
+t1383348800
+s949
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000052743A4D00000000000001A0
+t1383348813
+s416
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDV.h
+c0000000052745F650000000000000516
+t1383358309
+s1302
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+c0000000052745F650000000000000C83
+t1383358309
+s3203
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+c0000000052745F6500000000000008BA
+t1383358309
+s2234
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
+c0000000052745F650000000000000473
+t1383358309
+s1139
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
+c0000000052745F65000000000000126E
+t1383358309
+s4718
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+c0000000052745F650000000000000501
+t1383358309
+s1281
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
+c0000000052745F65000000000000158B
+t1383358309
+s5515
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
+c0000000052745F6500000000000004CB
+t1383358309
+s1227
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
+c0000000052745F650000000000000EB2
+t1383358309
+s3762
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h
+c0000000052745F650000000000000401
+t1383358309
+s1025
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+c0000000052745F6500000000000007E6
+t1383358309
+s2022
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
+c0000000052745F650000000000000DDE
+t1383358309
+s3550
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
+c0000000052745F6500000000000003DA
+t1383358309
+s986
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m
+c0000000052745F65000000000000098E
+t1383358309
+s2446
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
+c0000000052745F6500000000000006CF
+t1383358309
+s1743
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
+c0000000052745F650000000000004C7E
+t1383358309
+s19582
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+c0000000052745F650000000000000892
+t1383358309
+s2194
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m
+c0000000052745F6500000000000016AE
+t1383358309
+s5806
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+c0000000052745F650000000000000C13
+t1383358309
+s3091
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
+c0000000052745F650000000000001B29
+t1383358309
+s6953
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+c0000000052745F650000000000000408
+t1383358309
+s1032
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVShared.h
+c0000000052745F6500000000000003E6
+t1383358309
+s998
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVShared.m
+c0000000052745F6500000000000006B6
+t1383358309
+s1718
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h
+c0000000052745F66000000000000038D
+t1383358310
+s909
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m
+c0000000052745F660000000000000AA2
+t1383358310
+s2722
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
+c0000000052745F66000000000000041C
+t1383358310
+s1052
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
+c0000000052745F660000000000002514
+t1383358310
+s9492
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
+c0000000052745F660000000000000421
+t1383358310
+s1057
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
+c0000000052745F6600000000000012A2
+t1383358310
+s4770
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
+c0000000052745F660000000000000ACC
+t1383358310
+s2764
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m
+c0000000052745F660000000000009F3C
+t1383358310
+s40764
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
+c0000000052745F6600000000000005A2
+t1383358310
+s1442
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
+c0000000052745F6600000000000037C6
+t1383358310
+s14278
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+c0000000052745F6600000000000004B4
+t1383358310
+s1204
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
+c0000000052745F6600000000000027D3
+t1383358310
+s10195
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
+c0000000052745F660000000000000392
+t1383358310
+s914
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
+c0000000052745F6600000000000004D8
+t1383358310
+s1240
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+c0000000052745F66000000000000037D
+t1383358310
+s893
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m
+c0000000052745F6600000000000022CC
+t1383358310
+s8908
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
+c0000000052745F6600000000000005DA
+t1383358310
+s1498
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
+c0000000052745F660000000000001059
+t1383358310
+s4185
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+c0000000052745F6600000000000003A0
+t1383358310
+s928
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
+c0000000052745F660000000000000584
+t1383358310
+s1412
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
+c0000000052745F660000000000000476
+t1383358310
+s1142
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
+c0000000052745F660000000000000620
+t1383358310
+s1568
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/CordovaLib_Prefix.pch
+c0000000052745F660000000000000346
+t1383358310
+s838
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o
+t1383358327
+s63168
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o
+t1383358327
+s60108
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o
+t1383358327
+s27784
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o
+t1383358326
+s18740
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o
+t1383358327
+s10896
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o
+t1383358327
+s109668
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o
+t1383358326
+s59544
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o
+t1383358326
+s37256
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o
+t1383358327
+s9420
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o
+t1383358327
+s22968
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o
+t1383358326
+s71264
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o
+t1383358328
+s52748
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o
+t1383358328
+s191880
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o
+t1383358328
+s71336
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o
+t1383358326
+s42384
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/Cordova.LinkFileList
+c0000000052745F740000000000000D43
+t1383358324
+s3395
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o
+t1383358326
+s7500
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o
+t1383358326
+s11164
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o
+t1383358326
+s17876
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o
+t1383358326
+s7012
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o
+t1383358327
+s9632
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDV.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
+t2
+s0
+
+N/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/libCordova.a
+t2
+s0
+
+N/var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch.pch
+t1383358325
+s3202364
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies72c38bf49624b841^431dbaf49624b841^---0#1#1#--18"Check dependencies36"D0D98E70-081E-4EDC-89BC-B8DAD83AA505-
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051127.020670
+e405051127.724672
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m216"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler927805f79624b841^dd95b9f79624b841^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m0000000000000000^4062"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o36"96943972-7C89-4057-B88B-6ED87A62A907-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051126.869099
+e405051127.639760
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDV.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m202"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o Classes/CDVCommandQueue.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera1d8def69624b841^3bc8a3f79624b841^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m0000000000000000^4020"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o Classes/CDVCommandQueue.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o36"9EFFE5DA-1FCA-4552-A5AC-16C17C880999-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051127.308884
+e405051127.365232
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m202"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o Classes/CDVConfigParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler5b414ff79624b841^d87f5df79624b841^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m0000000000000000^4020"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o Classes/CDVConfigParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o36"A10DDFEB-D08A-4677-A338-43083B87723A-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051125.967553
+e405051126.037597
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m212"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o Classes/CDVInvokedUrlCommand.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler1adbf7f59624b841^81b209f69624b841^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m0000000000000000^4050"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o Classes/CDVInvokedUrlCommand.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o36"F2E73791-F3DF-413A-BF32-BBDA33D8AC28-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051127.366665
+e405051127.411039
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m186"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o Classes/CDVJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler29085ef79624b841^433d69f79624b841^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m0000000000000000^3972"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o Classes/CDVJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o36"66E630ED-3BF1-4E6C-BA9E-7B351650445F-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051126.159961
+e405051127.020218
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDV.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m202"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o Classes/CDVLocalStorage.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7d2029f69624b841^bf8105f79624b841^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m0000000000000000^4020"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o Classes/CDVLocalStorage.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o36"6CCCFCFA-1657-47D8-98FD-94BD04A6138C-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051126.031088
+e405051126.747181
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m190"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o Classes/CDVPlugin.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler4a2908f69624b841^8048bff69624b841^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m0000000000000000^3984"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o Classes/CDVPlugin.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o36"20E42070-694A-4568-8DB5-D38A4746B1BA-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051125.966553
+e405051126.081451
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m202"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o Classes/CDVPluginResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler04aaf7f59624b841^43e414f69624b841^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m0000000000000000^4020"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o Classes/CDVPluginResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o36"F82A7D01-AA43-4F1F-924E-7DEE95333D34-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVShared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051127.777613
+e405051127.828986
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVShared.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVShared.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVShared.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVShared.m190"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o Classes/CDVShared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera340c7f79624b841^62f5d3f79624b841^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVShared.m0000000000000000^3984"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o Classes/CDVShared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVShared.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o36"258CE364-4AEE-476E-A3DF-CA9FA0B86A80-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051127.725146
+e405051127.775447
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m188"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o Classes/CDVTimer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7f13baf79624b841^9083c6f79624b841^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m0000000000000000^3978"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o Classes/CDVTimer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o36"E366F4CB-48AF-4BD8-AAE1-21B4529CD3D3-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051126.075402
+e405051126.826258
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m200"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o Classes/CDVURLProtocol.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler089213f69624b841^7f86d3f69624b841^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m0000000000000000^4014"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o Classes/CDVURLProtocol.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o36"FEF3FA6A-F412-4DD2-B419-3B61B4E3EA40-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051127.411294
+e405051128.036321
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m204"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o Classes/CDVUserAgentUtil.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler34f269f79624b841^895f09f89624b841^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m0000000000000000^4026"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o Classes/CDVUserAgentUtil.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o36"FD0D3AC7-BDAC-4519-B97D-A9FE4F53CC95-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051126.081822
+e405051128.044865
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDV.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m206"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o Classes/CDVViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerd61f15f69624b841^cc7c0bf89624b841^---0#0#1#-19%DVTDocumentLocation2@103"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m0000000000000000^4032"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o Classes/CDVViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o36"5CF399A2-2FD2-47A7-B6DA-E81015C03CB2-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051127.641500
+e405051128.188165
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m208"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o Classes/CDVWebViewDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilere067a4f79624b841^8b3530f89624b841^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m0000000000000000^4038"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o Classes/CDVWebViewDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o36"9E9A8E69-4FFF-4124-8A6E-59A0B7D7AA9B-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051126.037977
+e405051126.159677
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m196"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o Classes/CDVWhitelist.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbd370af69624b841^5de228f69624b841^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m0000000000000000^4002"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o Classes/CDVWhitelist.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o36"A03D574B-1A59-4DEF-8562-2CB8C56A5BB0-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051126.827851
+e405051126.868709
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m210"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o Classes/NSArray+Comparisons.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerd121d4f69624b841^cc62def69624b841^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m0000000000000000^4044"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o Classes/NSArray+Comparisons.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o36"8114BF40-774C-437A-B8B1-81C7B418EBFD-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051125.965425
+e405051126.030407
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m198"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerd463f7f59624b841^d9ed07f69624b841^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m0000000000000000^4008"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o36"CA19E229-24CE-4CCD-BFB4-1F8E32B5010E-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051125.961354
+e405051126.032621
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m218"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o Classes/NSDictionary+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7689f6f59624b841^4f5a08f69624b841^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m0000000000000000^4068"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o Classes/NSDictionary+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o36"BEEF8ED7-8805-4C6A-ACCF-0D3135A6B1EE-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051126.034639
+e405051126.072474
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m230"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o Classes/NSMutableArray+QueueAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf60c09f69624b841^978d12f69624b841^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m0000000000000000^4104"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o Classes/NSMutableArray+QueueAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o36"055B3541-ACEA-4EF6-93B5-F6FA094069A5-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051126.747504
+e405051127.308379
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m210"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o Classes/UIDevice+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerca88bff69624b841^cedd4ef79624b841^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m0000000000000000^4044"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o Classes/UIDevice+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG -include /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.d --serialize-diagnostics /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.dia -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o36"D277C653-99C5-4202-A05D-693DFAE1030A-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDV.h
+s405051124.741204
+e405051124.744428
+r1
+xCpHeader
+xClasses/CDV.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDV.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDV.h117"CpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDV.ha2f0bdf49624b841^772ec0f49624b841^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDV.h0034f4c8ddffdf42^911"CpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDV.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"CAF2CC60-2B34-4941-B1D5-D59BB8606621-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+s405051124.743546
+e405051124.749066
+r1
+xCpHeader
+xClasses/CDVAvailability.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h141"CpHeader Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.hc64fbff49624b841^4b3cc0f49624b841^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h0034f4c8ddffdf42^947"CpHeader Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"8D070CD6-E9EE-4B84-A96E-389EEEC2E5CF-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+s405051124.741617
+e405051124.744622
+r1
+xCpHeader
+xClasses/CDVCommandDelegate.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h147"CpHeader Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h274abef49624b841^2332c0f49624b841^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h0034f4c8ddffdf42^956"CpHeader Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"A26E7E64-4A18-45B8-B140-FCE01D5543E7-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+s405051124.751789
+e405051124.763533
+r1
+xCpHeader
+xClasses/CDVCommandDelegateImpl.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h155"CpHeader Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.hae62c1f49624b841^e9800cf59624b841^---0#0#1#-19%DVTDocumentLocation2@120"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h0034f4c8ddffdf42^968"CpHeader Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"E662C3D7-27B0-4A4F-B865-CD55146C55C3-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+s405051124.751687
+e405051124.757833
+r1
+xCpHeader
+xClasses/CDVCommandQueue.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h141"CpHeader Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.hb2d6c0f49624b841^fb74c4f49624b841^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h0034f4c8ddffdf42^947"CpHeader Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"91D8B1A4-69DC-4501-A40F-C2F702BADE33-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
+s405051124.758088
+e405051124.761865
+r1
+xCpHeader
+xClasses/CDVConfigParser.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h141"CpHeader Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.hfe2cc2f49624b841^0ccac4f49624b841^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h0034f4c8ddffdf42^947"CpHeader Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"FB746937-902E-42B4-98D8-38FB2267D291-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
+s405051124.732637
+e405051124.737874
+r1
+xCpHeader
+xClasses/CDVDebug.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h127"CpHeader Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.hef1abcf49624b841^c214bdf49624b841^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h0034f4c8ddffdf42^926"CpHeader Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"5E6D4770-AA9F-430D-B8DE-96FFEBCEB6DF-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+s405051124.727784
+e405051124.732551
+r1
+xCpHeader
+xClasses/CDVInvokedUrlCommand.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h151"CpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h50febaf49624b841^2d95bbf49624b841^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h0034f4c8ddffdf42^962"CpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"4920521C-3398-4DFE-98E6-3BE78667AD1E-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
+s405051124.761259
+e405051124.768112
+r1
+xCpHeader
+xClasses/CDVJSON.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h125"CpHeader Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.ha801c3f49624b841^0a800df59624b841^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h0034f4c8ddffdf42^923"CpHeader Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"1D1B74F4-0995-4FC8-AF59-1247BF5ECE8F-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
+s405051124.747461
+e405051124.750376
+r1
+xCpHeader
+xClasses/CDVLocalStorage.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h141"CpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.hacc9bff49624b841^bf48c0f49624b841^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h0034f4c8ddffdf42^947"CpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"B1100A83-8A79-45F0-B075-F9AC8C5D9D8D-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+s405051124.731838
+e405051124.734097
+r1
+xCpHeader
+xClasses/CDVPlugin.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h129"CpHeader Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h0ea0bbf49624b841^df16bcf49624b841^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h0034f4c8ddffdf42^929"CpHeader Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"8C0C3598-F4FD-416F-8EB3-2722D2285B4D-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+s405051124.731806
+e405051124.733485
+r1
+xCpHeader
+xClasses/CDVPluginResult.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h141"CpHeader Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h1574bbf49624b841^2d09bcf49624b841^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h0034f4c8ddffdf42^947"CpHeader Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"82E69013-C913-4C9C-9B3B-8C4CDD26723A-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+s405051124.757620
+e405051124.767042
+r1
+xCpHeader
+xClasses/CDVScreenOrientationDelegate.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h167"CpHeader Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h8543c3f49624b841^fa7b0df59624b841^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h0034f4c8ddffdf42^986"CpHeader Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"75AD5553-89E5-4F6D-98F3-3F54428796FE-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h
+s405051124.752504
+e405051124.757869
+r1
+xCpHeader
+xClasses/CDVShared.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h129"CpHeader Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.hfb03c1f49624b841^feb9c4f49624b841^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h0034f4c8ddffdf42^929"CpHeader Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"0457CC89-40CE-402C-9629-433FEF8E3707-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
+s405051124.766640
+e405051124.770058
+r1
+xCpHeader
+xClasses/CDVTimer.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h127"CpHeader Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h328fc4f49624b841^ff910df59624b841^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h0034f4c8ddffdf42^926"CpHeader Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"431286AB-3D27-4F42-B2C1-E16F64005776-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
+s405051124.736092
+e405051124.738124
+r1
+xCpHeader
+xClasses/CDVURLProtocol.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h139"CpHeader Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.hc289bcf49624b841^fa26bdf49624b841^---0#0#1#-19%DVTDocumentLocation2@112"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h0034f4c8ddffdf42^944"CpHeader Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"F8D704B9-F18A-42A1-B5EF-6161DCE23511-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
+s405051124.763993
+e405051124.766986
+r1
+xCpHeader
+xClasses/CDVUserAgentUtil.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h143"CpHeader Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h28b5c3f49624b841^92780df59624b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h0034f4c8ddffdf42^950"CpHeader Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"410DB8E5-3D0D-45E2-AB5F-07028255BD33-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+s405051124.739404
+e405051124.741288
+r1
+xCpHeader
+xClasses/CDVViewController.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h145"CpHeader Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h3c69bdf49624b841^89cfbdf49624b841^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h0034f4c8ddffdf42^953"CpHeader Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"863F6D85-D1A2-4DA8-A4F7-DF9F22E990CF-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
+s405051124.762133
+e405051124.766373
+r1
+xCpHeader
+xClasses/CDVWebViewDelegate.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h147"CpHeader Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h5437c3f49624b841^7a720df59624b841^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h0034f4c8ddffdf42^956"CpHeader Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"203A3959-FC98-43DE-B4B2-1EFF77D5311B-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+s405051124.735102
+e405051124.737980
+r1
+xCpHeader
+xClasses/CDVWhitelist.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h135"CpHeader Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.hdd5cbcf49624b841^c11cbdf49624b841^---0#0#1#-19%DVTDocumentLocation2@110"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h0034f4c8ddffdf42^938"CpHeader Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"7AC271F5-B10F-442F-9A7F-9DEA35A93E18-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
+s405051124.747872
+e405051124.750170
+r1
+xCpHeader
+xClasses/NSArray+Comparisons.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h149"CpHeader Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h368fbff49624b841^ea42c0f49624b841^---0#0#1#-19%DVTDocumentLocation2@117"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h0034f4c8ddffdf42^959"CpHeader Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"2F2BB711-BE84-4A3E-9CB5-002AD95773A9-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
+s405051124.729242
+e405051124.731596
+r1
+xCpHeader
+xClasses/NSData+Base64.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h137"CpHeader Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h8ecdbaf49624b841^9643bbf49624b841^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h0034f4c8ddffdf42^941"CpHeader Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"D86172DF-D521-4740-9F10-6A873C9FBE80-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
+s405051124.727506
+e405051124.730454
+r1
+xCpHeader
+xClasses/NSDictionary+Extensions.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h157"CpHeader Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h3272baf49624b841^9737bbf49624b841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h00846f56f3fadf42^971"CpHeader Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"0E268CB2-2679-41C9-A0B7-9F6D5B53E18C-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+s405051124.734099
+e405051124.738107
+r1
+xCpHeader
+xClasses/NSMutableArray+QueueAdditions.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h169"CpHeader Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h1554bcf49624b841^a323bdf49624b841^---0#0#1#-19%DVTDocumentLocation2@127"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h0034f4c8ddffdf42^989"CpHeader Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"2317AA41-E1DF-4351-BF9F-2A21B56B3C2B-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CCpHeader Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
+s405051124.747509
+e405051124.752837
+r1
+xCpHeader
+xClasses/UIDevice+Extensions.h
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h149"CpHeader Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h9414c0f49624b841^24efc0f49624b841^---0#0#1#-19%DVTDocumentLocation2@117"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h0034f4c8ddffdf42^959"CpHeader Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova36"73B6F8B8-2421-4210-BD71-3B8B7A0F4F5A-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CLibtool /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/libCordova.a normal i386
+s405051128.190323
+e405051128.213570
+r1
+xLibtool
+x/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/libCordova.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Libtool /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/libCordova.a normal i386105"Libtool /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/libCordova.a normal i386d7dd30f89624b841^fbac36f89624b841^---0#0#1#--1254"Libtool /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/libCordova.a normal i386    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -filelist /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/Cordova.LinkFileList -o /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/libCordova.a36"93E69B54-38A2-4DB4-B05B-7FFC71C498D9-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+
+CProcessPCH /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405051124.772618
+e405051125.960457
+r1
+xProcessPCH
+x/var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch.pch
+xCordovaLib_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/CordovaLib_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Precompile CordovaLib_Prefix.pch291"ProcessPCH /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler61ffc5f49624b841^1ee0f5f59624b841^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/CordovaLib_Prefix.pch0000000000000000^3978"ProcessPCH /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator -DDEBUG --serialize-diagnostics /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch.d -c /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/CordovaLib/CordovaLib_Prefix.pch -o /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bpftamrptysijsbrgyuipvjyfjrs/CordovaLib_Prefix.pch.pch36"34B555FF-8BBF-4AF9-8FE5-73B93CBD5F4A-
+bB0E731A4-A392-460D-8ED3-EA04D8E29C12
+

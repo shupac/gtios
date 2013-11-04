@@ -1,0 +1,4 @@
+#!/bin/sh
+cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/
+pwd
+grunt copy

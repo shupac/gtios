@@ -44,7 +44,14 @@ angular.module('GetTogetherApp')
     watchPosition: function() {
       console.log('watchPosition started');
       service.watchID = navigator.geolocation.watchPosition(
-        service.storePosition,
+        function(position) {
+          SessionService.fetchRooms()
+          .then(function(rooms) {
+            for(var i = 0; i < rooms.length; i++) {
+              service.storePosition(position, rooms[i]);
+            }
+          });
+        },
         function(){
           console.log('watchPosition error')
         },{'enableHighAccuracy':true,'timeout':10000,'maximumAge':5000}
@@ -72,18 +79,13 @@ angular.module('GetTogetherApp')
       });
       return marker;
     },
-    // storePosition: function(position) {
-    //   var username = SessionService.getUsername();
-    //   refs.users.child(username).child('position').set({coords: position.coords, timestamp: position.timestamp});
-    //   console.log('Watch location:', SessionService.getUsername(), 'moved');
-    // },
 
-    storePosition: function(position) {
+    storePosition: function(position, roomname) {
+      roomname = roomname || SessionService.currentRoom;
       var defer = $q.defer();
-      var currentRoom = SessionService.currentRoom;
       var username = SessionService.getUsername();
       refs.rooms
-        .child(currentRoom)
+        .child(roomname)
         .child('Users')
         .child(username)
         .child('position')
@@ -92,7 +94,7 @@ angular.module('GetTogetherApp')
             if (error) {
               console.log('position could not be saved.' + error);
             } else {
-              console.log('position saved successfully.');
+              console.log('position saved successfully in', roomname);
               defer.resolve();
             }
           });

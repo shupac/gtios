@@ -56,20 +56,8 @@ angular.module('GetTogetherApp')
         .child('position')
         .set({coords: position.coords, timestamp: position.timestamp});
     },
-    getRooms: function() {
-      var defer = $q.defer();
-      console.log('getRooms');
-      var username = SessionService.getUsername();
-      refs.users
-        .child(username)
-        .child('Rooms')
-        .once('value', function(rooms) {
-          if(rooms.val()) {
-            console.log('getRooms', username, rooms.val());
-            defer.resolve(Object.keys(rooms.val()));
-          }
-        });
-      return defer.promise;
+    removePositions: function() {
+      
     }
   };
   return service;

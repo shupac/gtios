@@ -21,22 +21,24 @@ angular.module('GetTogetherApp')
   // $scope.login('Shu', 'test');
 })
 .controller('MainCtrl', function($scope, SessionService, LocationService, RoomService){
+  $scope.currentRoom = SessionService.getCurrentRoom;
   $scope.showRooms = true;
   $scope.showChats = true;
   $scope.username = SessionService.getUsername();
+  $scope.rooms = [];
+  RoomService.getRooms()
+  .then(function(roomsList) {$scope.rooms = roomsList;});
   $scope.logout = function() {
     SessionService.logout();
     LocationService.logout();
   };
-  // var map = 
-
-  // getting initial location
 
   $scope.createRoom = function(roomname) {
-    // debugger;
     RoomService.create(roomname)
     .then(
       function(roomname){
+        $scope.rooms.push(roomname);
+        delete $scope.newRoom.name;
         SessionService.setCurrentRoom(roomname);
         currentRoomRef = roomsRef.child(roomname);
         LocationService.getLocation()
@@ -55,5 +57,10 @@ angular.module('GetTogetherApp')
         console.log('Roomname taken');
       }
     );
-  }
+  };
+
+  $scope.join = function(roomname) {
+    RoomService.joinRoom(roomname);
+    delete $scope.joinRoom.name;
+  };
 });

@@ -117,20 +117,29 @@ angular.module('GetTogetherApp')
         marker.setMap(service.map);
       });
 
-      currentUsersInRoomRef.on('child_removed', function(user) {
+      currentUsersInRoomRef.on('child_changed', function(user) {
         // console.log(user.val());
-        console.log(user.name(), 'logged out');
-        service.markers[user.name()].setMap(null);
-        delete service.markers[user.name()];
+        var username = user.name();
+        currentUsersInRoomRef
+          .child(username)
+          .child('position')
+          .once('value', function(position) {
+            if(position.val() === null) {
+              console.log(user.name(), 'logged out');
+              service.markers[user.name()].setMap(null);
+              delete service.markers[user.name()];
+            } else {
+              console.log(user.name(), 'marker moved');
+              var position = user.val().position;
+              var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+              service.markers[user.name()].setPosition(pos);
+            }
+          });
       });
 
-      currentUsersInRoomRef.on('child_changed', function(user) {
-        console.log(user.val());
-        console.log(user.name(), 'marker moved');
-        var position = user.val().position;
-        var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-        service.markers[user.name()].setPosition(pos);
-      });
+      // currentUsersInRoomRef.on('child_changed', function(user) {
+      //   console.log(user.val());
+      // });
     },
     logout: function() {
       console.log('clearWatch', service.watchID);

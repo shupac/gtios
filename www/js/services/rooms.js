@@ -31,7 +31,11 @@ angular.module('GetTogetherApp')
 
         // if the room exists
         if(room.val() !== null) {
-          roomRef.child('Users').child(username).set({active:true});
+          refs.users
+            .child(username)
+            .child('Rooms')
+            .child(roomname)
+            .set({update: 'live'});
           console.log('logged into room:', roomname);
           defer.resolve();
           MapService.initializeMap(roomname);

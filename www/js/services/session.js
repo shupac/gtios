@@ -67,9 +67,12 @@ angular.module('GetTogetherApp')
     },
     logout: function() {
       service.currentUserID = null;
-      usersRef.off();
-      usersRef.child(service.currentUsername).child('position').remove();
+      refs.users.off();
+      refs.users.child(service.currentUsername).child('position').remove();
       $location.path('/login');
+    },
+    getRooms: function() {
+      
     }
   };
   return service;

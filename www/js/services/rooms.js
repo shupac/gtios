@@ -4,12 +4,12 @@ angular.module('GetTogetherApp')
     create: function(roomname) {
       var defer = $q.defer();
       var username = SessionService.getUsername();
-      var newRoomRef = roomsRef.child(roomname);
+      var newRoomRef = refs.rooms.child(roomname);
       newRoomRef.once('value', function(room) {
         if(room.val() === null) {
           newRoomRef.set({owner: username});
             newRoomRef.child('Users').child(username).set({active: true});
-            usersRef
+            refs.users
               .child(username)
               .child('Rooms')
               .child(roomname)
@@ -23,12 +23,13 @@ angular.module('GetTogetherApp')
       return defer.promise;
     },
     joinRoom: function(roomname) {
-      var roomRef = roomsRef.child(roomname);
+      var roomRef = refs.rooms.child(roomname);
       var username = SessionService.getUsername();
       roomRef.once('value', function(room) {
         if(room.val() !== null) {
           SessionService.setCurrentRoom(roomname);
           roomRef.child('Users').child(username).set({active:true});
+          prevRoomRef = currentRoomRef;
           currentRoomRef = roomRef;
           console.log('logged into room:', roomname);
           LocationService.getLocation()
@@ -50,7 +51,7 @@ angular.module('GetTogetherApp')
     storePosition: function(position) {
       var currentRoom = SessionService.getCurrentRoom();
       var username = SessionService.getUsername();
-      roomsRef
+      refs.rooms
         .child(currentRoom)
         .child('Users')
         .child(username)
@@ -61,7 +62,7 @@ angular.module('GetTogetherApp')
       var defer = $q.defer();
       console.log('getRooms');
       var username = SessionService.getUsername();
-      usersRef
+      refs.users
         .child(username)
         .child('Rooms')
         .once('value', function(rooms) {

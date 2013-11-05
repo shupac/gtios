@@ -40,6 +40,7 @@ angular.module('GetTogetherApp')
         $scope.rooms.push(roomname);
         delete $scope.newRoom.name;
         SessionService.setCurrentRoom(roomname);
+        prevRoomRef = currentRoomRef;
         currentRoomRef = roomsRef.child(roomname);
         LocationService.getLocation()
         .then(
@@ -61,6 +62,7 @@ angular.module('GetTogetherApp')
 
   $scope.join = function(roomname) {
     RoomService.joinRoom(roomname);
+    LocationService.startListeners();
     delete $scope.joinRoom.name;
   };
 });

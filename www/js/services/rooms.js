@@ -9,8 +9,8 @@ angular.module('GetTogetherApp')
         // if roomname is not found
         if(room.val() === null) {
           newRoomRef.set({owner: username});
-            newRoomRef.child('Users').child(username).set({active: true});
             service.enterRoom(roomname);
+            // newRoomRef.child('Users').child(username).set({active: true});
             defer.resolve(roomname);
             console.log(roomname, 'created');
         } else {
@@ -27,7 +27,6 @@ angular.module('GetTogetherApp')
 
         // if the room exists
         if(room.val() !== null) {
-          roomRef.child('Users').child(username).set({active:true});
           service.enterRoom(roomname);
           defer.resolve();
           console.log('logged into room:', roomname);

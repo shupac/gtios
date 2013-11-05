@@ -1,6 +1,7 @@
 angular.module('GetTogetherApp')
 .factory('MapService', function($http, $q, SessionService){
   var service = {
+    markers: {},
     initializeMap: function(roomname) {
       console.log('initializeMap');
       service.markers = {};
@@ -83,10 +84,12 @@ angular.module('GetTogetherApp')
       roomname = roomname || SessionService.currentRoom;
       var defer = $q.defer();
       var username = SessionService.getUsername();
-      refs.rooms
+      var currentUserRef = refs.rooms
         .child(roomname)
         .child('Users')
-        .child(username)
+        .child(username);
+
+      currentUserRef
         .child('position')
         .set({coords: position.coords, timestamp: position.timestamp},
           function(error) {
@@ -97,6 +100,10 @@ angular.module('GetTogetherApp')
               defer.resolve();
             }
           });
+      currentUserRef
+        .child('active')
+        .set({active: true});
+
       return defer.promise;
     },
 
@@ -110,11 +117,18 @@ angular.module('GetTogetherApp')
       console.log('start listener/110', roomname);
       currentUsersInRoomRef = refs.rooms.child(roomname).child('Users');
       currentUsersInRoomRef.on('child_added', function(user) {
-        console.log('child added', user.val());
-        console.log(user.name(), 'entered room');
-        var marker = service.displayMarker(user.val().position, user.name());
-        service.markers[user.name()] = marker;
-        marker.setMap(service.map);
+        var username = user.name();
+        currentUsersInRoomRef
+          .child(username)
+          .child('position')
+          .once('value', function(position) {
+            if(position.val() !== null) {
+              console.log(username, 'entered room with position', position.val());
+              var marker = service.displayMarker(position.val(), username);
+              service.markers[username] = marker;
+              marker.setMap(service.map);
+            }
+          });
       });
 
       currentUsersInRoomRef.on('child_changed', function(user) {
@@ -125,14 +139,15 @@ angular.module('GetTogetherApp')
           .child('position')
           .once('value', function(position) {
             if(position.val() === null) {
-              console.log(user.name(), 'logged out');
-              service.markers[user.name()].setMap(null);
-              delete service.markers[user.name()];
+              if(service.markers[username]) {
+                console.log(username, 'marker removed');
+                service.markers[username].setMap(null);
+              }
+              delete service.markers[username];
             } else {
-              console.log(user.name(), 'marker moved');
-              var position = user.val().position;
-              var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-              service.markers[user.name()].setPosition(pos);
+              console.log(username, 'changed', position.val());
+              var pos = new google.maps.LatLng(position.val().coords.latitude, position.val().coords.longitude);
+              service.markers[username].setPosition(pos);
             }
           });
       });
@@ -149,12 +164,18 @@ angular.module('GetTogetherApp')
       .then(function(rooms) {
         for(var i = 0; i < rooms.length; i++) {
           console.log(rooms[i]);
-          refs.rooms
+
+          var currentUserRef = refs.rooms
             .child(rooms[i])
             .child('Users')
-            .child(username)
+            .child(username);
+
+          currentUserRef
             .child('position')
             .remove();
+          currentUserRef
+            .child('active')
+            .set({active: false});
         }
       });
     }

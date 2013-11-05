@@ -72,8 +72,6 @@ angular.module('GetTogetherApp')
     },
     logout: function() {
       service.currentUserID = null;
-      // refs.users.off();
-      // refs.users.child(service.currentUsername).child('position').remove();
       $location.path('/login');
     },
 
@@ -88,6 +86,8 @@ angular.module('GetTogetherApp')
           if(rooms.val()) {
             console.log('getRooms', username, rooms.val());
             defer.resolve(Object.keys(rooms.val()));
+          } else {
+            defer.resolve([]);
           }
         });
       return defer.promise;

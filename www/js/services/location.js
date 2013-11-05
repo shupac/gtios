@@ -70,7 +70,8 @@ angular.module('GetTogetherApp')
       console.log('Watch location:', SessionService.getUsername(), 'moved');
     },
     startListeners: function() {
-      currentRoomRef.on('child_added', function(user) {
+      var currentUsersRef = currentRoomRef.child('Users');
+      currentUsersRef.on('child_added', function(user) {
         // console.log(user.val());
         console.log(user.name(), 'logged in');
         var marker = service.displayMarker(user.val().position, user.name());
@@ -78,14 +79,14 @@ angular.module('GetTogetherApp')
         marker.setMap(service.map);
       });
 
-      currentRoomRef.on('child_removed', function(user) {
+      currentUsersRef.on('child_removed', function(user) {
         // console.log(user.val());
         console.log(user.name(), 'logged out');
         service.markers[user.name()].setMap(null);
         delete service.markers[user.name()];
       });
 
-      currentRoomRef.on('child_changed', function(user) {
+      currentUsersRef.on('child_changed', function(user) {
         console.log(user.val());
         console.log(user.name(), 'marker moved');
         var position = user.val().position;

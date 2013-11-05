@@ -38,7 +38,7 @@ angular.module('GetTogetherApp')
         $scope.rooms.push(roomname);
         delete $scope.newRoom.name;
         SessionService.currentRoom = roomname;
-        MapService.initializeMap();
+        MapService.initializeMap(roomname);
       }, 
       function() {
         console.log('Roomname taken');

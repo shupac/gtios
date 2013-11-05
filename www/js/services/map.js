@@ -1,9 +1,11 @@
 angular.module('GetTogetherApp')
 .factory('MapService', function($http, $q, SessionService){
   var service = {
-    markers: {},
+    // markers: {},
     initializeMap: function(roomname) {
       console.log('initializeMap');
+      service.markers = {};
+      navigator.geolocation.clearWatch(service.watchID);
       var mapOptions = {
         zoom: 13,
         zoomControl: false,
@@ -16,7 +18,7 @@ angular.module('GetTogetherApp')
         service.displayMap(position);
         service.storePosition(position);
         console.log('Current position stored in Firebase', position);
-          // service.watchPosition();        
+        service.watchPosition();
       })
       .then(function() {
         service.startListeners(roomname);

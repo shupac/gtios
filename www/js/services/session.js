@@ -79,15 +79,29 @@ angular.module('GetTogetherApp')
 
     fetchRooms: function() {
       var defer = $q.defer();
-      refs.rooms.once('value', function(rooms) {
-        if(rooms.val() !== null) {
-          service.roomsList = Object.keys(rooms.val());
-        } else {
-          service.roomsList = [];
-        }
-        defer.resolve(service.roomsList);
-      });
+      console.log('getRooms');
+      var username = service.currentUsername;
+      refs.users
+        .child(username)
+        .child('Rooms')
+        .once('value', function(rooms) {
+          if(rooms.val()) {
+            console.log('getRooms', username, rooms.val());
+            defer.resolve(Object.keys(rooms.val()));
+          }
+        });
       return defer.promise;
+
+      // var defer = $q.defer();
+      // refs.rooms.once('value', function(rooms) {
+      //   if(rooms.val() !== null) {
+      //     service.roomsList = Object.keys(rooms.val());
+      //   } else {
+      //     service.roomsList = [];
+      //   }
+      //   defer.resolve(service.roomsList);
+      // });
+      // return defer.promise;
     }
   };
   return service;

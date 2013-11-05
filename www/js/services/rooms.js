@@ -10,11 +10,7 @@ angular.module('GetTogetherApp')
         if(room.val() === null) {
           newRoomRef.set({owner: username});
             newRoomRef.child('Users').child(username).set({active: true});
-            refs.users
-              .child(username)
-              .child('Rooms')
-              .child(roomname)
-              .set({update: 'live'});
+            service.enterRoom(roomname);
             defer.resolve(roomname);
             console.log(roomname, 'created');
         } else {
@@ -31,19 +27,24 @@ angular.module('GetTogetherApp')
 
         // if the room exists
         if(room.val() !== null) {
-          refs.users
-            .child(username)
-            .child('Rooms')
-            .child(roomname)
-            .set({update: 'live'});
-          console.log('logged into room:', roomname);
+          roomRef.child('Users').child(username).set({active:true});
+          service.enterRoom(roomname);
           defer.resolve();
-          MapService.initializeMap(roomname);
+          console.log('logged into room:', roomname);
         } else {
           defer.reject();
         }
       });
       return defer.promise;
+    },
+    enterRoom: function(roomname) {
+      var username = SessionService.getUsername();
+      refs.users
+        .child(username)
+        .child('Rooms')
+        .child(roomname)
+        .set({update: 'live'});
+      MapService.initializeMap(roomname);
     },
     storePosition: function(position) {
       var currentRoom = SessionService.currentRoom;
@@ -64,6 +65,7 @@ angular.module('GetTogetherApp')
         .child('Rooms')
         .once('value', function(rooms) {
           if(rooms.val()) {
+            console.log('getRooms', username, rooms.val());
             defer.resolve(Object.keys(rooms.val()));
           }
         });

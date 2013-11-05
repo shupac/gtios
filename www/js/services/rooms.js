@@ -55,9 +55,6 @@ angular.module('GetTogetherApp')
         .child(username)
         .child('position')
         .set({coords: position.coords, timestamp: position.timestamp});
-    },
-    removePositions: function() {
-      
     }
   };
   return service;

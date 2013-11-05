@@ -1,7 +1,6 @@
 angular.module('GetTogetherApp')
 .factory('MapService', function($http, $q, SessionService){
   var service = {
-    // markers: {},
     initializeMap: function(roomname) {
       console.log('initializeMap');
       service.markers = {};
@@ -102,7 +101,6 @@ angular.module('GetTogetherApp')
     },
 
     stopListeners: function(roomname) {
-      // debugger
       if(SessionService.currentRoom) {
         refs.rooms.child(roomname).child('Users').off();
       }
@@ -137,6 +135,19 @@ angular.module('GetTogetherApp')
     logout: function() {
       console.log('clearWatch', service.watchID);
       navigator.geolocation.clearWatch(service.watchID);
+      var username = SessionService.getUsername();
+      SessionService.fetchRooms()
+      .then(function(rooms) {
+        for(var i = 0; i < rooms.length; i++) {
+          console.log(rooms[i]);
+          refs.rooms
+            .child(rooms[i])
+            .child('Users')
+            .child(username)
+            .child('position')
+            .remove();
+        }
+      });
     }
   };
   return service;

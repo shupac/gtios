@@ -41,16 +41,6 @@ angular.module('GetTogetherApp')
       });
       return defer.promise;
     },
-    storePosition: function(position) {
-      var currentRoom = SessionService.currentRoom;
-      var username = SessionService.getUsername();
-      refs.rooms
-        .child(currentRoom)
-        .child('Users')
-        .child(username)
-        .child('position')
-        .set({coords: position.coords, timestamp: position.timestamp});
-    },
     getRooms: function() {
       var defer = $q.defer();
       console.log('getRooms');

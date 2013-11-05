@@ -7,24 +7,28 @@ angular.module('GetTogetherApp')
     isLoggedIn: function() {
       return !!service.currentUserID;
     },
+
+    // get, set userID
     getUserID: function() {
       return service.currentUserID;
-    },
-    getUsername: function() {
-      return service.currentUsername;
-    },
-    getCurrentRoom: function() {
-      return service.currentRoom;
     },
     setUserID: function(userID) {
       service.currentUserID = userID;
     },
+
+    // get, set username
+    getUsername: function() {
+      return service.currentUsername;
+    },
     setUsername: function(username) {
       service.currentUsername = username;
     },
-    setCurrentRoom: function(roomname) {
-      service.currentRoom = roomname;
+
+    getCurrentRoom: function() {
+      return service.currentRoom;
     },
+
+    // signup and login
     signup: function(username, password) {
       service.submitCred(username, password, 'signup');
     },
@@ -56,6 +60,7 @@ angular.module('GetTogetherApp')
           service.setUserID(data.id);
           service.setUsername(username);
           console.log(username, 'logged in');
+          service.fetchRooms();
           $location.path('/');
         } else {
           console.log(data.message);
@@ -71,8 +76,18 @@ angular.module('GetTogetherApp')
       refs.users.child(service.currentUsername).child('position').remove();
       $location.path('/login');
     },
-    getRooms: function() {
-      
+
+    fetchRooms: function() {
+      var defer = $q.defer();
+      refs.rooms.once('value', function(rooms) {
+        if(rooms.val() !== null) {
+          service.roomsList = Object.keys(rooms.val());
+        } else {
+          service.roomsList = [];
+        }
+        defer.resolve(service.roomsList);
+      });
+      return defer.promise;
     }
   };
   return service;

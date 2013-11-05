@@ -38,7 +38,7 @@ angular.module('GetTogetherApp')
         $scope.rooms.push(roomname);
         delete $scope.newRoom.name;
         SessionService.currentRoom = roomname;
-        MapService.initializeMap();
+        MapService.initializeMap(roomname);
       }, 
       function() {
         console.log('Roomname taken');
@@ -51,7 +51,7 @@ angular.module('GetTogetherApp')
     .then(function() {
       MapService.stopListeners(SessionService.currentRoom);
       SessionService.currentRoom = roomname;
-      // MapService.startListeners(roomname);
+      MapService.startListeners(roomname);
       delete $scope.joinRoom.name;
     }, function() {
       console.log('room does not exist');

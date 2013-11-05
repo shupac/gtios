@@ -1,6 +1,5 @@
 angular.module('GetTogetherApp')
 .run(function($rootScope, $location, SessionService) {
-  console.log('redirect');
   $rootScope.$on("$routeChangeStart", function(evt, next, current) {
     if (!SessionService.isLoggedIn() && next.controller !== "SignupCtrl") {
       $location.path('/login');
@@ -19,27 +18,42 @@ angular.module('GetTogetherApp')
   $scope.login = function(username, password){
     SessionService.login(username, password);
   };
-  $scope.login('Shu', 'test');
+  // $scope.login('Shu', 'test');
 })
-.controller('MainCtrl', function($scope, SessionService, LocationService){
-  // $swipe.bind();
+.controller('MainCtrl', function($scope, SessionService, LocationService, RoomService){
+  $scope.showRooms = true;
+  $scope.showChats = true;
   $scope.username = SessionService.getUsername();
   $scope.logout = function() {
     SessionService.logout();
     LocationService.logout();
   };
-
-  var mapOptions = {
-      zoom: 13,
-      zoomControl: false,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  // var map = 
 
   // getting initial location
-  LocationService.initializeMap(map);
-  LocationService.startListeners();
 
-  // document.addEventListener('touch')
-
+  $scope.createRoom = function(roomname) {
+    // debugger;
+    RoomService.create(roomname)
+    .then(
+      function(roomname){
+        SessionService.setCurrentRoom(roomname);
+        currentRoomRef = roomsRef.child(roomname);
+        LocationService.getLocation()
+        .then(
+          function(position) {
+            RoomService.storePosition(position);
+            LocationService.initializeMap(position);
+            LocationService.startListeners();
+          },
+          function() {
+            console.log('getLocation promise error');
+          }
+        );
+      }, 
+      function() {
+        console.log('Roomname taken');
+      }
+    );
+  }
 });

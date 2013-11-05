@@ -1,6 +1,7 @@
 var fbRef = new Firebase('https://gettogether.firebaseio.com');
 var usersRef = fbRef.child('users');
-var groupsRef = fbRef.child('groups');
+var roomsRef = fbRef.child('rooms');
+var currentRoomRef;
 
 angular.module('GetTogetherApp', ['ngRoute', 'ngTouch', 'angular-gestures'])
 .config(function($routeProvider, $locationProvider) {

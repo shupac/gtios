@@ -5,7 +5,10 @@ body {
 }
 
 .container {
+  width: 960px;
+  height: 548px;
   position: absolute;
+  background-color: yellow;
   top: 20px;
   bottom: 0;
   left: 0;
@@ -13,8 +16,10 @@ body {
 }
 
 #map-canvas {
-  width: 100%;
+  width: 320px;
   height: 100%;
+  position: absolute;
+  left: 320px;
 }
 
 #login {
@@ -26,15 +31,20 @@ body {
 }
 
 button {
-  font-size: x-large;
+  font-size: large;
 }
 
 #rooms, #chat {
-  width: 100%;
+  width: 320px;
   height: 100%;
+  position: absolute;
+
   background-color: gray;
-  position: fixed;
   z-index: 4;
+}
+
+#chat {
+  right: 0;
 }
 
 #leftSliver, #rightSliver {
@@ -48,9 +58,13 @@ button {
 }
 
 #leftSliver {
-  left: 0;
+  left: 320px;
 }
 
 #rightSliver {
-  right: 0;
+  right: 320px;
 }
+/*
+.gmnoprint, .gm-style-cc {
+  display: none;
+}*/

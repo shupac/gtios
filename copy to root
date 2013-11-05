@@ -1,4 +1,4 @@
 #!/bin/sh
-cd /Users/hongxuliu/dropbox/mobile
+cd /Users/hongxuliu/dropbox/gettogether
 pwd
 grunt copy

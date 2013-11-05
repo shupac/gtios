@@ -4,22 +4,33 @@
 </div>
 
 <div
+  id="rightSliver"
+  ng-swipe-left="showChats=true">
+</div>
+
+<div
   id="rooms"
   ng-show="showRooms"
   ng-swipe-left="showRooms=false">
-  Logged in as {{username}}
-  <button ng-click="logout()">Log Out</button>
+  <div>
+    Logged in as {{username}}
+    <button ng-click="logout()">Log Out</button>
+  </div>
+
+  <div>
+    <form ng-submit="createRoom(newRoom.name)">
+      Create a room
+      <input type="text" class="newRoomName" ng-model="newRoom.name" placeholder="roomname" />
+      <input type="submit" value="Create"></input>
+    </form>
+  </div>
 </div>
 
-<div
-  id="rightSliver"
-  ng-swipe-left="showChat=true">
-</div>
 
 <div
   id="chat"
-  ng-show="showChat"
-  ng-swipe-right="showChat=false">
+  ng-show="showChats"
+  ng-swipe-right="showChats=false">
   Chats
 </div>
 

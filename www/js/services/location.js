@@ -1,22 +1,23 @@
 angular.module('GetTogetherApp')
 .factory('LocationService', function($http, $q, SessionService){
-  var defer = $q.defer();
   var service = {
     markers: {},
-    initializeMap: function(map) {
-      service.map = map;
-      service
-      .getLocation(map)
-      .then(function(position) {
-        position.coords.heading = position.coords.heading || 0;
-        service.displayMap(position);
-        console.log(position);
-        service.storePosition(position);
-        console.log('Current position stored in Firebase');
+    initializeMap: function(position) {
+      console.log('initializeMap');
+      var mapOptions = {
+        zoom: 13,
+        zoomControl: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      service.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      position.coords.heading = position.coords.heading || 0;
+      service.displayMap(position);
+      service.storePosition(position);
+      console.log('Current position stored in Firebase', position);
         // service.watchPosition();
-      }, function(){console.log('location promise error')});
     },
-    getLocation: function(map) {
+    getLocation: function() {
+      var defer = $q.defer();
       console.log('getLocation');
       if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -27,8 +28,6 @@ angular.module('GetTogetherApp')
             console.log('getCurrentPosition error')
           }, {'enableHighAccuracy':true,'timeout':10000,'maximumAge':5000}
         );
-
-
       } else {
         alert("Browser doesn't support Geolocation");
       }
@@ -67,29 +66,31 @@ angular.module('GetTogetherApp')
     },
     storePosition: function(position) {
       var username = SessionService.getUsername();
-      usersRef.child(username).set({username: username, position: position});
+      usersRef.child(username).child('position').set({coords: position.coords, timestamp: position.timestamp});
       console.log('Watch location:', SessionService.getUsername(), 'moved');
     },
     startListeners: function() {
-      usersRef.on('child_added', function(user) {
-        console.log(user.val().username, 'logged in');
-        var marker = service.displayMarker(user.val().position, user.val().username);
-        service.markers[user.val().username] = marker;
+      currentRoomRef.on('child_added', function(user) {
+        // console.log(user.val());
+        console.log(user.name(), 'logged in');
+        var marker = service.displayMarker(user.val().position, user.name());
+        service.markers[user.name()] = marker;
         marker.setMap(service.map);
       });
 
-      usersRef.on('child_removed', function(user) {
-        console.log(user.val().username, 'logged out');
-        service.markers[user.val().username].setMap(null);
-        delete service.markers[user.val().username];
+      currentRoomRef.on('child_removed', function(user) {
+        // console.log(user.val());
+        console.log(user.name(), 'logged out');
+        service.markers[user.name()].setMap(null);
+        delete service.markers[user.name()];
       });
 
-      usersRef.on('child_changed', function(user) {
-        console.log(user.val().username, 'marker moved');
-        // alert(user.val().username + 'moved');
+      currentRoomRef.on('child_changed', function(user) {
+        console.log(user.val());
+        console.log(user.name(), 'marker moved');
         var position = user.val().position;
         var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-        service.markers[user.val().username].setPosition(pos);
+        service.markers[user.name()].setPosition(pos);
       });
     },
     logout: function() {

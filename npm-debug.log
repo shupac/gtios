@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-stylus',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.20
+4 warn package.json gettogether@0.1.0 No description
+5 warn package.json gettogether@0.1.0 No repository field.
+6 warn package.json gettogether@0.1.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'grunt-contrib-stylus', null ]
+9 verbose cache add name=undefined spec="grunt-contrib-stylus" args=["grunt-contrib-stylus",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'grunt-contrib-stylus',
+10 verbose parsed url   path: 'grunt-contrib-stylus',
+10 verbose parsed url   href: 'grunt-contrib-stylus' }
+11 silly lockFile 925d9ad9-grunt-contrib-stylus grunt-contrib-stylus
+12 verbose lock grunt-contrib-stylus /Users/hongxuliu/.npm/925d9ad9-grunt-contrib-stylus.lock
+13 silly lockFile 925d9ad9-grunt-contrib-stylus grunt-contrib-stylus
+14 silly lockFile 925d9ad9-grunt-contrib-stylus grunt-contrib-stylus
+15 verbose addNamed [ 'grunt-contrib-stylus', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile c5a93b71-grunt-contrib-stylus grunt-contrib-stylus@
+18 verbose lock grunt-contrib-stylus@ /Users/hongxuliu/.npm/c5a93b71-grunt-contrib-stylus.lock
+19 silly addNameRange { name: 'grunt-contrib-stylus', range: '*', hasData: false }
+20 verbose url raw grunt-contrib-stylus
+21 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-stylus' ]
+22 verbose url resolved https://registry.npmjs.org/grunt-contrib-stylus
+23 info trying registry request attempt 1 at 11:59:35
+24 http GET https://registry.npmjs.org/grunt-contrib-stylus
+25 info retry will retry, error on last attempt: Error: socket hang up
+26 info trying registry request attempt 2 at 11:59:59
+27 http GET https://registry.npmjs.org/grunt-contrib-stylus
+28 http 200 https://registry.npmjs.org/grunt-contrib-stylus
+29 silly registry.get cb [ 200,
+29 silly registry.get   { vary: 'Accept',
+29 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+29 silly registry.get     etag: '"BMTUOKEWA8QBUT8QQOCE5DESE"',
+29 silly registry.get     date: 'Mon, 04 Nov 2013 20:00:21 GMT',
+29 silly registry.get     'content-type': 'application/json',
+29 silly registry.get     'content-length': '88966' } ]
+30 silly addNameRange number 2 { name: 'grunt-contrib-stylus', range: '*', hasData: true }
+31 silly addNameRange versions [ 'grunt-contrib-stylus',
+31 silly addNameRange   [ '0.1.0',
+31 silly addNameRange     '0.2.0',
+31 silly addNameRange     '0.2.1',
+31 silly addNameRange     '0.2.2',
+31 silly addNameRange     '0.3.0',
+31 silly addNameRange     '0.3.1',
+31 silly addNameRange     '0.4.0',
+31 silly addNameRange     '0.4.1',
+31 silly addNameRange     '0.5.0',
+31 silly addNameRange     '0.5.1',
+31 silly addNameRange     '0.4.0-rc7',
+31 silly addNameRange     '0.6.0',
+31 silly addNameRange     '0.7.0',
+31 silly addNameRange     '0.8.0',
+31 silly addNameRange     '0.9.0' ] ]
+32 verbose addNamed [ 'grunt-contrib-stylus', '0.9.0' ]
+33 verbose addNamed [ '0.9.0', '0.9.0' ]
+34 silly lockFile 971c54e6-grunt-contrib-stylus-0-9-0 grunt-contrib-stylus@0.9.0
+35 verbose lock grunt-contrib-stylus@0.9.0 /Users/hongxuliu/.npm/971c54e6-grunt-contrib-stylus-0-9-0.lock
+36 silly lockFile 76bed544-s-grunt-contrib-stylus-0-9-0-tgz https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.9.0.tgz
+37 verbose lock https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.9.0.tgz /Users/hongxuliu/.npm/76bed544-s-grunt-contrib-stylus-0-9-0-tgz.lock
+38 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.9.0.tgz',
+38 verbose addRemoteTarball   'd16f8995ab64640ff34d92dc754dca2cfee2402b' ]
+39 info retry fetch attempt 1 at 12:00:21
+40 verbose fetch to= /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/T/npm-13521-oIl4dUSx/1383595221528-0.47182062920182943/tmp.tgz
+41 http GET https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.9.0.tgz
+42 error fetch failed https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.9.0.tgz
+43 info retry will retry, error on last attempt: Error: socket hang up
+44 info retry fetch attempt 2 at 12:00:58
+45 verbose fetch to= /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/T/npm-13521-oIl4dUSx/1383595221528-0.47182062920182943/tmp.tgz
+46 http GET https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.9.0.tgz
+47 error fetch failed https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.9.0.tgz
+48 info retry will retry, error on last attempt: Error: socket hang up
+49 info retry fetch attempt 3 at 12:02:22
+50 verbose fetch to= /var/folders/pv/tj7296pn4b30nftdc518bd280000gn/T/npm-13521-oIl4dUSx/1383595221528-0.47182062920182943/tmp.tgz
+51 http GET https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.9.0.tgz
+52 error fetch failed https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.9.0.tgz
+53 silly lockFile 76bed544-s-grunt-contrib-stylus-0-9-0-tgz https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.9.0.tgz
+54 silly lockFile 76bed544-s-grunt-contrib-stylus-0-9-0-tgz https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.9.0.tgz
+55 silly lockFile 971c54e6-grunt-contrib-stylus-0-9-0 grunt-contrib-stylus@0.9.0
+56 silly lockFile 971c54e6-grunt-contrib-stylus-0-9-0 grunt-contrib-stylus@0.9.0
+57 silly lockFile c5a93b71-grunt-contrib-stylus grunt-contrib-stylus@
+58 silly lockFile c5a93b71-grunt-contrib-stylus grunt-contrib-stylus@
+59 error network socket hang up
+59 error network This is most likely not a problem with npm itself
+59 error network and is related to network connectivity.
+59 error network In most cases you are behind a proxy or have bad network settings.
+59 error network
+59 error network If you are behind a proxy, please make sure that the
+59 error network 'proxy' config is set properly.  See: 'npm help config'
+60 error System Darwin 13.0.0
+61 error command "node" "/usr/local/bin/npm" "install" "grunt-contrib-stylus" "--save-dev"
+62 error cwd /Users/hongxuliu/dropbox/ios
+63 error node -v v0.10.20
+64 error npm -v 1.3.11
+65 error code ECONNRESET
+66 verbose exit [ 1, true ]

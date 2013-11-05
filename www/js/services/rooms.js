@@ -34,7 +34,7 @@ angular.module('GetTogetherApp')
           roomRef.child('Users').child(username).set({active:true});
           console.log('logged into room:', roomname);
           defer.resolve();
-          MapService.initializeMap();
+          MapService.initializeMap(roomname);
         } else {
           defer.reject();
         }

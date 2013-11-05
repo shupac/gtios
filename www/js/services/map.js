@@ -19,7 +19,6 @@ angular.module('GetTogetherApp')
           // service.watchPosition();        
       })
       .then(function() {
-        console.log('starting listeners');
         service.startListeners(roomname);
       });
     },
@@ -79,7 +78,6 @@ angular.module('GetTogetherApp')
 
     storePosition: function(position) {
       var defer = $q.defer();
-      console.log('stored postion');
       var currentRoom = SessionService.currentRoom;
       var username = SessionService.getUsername();
       refs.rooms

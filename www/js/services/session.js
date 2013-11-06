@@ -46,7 +46,6 @@ angular.module('GetTogetherApp')
         // url = 'http://gettogetherapp.herokuapp.com/signup';
       }
 
-      // console.log(type + ': ', username, password);
       $http({
         url: url,
         method: 'POST',
@@ -72,19 +71,19 @@ angular.module('GetTogetherApp')
     },
     logout: function() {
       service.currentUserID = null;
+      service.currentUsername = null;
+      service.currentRoom = null;
       $location.path('/login');
     },
 
     fetchRooms: function() {
       var defer = $q.defer();
-      console.log('getRooms');
       var username = service.currentUsername;
       refs.users
         .child(username)
         .child('Rooms')
         .once('value', function(rooms) {
           if(rooms.val()) {
-            console.log('getRooms', username, rooms.val());
             defer.resolve(Object.keys(rooms.val()));
           } else {
             defer.resolve([]);

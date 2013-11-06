@@ -16,7 +16,7 @@ angular.module('GetTogetherApp')
       .then(function(position) {
         service.displayMap(position);
         service.storePosition(position);
-        console.log('Current position stored in Firebase', position);
+        // console.log('Current position stored in Firebase', position);
         service.watchPosition();
       })
       .then(function() {
@@ -34,7 +34,7 @@ angular.module('GetTogetherApp')
           },
           function(){
             console.log('getCurrentPosition error')
-          }, {'enableHighAccuracy':true,'timeout':10000,'maximumAge':5000}
+          }, {'enableHighAccuracy':true,'timeout':10000,'maximumAge':0}
         );
       } else {
         console.log("Browser doesn't support Geolocation");
@@ -42,7 +42,7 @@ angular.module('GetTogetherApp')
       return defer.promise;
     },
     watchPosition: function() {
-      console.log('watchPosition started');
+      // console.log('watchPosition started');
       service.watchID = navigator.geolocation.watchPosition(
         function(position) {
           position.coords.heading = position.coords.heading || 0;
@@ -55,7 +55,7 @@ angular.module('GetTogetherApp')
         },
         function(){
           console.log('watchPosition error')
-        },{'enableHighAccuracy':true,'timeout':10000,'maximumAge':5000}
+        },{'enableHighAccuracy':true,'timeout':10000,'maximumAge':0}
       );
     },
     displayMap: function(position) {
@@ -97,7 +97,7 @@ angular.module('GetTogetherApp')
             if (error) {
               console.log('position could not be saved.' + error);
             } else {
-              console.log('position saved successfully in', roomname);
+              // console.log('position saved successfully in', roomname);
               defer.resolve();
             }
           });
@@ -115,10 +115,11 @@ angular.module('GetTogetherApp')
     },
 
     startListeners: function(roomname) {
-      console.log('start listener', roomname);
+      // console.log('start listener', roomname);
       currentUsersInRoomRef = refs.rooms.child(roomname).child('Users');
       currentUsersInRoomRef.on('child_added', function(user) {
         var username = user.name();
+        console.log(username, 'added to', roomname);
         currentUsersInRoomRef
           .child(username)
           .child('position')
@@ -150,6 +151,11 @@ angular.module('GetTogetherApp')
               var pos = new google.maps.LatLng(position.val().coords.latitude, position.val().coords.longitude);
               if(service.markers[username]) {
                 service.markers[username].setPosition(pos);
+                console.log('marker for', username, 'updated');
+              } else {
+                var marker = service.displayMarker(position.val(), username);
+                service.markers[username] = marker;
+                marker.setMap(service.map);
               }
             }
           });

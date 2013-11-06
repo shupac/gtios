@@ -69,7 +69,7 @@ angular.module('GetTogetherApp')
   };
 
   $scope.logout = function() {
-    SessionService.logout();
     MapService.logout();
+    SessionService.logout();
   };
 });

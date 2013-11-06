@@ -10,19 +10,10 @@ body {
   position: absolute;
   /*background-color: yellow;*/
   top: 20px;
-  bottom: 0;
   /*left: -320px;*/
   left: 0;
-  right: 0;
 
   overflow: hidden;
-}
-
-#map-canvas {
-  width: 320px;
-  height: 100%;
-  position: absolute;
-  left: 320px;
 }
 
 .login {
@@ -130,4 +121,43 @@ button {
 .topcoat-list__item-selected {
   border-top: 1px solid rgba(0,0,0,0.05);
   background-color: #455;
+}
+
+.map {
+  position: absolute;
+  width: 320px;
+  height: 100%;
+  left: 320px;
+  /*background-color: blue;*/
+}
+
+#map-canvas {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.map-topbar {
+  height: 44px;
+  background-color: #454646;
+}
+
+.hamburger, .user-icon {
+  width: 30px;
+  height: 30px;
+  margin: 7px;
+}
+
+.user-icon {
+  float: right;
+  margin-right: 10px;
+}
+
+.map-room {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
 }

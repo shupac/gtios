@@ -115,7 +115,7 @@ angular.module('GetTogetherApp')
     },
 
     startListeners: function(roomname) {
-      console.log('start listener/110', roomname);
+      console.log('start listener', roomname);
       currentUsersInRoomRef = refs.rooms.child(roomname).child('Users');
       currentUsersInRoomRef.on('child_added', function(user) {
         var username = user.name();

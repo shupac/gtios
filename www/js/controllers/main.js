@@ -59,7 +59,7 @@ angular.module('GetTogetherApp')
       MapService.stopListeners(SessionService.currentRoom);
       SessionService.currentRoom = roomname;
       $scope.roomsClass = 'hiddenLeft';
-      delete $scope.joinRoom.name;
+      $scope.joinRoom = {name: ""};
     }, function() {
       console.log('room does not exist');
     });

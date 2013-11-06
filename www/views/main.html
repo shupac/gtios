@@ -47,13 +47,20 @@
   class="hiddenRight"
   ng-class="usersClass"
   ng-swipe-right="usersClass='hiddenRight'">
-  Chats
+  Users
 </div>
 
-<div
-  id="map-canvas">
-</div>
 
-<div class="map-room">
-  In {{ currentRoom() }}
+<div class="map">
+  <div class="map-topbar">
+    <img class="hamburger" src="../img/hamburger_light.svg" />
+    <img class="user-icon" src="../img/multi-user.png" />
+  </div>
+  
+  <div id="map-canvas">
+  </div>
+
+  <div class="map-room">
+    In {{ currentRoom() }}
+  </div>
 </div>

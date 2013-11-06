@@ -18,7 +18,7 @@ angular.module('GetTogetherApp')
   $scope.login = function(username, password){
     SessionService.login(username, password);
   };
-  $scope.login('Shu', 'test');
+  // $scope.login('Shu', 'test');
 })
 .controller('MainCtrl', function($scope, SessionService, MapService, RoomService){
   document.addEventListener('touchmove', function(e) {

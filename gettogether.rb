@@ -17,7 +17,7 @@ set :public_folder, File.dirname(__FILE__) + '/www'
 # db = URI.parse('postgres://gtgztuwtqlcxzw:4HAFe2VjQShWUyy94qVQpLCGMg@ec2-54-235-152-22.compute-1.amazonaws.com:5432/dkg1uaf18h609')
 
 # gettogether dev
-db = URI.parse('postgres://zjfhxbnfryvuvl:rj3CirK7hzYjyf5a1aRBKT2ZVV@ec2-54-235-174-213.compute-1.amazonaws.com:5432/d214lcv0vtfnd4')
+db = URI.parse('postgres://brtdgxmmhwvmpf:lBysvVVFoJu-v_G_DTkSlrRvw0@ec2-107-20-228-206.compute-1.amazonaws.com:5432/d5hbot7mu9q79s')
 
 ActiveRecord::Base.establish_connection(
   :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,

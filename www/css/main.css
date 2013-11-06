@@ -11,7 +11,8 @@ body {
   /*background-color: yellow;*/
   top: 20px;
   bottom: 0;
-  left: -320px;
+  /*left: -320px;*/
+  left: 0;
   right: 0;
 
   overflow: hidden;
@@ -122,8 +123,11 @@ button {
   padding: 1.25rem;
   border-top: 1px solid #616363;
   border-bottom: 1px solid #333434;
+
+  /*background-color: #6B6B6B;*/
 }
 
-.topcoat-list__item:first-child {
+.topcoat-list__item-selected {
   border-top: 1px solid rgba(0,0,0,0.05);
+  background-color: #455;
 }

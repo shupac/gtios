@@ -21,7 +21,7 @@
   <div class="topcoat-list">
     <h3 class="topcoat-list__header">Rooms</h3>
     <ul class="topcoat-list__container">
-      <li class="topcoat-list__item" ng-repeat="room in rooms" ng-model=room ng-click="join(room)">{{ room }}</li>
+      <li class="topcoat-list__item" ng-repeat="room in rooms" ng-model=room ng-click="join(room)" ng-class="{'topcoat-list__item-selected': room == currentRoom() }">{{ room }}</li>
   </ul>
   </div>
 

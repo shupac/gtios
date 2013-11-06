@@ -34,9 +34,13 @@ angular.module('GetTogetherApp')
     $scope.roomsClass = 'center';
   }
 
-  SessionService.fetchRooms()
+  SessionService.getRooms()
   .then(function(rooms) {
     $scope.rooms = rooms;
+  });
+
+  $scope.$watch(function() {return SessionService.currentUsers;}, function(users) {
+    $scope.users = users;
   });
 
   $scope.createRoom = function(roomname) {
@@ -45,7 +49,9 @@ angular.module('GetTogetherApp')
       function(roomname){
         $scope.rooms.push(roomname);
         SessionService.currentRoom = roomname;
-        delete $scope.newRoom.name;
+        $scope.joinRoom = {name: ""};
+      
+        SessionService.getUsers();
       }, 
       function() {
         console.log('Roomname taken');
@@ -63,6 +69,8 @@ angular.module('GetTogetherApp')
       }
       $scope.roomsClass = 'hiddenLeft';
       $scope.joinRoom = {name: ""};
+
+      SessionService.getUsers();
     }, function() {
       console.log('room does not exist');
     });

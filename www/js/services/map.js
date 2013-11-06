@@ -46,7 +46,7 @@ angular.module('GetTogetherApp')
       service.watchID = navigator.geolocation.watchPosition(
         function(position) {
           position.coords.heading = position.coords.heading || 0;
-          SessionService.fetchRooms()
+          SessionService.getRooms()
           .then(function(rooms) {
             for(var i = 0; i < rooms.length; i++) {
               service.storePosition(position, rooms[i]);
@@ -165,7 +165,7 @@ angular.module('GetTogetherApp')
       console.log('clearWatch', service.watchID);
       navigator.geolocation.clearWatch(service.watchID);
       var username = SessionService.getUsername();
-      SessionService.fetchRooms()
+      SessionService.getRooms()
       .then(function(rooms) {
         for(var i = 0; i < rooms.length; i++) {
           console.log(rooms[i]);

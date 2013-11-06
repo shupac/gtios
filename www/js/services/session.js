@@ -4,6 +4,8 @@ angular.module('GetTogetherApp')
     currentUserID: null,
     currentUsername: null,
     currentRoom: null,
+    currentRoomsList: [],
+    currentUsers: [],
     isLoggedIn: function() {
       return !!service.currentUserID;
     },
@@ -59,7 +61,7 @@ angular.module('GetTogetherApp')
           service.setUserID(data.id);
           service.setUsername(username);
           console.log(username, 'logged in');
-          service.fetchRooms();
+          service.getRooms();
           $location.path('/');
         } else {
           console.log(data.message);
@@ -76,7 +78,7 @@ angular.module('GetTogetherApp')
       $location.path('/login');
     },
 
-    fetchRooms: function() {
+    getRooms: function() {
       var defer = $q.defer();
       var username = service.currentUsername;
       refs.users
@@ -87,6 +89,24 @@ angular.module('GetTogetherApp')
             defer.resolve(Object.keys(rooms.val()));
           } else {
             defer.resolve([]);
+          }
+        });
+      return defer.promise;
+    },
+    getUsers: function() {
+      console.log('update currentUsers', service.currentUsers);
+      var defer = $q.defer();
+      refs.rooms
+        .child(service.currentRoom)
+        .child('Users')
+        .once('value', function(users) {
+          if(users.val()) {
+            console.log(Object.keys(users.val()));
+            service.currentUsers = Object.keys(users.val());
+            // defer.resolve(Object.keys(users.val()));
+          } else {
+            // defer.resolve([]);
+            service.currentUsers = [];
           }
         });
       return defer.promise;

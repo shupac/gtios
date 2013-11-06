@@ -58,7 +58,9 @@ angular.module('GetTogetherApp')
     .then(function() {
       MapService.stopListeners(SessionService.currentRoom);
       SessionService.currentRoom = roomname;
-      $scope.rooms.push(roomname);
+      if($scope.rooms.indexOf(roomname) === -1) {
+        $scope.rooms.push(roomname);
+      }
       $scope.roomsClass = 'hiddenLeft';
       $scope.joinRoom = {name: ""};
     }, function() {

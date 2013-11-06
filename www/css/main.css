@@ -137,14 +137,14 @@ button {
 }
 
 .hamburger, .user-icon {
-  width: 30px;
-  height: 30px;
-  margin: 7px;
+  width: 24px;
+  height: 24px;
+  margin: 10px 15px;
 }
 
 .user-icon {
   float: right;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .map-room {

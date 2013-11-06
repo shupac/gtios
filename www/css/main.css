@@ -66,17 +66,9 @@ button {
   /*opacity: 0;*/
 }
 
-#leftSliver {
-  left: 320px;
-}
-
-#rightSliver {
-  right: 320px;
-}
-/*
 .gmnoprint, .gm-style-cc {
   display: none;
-}*/
+}
 
 .map-room {
   position: absolute;

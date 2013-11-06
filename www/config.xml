@@ -7,14 +7,14 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
-    <feature name="http://api.phonegap.com/1.0/device" />
+    <!-- <feature name="http://api.phonegap.com/1.0/device" /> -->
     <feature name="Geolocation">
         <param name="ios-package" value="CDVLocation" />
     </feature>
     <feature name="SplashScreen">
         <param name="ios-package" value="CDVSplashScreen" />
     </feature>
-    
+
     <access origin="*" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />

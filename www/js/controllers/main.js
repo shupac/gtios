@@ -18,7 +18,7 @@ angular.module('GetTogetherApp')
   $scope.login = function(username, password){
     SessionService.login(username, password);
   };
-  // $scope.login('Shu', 'test');
+  $scope.login('hackreactor', 'test');
 })
 .controller('MainCtrl', function($scope, SessionService, MapService, RoomService){
   document.addEventListener('touchmove', function(e) {
@@ -34,24 +34,20 @@ angular.module('GetTogetherApp')
     $scope.roomsClass = 'center';
   }
 
-  SessionService.getRooms()
-  .then(function(rooms) {
-    $scope.rooms = rooms;
+  $scope.session = SessionService;
+  $scope.$watch('session.usersList', function(users) {
+    $scope.users = users;
   });
 
-  $scope.$watch(function() {return SessionService.currentUsers;}, function(users) {
-    $scope.users = users;
+  $scope.$watch('session.roomsList', function(rooms) {
+    $scope.rooms = rooms;
   });
 
   $scope.createRoom = function(roomname) {
     RoomService.create(roomname)
     .then(
       function(roomname){
-        $scope.rooms.push(roomname);
-        SessionService.currentRoom = roomname;
         $scope.joinRoom = {name: ""};
-      
-        SessionService.getUsers();
       }, 
       function() {
         console.log('Roomname taken');
@@ -61,19 +57,13 @@ angular.module('GetTogetherApp')
 
   $scope.join = function(roomname) {
     RoomService.joinRoom(roomname)
-    .then(function() {
-      MapService.stopListeners(SessionService.currentRoom);
-      SessionService.currentRoom = roomname;
-      if($scope.rooms.indexOf(roomname) === -1) {
-        $scope.rooms.push(roomname);
-      }
-      $scope.roomsClass = 'hiddenLeft';
-      $scope.joinRoom = {name: ""};
-
-      SessionService.getUsers();
-    }, function() {
-      console.log('room does not exist');
-    });
+    .then(
+      function() {
+        $scope.roomsClass = 'hiddenLeft';
+        $scope.joinRoom = {name: ""};
+      }, function() {
+        console.log('room does not exist');
+      });
   };
 
   $scope.logout = function() {

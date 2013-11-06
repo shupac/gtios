@@ -1,29 +1,29 @@
 angular.module('GetTogetherApp')
 .factory('SessionService', function($http, $q, $location) {
   var service = {
-    currentUserID: null,
-    currentUsername: null,
+    sessionUserID: null,
+    sessionUsername: null,
     currentRoom: null,
-    currentRoomsList: [],
-    currentUsers: [],
+    roomsList: [],
+    usersList: [],
     isLoggedIn: function() {
-      return !!service.currentUserID;
+      return !!service.sessionUserID;
     },
 
     // get, set userID
     getUserID: function() {
-      return service.currentUserID;
+      return service.sessionUserID;
     },
     setUserID: function(userID) {
-      service.currentUserID = userID;
+      service.sessionUserID = userID;
     },
 
     // get, set username
     getUsername: function() {
-      return service.currentUsername;
+      return service.sessionUsername;
     },
     setUsername: function(username) {
-      service.currentUsername = username;
+      service.sessionUsername = username;
     },
 
     getCurrentRoom: function() {
@@ -60,9 +60,11 @@ angular.module('GetTogetherApp')
         if(data.success) {
           service.setUserID(data.id);
           service.setUsername(username);
-          console.log(username, 'logged in');
-          service.getRooms();
-          $location.path('/');
+          service.updateRoomsList()
+          .then(function() {
+            console.log(username, 'logged in');
+            $location.path('/');            
+          });
         } else {
           console.log(data.message);
         }
@@ -72,44 +74,59 @@ angular.module('GetTogetherApp')
       });
     },
     logout: function() {
-      service.currentUserID = null;
-      service.currentUsername = null;
+      service.sessionUserID = null;
+      service.sessionUsername = null;
       service.currentRoom = null;
+      service.roomsList = [];
+      service.usersList = [];
       $location.path('/login');
     },
-
-    getRooms: function() {
+    enterRoom: function(roomname) {
+      service.currentRoom = roomname;
+      service.updateUsersList();
+      if(service.roomsList.indexOf(roomname) === -1) {
+        service.roomsList.push(roomname);
+      }
+      refs.users
+        .child(service.sessionUsername)
+        .child('Rooms')
+        .child(roomname)
+        .set({update: 'live'});
+    },
+    updateRoomsList: function() {
       var defer = $q.defer();
-      var username = service.currentUsername;
+      var username = service.sessionUsername;
       refs.users
         .child(username)
         .child('Rooms')
         .once('value', function(rooms) {
           if(rooms.val()) {
-            defer.resolve(Object.keys(rooms.val()));
+            service.roomsList = Object.keys(rooms.val());
+            console.log(service.roomsList);
+            defer.resolve();
           } else {
-            defer.resolve([]);
+            service.roomsList = [];
+            defer.reject();
           }
         });
       return defer.promise;
     },
-    getUsers: function() {
-      console.log('update currentUsers', service.currentUsers);
-      var defer = $q.defer();
+    updateUsersList: function() {
+      console.log('******* update users list', service.currentRoom);
+
       refs.rooms
         .child(service.currentRoom)
         .child('Users')
         .once('value', function(users) {
           if(users.val()) {
+            console.log('*************', users.val());
             console.log(Object.keys(users.val()));
-            service.currentUsers = Object.keys(users.val());
-            // defer.resolve(Object.keys(users.val()));
+            service.usersList = Object.keys(users.val());
+            console.log('update sessionUsers', service.usersList);
           } else {
-            // defer.resolve([]);
-            service.currentUsers = [];
+            service.usersList = [];
           }
         });
-      return defer.promise;
     }
   };
   return service;

@@ -46,12 +46,10 @@ angular.module('GetTogetherApp')
       service.watchID = navigator.geolocation.watchPosition(
         function(position) {
           position.coords.heading = position.coords.heading || 0;
-          SessionService.getRooms()
-          .then(function(rooms) {
-            for(var i = 0; i < rooms.length; i++) {
-              service.storePosition(position, rooms[i]);
-            }
-          });
+          var rooms = SessionService.roomsList;
+          for(var i = 0; i < rooms.length; i++) {
+            service.storePosition(position, rooms[i]);
+          }
         },
         function(){
           console.log('watchPosition error')
@@ -85,12 +83,12 @@ angular.module('GetTogetherApp')
       roomname = roomname || SessionService.currentRoom;
       var defer = $q.defer();
       var username = SessionService.getUsername();
-      var currentUserRef = refs.rooms
+      var sessionUserRef = refs.rooms
         .child(roomname)
         .child('Users')
         .child(username);
 
-      currentUserRef
+      sessionUserRef
         .child('position')
         .set({coords: position.coords, timestamp: position.timestamp},
           function(error) {
@@ -101,7 +99,7 @@ angular.module('GetTogetherApp')
               defer.resolve();
             }
           });
-      currentUserRef
+      sessionUserRef
         .child('active')
         .set({active: true});
 
@@ -116,11 +114,11 @@ angular.module('GetTogetherApp')
 
     startListeners: function(roomname) {
       // console.log('start listener', roomname);
-      currentUsersInRoomRef = refs.rooms.child(roomname).child('Users');
-      currentUsersInRoomRef.on('child_added', function(user) {
+      sessionUsersInRoomRef = refs.rooms.child(roomname).child('Users');
+      sessionUsersInRoomRef.on('child_added', function(user) {
         var username = user.name();
         console.log(username, 'added to', roomname);
-        currentUsersInRoomRef
+        sessionUsersInRoomRef
           .child(username)
           .child('position')
           .once('value', function(position) {
@@ -133,10 +131,10 @@ angular.module('GetTogetherApp')
           });
       });
 
-      currentUsersInRoomRef.on('child_changed', function(user) {
+      sessionUsersInRoomRef.on('child_changed', function(user) {
         // console.log(user.val());
         var username = user.name();
-        currentUsersInRoomRef
+        sessionUsersInRoomRef
           .child(username)
           .child('position')
           .once('value', function(position) {
@@ -165,24 +163,22 @@ angular.module('GetTogetherApp')
       console.log('clearWatch', service.watchID);
       navigator.geolocation.clearWatch(service.watchID);
       var username = SessionService.getUsername();
-      SessionService.getRooms()
-      .then(function(rooms) {
-        for(var i = 0; i < rooms.length; i++) {
-          console.log(rooms[i]);
+      var rooms = SessionService.roomsList;
+      for(var i = 0; i < rooms.length; i++) {
+        console.log(rooms[i]);
 
-          var currentUserRef = refs.rooms
-            .child(rooms[i])
-            .child('Users')
-            .child(username);
+        var sessionUserRef = refs.rooms
+          .child(rooms[i])
+          .child('Users')
+          .child(username);
 
-          currentUserRef
-            .child('position')
-            .remove();
-          currentUserRef
-            .child('active')
-            .set({active: false});
-        }
-      });
+        sessionUserRef
+          .child('position')
+          .remove();
+        sessionUserRef
+          .child('active')
+          .set({active: false});
+      }
     }
   };
   return service;

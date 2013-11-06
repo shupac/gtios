@@ -9,8 +9,8 @@ angular.module('GetTogetherApp')
         // if roomname is not found
         if(room.val() === null) {
           newRoomRef.set({owner: username});
-            service.enterRoom(roomname);
-            // newRoomRef.child('Users').child(username).set({active: true});
+            SessionService.enterRoom(roomname);
+            MapService.initializeMap(roomname);
             defer.resolve(roomname);
             console.log(roomname, 'created');
         } else {
@@ -27,7 +27,9 @@ angular.module('GetTogetherApp')
 
         // if the room exists
         if(room.val() !== null) {
-          service.enterRoom(roomname);
+          MapService.stopListeners(SessionService.currentRoom);
+          SessionService.enterRoom(roomname);
+          MapService.initializeMap(roomname);  
           defer.resolve();
           console.log('logged into room:', roomname);
         } else {
@@ -35,15 +37,6 @@ angular.module('GetTogetherApp')
         }
       });
       return defer.promise;
-    },
-    enterRoom: function(roomname) {
-      var username = SessionService.getUsername();
-      refs.users
-        .child(username)
-        .child('Rooms')
-        .child(roomname)
-        .set({update: 'live'});
-      MapService.initializeMap(roomname);
     },
     storePosition: function(position) {
       var currentRoom = SessionService.currentRoom;

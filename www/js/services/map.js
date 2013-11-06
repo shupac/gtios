@@ -14,7 +14,6 @@ angular.module('GetTogetherApp')
       service.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
       service.getLocation()
       .then(function(position) {
-        position.coords.heading = position.coords.heading || 0;
         service.displayMap(position);
         service.storePosition(position);
         console.log('Current position stored in Firebase', position);
@@ -30,6 +29,7 @@ angular.module('GetTogetherApp')
       if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           function(position) {
+            position.coords.heading = position.coords.heading || 0;
             defer.resolve(position);
           },
           function(){
@@ -45,6 +45,7 @@ angular.module('GetTogetherApp')
       console.log('watchPosition started');
       service.watchID = navigator.geolocation.watchPosition(
         function(position) {
+          position.coords.heading = position.coords.heading || 0;
           SessionService.fetchRooms()
           .then(function(rooms) {
             for(var i = 0; i < rooms.length; i++) {
@@ -147,14 +148,12 @@ angular.module('GetTogetherApp')
             } else {
               console.log(username, 'changed', position.val());
               var pos = new google.maps.LatLng(position.val().coords.latitude, position.val().coords.longitude);
-              service.markers[username].setPosition(pos);
+              if(service.markers[username]) {
+                service.markers[username].setPosition(pos);
+              }
             }
           });
       });
-
-      // currentUsersInRoomRef.on('child_changed', function(user) {
-      //   console.log(user.val());
-      // });
     },
     logout: function() {
       console.log('clearWatch', service.watchID);

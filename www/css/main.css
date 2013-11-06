@@ -8,11 +8,13 @@ body {
   width: 960px;
   height: 548px;
   position: absolute;
-  background-color: yellow;
+  /*background-color: yellow;*/
   top: 20px;
   bottom: 0;
-  left: 0;
+  left: -320px;
   right: 0;
+
+  overflow: hidden;
 }
 
 #map-canvas {
@@ -22,19 +24,26 @@ body {
   left: 320px;
 }
 
-#login {
+.login {
+  position: absolute;
+  width: 320px;
+  left: 320px;
+}
+
+.login input {
+  font-size: 20px;
+}
+
+.loginForm {
   padding: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
   margin-top: 200px;
-  font-size: x-large;
 }
 
 button {
   font-size: large;
 }
 
-#rooms, #chat {
+#rooms, #users {
   width: 320px;
   height: 100%;
   position: absolute;
@@ -43,8 +52,16 @@ button {
   z-index: 4;
 }
 
-#chat {
+.hiddenLeft {
+  left: 0;
+}
+
+.hiddenRight {
   right: 0;
+}
+
+.center {
+  left: 320px;
 }
 
 #leftSliver, #rightSliver {
@@ -53,8 +70,8 @@ button {
   width: 30px;
   height: 100%;
   z-index: 3;
-  background-color: blue;
-  opacity: 0;
+  /*background-color: blue;*/
+  /*opacity: 0;*/
 }
 
 #leftSliver {
@@ -75,4 +92,38 @@ button {
   bottom: 0;
   left: 320px;
   background-color: white;
+}
+
+.topcoat-list {
+  border-top: 1px solid #333434;
+  border-bottom: 1px solid #616363;
+  background-color: #454646;
+}
+
+.topcoat-list__header {
+  padding: 4px 20px;
+  font-size: 0.9em;
+  font-weight: 400;
+  background-color: #3f4041;
+  color: #c6c8c8;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.topcoat-list__container {
+  padding: 0;
+  list-style-type: none;
+  border-top: 1px solid #333434;
+  color: #c6c8c8;
+}
+
+.topcoat-list__item {
+  padding: 1.25rem;
+  border-top: 1px solid #616363;
+  border-bottom: 1px solid #333434;
+}
+
+.topcoat-list__item:first-child {
+  border-top: 1px solid rgba(0,0,0,0.05);
 }

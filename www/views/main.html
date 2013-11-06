@@ -1,26 +1,28 @@
 <div
   id="leftSliver"
-  ng-swipe-right="showRooms=true">
+  ng-swipe-right="roomsClass='center'">
 </div>
 
 <div
   id="rightSliver"
-  ng-swipe-left="showChats=true">
+  ng-swipe-left="usersClass='center'">
 </div>
 
 <div
   id="rooms"
-  ng-show="showRooms"
-  ng-swipe-left="showRooms=false">
+  class="hiddenLeft"
+  ng-class="roomsClass"
+  ng-swipe-left="roomsClass='hiddenLeft'">
   <div>
     Logged in as {{username}}
     <button ng-click="logout()">Log Out</button>
   </div>
 
-  <div>
-    <p ng-repeat="room in rooms">
-      {{ room }}
-    </p>
+  <div class="topcoat-list">
+    <h3 class="topcoat-list__header">Rooms</h3>
+    <ul class="topcoat-list__container">
+      <li class="topcoat-list__item" ng-repeat="room in rooms" ng-model=room ng-click="join(room)">{{ room }}</li>
+  </ul>
   </div>
 
   <div>
@@ -41,9 +43,10 @@
 </div>
 
 <div
-  id="chat"
-  ng-show="showChats"
-  ng-swipe-right="showChats=false">
+  id="users"
+  class="hiddenRight"
+  ng-class="usersClass"
+  ng-swipe-right="usersClass='hiddenRight'">
   Chats
 </div>
 

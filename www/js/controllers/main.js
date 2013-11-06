@@ -21,10 +21,18 @@ angular.module('GetTogetherApp')
   // $scope.login('Shu', 'test');
 })
 .controller('MainCtrl', function($scope, SessionService, MapService, RoomService){
+  document.addEventListener('touchmove', function(e) {
+    // Cancel the event
+    e.preventDefault();
+  }, false);
   $scope.currentRoom = SessionService.getCurrentRoom;
   $scope.showRooms = true;
   $scope.showChats = true;
   $scope.username = SessionService.getUsername();
+
+  if(SessionService.currentRoom === null) {
+    $scope.roomsClass = 'center';
+  }
 
   SessionService.fetchRooms()
   .then(function(rooms) {
@@ -50,6 +58,7 @@ angular.module('GetTogetherApp')
     .then(function() {
       MapService.stopListeners(SessionService.currentRoom);
       SessionService.currentRoom = roomname;
+      $scope.roomsClass = 'hiddenLeft';
       delete $scope.joinRoom.name;
     }, function() {
       console.log('room does not exist');

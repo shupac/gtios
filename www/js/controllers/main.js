@@ -7,10 +7,10 @@ angular.module('GetTogetherApp')
   });
 })
 .controller('LoginCtrl', function($scope, SessionService, $location){
-  $scope.user = {
-    username: 'Shu',
-    password: 'test'
-  };
+  // $scope.user = {
+  //   username: 'Shu',
+  //   password: 'test'
+  // };
   $scope.signedIn = SessionService.isLoggedIn();
   $scope.signup = function(username, password){
     SessionService.signup(username, password);

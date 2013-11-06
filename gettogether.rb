@@ -14,10 +14,10 @@ require 'bcrypt'
 set :public_folder, File.dirname(__FILE__) + '/www'
 
 # gettogether
-# db = URI.parse('postgres://mbsekaecifbryh:Iu4qts0pJC4d5Jz9dDzQc1YsvU@ec2-54-221-251-195.compute-1.amazonaws.com:5432/d5c6mcosd7q7n7')
+db = URI.parse('postgres://mbsekaecifbryh:Iu4qts0pJC4d5Jz9dDzQc1YsvU@ec2-54-221-251-195.compute-1.amazonaws.com:5432/d5c6mcosd7q7n7')
 
 # gettogether dev
-db = URI.parse('postgres://brtdgxmmhwvmpf:lBysvVVFoJu-v_G_DTkSlrRvw0@ec2-107-20-228-206.compute-1.amazonaws.com:5432/d5hbot7mu9q79s')
+# db = URI.parse('postgres://brtdgxmmhwvmpf:lBysvVVFoJu-v_G_DTkSlrRvw0@ec2-107-20-228-206.compute-1.amazonaws.com:5432/d5hbot7mu9q79s')
 
 ActiveRecord::Base.establish_connection(
   :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,

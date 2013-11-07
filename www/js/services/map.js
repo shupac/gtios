@@ -15,6 +15,7 @@ angular.module('GetTogetherApp')
       .then(function(position) {
         service.displayMap(position);
         service.storePosition(position);
+        service.autocomplete();
         // service.watchPosition();
       })
       .then(function() {
@@ -27,6 +28,7 @@ angular.module('GetTogetherApp')
         navigator.geolocation.getCurrentPosition(
           function(position) {
             position.coords.heading = position.coords.heading || 0;
+            // service.currentPosition = position;
             defer.resolve(position);
           },
           function(){
@@ -43,6 +45,7 @@ angular.module('GetTogetherApp')
       service.watchID = navigator.geolocation.watchPosition(
         function(position) {
           position.coords.heading = position.coords.heading || 0;
+          // service.currentPosition = position;
           var rooms = SessionService.roomsList;
           for(var i = 0; i < rooms.length; i++) {
             service.storePosition(position, rooms[i]);
@@ -73,6 +76,49 @@ angular.module('GetTogetherApp')
         infowindow.open(service.map,marker);
       });
       return marker;
+    },
+
+    autocomplete: function(text) {
+      // position = position || service.currentPosition;
+      // var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      // var radius = 1; // in miles
+      // var meters = 1609 * radius; // radius in meters
+      var map = service.map;
+      // var search = {
+      //   bounds: map.getBounds()
+      // };
+      // var MARKER_PATH = 'https://maps.gstatic.com/intl/en_us/mapfiles/marker_green';
+      // var infoWindow = new google.maps.InfoWindow();
+      var places = new google.maps.places.PlacesService(map);
+      var input = document.getElementById('autocomplete');
+      debugger
+      var autocomplete = new google.maps.places.Autocomplete(input);
+      autocomplete.bindTo('bounds', map);
+
+      places.search(search, function(results, status) {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+          clearResults();
+          clearMarkers();
+          // Create a marker for each hotel found, and
+          // assign a letter of the alphabetic to each marker icon.
+          for (var i = 0; i < results.length; i++) {
+            var markerLetter = String.fromCharCode('A'.charCodeAt(0) + i);
+            var markerIcon = MARKER_PATH + markerLetter + '.png';
+            // Use marker animation to drop the icons incrementally on the map.
+            markers[i] = new google.maps.Marker({
+              position: results[i].geometry.location,
+              animation: google.maps.Animation.DROP,
+              icon: markerIcon
+            });
+            // If the user clicks a hotel marker, show the details of that hotel
+            // in an info window.
+            markers[i].placeResult = results[i];
+            google.maps.event.addListener(markers[i], 'click', showInfoWindow);
+            setTimeout(dropMarker(i), i * 100);
+            addResult(results[i], i);
+          }
+        }
+      });
     },
 
     storePosition: function(position, roomname) {

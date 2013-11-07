@@ -73,6 +73,7 @@ angular.module('GetTogetherApp')
 
   $scope.search = function() {
     console.log($scope.searchText);
+    MapService.search($scope.searchText);
     $scope.searchText = "";
   };
 

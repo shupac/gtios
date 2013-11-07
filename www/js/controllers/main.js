@@ -7,16 +7,16 @@ angular.module('GetTogetherApp')
   });
 })
 .controller('LoginCtrl', function($scope, SessionService, $location){
-  // $scope.user = {
+  // $scope.userLogin = {
   //   username: 'Shu',
   //   password: 'test'
   // };
   $scope.signedIn = SessionService.isLoggedIn();
   $scope.signup = function(username, password){
-    SessionService.signup(username, password);
+    SessionService.signup(username.toLowerCase(), password);
   };
   $scope.login = function(username, password){
-    SessionService.login(username, password);
+    SessionService.login(username.toLowerCase(), password);
   };
   $scope.login('hackreactor', 'test');
 })
@@ -44,6 +44,7 @@ angular.module('GetTogetherApp')
   });
 
   $scope.createRoom = function(roomname) {
+    roomname = roomname.toLowerCase();
     RoomService.create(roomname)
     .then(
       function(roomname){
@@ -57,6 +58,7 @@ angular.module('GetTogetherApp')
   };
 
   $scope.join = function(roomname) {
+    roomname = roomname.toLowerCase();
     RoomService.joinRoom(roomname)
     .then(
       function() {

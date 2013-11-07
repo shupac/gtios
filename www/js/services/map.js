@@ -156,6 +156,7 @@ angular.module('GetTogetherApp')
     logout: function() {
       console.log('clearWatch', service.watchID);
       navigator.geolocation.clearWatch(service.watchID);
+      service.stopListeners(SessionService.currentRoom);
       var username = SessionService.getUsername();
       var rooms = SessionService.roomsList;
       for(var i = 0; i < rooms.length; i++) {

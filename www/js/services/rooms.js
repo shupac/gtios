@@ -23,8 +23,8 @@ angular.module('GetTogetherApp')
       var defer = $q.defer();
       var roomRef = refs.rooms.child(roomname);
       var username = SessionService.getUsername();
-      roomRef.once('value', function(room) {
 
+      roomRef.once('value', function(room) {
         // if the room exists
         if(room.val() !== null) {
           MapService.stopListeners(SessionService.currentRoom);
@@ -32,6 +32,28 @@ angular.module('GetTogetherApp')
           MapService.initializeMap(roomname);  
           defer.resolve();
           console.log(username, 'entered room:', roomname);
+        } else {
+          defer.reject();
+        }
+      });
+      return defer.promise;
+    },
+    leaveRoom: function(roomname) {
+      var defer = $q.defer();
+      var username = SessionService.getUsername();
+
+      var userRef = refs.rooms
+        .child(roomname)
+        .child('Users')
+        .child(username);
+
+      userRef.once('value', function(user) {
+        // if the room exists
+        if(user.val() !== null) {
+          MapService.stopListeners(roomname);
+          userRef.remove();
+          defer.resolve();
+          // console.log(username, 'entered room:', roomname);
         } else {
           defer.reject();
         }

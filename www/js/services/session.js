@@ -83,6 +83,9 @@ angular.module('GetTogetherApp')
     },
     enterRoom: function(roomname) {
       service.currentRoom = roomname;
+      if(service.roomsList.indexOf(roomname) === -1) {
+        service.roomsList.push(roomname);
+      }    
       refs.users
         .child(service.sessionUsername)
         .child('Rooms')
@@ -90,8 +93,8 @@ angular.module('GetTogetherApp')
         .set({update: 'live'});
       service.updateUsersList()
       .then(function() {
-        if(service.roomsList.indexOf(roomname) === -1) {
-          service.roomsList.push(roomname);
+        if(service.usersList.indexOf(service.sessionUsername) === -1) {
+          service.usersList.push(service.sessionUsername);
         }        
       });
     },

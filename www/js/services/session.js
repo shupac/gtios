@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.factory('SessionService', function($http, $q, $location, $rootScope) {
+.factory('SessionService', function($http, $q, $location, $timeout) {
   var service = {
     sessionUserID: null,
     sessionUsername: null,
@@ -118,7 +118,7 @@ angular.module('GetTogetherApp')
         .child('Users')
         .once('value', function(users) {
           if(users.val()) {
-            $rootScope.$apply(service.usersList = users.val());
+            $timeout(service.usersList = users.val());
 
             console.log('usersList', service.usersList);
             defer.resolve();

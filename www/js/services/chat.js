@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.factory('ChatService', function($q, SessionService, $rootScope){
+.factory('ChatService', function($q, SessionService, $timeout){
   var service = {
     messages: [],
     sendMessage: function(message) {
@@ -16,18 +16,10 @@ angular.module('GetTogetherApp')
       refs.rooms
         .child(roomname)
         .child('Messages')
-        .on('child_added', function() {
-          service.updateMessages();
-        });
-    },
-    updateMessages: function() {
-      var username = SessionService.sessionUsername;
-      var roomname = SessionService.currentRoom;
-      refs.rooms
-        .child(roomname)
-        .child('Messages')
-        .once('value', function(messages) {
-          $rootScope.$apply(service.messages = messages.val());
+        .on('child_added', function(message) {
+          $timeout(function() {
+            service.messages.push(message.val());
+          });
         });
     },
     stopListener: function(roomname) {

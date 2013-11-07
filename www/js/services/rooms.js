@@ -31,7 +31,7 @@ angular.module('GetTogetherApp')
           SessionService.enterRoom(roomname);
           MapService.initializeMap(roomname);  
           defer.resolve();
-          console.log('logged into room:', roomname);
+          console.log(username, 'entered room:', roomname);
         } else {
           defer.reject();
         }

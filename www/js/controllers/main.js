@@ -47,6 +47,7 @@ angular.module('GetTogetherApp')
     RoomService.create(roomname)
     .then(
       function(roomname){
+        $scope.roomsClass = 'hiddenLeft';
         $scope.joinRoom = {name: ""};
       }, 
       function() {

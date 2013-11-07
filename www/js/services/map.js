@@ -3,7 +3,6 @@ angular.module('GetTogetherApp')
   var service = {
     markers: {},
     initializeMap: function(roomname) {
-      console.log('initializeMap');
       service.markers = {};
       navigator.geolocation.clearWatch(service.watchID);
       var mapOptions = {
@@ -16,7 +15,6 @@ angular.module('GetTogetherApp')
       .then(function(position) {
         service.displayMap(position);
         service.storePosition(position);
-        // console.log('Current position stored in Firebase', position);
         service.watchPosition();
       })
       .then(function() {
@@ -25,7 +23,6 @@ angular.module('GetTogetherApp')
     },
     getLocation: function() {
       var defer = $q.defer();
-      console.log('getLocation');
       if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           function(position) {
@@ -62,7 +59,6 @@ angular.module('GetTogetherApp')
       service.map.setCenter(pos);
     },
     displayMarker: function(position, username) {
-      console.log(position, username);
       var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       var marker = new google.maps.Marker({
         position: pos,
@@ -117,13 +113,12 @@ angular.module('GetTogetherApp')
       sessionUsersInRoomRef = refs.rooms.child(roomname).child('Users');
       sessionUsersInRoomRef.on('child_added', function(user) {
         var username = user.name();
-        console.log(username, 'added to', roomname);
+        console.log('Marker added:', username, 'added to', roomname);
         sessionUsersInRoomRef
           .child(username)
           .child('position')
           .once('value', function(position) {
             if(position.val() !== null) {
-              console.log(username, 'entered room with position', position.val());
               var marker = service.displayMarker(position.val(), username);
               service.markers[username] = marker;
               marker.setMap(service.map);
@@ -140,16 +135,15 @@ angular.module('GetTogetherApp')
           .once('value', function(position) {
             if(position.val() === null) {
               if(service.markers[username]) {
-                console.log(username, 'marker removed');
+                console.log('Marker removed:', username, 'removed from', roomname);
                 service.markers[username].setMap(null);
               }
               delete service.markers[username];
             } else {
-              console.log(username, 'changed', position.val());
               var pos = new google.maps.LatLng(position.val().coords.latitude, position.val().coords.longitude);
               if(service.markers[username]) {
                 service.markers[username].setPosition(pos);
-                console.log('marker for', username, 'updated');
+                console.log('Marker updated: ', username, 'in', roomname);
               } else {
                 var marker = service.displayMarker(position.val(), username);
                 service.markers[username] = marker;

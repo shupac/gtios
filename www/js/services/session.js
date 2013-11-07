@@ -63,8 +63,8 @@ angular.module('GetTogetherApp')
           service.updateRoomsList()
           .then(function() {
             console.log(username, 'logged in');
-            $location.path('/');            
           });
+          $location.path('/');
         } else {
           console.log(data.message);
         }
@@ -83,15 +83,17 @@ angular.module('GetTogetherApp')
     },
     enterRoom: function(roomname) {
       service.currentRoom = roomname;
-      service.updateUsersList();
-      if(service.roomsList.indexOf(roomname) === -1) {
-        service.roomsList.push(roomname);
-      }
       refs.users
         .child(service.sessionUsername)
         .child('Rooms')
         .child(roomname)
         .set({update: 'live'});
+      service.updateUsersList()
+      .then(function() {
+        if(service.roomsList.indexOf(roomname) === -1) {
+          service.roomsList.push(roomname);
+        }        
+      });
     },
     updateRoomsList: function() {
       var defer = $q.defer();
@@ -102,31 +104,30 @@ angular.module('GetTogetherApp')
         .once('value', function(rooms) {
           if(rooms.val()) {
             service.roomsList = Object.keys(rooms.val());
-            console.log(service.roomsList);
+            // console.log(service.roomsList);
             defer.resolve();
           } else {
             service.roomsList = [];
-            defer.reject();
+            defer.resolve();
           }
         });
       return defer.promise;
     },
     updateUsersList: function() {
-      console.log('******* update users list', service.currentRoom);
-
+      var defer = $q.defer();
       refs.rooms
         .child(service.currentRoom)
         .child('Users')
         .once('value', function(users) {
           if(users.val()) {
-            console.log('*************', users.val());
-            console.log(Object.keys(users.val()));
             service.usersList = Object.keys(users.val());
-            console.log('update sessionUsers', service.usersList);
+            defer.resolve();
           } else {
             service.usersList = [];
+            defer.resolve();
           }
         });
+      return defer.promise;
     }
   };
   return service;

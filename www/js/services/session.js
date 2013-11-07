@@ -143,6 +143,16 @@ angular.module('GetTogetherApp')
         .child('Rooms')
         .child(roomname)
         .remove();
+    },
+    addUserToList: function(username) {
+      service.usersList.push(username);
+    },
+    removeUserFromList: function(username) {
+      for(var i = 0; i < service.usersList.length; i++) {
+        if(service.usersList[i] === username) {
+          service.usersList.splice(i, 1);
+        }
+      }
     }
   };
   return service;

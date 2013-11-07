@@ -18,7 +18,7 @@ angular.module('GetTogetherApp')
   $scope.login = function(username, password){
     SessionService.login(username.toLowerCase(), password);
   };
-  $scope.login('hackreactor', 'test');
+  // $scope.login('hackreactor', 'test');
 })
 .controller('MainCtrl', function($scope, SessionService, MapService, RoomService){
   document.addEventListener('touchmove', function(e) {

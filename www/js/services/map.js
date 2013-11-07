@@ -15,7 +15,7 @@ angular.module('GetTogetherApp')
       .then(function(position) {
         service.displayMap(position);
         service.storePosition(position);
-        service.watchPosition();
+        // service.watchPosition();
       })
       .then(function() {
         service.startListeners(roomname);
@@ -136,6 +136,7 @@ angular.module('GetTogetherApp')
             if(position.val() === null) {
               if(service.markers[username]) {
                 console.log('Marker removed:', username, 'removed from', roomname);
+                SessionService.removeUserFromList(username);
                 service.markers[username].setMap(null);
               }
               delete service.markers[username];
@@ -148,15 +149,18 @@ angular.module('GetTogetherApp')
                 var marker = service.displayMarker(position.val(), username);
                 service.markers[username] = marker;
                 marker.setMap(service.map);
+                SessionService.addUserToList(username);
               }
             }
           });
       });
 
+      // user leaves room
       sessionUsersInRoomRef.on('child_removed', function(user) {
         var username = user.name();
         console.log('Marker removed:', username, 'removed from', roomname);
         service.markers[username].setMap(null);
+        SessionService.removeUserFromList(username);
         delete service.markers[username];
       });
     },

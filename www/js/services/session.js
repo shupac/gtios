@@ -26,10 +26,6 @@ angular.module('GetTogetherApp')
       service.sessionUsername = username;
     },
 
-    getCurrentRoom: function() {
-      return service.currentRoom;
-    },
-
     // signup and login
     signup: function(username, password) {
       service.submitCred(username, password, 'signup');
@@ -85,7 +81,7 @@ angular.module('GetTogetherApp')
       service.currentRoom = roomname;
       if(service.roomsList.indexOf(roomname) === -1) {
         service.roomsList.push(roomname);
-      }    
+      }
       refs.users
         .child(service.sessionUsername)
         .child('Rooms')
@@ -102,7 +98,6 @@ angular.module('GetTogetherApp')
         .once('value', function(rooms) {
           if(rooms.val()) {
             service.roomsList = Object.keys(rooms.val());
-            // console.log(service.roomsList);
             defer.resolve();
           } else {
             service.roomsList = [];
@@ -118,9 +113,9 @@ angular.module('GetTogetherApp')
         .child('Users')
         .once('value', function(users) {
           if(users.val()) {
-            $timeout(service.usersList = users.val());
-
-            console.log('usersList', service.usersList);
+            $timeout(function() {
+              service.usersList = users.val();
+            });
             defer.resolve();
           } else {
             service.usersList = [];

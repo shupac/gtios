@@ -22,7 +22,7 @@
   <div class="topcoat-list">
     <h3 class="topcoat-list__header">Rooms</h3>
     <ul class="topcoat-list__container">
-      <li class="topcoat-list__item" ng-repeat="room in rooms" ng-class="{'topcoat-list__item-selected': room == currentRoom() }">
+      <li class="topcoat-list__item" ng-repeat="room in rooms" ng-class="{'topcoat-list__item-selected': room == currentRoom }">
         <span ng-click="join(room)" class="room-name">{{ room }}</span>
         <span ng-click="leaveRoom(room)" class="room-leave">Leave</span>
       </li>
@@ -66,11 +66,12 @@
   </div>
 
   <div class="map-room">
-    In {{ currentRoom() }}
+    In {{ currentRoom }}
   </div>
 </div>
 
 <div class="chat">
+  <h1>Chat</h1>
   <ul class="chat-list">
     <li ng-repeat="message in messages">{{ message.username }}: {{ message.message }}</li>
   </ul>

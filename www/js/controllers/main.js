@@ -18,7 +18,7 @@ angular.module('GetTogetherApp')
   $scope.login = function(username, password){
     SessionService.login(username.toLowerCase(), password);
   };
-  // $scope.login('hackreactor', 'test');
+  $scope.login('hackreactor', 'test');
 })
 .controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService){
   document.addEventListener('touchmove', function(e) {
@@ -71,14 +71,13 @@ angular.module('GetTogetherApp')
     $scope.chatMessage = "";
   };
 
-  $scope.currentRoom = SessionService.getCurrentRoom;
-  $scope.showRooms = true;
-  $scope.showChats = true;
-  $scope.username = SessionService.getUsername();
 
-  if(SessionService.currentRoom === null) {
-    $scope.roomsClass = 'center';
-  }
+  // Getting session variables
+  $scope.username = SessionService.sessionUsername;
+
+  $scope.$watch(function() {return SessionService.currentRoom;}, function(currentRoom) {
+    $scope.currentRoom = currentRoom;
+  })
 
   $scope.$watch(function() {return SessionService.usersList;}, function(users) {
     $scope.users = users;
@@ -92,5 +91,10 @@ angular.module('GetTogetherApp')
     $scope.messages = messages;
   });
 
-  // $scope.join('public');
+  // If user is not in a room, show the room login panel
+  if(SessionService.currentRoom === null) {
+    $scope.roomsClass = 'center';
+  }
+
+  $scope.join('public');
 });

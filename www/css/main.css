@@ -160,7 +160,8 @@ button {
 .chat {
   position: absolute;
   left: 320px;
-  bottom: -100%;
+  top: 100%;
+  margin-top: -50px;
   z-index: 10;
   background-color: lightgray;
 }

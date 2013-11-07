@@ -23,7 +23,6 @@ angular.module('GetTogetherApp')
       var defer = $q.defer();
       var roomRef = refs.rooms.child(roomname);
       var username = SessionService.sessionUsername;
-
       roomRef.once('value', function(room) {
         // if the room exists
         if(room.val() !== null) {

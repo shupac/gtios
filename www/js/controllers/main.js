@@ -66,9 +66,14 @@ angular.module('GetTogetherApp')
     SessionService.logout();
   };
 
-  $scope.send = function(message) {
-    ChatService.sendMessage(message);
+  $scope.chatSend = function() {
+    ChatService.sendMessage($scope.chatMessage);
     $scope.chatMessage = "";
+  };
+
+  $scope.search = function() {
+    console.log($scope.searchText);
+    $scope.searchText = "";
   };
 
 

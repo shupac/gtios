@@ -56,29 +56,37 @@
 </div>
 
 
-<div class="map">
-  <div class="map-topbar">
-    <img class="hamburger" src="img/hamburger_light.svg" ng-click="roomsClass='center'" />
-    <img class="user-icon" src="img/multi-user.png" ng-click="usersClass='center'" />
-  </div>
-  
-  <div id="map-canvas">
+<div class="map-div-container">
+  <div class="map">
+    <div class="map-topbar">
+      <img class="hamburger" src="img/hamburger_light.svg" ng-click="roomsClass='center'" />
+      <img class="user-icon" src="img/multi-user.png" ng-click="usersClass='center'" />
+    </div>
+    
+    <div id="map-canvas">
+    </div>
+
+    <div class="map-room">
+      In {{ currentRoom }}
+    </div>
   </div>
 
-  <div class="map-room">
-    In {{ currentRoom }}
+  <div class="chat" ng-class="{'chat-show': chatShow}">
+    <h1 ng-click="chatShow = !chatShow">Chat</h1>
+    <ul class="chat-list">
+      <li ng-repeat="message in messages">{{ message.username }}: {{ message.message }}</li>
+    </ul>
+    <div class="chat-container">
+      <form ng-submit="chatSend()">
+        <input type="text" ng-model="chatMessage" placeholder="Chat" />
+        <input type="submit" value="Send"></input>
+      </form>
+    </div>
   </div>
-</div>
 
-<div class="chat" ng-class="{'chat-show': chatShow}">
-  <h1 ng-click="chatShow = !chatShow">Chat</h1>
-  <ul class="chat-list">
-    <li ng-repeat="message in messages">{{ message.username }}: {{ message.message }}</li>
-  </ul>
-  <div class="chat-container">
-    <form ng-submit="send(chatMessage)">
-      <input type="text" ng-model="chatMessage" placeholder="Chat" />
-      <input type="submit" value="Send"></input>
+  <div class="search-container">
+    <form ng-submit="search()">
+      <input type="text" ng-model="searchText" placeholder="Search" />
     </form>
   </div>
 </div>

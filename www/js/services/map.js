@@ -85,20 +85,18 @@ angular.module('GetTogetherApp')
         .child(username);
 
       sessionUserRef
-        .child('position')
-        .set({coords: position.coords, timestamp: position.timestamp},
-          function(error) {
-            if (error) {
-              console.log('position could not be saved.' + error);
-            } else {
-              // console.log('position saved successfully in', roomname);
-              defer.resolve();
-            }
-          });
-      sessionUserRef
-        .child('active')
-        .set({active: true});
-
+        .set({
+          position: {coords: position.coords, timestamp: position.timestamp},
+          active: true
+        },
+        function(error) {
+          if (error) {
+            console.log('position could not be saved.' + error);
+          } else {
+            // console.log('position saved successfully in', roomname);
+            defer.resolve();
+          }
+        });
       return defer.promise;
     },
 
@@ -122,6 +120,7 @@ angular.module('GetTogetherApp')
               var marker = service.displayMarker(position.val(), username);
               service.markers[username] = marker;
               marker.setMap(service.map);
+              SessionService.updateUsersList();
             }
           });
       });
@@ -136,7 +135,7 @@ angular.module('GetTogetherApp')
             if(position.val() === null) {
               if(service.markers[username]) {
                 console.log('Marker removed:', username, 'removed from', roomname);
-                SessionService.removeUserFromList(username);
+                SessionService.updateUsersList();
                 service.markers[username].setMap(null);
               }
               delete service.markers[username];
@@ -149,7 +148,7 @@ angular.module('GetTogetherApp')
                 var marker = service.displayMarker(position.val(), username);
                 service.markers[username] = marker;
                 marker.setMap(service.map);
-                SessionService.addUserToList(username);
+                SessionService.updateUsersList();
               }
             }
           });
@@ -160,7 +159,7 @@ angular.module('GetTogetherApp')
         var username = user.name();
         console.log('Marker removed:', username, 'removed from', roomname);
         service.markers[username].setMap(null);
-        SessionService.removeUserFromList(username);
+        SessionService.updateUsersList();
         delete service.markers[username];
       });
     },
@@ -179,11 +178,14 @@ angular.module('GetTogetherApp')
           .child(username);
 
         sessionUserRef
-          .child('position')
-          .remove();
-        sessionUserRef
-          .child('active')
-          .set({active: false});
+          .set({
+            active: false
+          });
+        //   .child('active')
+        //   .set({active: false});
+        // sessionUserRef
+        //   .child('position')
+        //   .remove();
       }
     },
     terminateMap: function(roomname) {

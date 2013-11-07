@@ -52,7 +52,7 @@
   ng-swipe-right="usersClass='hiddenRight'">
   Users
 
-  <p ng-repeat="user in users">{{ user }}</p>
+  <p ng-repeat="(username, userdata) in users">{{ username }}: {{ userdata.active }}</p>
 </div>
 
 
@@ -69,3 +69,14 @@
     In {{ currentRoom() }}
   </div>
 </div>
+
+<!-- <div class="chat">
+  <ul>
+    <li ng-repeat="message in messages">{{ message }}</li>
+  </ul>
+
+  <form ng-submit="send(chatMessage)">
+    <input type="text" ng-model="chatMessage" placeholder="Chat" />
+    <input type="submit" value="Send"></input>
+  </form>
+</div> -->

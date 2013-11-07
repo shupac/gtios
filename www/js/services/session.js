@@ -5,7 +5,7 @@ angular.module('GetTogetherApp')
     sessionUsername: null,
     currentRoom: null,
     roomsList: [],
-    usersList: [],
+    usersList: {},
     isLoggedIn: function() {
       return !!service.sessionUserID;
     },
@@ -93,9 +93,9 @@ angular.module('GetTogetherApp')
         .set({update: 'live'});
       service.updateUsersList()
       .then(function() {
-        if(service.usersList.indexOf(service.sessionUsername) === -1) {
-          service.usersList.push(service.sessionUsername);
-        }        
+        // if(service.usersList.indexOf(service.sessionUsername) === -1) {
+        //   service.usersList.push(service.sessionUsername);
+        // }        
       });
     },
     updateRoomsList: function() {
@@ -123,7 +123,7 @@ angular.module('GetTogetherApp')
         .child('Users')
         .once('value', function(users) {
           if(users.val()) {
-            service.usersList = Object.keys(users.val());
+            service.usersList = users.val();
             defer.resolve();
           } else {
             service.usersList = [];

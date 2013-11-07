@@ -21,12 +21,10 @@
   <div class="topcoat-list">
     <h3 class="topcoat-list__header">Rooms</h3>
     <ul class="topcoat-list__container">
-      <div ng-repeat="room in rooms">
-      <li class="topcoat-list__item" ng-model=room ng-click="join(room)" ng-class="{'topcoat-list__item-selected': room == currentRoom() }">
-        {{ room }}
+      <li class="topcoat-list__item" ng-repeat="room in rooms" ng-class="{'topcoat-list__item-selected': room == currentRoom() }">
+        <span ng-click="join(room)" class="room-name">{{ room }}</span>
+        <span ng-click="leaveRoom(room)" class="room-leave">Leave</span>
       </li>
-      <span ng-click="leaveRoom(room)" class="leave-room">Leave</span>
-      <div>
   </ul>
   </div>
 

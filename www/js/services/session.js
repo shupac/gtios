@@ -10,22 +10,6 @@ angular.module('GetTogetherApp')
       return !!service.sessionUserID;
     },
 
-    // get, set userID
-    getUserID: function() {
-      return service.sessionUserID;
-    },
-    setUserID: function(userID) {
-      service.sessionUserID = userID;
-    },
-
-    // get, set username
-    getUsername: function() {
-      return service.sessionUsername;
-    },
-    setUsername: function(username) {
-      service.sessionUsername = username;
-    },
-
     // signup and login
     signup: function(username, password) {
       service.submitCred(username, password, 'signup');
@@ -54,8 +38,8 @@ angular.module('GetTogetherApp')
       })
       .success(function(data) {
         if(data.success) {
-          service.setUserID(data.id);
-          service.setUsername(username);
+          service.sessionUserID = data.id;
+          service.sessionUsername = username;
           service.updateRoomsList()
           .then(function() {
             console.log(username, 'logged in');

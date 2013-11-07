@@ -3,7 +3,7 @@ angular.module('GetTogetherApp')
   var service = {
     create: function(roomname) {
       var defer = $q.defer();
-      var username = SessionService.getUsername();
+      var username = SessionService.sessionUsername;
       var newRoomRef = refs.rooms.child(roomname);
       newRoomRef.once('value', function(room) {
         // if roomname is not found
@@ -42,7 +42,7 @@ angular.module('GetTogetherApp')
     },
     leaveRoom: function(roomname) {
       var defer = $q.defer();
-      var username = SessionService.getUsername();
+      var username = SessionService.sessionUsername;
 
       var userRef = refs.rooms
         .child(roomname)
@@ -67,7 +67,7 @@ angular.module('GetTogetherApp')
     },
     storePosition: function(position) {
       var currentRoom = SessionService.currentRoom;
-      var username = SessionService.getUsername();
+      var username = SessionService.sessionUsername;
       refs.rooms
         .child(currentRoom)
         .child('Users')

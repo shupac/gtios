@@ -57,7 +57,7 @@ angular.module('GetTogetherApp')
       );
     },
     displayMap: function(position) {
-      var username = SessionService.getUsername();
+      var username = SessionService.sessionUsername;
       var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       service.map.setCenter(pos);
     },
@@ -81,7 +81,7 @@ angular.module('GetTogetherApp')
     storePosition: function(position, roomname) {
       roomname = roomname || SessionService.currentRoom;
       var defer = $q.defer();
-      var username = SessionService.getUsername();
+      var username = SessionService.sessionUsername;
       var sessionUserRef = refs.rooms
         .child(roomname)
         .child('Users')
@@ -168,7 +168,7 @@ angular.module('GetTogetherApp')
       console.log('clearWatch', service.watchID);
       navigator.geolocation.clearWatch(service.watchID);
       service.stopListeners(SessionService.currentRoom);
-      var username = SessionService.getUsername();
+      var username = SessionService.sessionUsername;
       var rooms = SessionService.roomsList;
       for(var i = 0; i < rooms.length; i++) {
         console.log(rooms[i]);

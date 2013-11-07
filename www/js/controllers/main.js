@@ -69,6 +69,13 @@ angular.module('GetTogetherApp')
       });
   };
 
+  $scope.leaveRoom = function(roomname) {
+    RoomService.leaveRoom(roomname)
+    .then(function() {
+      console.log('left room');
+    });
+  }
+
   $scope.logout = function() {
     MapService.logout();
     SessionService.logout();

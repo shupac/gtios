@@ -152,6 +152,13 @@ angular.module('GetTogetherApp')
             }
           });
       });
+
+      sessionUsersInRoomRef.on('child_removed', function(user) {
+        var username = user.name();
+        console.log('Marker removed:', username, 'removed from', roomname);
+        service.markers[username].setMap(null);
+        delete service.markers[username];
+      });
     },
     logout: function() {
       console.log('clearWatch', service.watchID);

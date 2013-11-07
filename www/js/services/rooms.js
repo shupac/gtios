@@ -50,8 +50,8 @@ angular.module('GetTogetherApp')
       userRef.once('value', function(user) {
         // if the room exists
         if(user.val() !== null) {
-          MapService.stopListeners(roomname);
           userRef.remove();
+          SessionService.leaveRoom(roomname);
           defer.resolve();
           // console.log(username, 'entered room:', roomname);
         } else {

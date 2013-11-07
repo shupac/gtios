@@ -131,6 +131,18 @@ angular.module('GetTogetherApp')
           }
         });
       return defer.promise;
+    },
+    leaveRoom: function(roomname) {
+      for(var i = 0; i < service.roomsList.length; i++) {
+        if(service.roomsList[i] === roomname) {
+          service.roomsList.splice(i, 1);
+        }
+      }
+      refs.users
+        .child(service.sessionUsername)
+        .child('Rooms')
+        .child(roomname)
+        .remove();
     }
   };
   return service;

@@ -101,9 +101,7 @@ angular.module('GetTogetherApp')
     },
 
     stopListeners: function(roomname) {
-      if(SessionService.currentRoom) {
-        refs.rooms.child(roomname).child('Users').off();
-      }
+      refs.rooms.child(roomname).child('Users').off();
     },
 
     startListeners: function(roomname) {

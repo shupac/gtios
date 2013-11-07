@@ -20,34 +20,18 @@ angular.module('GetTogetherApp')
   };
   // $scope.login('hackreactor', 'test');
 })
-.controller('MainCtrl', function($scope, SessionService, MapService, RoomService){
+.controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService){
   document.addEventListener('touchmove', function(e) {
     // Cancel the event
     e.preventDefault();
   }, false);
-  $scope.currentRoom = SessionService.getCurrentRoom;
-  $scope.showRooms = true;
-  $scope.showChats = true;
-  $scope.username = SessionService.getUsername();
-
-  if(SessionService.currentRoom === null) {
-    $scope.roomsClass = 'center';
-  }
-
-  $scope.session = SessionService;
-  $scope.$watch('session.usersList', function(users) {
-    $scope.users = users;
-  });
-
-  $scope.$watch('session.roomsList', function(rooms) {
-    $scope.rooms = rooms;
-  });
 
   $scope.createRoom = function(roomname) {
     roomname = roomname.toLowerCase();
     RoomService.create(roomname)
     .then(
       function(roomname){
+        // ChatService.startListener();
         $scope.roomsClass = 'hiddenLeft';
         $scope.joinRoom = {name: ""};
       }, 
@@ -62,6 +46,7 @@ angular.module('GetTogetherApp')
     RoomService.joinRoom(roomname)
     .then(
       function() {
+        ChatService.startListener();
         $scope.roomsClass = 'hiddenLeft';
         $scope.joinRoom = {name: ""};
       }, function() {
@@ -80,4 +65,32 @@ angular.module('GetTogetherApp')
     MapService.logout();
     SessionService.logout();
   };
+
+  $scope.send = function(message) {
+    ChatService.sendMessage(message);
+    $scope.chatMessage = "";
+  };
+
+  $scope.currentRoom = SessionService.getCurrentRoom;
+  $scope.showRooms = true;
+  $scope.showChats = true;
+  $scope.username = SessionService.getUsername();
+
+  if(SessionService.currentRoom === null) {
+    $scope.roomsClass = 'center';
+  }
+
+  $scope.$watch(function() {return SessionService.usersList;}, function(users) {
+    $scope.users = users;
+  });
+
+  $scope.$watch(function() {return SessionService.roomsList;}, function(rooms) {
+    $scope.rooms = rooms;
+  });
+
+  $scope.$watch(function() {return ChatService.messages;}, function(messages) {
+    $scope.messages = messages;
+  });
+
+  // $scope.join('public');
 });

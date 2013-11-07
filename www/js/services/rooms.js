@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.factory('RoomService', function($http, $q, SessionService, MapService) {
+.factory('RoomService', function($http, $q, SessionService, MapService, ChatService) {
   var service = {
     create: function(roomname) {
       var defer = $q.defer();
@@ -22,12 +22,15 @@ angular.module('GetTogetherApp')
     joinRoom: function(roomname) {
       var defer = $q.defer();
       var roomRef = refs.rooms.child(roomname);
-      var username = SessionService.getUsername();
+      var username = SessionService.sessionUsername;
 
       roomRef.once('value', function(room) {
         // if the room exists
         if(room.val() !== null) {
-          MapService.stopListeners(SessionService.currentRoom);
+          if(SessionService.currentRoom) {
+            MapService.stopListeners(SessionService.currentRoom);
+            ChatService.stopListener(SessionService.currentRoom);
+          }
           SessionService.enterRoom(roomname);
           MapService.initializeMap(roomname);  
           defer.resolve();

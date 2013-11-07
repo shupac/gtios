@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.factory('SessionService', function($http, $q, $location) {
+.factory('SessionService', function($http, $q, $location, $rootScope) {
   var service = {
     sessionUserID: null,
     sessionUsername: null,
@@ -91,12 +91,7 @@ angular.module('GetTogetherApp')
         .child('Rooms')
         .child(roomname)
         .set({update: 'live'});
-      service.updateUsersList()
-      .then(function() {
-        // if(service.usersList.indexOf(service.sessionUsername) === -1) {
-        //   service.usersList.push(service.sessionUsername);
-        // }        
-      });
+      service.updateUsersList();
     },
     updateRoomsList: function() {
       var defer = $q.defer();
@@ -123,7 +118,9 @@ angular.module('GetTogetherApp')
         .child('Users')
         .once('value', function(users) {
           if(users.val()) {
-            service.usersList = users.val();
+            $rootScope.$apply(service.usersList = users.val());
+
+            console.log('usersList', service.usersList);
             defer.resolve();
           } else {
             service.usersList = [];

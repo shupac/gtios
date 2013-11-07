@@ -13,7 +13,7 @@ body {
   /*left: -320px;*/
   left: 0;
 
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .login {
@@ -35,7 +35,7 @@ button {
   font-size: large;
 }
 
-#rooms, #users {
+.rooms, .users, .chat {
   width: 320px;
   height: 100%;
   position: absolute;
@@ -54,16 +54,6 @@ button {
 
 .center {
   left: 320px;
-}
-
-#leftSliver, #rightSliver {
-  position: absolute;
-  top: 60px;
-  width: 30px;
-  height: 100%;
-  z-index: 3;
-  /*background-color: blue;*/
-  /*opacity: 0;*/
 }
 
 .gmnoprint, .gm-style-cc {
@@ -156,4 +146,32 @@ button {
 
 .room-leave {
   float: right;
+}
+
+.menu-header-container {
+  text-align: center;
+}
+
+.logout-button-container {
+  width: 250px;
+  margin: auto;
+}
+
+.chat {
+  position: absolute;
+  left: 320px;
+  bottom: -100%;
+  z-index: 10;
+  background-color: lightgray;
+}
+/*
+.chat-container {
+  position: absolute;
+  bottom: 0;
+}*/
+
+.chat-list {
+  padding: 0;
+  list-style-type: none;
+  color: #444;
 }

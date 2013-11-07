@@ -9,13 +9,14 @@
 </div>
 
 <div
-  id="rooms"
-  class="hiddenLeft"
+  class="rooms hiddenLeft"
   ng-class="roomsClass"
   ng-swipe-left="roomsClass='hiddenLeft'">
-  <div>
-    Logged in as {{username}}
-    <button ng-click="logout()">Log Out</button>
+  <div class="menu-header-container">
+    <h1>logged in as {{username}}</h1>
+    <div class="logout-button-container">
+      <button ng-click="logout()">Log Out</button>
+    </div>
   </div>
 
   <div class="topcoat-list">
@@ -46,11 +47,10 @@
 </div>
 
 <div
-  id="users"
-  class="hiddenRight"
+  class="users hiddenRight"
   ng-class="usersClass"
   ng-swipe-right="usersClass='hiddenRight'">
-  Users
+  <h1>Users</h1>
 
   <p ng-repeat="(username, userdata) in users">{{ username }}: {{ userdata.active }}</p>
 </div>
@@ -70,13 +70,14 @@
   </div>
 </div>
 
-<!-- <div class="chat">
-  <ul>
-    <li ng-repeat="message in messages">{{ message }}</li>
+<div class="chat">
+  <ul class="chat-list">
+    <li ng-repeat="message in messages">{{ message.username }}: {{ message.message }}</li>
   </ul>
-
-  <form ng-submit="send(chatMessage)">
-    <input type="text" ng-model="chatMessage" placeholder="Chat" />
-    <input type="submit" value="Send"></input>
-  </form>
-</div> -->
+  <div class="chat-container">
+    <form ng-submit="send(chatMessage)">
+      <input type="text" ng-model="chatMessage" placeholder="Chat" />
+      <input type="submit" value="Send"></input>
+    </form>
+  </div>
+</div>

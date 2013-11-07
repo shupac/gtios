@@ -52,6 +52,9 @@ angular.module('GetTogetherApp')
         if(user.val() !== null) {
           userRef.remove();
           SessionService.leaveRoom(roomname);
+          if(SessionService.currentRoom === roomname) {
+            MapService.terminateMap(roomname);
+          }
           defer.resolve();
           // console.log(username, 'entered room:', roomname);
         } else {

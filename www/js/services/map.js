@@ -181,6 +181,11 @@ angular.module('GetTogetherApp')
           .child('active')
           .set({active: false});
       }
+    },
+    terminateMap: function(roomname) {
+      service.stopListeners(roomname);
+      service.map = null;
+      document.getElementById('map-canvas').innerHTML = "";
     }
   };
   return service;

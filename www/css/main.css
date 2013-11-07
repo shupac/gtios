@@ -13,7 +13,7 @@ body {
   /*left: -320px;*/
   left: 0;
 
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .login {
@@ -165,14 +165,19 @@ button {
   z-index: 10;
   background-color: lightgray;
 }
-/*
+
 .chat-container {
   position: absolute;
-  bottom: 0;
-}*/
+  bottom: 44px;
+}
 
 .chat-list {
   padding: 0;
   list-style-type: none;
   color: #444;
+}
+
+.chat-show {
+  top: 0;
+  margin-top: 44px;
 }

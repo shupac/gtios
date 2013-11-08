@@ -1,9 +1,9 @@
 angular.module('GetTogetherApp')
 .factory('MapService', function($http, $q, SessionService, SearchService){
   var service = {
-    markers: {},
+    userMarkers: {},
     initializeMap: function(roomname) {
-      service.markers = {};
+      service.userMarkers = {};
       navigator.geolocation.clearWatch(service.watchID);
       var mapOptions = {
         zoom: 13,
@@ -126,7 +126,7 @@ angular.module('GetTogetherApp')
           .once('value', function(position) {
             if(position.val() !== null) {
               var marker = service.displayMarker(position.val(), username);
-              service.markers[username] = marker;
+              service.userMarkers[username] = marker;
               marker.setMap(service.map);
               SessionService.updateUsersList();
             }
@@ -141,20 +141,20 @@ angular.module('GetTogetherApp')
           .child('position')
           .once('value', function(position) {
             if(position.val() === null) {
-              if(service.markers[username]) {
+              if(service.userMarkers[username]) {
                 console.log('Marker removed:', username, 'removed from', roomname);
                 SessionService.updateUsersList();
-                service.markers[username].setMap(null);
+                service.userMarkers[username].setMap(null);
               }
-              delete service.markers[username];
+              delete service.userMarkers[username];
             } else {
               var pos = new google.maps.LatLng(position.val().coords.latitude, position.val().coords.longitude);
-              if(service.markers[username]) {
-                service.markers[username].setPosition(pos);
+              if(service.userMarkers[username]) {
+                service.userMarkers[username].setPosition(pos);
                 console.log('Marker updated: ', username, 'in', roomname);
               } else {
                 var marker = service.displayMarker(position.val(), username);
-                service.markers[username] = marker;
+                service.userMarkers[username] = marker;
                 marker.setMap(service.map);
                 SessionService.updateUsersList();
               }
@@ -166,9 +166,9 @@ angular.module('GetTogetherApp')
       sessionUsersInRoomRef.on('child_removed', function(user) {
         var username = user.name();
         console.log('Marker removed:', username, 'removed from', roomname);
-        service.markers[username].setMap(null);
+        service.userMarkers[username].setMap(null);
         SessionService.updateUsersList();
-        delete service.markers[username];
+        delete service.userMarkers[username];
       });
     },
     logout: function() {

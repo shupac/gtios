@@ -1,6 +1,7 @@
 angular.module('GetTogetherApp')
-.factory('SearchService', function(){
+.factory('SearchService', function($q, $compile, $rootScope){
   var service = {
+    locationMarkers: {},
     autocomplete: function(map) {
       var placesService = new google.maps.places.PlacesService(map);
       var input = document.getElementById('autocomplete');
@@ -8,7 +9,6 @@ angular.module('GetTogetherApp')
       autocomplete.bindTo('bounds', map);
 
       var MARKER_PATH = 'https://maps.gstatic.com/intl/en_us/mapfiles/marker_green';
-      var infoWindow = new google.maps.InfoWindow();
       
       var markers = [];
 
@@ -40,13 +40,20 @@ angular.module('GetTogetherApp')
       var showInfoWindow = function() {
         var marker = this;
         placesService.getDetails({reference: marker.placeResult.reference},
-            function(place, status) {
-              if (status != google.maps.places.PlacesServiceStatus.OK) {
-                return;
-              }
-              infoWindow.open(map, marker);
-              buildIWContent(place);
+          function(place, status) {
+            if (status != google.maps.places.PlacesServiceStatus.OK) {
+              return;
+            }
+            var contentString = 
+              '<div id="content" ng-controller="LocMarkerCtrl"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + '</div>';
+            var infoWindow = new google.maps.InfoWindow({
+              content: contentString
             });
+            
+            infoWindow.open(map, marker);
+          });
+
+          // buildIWContent(place);
       };
 
       var search = function() {
@@ -87,6 +94,8 @@ angular.module('GetTogetherApp')
 
       var buildIWContent = function(place) {
         console.log(place);
+
+
       };
 
       google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);

@@ -61,6 +61,7 @@
     <div class="map-topbar">
       <img class="hamburger" src="img/hamburger_light.svg" ng-click="roomsClass='center'" />
       <img class="user-icon" src="img/multi-user.png" ng-click="usersClass='center'" />
+      <img class="chat-icon" src="img/chat-icon.png" ng-click="chatShow = !chatShow" />
     </div>
     
     <div id="map-canvas">
@@ -72,19 +73,22 @@
   </div>
 
   <div class="chat" ng-class="{'chat-show': chatShow}">
-    <h1 ng-click="chatShow = !chatShow">Chat</h1>
-    <ul class="chat-list">
-      <li ng-repeat="message in messages">{{ message.username }}: {{ message.message }}</li>
-    </ul>
-    <div class="chat-container">
+    <h1>Chat</h1>
+
+    <div class="chat-messages-container" ng-click="cancelChat()">
+      <ul class="chat-list">
+        <li ng-repeat="message in messages">{{ message.username }}: {{ message.message }}</li>
+      </ul>
+    </div>
+    <div class="chat-send-container">
       <form ng-submit="chatSend()">
-        <input type="text" ng-model="chatMessage" size="25" placeholder="Chat" />
-        <input type="submit" value="Send"></input>
+        <input id="sendChat" type="text" ng-model="chatMessage" size="20" placeholder="Chat" />
       </form>
     </div>
   </div>
 
   <div class="search-container">
-    <input id="autocomplete" type="text" size="30" placeholder="Search" />
+    <input id="autocomplete" type="text" size="15" placeholder="Search" />
+    <button class="cancel" ng-click="cancelSearch()">Cancel</button>
   </div>
 </div>

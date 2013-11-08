@@ -7,10 +7,10 @@ angular.module('GetTogetherApp')
   });
 })
 .controller('LoginCtrl', function($scope, SessionService, $location){
-  // $scope.userLogin = {
-  //   username: 'Shu',
-  //   password: 'test'
-  // };
+  $scope.userLogin = {
+    username: 'Shu',
+    password: 'test'
+  };
   $scope.signedIn = SessionService.isLoggedIn();
   $scope.signup = function(username, password){
     SessionService.signup(username.toLowerCase(), password);
@@ -77,6 +77,13 @@ angular.module('GetTogetherApp')
     $scope.searchText = "";
   };
 
+  $scope.cancelSearch = function() {
+    document.getElementById('autocomplete').blur();
+  }
+
+  $scope.cancelChat = function() {
+    document.getElementById('sendChat').blur();
+  }
 
   // Getting session variables
   $scope.username = SessionService.sessionUsername;

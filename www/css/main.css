@@ -136,15 +136,19 @@ button {
   background-color: #454646;
 }
 
-.hamburger, .user-icon {
-  width: 24px;
-  height: 24px;
+.hamburger, .user-icon, .chat-icon {
+  width: 28px;
+  height: 28px;
   margin: 10px 15px;
 }
 
 .user-icon {
   float: right;
   margin-right: 15px;
+}
+
+.chat-icon {
+  float: right;
 }
 
 .map-room {
@@ -177,7 +181,17 @@ button {
   background-color: lightgray;
 }
 
-.chat-container {
+.chat-messages-container {
+  position: absolute;
+  top: 30px;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  padding-bottom: ;
+  overflow: scroll;
+}
+
+.chat-send-container {
   position: absolute;
   bottom: 44px;
 }
@@ -202,4 +216,8 @@ button {
 
 input[type="text"] {
   font-size: 20px;
+}
+
+.cancel {
+
 }

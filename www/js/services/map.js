@@ -16,7 +16,7 @@ angular.module('GetTogetherApp')
         service.displayMap(position);
         service.storePosition(position);
         SearchService.autocomplete(service.map);
-        // service.watchPosition();
+        service.watchPosition();
       })
       .then(function() {
         service.startListeners(roomname);
@@ -151,7 +151,7 @@ angular.module('GetTogetherApp')
               var pos = new google.maps.LatLng(position.val().coords.latitude, position.val().coords.longitude);
               if(service.userMarkers[username]) {
                 service.userMarkers[username].setPosition(pos);
-                console.log('Marker updated: ', username, 'in', roomname);
+                // console.log('Marker updated: ', username, 'in', roomname);
               } else {
                 var marker = service.displayMarker(position.val(), username);
                 service.userMarkers[username] = marker;

@@ -2,7 +2,7 @@ angular.module('GetTogetherApp')
 .factory('SearchService', function(){
   var service = {
     autocomplete: function(map) {
-      var places = new google.maps.places.PlacesService(map);
+      var placesService = new google.maps.places.PlacesService(map);
       var input = document.getElementById('autocomplete');
       var autocomplete = new google.maps.places.Autocomplete(input);
       autocomplete.bindTo('bounds', map);
@@ -17,10 +17,13 @@ angular.module('GetTogetherApp')
       var onPlaceChanged = function() {
         var place = autocomplete.getPlace();
         if (place.geometry) {
-          new google.maps.Marker({
+          var focusMarker = new google.maps.Marker({
             position: place.geometry.location,
             animation: google.maps.Animation.DROP
-          }).setMap(map);
+          });
+          focusMarker.placeResult = place;
+          focusMarker.setMap(map);
+          google.maps.event.addListener(focusMarker, 'click', showInfoWindow);
           map.panTo(place.geometry.location);
           map.setZoom(15);
         } else {
@@ -36,7 +39,7 @@ angular.module('GetTogetherApp')
 
       var showInfoWindow = function() {
         var marker = this;
-        places.getDetails({reference: marker.placeResult.reference},
+        placesService.getDetails({reference: marker.placeResult.reference},
             function(place, status) {
               if (status != google.maps.places.PlacesServiceStatus.OK) {
                 return;
@@ -51,7 +54,7 @@ angular.module('GetTogetherApp')
           bounds: map.getBounds()
         };
 
-        places.search(search, function(results, status) {
+        placesService.search(search, function(results, status) {
           if (status == google.maps.places.PlacesServiceStatus.OK) {
             clearMarkers();
             // Create a marker for each hotel found, and

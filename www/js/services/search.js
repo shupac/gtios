@@ -12,6 +12,8 @@ angular.module('GetTogetherApp')
       
       var markers = [];
 
+      var resultsLimit = 10;
+
       var onPlaceChanged = function() {
         var place = autocomplete.getPlace();
         if (place.geometry) {
@@ -54,14 +56,12 @@ angular.module('GetTogetherApp')
             clearMarkers();
             // Create a marker for each hotel found, and
             // assign a letter of the alphabetic to each marker icon.
-            for (var i = 0; i < results.length; i++) {
-              var markerLetter = String.fromCharCode('A'.charCodeAt(0) + i);
-              var markerIcon = MARKER_PATH + markerLetter + '.png';
+            for (var i = 0; i < resultsLimit; i++) {
               // Use marker animation to drop the icons incrementally on the map.
               markers[i] = new google.maps.Marker({
                 position: results[i].geometry.location,
-                animation: google.maps.Animation.DROP,
-                icon: markerIcon
+                animation: google.maps.Animation.DROP
+                // icon: markerIcon
               });
               // If the user clicks a hotel marker, show the details of that hotel
               // in an info window.
@@ -85,8 +85,6 @@ angular.module('GetTogetherApp')
       var buildIWContent = function(place) {
         console.log(place);
       };
-
-
 
       google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
     }

@@ -62,10 +62,17 @@ angular.module('GetTogetherApp')
       service.map.setCenter(pos);
     },
     displayMarker: function(position, username) {
+      var icon = 'img/map/';
+      if(username === SessionService.sessionUsername) {
+        icon += 'bluedot.png';
+      } else {
+        icon += 'reddot.png';
+      }
       var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       var marker = new google.maps.Marker({
         position: pos,
-        title: username
+        title: username,
+        icon: icon
       });
 
       var infowindow = new google.maps.InfoWindow({
@@ -73,7 +80,7 @@ angular.module('GetTogetherApp')
       });
 
       google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(service.map,marker);
+        infowindow.open(service.map, marker);
       });
       return marker;
     },

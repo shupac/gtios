@@ -102,5 +102,5 @@ angular.module('GetTogetherApp')
     $scope.roomsClass = 'center';
   }
 
-  // $scope.join('public');
+  $scope.join('public');
 });

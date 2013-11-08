@@ -78,6 +78,7 @@ angular.module('GetTogetherApp')
   };
 
   $scope.cancelSearch = function() {
+    $scope.searchText = "";
     document.getElementById('autocomplete').blur();
   }
 

@@ -18,7 +18,7 @@ angular.module('GetTogetherApp')
           });
           focusMarker.placeResult = place;
           focusMarker.setMap(map);
-          google.maps.event.addListener(focusMarker, 'click', showInfoWindow);
+          google.maps.event.addListener(focusMarker, 'click', service.showInfoWindow);
           map.panTo(place.geometry.location);
           map.setZoom(15);
         } else {
@@ -39,22 +39,25 @@ angular.module('GetTogetherApp')
           var contentString = 
             '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
             '<button id="save-marker">Save</button><button id="hide-marker">Hide</button></div>';
-          var infoWindow = new google.maps.InfoWindow();
-          
-          infoWindow.open(map, marker);
-          infoWindow.setContent(contentString);
-          
-          document.getElementById('save-marker').addEventListener('click', function() {
-            MarkerService.saveMarker(marker)
-            .then(function() {
-              console.log('marker saved');
-            }, function() {
-              console.log('error');
-            });
+          var infoWindow = new google.maps.InfoWindow({
+            content: contentString
           });
-
-          document.getElementById('hide-marker').addEventListener('click', function() {
-            marker.setMap(null);
+          
+          infoWindow.open(service.map, marker);
+          // infoWindow.setContent(contentString);
+          
+          google.maps.event.addListener(infoWindow, 'domready', function() {
+            document.getElementById('save-marker').addEventListener('click', function() {
+              MarkerService.saveMarker(marker)
+              .then(function() {
+                console.log('marker saved');
+              }, function() {
+                console.log('error');
+              });
+            });
+            document.getElementById('hide-marker').addEventListener('click', function() {
+              marker.setMap(null);
+            });
           });
         });
     },

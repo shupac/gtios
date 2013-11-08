@@ -1,7 +1,6 @@
 angular.module('GetTogetherApp')
-.factory('SearchService', function($q, $compile, $rootScope){
+.factory('SearchService', function($q, MarkerService){
   var service = {
-    locationMarkers: [],
     autocomplete: function(map) {
       var placesService = new google.maps.places.PlacesService(map);
       var input = document.getElementById('autocomplete');
@@ -47,25 +46,35 @@ angular.module('GetTogetherApp')
             }
             var contentString = 
               '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
-              '<div><button id="save-marker">Save</button></div>';
+              '<button id="save-marker">Save</button><button id="hide-marker">Hide</button></div>';
             var infoWindow = new google.maps.InfoWindow();
             
             infoWindow.open(map, marker);
             infoWindow.setContent(contentString);
             
             document.getElementById('save-marker').addEventListener('click', function() {
-              service.locationMarkers.push(marker);
-              console.log('marker saved');
+              MarkerService.saveMarker(marker)
+              .then(function() {
+                console.log('marker saved');
+              }, function() {
+                console.log('error');
+              });
+            });
+
+            document.getElementById('hide-marker').addEventListener('click', function() {
+              marker.setMap(null);
             });
           });
       };
 
       var search = function() {
+        var searchTerm = document.getElementById('autocomplete').value;
         var search = {
-          bounds: map.getBounds()
+          bounds: map.getBounds(),
+          keyword: searchTerm
         };
 
-        placesService.search(search, function(results, status) {
+        placesService.radarSearch(search, function(results, status) {
           if (status == google.maps.places.PlacesServiceStatus.OK) {
             clearMarkers();
             // Create a marker for each hotel found, and

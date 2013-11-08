@@ -3,6 +3,10 @@ refs.root = new Firebase('https://gettogether.firebaseio.com');
 refs.users = refs.root.child('Users');
 refs.rooms = refs.root.child('Rooms');
 
+var onGoogleReady = function() {
+  angular.bootstrap(document.getElementById("map-canvas"), ['GetTogetherApp.ui-map']);
+};
+
 angular.module('GetTogetherApp', ['ngRoute', 'ngTouch', 'angular-gestures'])
 .config(function($routeProvider, $locationProvider) {
   $routeProvider

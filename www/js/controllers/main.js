@@ -18,7 +18,7 @@ angular.module('GetTogetherApp')
   $scope.login = function(username, password){
     SessionService.login(username.toLowerCase(), password);
   };
-  // $scope.login('hackreactor', 'test');
+  $scope.login('hackreactor', 'test');
 })
 .controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService){
   document.addEventListener('touchmove', function(e) {
@@ -109,5 +109,33 @@ angular.module('GetTogetherApp')
     $scope.roomsClass = 'center';
   }
 
-  // $scope.join('public');
+  $scope.join('public');
+
+  // $scope.watch(function() {return SearchService.locationMarkers;}, function(locationMarkers) {
+  //   $scope.myMarkers = locationMarkers;
+  // });
+
+
+  //   $scope.openMarkerInfo = function (marker) {
+  //     $scope.currentMarker = marker;
+  //     $scope.currentMarkerLat = marker.getPosition().lat();
+  //     $scope.currentMarkerLng = marker.getPosition().lng();
+  //     $scope.myInfoWindow.open($scope.myMap, marker);
+  //   };
+
+
 });
+// .directive('infoWindow', function() {
+//   return {
+//     restrict 'A',
+//     template: '<p>{{ name }}</p>' +
+//     '<p>{{ address }}</p>' +
+//     '<button id="saveMarker" ng-click="saveCurrentMarker()">Save</button>',
+//     scope: {
+//       myMarker: '='
+//     },
+//     link: function (scope, element, attrs) {
+
+//     }
+//   }
+// });

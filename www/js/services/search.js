@@ -1,7 +1,7 @@
 angular.module('GetTogetherApp')
 .factory('SearchService', function($q, $compile, $rootScope){
   var service = {
-    locationMarkers: {},
+    locationMarkers: [],
     autocomplete: function(map) {
       var placesService = new google.maps.places.PlacesService(map);
       var input = document.getElementById('autocomplete');
@@ -39,21 +39,25 @@ angular.module('GetTogetherApp')
 
       var showInfoWindow = function() {
         var marker = this;
+        service.currentMarker = this;
         placesService.getDetails({reference: marker.placeResult.reference},
           function(place, status) {
             if (status != google.maps.places.PlacesServiceStatus.OK) {
               return;
             }
             var contentString = 
-              '<div id="content" ng-controller="LocMarkerCtrl"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + '</div>';
-            var infoWindow = new google.maps.InfoWindow({
-              content: contentString
-            });
+              '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
+              '<div><button id="save-marker">Save</button></div>';
+            var infoWindow = new google.maps.InfoWindow();
             
             infoWindow.open(map, marker);
+            infoWindow.setContent(contentString);
+            
+            document.getElementById('save-marker').addEventListener('click', function() {
+              service.locationMarkers.push(marker);
+              console.log('marker saved');
+            });
           });
-
-          // buildIWContent(place);
       };
 
       var search = function() {
@@ -94,8 +98,6 @@ angular.module('GetTogetherApp')
 
       var buildIWContent = function(place) {
         console.log(place);
-
-
       };
 
       google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);

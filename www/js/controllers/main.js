@@ -20,7 +20,7 @@ angular.module('GetTogetherApp')
   };
   $scope.login('hackreactor', 'test');
 })
-.controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService){
+.controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService, SearchService){
   document.addEventListener('touchmove', function(e) {
     // Cancel the event
     e.preventDefault();
@@ -85,6 +85,10 @@ angular.module('GetTogetherApp')
     document.getElementById('sendChat').blur();
   }
 
+  $scope.clearResults = function() {
+    SearchService.clearMarkers();
+  }
+
   // Getting session variables
   $scope.username = SessionService.sessionUsername;
 
@@ -111,31 +115,4 @@ angular.module('GetTogetherApp')
 
   $scope.join('public');
 
-  // $scope.watch(function() {return SearchService.locationMarkers;}, function(locationMarkers) {
-  //   $scope.myMarkers = locationMarkers;
-  // });
-
-
-  //   $scope.openMarkerInfo = function (marker) {
-  //     $scope.currentMarker = marker;
-  //     $scope.currentMarkerLat = marker.getPosition().lat();
-  //     $scope.currentMarkerLng = marker.getPosition().lng();
-  //     $scope.myInfoWindow.open($scope.myMap, marker);
-  //   };
-
-
 });
-// .directive('infoWindow', function() {
-//   return {
-//     restrict 'A',
-//     template: '<p>{{ name }}</p>' +
-//     '<p>{{ address }}</p>' +
-//     '<button id="saveMarker" ng-click="saveCurrentMarker()">Save</button>',
-//     scope: {
-//       myMarker: '='
-//     },
-//     link: function (scope, element, attrs) {
-
-//     }
-//   }
-// });

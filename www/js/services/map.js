@@ -66,7 +66,7 @@ angular.module('GetTogetherApp')
       if(username === SessionService.sessionUsername) {
         icon += 'bluedot.png';
       } else {
-        icon += 'reddot.png';
+        icon = 'https://maps.gstatic.com/mapfiles/ms2/micons/man.png';
       }
       var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       var marker = new google.maps.Marker({

@@ -27,7 +27,8 @@ angular.module('GetTogetherApp')
         // if the room exists
         if(room.val() !== null) {
           if(SessionService.currentRoom) { // If currently in a room, stop listeners and delete chats
-            service.leaveRoom(SessionService.currentRoom);
+            service.terminateRoomSession();
+            ChatService.messages = [];
           }
           SessionService.enterRoom(roomname);
           MapService.initializeMap(roomname);
@@ -40,10 +41,13 @@ angular.module('GetTogetherApp')
       });
       return defer.promise;
     },
-    leaveRoom: function(roomname) {
-      MapService.stopListeners(roomname);
-      ChatService.stopListener(roomname);
-      MapService.terminateMap(roomname);
+    terminateRoomSession: function() {
+      currentRoom = SessionService.currentRoom;
+      MapService.stopListeners(currentRoom);
+      ChatService.stopListener(currentRoom);
+      MapService.terminateMap(currentRoom);
+      ChatService.messages = [];
+      SessionService.currentRoom = null;
     },
     deleteRoom: function(roomname) {
       var defer = $q.defer();
@@ -60,7 +64,7 @@ angular.module('GetTogetherApp')
           userRef.remove();
           SessionService.deleteRoom(roomname);
           if(SessionService.currentRoom === roomname) {
-            MapService.terminateMap(roomname);
+            service.terminateRoomSession();
           }
           defer.resolve();
         } else {

@@ -63,16 +63,20 @@ angular.module('GetTogetherApp')
     },
     displayMarker: function(position, username) {
       var icon = 'img/map/';
+      var zIndex;
       if(username === SessionService.sessionUsername) {
         icon += 'bluedot.png';
+        zIndex = 10;
       } else {
         icon = 'https://maps.gstatic.com/mapfiles/ms2/micons/man.png';
+        zIndex = 9;
       }
       var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       var marker = new google.maps.Marker({
         position: pos,
         title: username,
-        icon: icon
+        icon: icon,
+        zIndex: zIndex
       });
 
       var infowindow = new google.maps.InfoWindow({

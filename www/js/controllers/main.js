@@ -20,7 +20,7 @@ angular.module('GetTogetherApp')
   };
   $scope.login('hackreactor', 'test');
 })
-.controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService, SearchService){
+.controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService, SearchService, MarkerService){
   document.addEventListener('touchmove', function(e) {
     // Cancel the event
     e.preventDefault();
@@ -107,6 +107,11 @@ angular.module('GetTogetherApp')
 
   $scope.$watch(function() {return ChatService.messages;}, function(messages) {
     $scope.messages = messages;
+  });
+
+  $scope.$watch(function() {return MarkerService.savedMarkers;}, function(markers) {
+    console.log(markers);
+    $scope.markers = markers;
   });
 
   // If user is not in a room, show the room login panel

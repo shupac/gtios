@@ -33,7 +33,6 @@ angular.module('GetTogetherApp')
     },
     showInfoWindow: function() {
       var marker = this;
-      service.currentMarker = this;
       service.places.getDetails({reference: marker.placeResult.reference},
         function(place, status) {
           if (status != google.maps.places.PlacesServiceStatus.OK) {
@@ -47,11 +46,10 @@ angular.module('GetTogetherApp')
           });
           
           infoWindow.open(service.map, marker);
-          // infoWindow.setContent(contentString);
           
           google.maps.event.addListener(infoWindow, 'domready', function() {
             document.getElementById('save-marker').addEventListener('click', function() {
-              MarkerService.saveMarker(marker)
+              MarkerService.savePlace(place.reference, place.id)
               .then(function() {
                 console.log('marker saved');
                 marker.setMap(null);

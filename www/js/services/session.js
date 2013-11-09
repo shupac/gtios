@@ -102,6 +102,9 @@ angular.module('GetTogetherApp')
       return defer.promise;
     },
     leaveRoom: function(roomname) {
+
+    },
+    deleteRoom: function(roomname) {
       $timeout(function() {
         delete service.roomsList[roomname];
       });
@@ -120,6 +123,9 @@ angular.module('GetTogetherApp')
           service.usersList.splice(i, 1);
         }
       }
+    },
+    syncUpdateType: function(roomname, updateType) {
+
     }
   };
   return service;

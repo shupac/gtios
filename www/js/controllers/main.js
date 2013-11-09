@@ -54,8 +54,8 @@ angular.module('GetTogetherApp')
       });
   };
 
-  $scope.leaveRoom = function(roomname) {
-    RoomService.leaveRoom(roomname)
+  $scope.deleteRoom = function(roomname) {
+    RoomService.deleteRoom(roomname)
     .then(function() {
       console.log('left room');
     });
@@ -80,15 +80,22 @@ angular.module('GetTogetherApp')
   $scope.cancelSearch = function() {
     $scope.searchText = "";
     document.getElementById('autocomplete').blur();
-  }
+  };
 
   $scope.cancelChat = function() {
     document.getElementById('sendChat').blur();
-  }
+  };
 
   $scope.clearResults = function() {
     SearchService.clearMarkers();
-  }
+  };
+
+  $scope.toggleUpdate = function(room) {
+    SessionService.syncUpdateType(room, room.update);
+    if(room === SessionService.currentRoom && room.updateType === 'manual') {
+      RoomService.leaveRoom(SessionService.currentRoom);
+    }
+  };
 
   // Getting session variables
   $scope.username = SessionService.sessionUsername;

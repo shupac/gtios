@@ -10,6 +10,7 @@ angular.module('GetTogetherApp')
       autocomplete.bindTo('bounds', map);
 
       var onPlaceChanged = function() {
+        service.clearMarkers();
         var place = autocomplete.getPlace();
         if (place.geometry) {
           var focusMarker = new google.maps.Marker({
@@ -17,6 +18,7 @@ angular.module('GetTogetherApp')
             animation: google.maps.Animation.DROP
           });
           focusMarker.placeResult = place;
+          service.searchMarkers.push(focusMarker);
           focusMarker.setMap(map);
           google.maps.event.addListener(focusMarker, 'click', service.showInfoWindow);
           map.panTo(place.geometry.location);
@@ -24,6 +26,7 @@ angular.module('GetTogetherApp')
         } else {
           service.search();
         }
+        document.getElementById('autocomplete').value = "";
       };
 
       google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
@@ -51,6 +54,7 @@ angular.module('GetTogetherApp')
               MarkerService.saveMarker(marker)
               .then(function() {
                 console.log('marker saved');
+                marker.setMap(null);
               }, function() {
                 console.log('error');
               });
@@ -87,7 +91,6 @@ angular.module('GetTogetherApp')
 
       service.places.radarSearch(query, function(results, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
-          service.clearMarkers();
           for (var i = 0; i < resultsLimit; i++) {
             service.searchMarkers[i] = new google.maps.Marker({
               position: results[i].geometry.location,

@@ -17,8 +17,18 @@ angular.module('GetTogetherApp')
         }
       });
       service.savedMarkers[newMarkerRef.name()] = marker;
-      console.log(service.savedMarkers);
       return defer.promise;
+    },
+    startListeners: function(map) {
+      service.map = map;
+
+      var roomname = SessionService.currentRoom;
+      var username = SessionService.sessionUsername;
+      var markersRef = refs.rooms.child(roomname).child('Markers');
+
+      markersRef.on('child_added', function(marker) {
+        marker = JSON.parse(marker.val().marker);
+      });
     }
   };
   return service;

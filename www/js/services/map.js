@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.factory('MapService', function($http, $q, SessionService, SearchService){
+.factory('MapService', function($http, $q, SessionService, SearchService, MarkerService){
   var service = {
     userMarkers: {},
     initializeMap: function(roomname) {
@@ -110,12 +110,10 @@ angular.module('GetTogetherApp')
       return defer.promise;
     },
 
-    stopListeners: function(roomname) {
-      refs.rooms.child(roomname).child('Users').off();
-    },
-
     startListeners: function(roomname) {
       // console.log('start listener', roomname);
+      MarkerService.startListeners(service.map);
+
       sessionUsersInRoomRef = refs.rooms.child(roomname).child('Users');
       sessionUsersInRoomRef.on('child_added', function(user) {
         var username = user.name();
@@ -171,6 +169,12 @@ angular.module('GetTogetherApp')
         delete service.userMarkers[username];
       });
     },
+
+    stopListeners: function(roomname) {
+      refs.rooms.child(roomname).child('Users').off();
+      MarkerService.stopListeners();
+    },
+
     logout: function() {
       console.log('clearWatch', service.watchID);
       navigator.geolocation.clearWatch(service.watchID);

@@ -64,6 +64,12 @@ angular.module('GetTogetherApp')
           });
       });
 
+      markersRef.on('child_removed', function(data) {
+        var placeId = data.name();
+        var marker = service.savedMarkers[placeId];
+        marker.setMap(null);
+        delete marker;
+      });
     },
 
     stopListeners: function() {
@@ -86,18 +92,27 @@ angular.module('GetTogetherApp')
       });
       
       infoWindow.open(service.map, marker);
-      // infoWindow.setContent(contentString);
+      infoWindow.marker = marker;
       
       google.maps.event.addListener(infoWindow, 'domready', function() {
         document.getElementById('edit-marker').addEventListener('click', function() {
           console.log('edit marker');
         });
         document.getElementById('delete-marker').addEventListener('click', function() {
-          // marker.setMap(null);
+          service.deleteMarker(marker);
           console.log('delete marker');
         });
       });
     },
+
+    deleteMarker: function(marker) {
+      var roomname = SessionService.currentRoom;
+      var username = SessionService.sessionUsername;
+      var markersRef = refs.rooms.child(roomname).child('Places');
+
+      var placeId = marker.placeResult.id;
+      markersRef.child(placeId).remove();
+    }
   };
   return service;
 });

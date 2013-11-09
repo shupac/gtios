@@ -18,8 +18,8 @@ angular.module('GetTogetherApp')
   $scope.login = function(username, password){
     SessionService.login(username.toLowerCase(), password);
   };
-  $scope.login('hackreactor', 'test');
-  // $scope.login('shu', 'test');
+  // $scope.login('hackreactor', 'test');
+  $scope.login('shu', 'test');
 })
 .controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService, SearchService, MarkerService){
   document.addEventListener('touchmove', function(e) {
@@ -111,7 +111,6 @@ angular.module('GetTogetherApp')
   });
 
   $scope.$watch(function() {return MarkerService.savedMarkers;}, function(markers) {
-    console.log(markers);
     $scope.markers = markers;
   });
 

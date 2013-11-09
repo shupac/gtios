@@ -26,13 +26,13 @@ angular.module('GetTogetherApp')
       roomRef.once('value', function(room) {
         // if the room exists
         if(room.val() !== null) {
-          if(SessionService.currentRoom) {
+          if(SessionService.currentRoom) { // If currently in a room, stop listeners and delete chats
             MapService.stopListeners(SessionService.currentRoom);
             ChatService.stopListener(SessionService.currentRoom);
-            ChatService.messages = [];
           }
           SessionService.enterRoom(roomname);
-          MapService.initializeMap(roomname);  
+          MapService.initializeMap(roomname);
+          ChatService.initialize();
           defer.resolve();
           console.log(username, 'entered room:', roomname);
         } else {

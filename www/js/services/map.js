@@ -28,7 +28,6 @@ angular.module('GetTogetherApp')
         navigator.geolocation.getCurrentPosition(
           function(position) {
             position.coords.heading = position.coords.heading || 0;
-            // service.currentPosition = position;
             defer.resolve(position);
           },
           function(){
@@ -42,13 +41,17 @@ angular.module('GetTogetherApp')
     },
     watchPosition: function() {
       // console.log('watchPosition started');
+
       service.watchID = navigator.geolocation.watchPosition(
         function(position) {
           position.coords.heading = position.coords.heading || 0;
           // service.currentPosition = position;
           var rooms = SessionService.roomsList;
-          for(var i = 0; i < rooms.length; i++) {
-            service.storePosition(position, rooms[i]);
+          for(var room in rooms) {
+            var updateType = room.update;
+            if(room.update === 'live' || room.name === SessionService.currentRoom) {
+              service.storePosition(position, room.name);
+            }
           }
         },
         function(){
@@ -98,8 +101,11 @@ angular.module('GetTogetherApp')
     },
 
     storePosition: function(position, roomname) {
-      roomname = roomname || SessionService.currentRoom;
       var defer = $q.defer();
+
+      roomname = roomname || SessionService.currentRoom;
+      var updateType = SessionService.roomsList[roomname].update;
+
       var username = SessionService.sessionUsername;
       var sessionUserRef = refs.rooms
         .child(roomname)
@@ -109,7 +115,7 @@ angular.module('GetTogetherApp')
       sessionUserRef
         .set({
           position: {coords: position.coords, timestamp: position.timestamp},
-          active: true
+          update: updateType
         },
         function(error) {
           if (error) {

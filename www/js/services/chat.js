@@ -1,16 +1,8 @@
 angular.module('GetTogetherApp')
 .factory('ChatService', function($q, SessionService, $timeout){
   var service = {
-    messages: [],
-    sendMessage: function(message) {
-      var username = SessionService.sessionUsername;
-      var roomname = SessionService.currentRoom;
-      refs.rooms
-        .child(roomname)
-        .child('Messages')
-        .push({username: username, message: message});
-    },
-    startListener: function() {
+    initialize: function() {
+      service.messages = [];
       var username = SessionService.sessionUsername;
       var roomname = SessionService.currentRoom;
       refs.rooms
@@ -21,6 +13,14 @@ angular.module('GetTogetherApp')
             service.messages.push(message.val());
           });
         });
+    },
+    sendMessage: function(message) {
+      var username = SessionService.sessionUsername;
+      var roomname = SessionService.currentRoom;
+      refs.rooms
+        .child(roomname)
+        .child('Messages')
+        .push({username: username, message: message});
     },
     stopListener: function(roomname) {
       var username = SessionService.sessionUsername;

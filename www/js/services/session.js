@@ -4,7 +4,7 @@ angular.module('GetTogetherApp')
     sessionUserID: null,
     sessionUsername: null,
     currentRoom: null,
-    roomsList: [],
+    roomsList: {},
     usersList: {},
     isLoggedIn: function() {
       return !!service.sessionUserID;
@@ -40,10 +40,7 @@ angular.module('GetTogetherApp')
         if(data.success) {
           service.sessionUserID = data.id;
           service.sessionUsername = username;
-          service.updateRoomsList()
-          .then(function() {
-            console.log(username, 'logged in');
-          });
+          service.updateRoomsList();
           $location.path('/');
         } else {
           console.log(data.message);
@@ -63,8 +60,8 @@ angular.module('GetTogetherApp')
     },
     enterRoom: function(roomname) {
       service.currentRoom = roomname;
-      if(service.roomsList.indexOf(roomname) === -1) {
-        service.roomsList.push(roomname);
+      if(!service.roomsList[roomname]) {
+        service.roomsList[roomname] = {name: roomname, update: 'live'};
       }
       refs.users
         .child(service.sessionUsername)
@@ -74,21 +71,17 @@ angular.module('GetTogetherApp')
       service.updateUsersList();
     },
     updateRoomsList: function() {
-      var defer = $q.defer();
       var username = service.sessionUsername;
       refs.users
         .child(username)
         .child('Rooms')
-        .once('value', function(rooms) {
-          if(rooms.val()) {
-            service.roomsList = Object.keys(rooms.val());
-            defer.resolve();
-          } else {
-            service.roomsList = [];
-            defer.resolve();
-          }
+        .once('child_added', function(room) {
+          var roomname = room.name();
+          var updateType = room.val().update;
+          $timeout(function() {
+            service.roomsList[roomname] = {name: roomname, update: updateType};
+          });
         });
-      return defer.promise;
     },
     updateUsersList: function() {
       var defer = $q.defer();
@@ -109,11 +102,9 @@ angular.module('GetTogetherApp')
       return defer.promise;
     },
     leaveRoom: function(roomname) {
-      for(var i = 0; i < service.roomsList.length; i++) {
-        if(service.roomsList[i] === roomname) {
-          service.roomsList.splice(i, 1);
-        }
-      }
+      $timeout(function() {
+        delete service.roomsList[roomname];
+      });
       refs.users
         .child(service.sessionUsername)
         .child('Rooms')

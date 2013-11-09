@@ -20,11 +20,18 @@
   </div>
 
   <div class="topcoat-list">
-    <h3 class="topcoat-list__header">Rooms</h3>
+    <h3 class="topcoat-list__header">Groups</h3>
     <ul class="topcoat-list__container">
-      <li class="topcoat-list__item" ng-repeat="room in rooms" ng-class="{'topcoat-list__item-selected': room == currentRoom }">
-        <span ng-click="join(room)" class="room-name">{{ room }}</span>
-        <span ng-click="leaveRoom(room)" class="room-leave">Leave</span>
+      <li class="topcoat-list__item" ng-repeat="room in rooms" ng-class="{'topcoat-list__item-selected': room.name == currentRoom }">
+        <span ng-click="join(room.name)" class="room-name">{{ room.name }}</span>
+        <span>{{ room.update }}</span>
+        <span ng-click="leaveRoom(room.name)" class="room-leave">Leave</span>
+        <span class="update-toggle">
+          <label class="topcoat-switch">
+            <input type="checkbox" class="topcoat-switch__input" checked>
+            <span class="topcoat-switch__toggle"></span>
+          </label>
+        </span>
       </li>
   </ul>
   </div>
@@ -52,7 +59,7 @@
   ng-swipe-right="usersClass='hiddenRight'">
   <h1>Users</h1>
 
-  <p ng-repeat="(username, userdata) in users">{{ username }}: {{ userdata.active }}</p>
+  <p ng-repeat="(username, userdata) in users">{{ username }}: {{ userdata.update }}</p>
 
   <h1>Places</h1>
 

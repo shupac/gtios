@@ -18,7 +18,7 @@ angular.module('GetTogetherApp')
   $scope.login = function(username, password){
     SessionService.login(username.toLowerCase(), password);
   };
-  // $scope.login('hackreactor', 'test');
+  $scope.login('hackreactor', 'test');
   // $scope.login('shu', 'test');
 })
 .controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService, SearchService, MarkerService){
@@ -47,9 +47,8 @@ angular.module('GetTogetherApp')
     RoomService.joinRoom(roomname)
     .then(
       function() {
-        ChatService.startListener();
         $scope.roomsClass = 'hiddenLeft';
-        $scope.joinRoom = {name: ""};
+        $scope.joinRoom = {name: ""}; 
       }, function() {
         console.log('room does not exist');
       });

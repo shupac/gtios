@@ -41,9 +41,15 @@ angular.module('GetTogetherApp')
             if (status != google.maps.places.PlacesServiceStatus.OK) {
               return;
             } else {
+              var icon = {
+                url: 'img/map/reddot-18x18.png',
+                size: new google.maps.Size(18, 18),
+                origin: new google.maps.Point(0,0),
+                anchor: new google.maps.Point(9, 9)
+              };
               var marker = new google.maps.Marker({
                 position: place.geometry.location,
-                icon: 'img/map/reddot.png',
+                icon: icon,
                 zIndex: 1
               });
               marker.placeResult = place;

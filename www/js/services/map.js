@@ -62,14 +62,22 @@ angular.module('GetTogetherApp')
       service.map.setCenter(pos);
     },
     displayMarker: function(position, username) {
-      var icon = 'img/map/';
-      var zIndex;
       if(username === SessionService.sessionUsername) {
-        icon += 'bluedot.png';
-        zIndex = 10;
+        var icon = {
+          url: 'img/map/bluedot-18x18.png',
+          size: new google.maps.Size(18, 18),
+          origin: new google.maps.Point(0,0),
+          anchor: new google.maps.Point(9, 9)
+        };
+        var zIndex = 10;
       } else {
-        icon = 'https://maps.gstatic.com/mapfiles/ms2/micons/man.png';
-        zIndex = 9;
+        var icon = {
+          url: 'img/map/man-18x32.png',
+          size: new google.maps.Size(18, 32),
+          origin: new google.maps.Point(0,0),
+          anchor: new google.maps.Point(9, 32)
+        };
+        var zIndex = 9;
       }
       var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       var marker = new google.maps.Marker({

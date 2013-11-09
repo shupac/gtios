@@ -13,6 +13,7 @@ angular.module('GetTogetherApp')
         service.clearMarkers();
         var place = autocomplete.getPlace();
         if (place.geometry) {
+          console.log(place);
           var focusMarker = new google.maps.Marker({
             position: place.geometry.location,
             animation: google.maps.Animation.DROP
@@ -49,7 +50,7 @@ angular.module('GetTogetherApp')
           
           google.maps.event.addListener(infoWindow, 'domready', function() {
             document.getElementById('save-marker').addEventListener('click', function() {
-              MarkerService.savePlace(place.reference, place.id)
+              MarkerService.savePlace(place.reference, place.id, place.name)
               .then(function() {
                 console.log('marker saved');
                 marker.setMap(null);

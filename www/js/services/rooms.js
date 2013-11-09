@@ -29,6 +29,7 @@ angular.module('GetTogetherApp')
           if(SessionService.currentRoom) {
             MapService.stopListeners(SessionService.currentRoom);
             ChatService.stopListener(SessionService.currentRoom);
+            ChatService.messages = [];
           }
           SessionService.enterRoom(roomname);
           MapService.initializeMap(roomname);  

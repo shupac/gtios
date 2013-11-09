@@ -2,7 +2,7 @@ angular.module('GetTogetherApp')
 .factory('MarkerService', function($q, SessionService, $rootScope, $timeout){
   var service = {
     savedMarkers: {},
-    savePlace: function(reference, id) {
+    savePlace: function(reference, id, name) {
       var defer = $q.defer();
       var roomname = SessionService.currentRoom;
       var username = SessionService.sessionUsername;
@@ -11,7 +11,7 @@ angular.module('GetTogetherApp')
         console.log('location already saved');
         defer.reject();
       } else {
-        markersRef.child(id).set({reference: reference}, function(error) {
+        markersRef.child(id).set({reference: reference, name: name}, function(error) {
           if(error) {
             defer.reject();
           } else {
@@ -34,7 +34,8 @@ angular.module('GetTogetherApp')
 
       markersRef.on('child_added', function(data) {
         var placeId = data.name();
-        reference = data.val().reference;
+        var placeName = data.val().name;
+        var reference = data.val().reference;
 
         service.places.getDetails({reference: reference},
           function(place, status) {
@@ -50,9 +51,10 @@ angular.module('GetTogetherApp')
               var marker = new google.maps.Marker({
                 position: place.geometry.location,
                 icon: icon,
-                zIndex: 1
+                zIndex: 1,
               });
               marker.placeResult = place;
+              marker.name = placeName;
               $timeout(function() {
                 service.savedMarkers[placeId] = marker;
               });

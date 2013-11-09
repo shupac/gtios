@@ -92,9 +92,8 @@ angular.module('GetTogetherApp')
 
   $scope.toggleUpdate = function(room) {
     SessionService.syncUpdateType(room.name, room.update);
-    console.log(room.name, SessionService.currentRoom, room.update);
+    // console.log(room.name, SessionService.currentRoom, room.update);
     if(room.name === SessionService.currentRoom && room.update === 'manual') {
-      console.log('here');
       RoomService.terminateRoomSession();
     }
   };

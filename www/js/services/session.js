@@ -60,22 +60,19 @@ angular.module('GetTogetherApp')
     },
     enterRoom: function(roomname) {
       service.currentRoom = roomname;
-      if(!service.roomsList[roomname]) {
-        service.roomsList[roomname] = {name: roomname, update: 'live'};
-      }
-      refs.users
-        .child(service.sessionUsername)
-        .child('Rooms')
-        .child(roomname)
-        .set({update: 'live'});
+      // if(!service.roomsList[roomname]) {
+      //   service.roomsList[roomname] = {name: roomname, update: 'live'};
+      // }
+      service.syncUpdateType(roomname, 'live');
       service.updateUsersList();
     },
     updateRoomsList: function() {
+      service.roomsList = {};
       var username = service.sessionUsername;
       refs.users
         .child(username)
         .child('Rooms')
-        .once('child_added', function(room) {
+        .on('child_added', function(room) {
           var roomname = room.name();
           var updateType = room.val().update;
           $timeout(function() {
@@ -101,9 +98,6 @@ angular.module('GetTogetherApp')
         });
       return defer.promise;
     },
-    leaveRoom: function(roomname) {
-
-    },
     deleteRoom: function(roomname) {
       $timeout(function() {
         delete service.roomsList[roomname];
@@ -125,7 +119,19 @@ angular.module('GetTogetherApp')
       }
     },
     syncUpdateType: function(roomname, updateType) {
-
+      var username = service.sessionUsername;
+      refs.users
+        .child(username)
+        .child('Rooms')
+        .child(roomname)
+        .set({update: updateType}, function(error) {
+          if(error) {
+            console.log('error');
+          } else {
+            console.log(roomname, updateType);
+            service.updateRoomsList();
+          }
+        });
     }
   };
   return service;

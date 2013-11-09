@@ -68,7 +68,8 @@ angular.module('GetTogetherApp')
         var placeId = data.name();
         var marker = service.savedMarkers[placeId];
         marker.setMap(null);
-        delete marker;
+        delete service.savedMarkers[placeId];
+        console.log(service.savedMarkers);
       });
     },
 

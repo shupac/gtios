@@ -7,7 +7,7 @@ angular.module('GetTogetherApp')
       var roomname = SessionService.currentRoom;
       var username = SessionService.sessionUsername;
       var markersRef = refs.rooms.child(roomname).child('Places');
-      if(savedMarkers[id]) {
+      if(service.savedMarkers[id]) {
         console.log('location already saved');
         defer.reject();
       } else {

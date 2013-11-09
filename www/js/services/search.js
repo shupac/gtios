@@ -26,7 +26,7 @@ angular.module('GetTogetherApp')
         } else {
           service.search();
         }
-        document.getElementById('autocomplete').value = "";
+        service.clearAutocomplete();
       };
 
       google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
@@ -100,6 +100,14 @@ angular.module('GetTogetherApp')
           }
         }
       });
+    },
+    clearAutocomplete: function() {
+      var input = document.getElementById('autocomplete');
+      input.blur();    
+      setTimeout(function(){
+        input.value = "";
+        input.focus();
+      },10);
     }
   }
   return service;

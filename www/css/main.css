@@ -236,7 +236,7 @@ button {
 }
 
 .topcoat-switch__toggle:after {
-  content: 'MAN';
+  content: 'LAST';
   color: white;
   background-color: #EE8700;
   top: -1px;

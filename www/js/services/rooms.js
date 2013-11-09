@@ -47,7 +47,7 @@ angular.module('GetTogetherApp')
       ChatService.stopListener(currentRoom);
       MapService.terminateMap(currentRoom);
       ChatService.messages = [];
-      SessionService.currentRoom = null;
+      SessionService.leaveCurrentRoom();
     },
     deleteRoom: function(roomname) {
       var defer = $q.defer();

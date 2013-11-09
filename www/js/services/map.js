@@ -14,7 +14,8 @@ angular.module('GetTogetherApp')
       service.getLocation()
       .then(function(position) {
         service.displayMap(position);
-        service.storePosition(position);
+        service.currentPosition = position;
+        service.storeCurrentPosition();
         SearchService.autocomplete(service.map);
         service.watchPosition();
       })
@@ -23,6 +24,7 @@ angular.module('GetTogetherApp')
       });
     },
     getLocation: function() {
+      console.log('getLocation');
       var defer = $q.defer();
       if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -31,7 +33,7 @@ angular.module('GetTogetherApp')
             defer.resolve(position);
           },
           function(){
-            console.log('getCurrentPosition error')
+            console.log('getCurrentPosition error');
           }, {'enableHighAccuracy':true,'timeout':10000,'maximumAge':0}
         );
       } else {
@@ -50,7 +52,8 @@ angular.module('GetTogetherApp')
           for(var room in rooms) {
             var updateType = room.update;
             if(room.update === 'live' || room.name === SessionService.currentRoom) {
-              service.storePosition(position, room.name);
+              service.currentPosition = position;
+              service.storeCurrentPosition(room.name);
             }
           }
         },
@@ -100,12 +103,12 @@ angular.module('GetTogetherApp')
       return marker;
     },
 
-    storePosition: function(position, roomname) {
+    storeCurrentPosition: function(roomname, update) {
       var defer = $q.defer();
-
+      var position = service.currentPosition;
       roomname = roomname || SessionService.currentRoom;
-      var updateType = SessionService.roomsList[roomname].update;
-
+      // var updateType = SessionService.roomsList[roomname].update;
+      update = update || 'live';
       var username = SessionService.sessionUsername;
       var sessionUserRef = refs.rooms
         .child(roomname)
@@ -115,7 +118,7 @@ angular.module('GetTogetherApp')
       sessionUserRef
         .set({
           position: {coords: position.coords, timestamp: position.timestamp},
-          update: updateType
+          update: update
         },
         function(error) {
           if (error) {
@@ -144,7 +147,6 @@ angular.module('GetTogetherApp')
               var marker = service.displayMarker(position.val(), username);
               service.userMarkers[username] = marker;
               marker.setMap(service.map);
-              SessionService.updateUsersList();
             }
           });
       });
@@ -159,7 +161,6 @@ angular.module('GetTogetherApp')
             if(position.val() === null) {
               if(service.userMarkers[username]) {
                 console.log('Marker removed:', username, 'removed from', roomname);
-                SessionService.updateUsersList();
                 service.userMarkers[username].setMap(null);
               }
               delete service.userMarkers[username];
@@ -172,7 +173,6 @@ angular.module('GetTogetherApp')
                 var marker = service.displayMarker(position.val(), username);
                 service.userMarkers[username] = marker;
                 marker.setMap(service.map);
-                SessionService.updateUsersList();
               }
             }
           });
@@ -183,7 +183,6 @@ angular.module('GetTogetherApp')
         var username = user.name();
         console.log('Marker removed:', username, 'removed from', roomname);
         service.userMarkers[username].setMap(null);
-        SessionService.updateUsersList();
         delete service.userMarkers[username];
       });
     },

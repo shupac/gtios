@@ -60,11 +60,18 @@ angular.module('GetTogetherApp')
     },
     enterRoom: function(roomname) {
       service.currentRoom = roomname;
-      // if(!service.roomsList[roomname]) {
-      //   service.roomsList[roomname] = {name: roomname, update: 'live'};
-      // }
       service.syncUpdateType(roomname, 'live');
       service.updateUsersList();
+    },
+    leaveCurrentRoom: function() {
+      refs.rooms
+        .child(service.currentRoom)
+        .child('Users')
+        .off();
+      $timeout(function() {
+        service.usersList = {};
+      });
+      service.currentRoom = null;
     },
     updateRoomsList: function() {
       service.roomsList = {};
@@ -85,16 +92,12 @@ angular.module('GetTogetherApp')
       refs.rooms
         .child(service.currentRoom)
         .child('Users')
-        .once('value', function(users) {
-          if(users.val()) {
-            $timeout(function() {
-              service.usersList = users.val();
-            });
-            defer.resolve();
-          } else {
-            service.usersList = [];
-            defer.resolve();
-          }
+        .on('value', function(users) {
+          console.log(users.val());
+          $timeout(function() {
+            service.usersList = users.val();
+          });
+          defer.resolve();
         });
       return defer.promise;
     },

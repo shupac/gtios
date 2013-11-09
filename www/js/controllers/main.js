@@ -92,8 +92,10 @@ angular.module('GetTogetherApp')
 
   $scope.toggleUpdate = function(room) {
     SessionService.syncUpdateType(room.name, room.update);
+    MapService.storeCurrentPosition(room.name, room.update);
+
     // console.log(room.name, SessionService.currentRoom, room.update);
-    if(room.name === SessionService.currentRoom && room.update === 'manual') {
+    if(room.name === SessionService.currentRoom && room.update === 'last') {
       RoomService.terminateRoomSession();
     }
   };

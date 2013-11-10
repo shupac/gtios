@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.factory('MapService', function($http, $q, SessionService, SearchService, MarkerService){
+.factory('MapService', function($http, $q, SessionService, $filter, SearchService, MarkerService){
   var service = {
     userMarkers: {},
     initializeMap: function(roomname) {
@@ -24,7 +24,6 @@ angular.module('GetTogetherApp')
       });
     },
     getLocation: function() {
-      console.log('getLocation');
       var defer = $q.defer();
       if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -46,13 +45,24 @@ angular.module('GetTogetherApp')
 
       service.watchID = navigator.geolocation.watchPosition(
         function(position) {
-          position.coords.heading = position.coords.heading || 0;
-          // service.currentPosition = position;
+          var coords = {};
+          coords.accuracy = position.coords.accuracy;
+          coords.latitude = position.coords.latitude;
+          coords.longitude = position.coords.longitude;
+
+          var date = Date.now();
+          position = {
+            coords: coords,
+            timestamp: date
+          };
+
+          // position.coords.heading = position.coords.heading || 0;
+          service.currentPosition = position;
+
           var rooms = SessionService.roomsList;
-          for(var room in rooms) {
-            var updateType = room.update;
+          for(var key in rooms) {
+            var room = rooms[key];
             if(room.update === 'live' || room.name === SessionService.currentRoom) {
-              service.currentPosition = position;
               service.storeCurrentPosition(room.name);
             }
           }
@@ -107,7 +117,7 @@ angular.module('GetTogetherApp')
       var defer = $q.defer();
       var position = service.currentPosition;
       roomname = roomname || SessionService.currentRoom;
-      // var updateType = SessionService.roomsList[roomname].update;
+
       update = update || 'live';
       var username = SessionService.sessionUsername;
       var sessionUserRef = refs.rooms
@@ -138,7 +148,7 @@ angular.module('GetTogetherApp')
       sessionUsersInRoomRef = refs.rooms.child(roomname).child('Users');
       sessionUsersInRoomRef.on('child_added', function(user) {
         var username = user.name();
-        console.log('Marker added:', username, 'added to', roomname);
+        // console.log('Marker added:', username, 'added to', roomname);
         sessionUsersInRoomRef
           .child(username)
           .child('position')
@@ -160,7 +170,7 @@ angular.module('GetTogetherApp')
           .once('value', function(position) {
             if(position.val() === null) {
               if(service.userMarkers[username]) {
-                console.log('Marker removed:', username, 'removed from', roomname);
+                // console.log('Marker removed:', username, 'removed from', roomname);
                 service.userMarkers[username].setMap(null);
               }
               delete service.userMarkers[username];
@@ -168,7 +178,7 @@ angular.module('GetTogetherApp')
               var pos = new google.maps.LatLng(position.val().coords.latitude, position.val().coords.longitude);
               if(service.userMarkers[username]) {
                 service.userMarkers[username].setPosition(pos);
-                // console.log('Marker updated: ', username, 'in', roomname);
+                console.log('Marker updated: ', username, 'in', roomname, $filter('date')(position.val().timestamp, 'mediumTime'));
               } else {
                 var marker = service.displayMarker(position.val(), username);
                 service.userMarkers[username] = marker;
@@ -181,7 +191,7 @@ angular.module('GetTogetherApp')
       // user leaves room
       sessionUsersInRoomRef.on('child_removed', function(user) {
         var username = user.name();
-        console.log('Marker removed:', username, 'removed from', roomname);
+        // console.log('Marker removed:', username, 'removed from', roomname);
         service.userMarkers[username].setMap(null);
         delete service.userMarkers[username];
       });
@@ -199,7 +209,6 @@ angular.module('GetTogetherApp')
       var username = SessionService.sessionUsername;
       var rooms = SessionService.roomsList;
       for(var i = 0; i < rooms.length; i++) {
-        console.log(rooms[i]);
 
         var sessionUserRef = refs.rooms
           .child(rooms[i])

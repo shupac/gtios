@@ -20,12 +20,12 @@ angular.module('GetTogetherApp')
     submitCred: function(username, password, type) {
       var url;
       if(type === 'login') {
-        url = '/login';
-        // url = 'http://gettogetherapp.herokuapp.com/login';
+        // url = '/login';
+        url = 'http://gettogetherapp.herokuapp.com/login';
       }
       if(type === 'signup') {
-        url = '/signup';
-        // url = 'http://gettogetherapp.herokuapp.com/signup';
+        // url = '/signup';
+        url = 'http://gettogetherapp.herokuapp.com/signup';
       }
 
       $http({
@@ -93,7 +93,6 @@ angular.module('GetTogetherApp')
         .child(service.currentRoom)
         .child('Users')
         .on('value', function(users) {
-          console.log(users.val());
           $timeout(function() {
             service.usersList = users.val();
           });
@@ -131,7 +130,7 @@ angular.module('GetTogetherApp')
           if(error) {
             console.log('error');
           } else {
-            console.log(roomname, updateType);
+            // console.log(roomname, updateType);
             service.updateRoomsList();
           }
         });

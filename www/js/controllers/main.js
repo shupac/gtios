@@ -18,12 +18,13 @@ angular.module('GetTogetherApp')
   $scope.login = function(username, password){
     SessionService.login(username.toLowerCase(), password);
   };
-  $scope.login('hackreactor', 'test');
+  // $scope.login('hackreactor', 'test');
   // $scope.login('shu', 'test');
 })
 .controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService, SearchService, MarkerService){
+  
+  // prevent page scrolling
   document.addEventListener('touchmove', function(e) {
-    // Cancel the event
     e.preventDefault();
   }, false);
 
@@ -32,7 +33,6 @@ angular.module('GetTogetherApp')
     RoomService.create(roomname)
     .then(
       function(roomname){
-        // ChatService.startListener();
         $scope.roomsClass = 'hiddenLeft';
         $scope.joinRoom = {name: ""};
       }, 
@@ -128,6 +128,8 @@ angular.module('GetTogetherApp')
     $scope.roomsClass = 'center';
   }
 
-  $scope.join('public');
+  var joinRoom = openParams.roomInvite || 'public';
+
+  $scope.join(joinRoom);
 
 });

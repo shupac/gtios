@@ -13,7 +13,6 @@ angular.module('GetTogetherApp')
         service.clearMarkers();
         var place = autocomplete.getPlace();
         if (place.geometry) {
-          console.log(place);
           var focusMarker = new google.maps.Marker({
             position: place.geometry.location,
             animation: google.maps.Animation.DROP

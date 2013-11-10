@@ -208,16 +208,16 @@ angular.module('GetTogetherApp')
       service.stopListeners(SessionService.currentRoom);
       var username = SessionService.sessionUsername;
       var rooms = SessionService.roomsList;
-      for(var i = 0; i < rooms.length; i++) {
-
+      for(var key in rooms) {
+        var room = rooms[key]
         var sessionUserRef = refs.rooms
-          .child(rooms[i])
+          .child(room.name)
           .child('Users')
           .child(username);
 
         sessionUserRef
           .set({
-            active: false
+            update: 'logged out'
           });
       }
     },

@@ -107,7 +107,7 @@ angular.module('GetTogetherApp')
       setTimeout(function(){
         input.value = "";
         input.focus();
-      },10);
+      },100);
     }
   }
   return service;

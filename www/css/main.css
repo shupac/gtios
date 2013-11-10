@@ -10,8 +10,8 @@ body {
   position: absolute;
   /*background-color: yellow;*/
   top: 20px;
-  left: -320px;
-  /*left: 0;*/
+  /*left: -320px;*/
+  left: 0;
 
   overflow: hidden;
 }
@@ -125,6 +125,7 @@ button {
   border: 1px solid #a5a8a8;
   overflow: hidden;
   width: 3.5rem;
+  font-size: 13px;
 
 /* something to do with showing only one side */
   -webkit-box-sizing: border-box;
@@ -230,18 +231,16 @@ button {
   content: 'LIVE';
   color: white;
   background-color: #388F0F;
-  top: -1px;
   right: 15px;
-  padding-left: 12px;
+  padding-left: 15px;
 }
 
 .topcoat-switch__toggle:after {
   content: 'LAST';
   color: white;
   background-color: #EE8700;
-  top: -1px;
   left: 15px;
-  padding-left: 1px;
+  padding-left: 3px;
 }
 
 

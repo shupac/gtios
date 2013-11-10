@@ -128,7 +128,11 @@ angular.module('GetTogetherApp')
     $scope.roomsClass = 'center';
   }
 
-  var joinRoom = openParams.roomInvite || 'public';
+  var joinRoom = 'public';
+  
+  if(window.openParams) {
+    joinRoom = openParams.roomInvite;
+  }
 
   $scope.join(joinRoom);
 

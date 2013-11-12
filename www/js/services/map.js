@@ -41,7 +41,7 @@ angular.module('GetTogetherApp')
       return defer.promise;
     },
     watchPosition: function() {
-      // console.log('watchPosition started');
+      console.log('watchPosition started');
 
       service.watchID = navigator.geolocation.watchPosition(
         function(position) {
@@ -58,11 +58,12 @@ angular.module('GetTogetherApp')
 
           // position.coords.heading = position.coords.heading || 0;
           service.currentPosition = position;
-
+          console.log(position);
           var rooms = SessionService.roomsList;
           for(var key in rooms) {
             var room = rooms[key];
             if(room.update === 'live' || room.name === SessionService.currentRoom) {
+              console.log(room.name);
               service.storeCurrentPosition(room.name);
             }
           }

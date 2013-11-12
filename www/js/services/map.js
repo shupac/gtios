@@ -58,7 +58,6 @@ angular.module('GetTogetherApp')
 
           // position.coords.heading = position.coords.heading || 0;
           service.currentPosition = position;
-          console.log(position);
           var rooms = SessionService.roomsList;
           for(var key in rooms) {
             var room = rooms[key];

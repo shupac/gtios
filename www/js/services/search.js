@@ -44,24 +44,30 @@ angular.module('GetTogetherApp')
             '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
             '<img src="' + place.icon + '"/><hr>' +
             '<button id="save-marker">Save</button><button id="hide-marker">Hide</button></div>';
-          var infoWindow = new google.maps.InfoWindow({
-            content: contentString
-          });
+
+          if(service.infoWindow) {
+            service.infoWindow.close();
+            delete service.infoWindow;
+          }
           
-          infoWindow.open(service.map, marker);
+          service.infoWindow = new google.maps.InfoWindow({maxWidth: 150});
+          service.infoWindow.setContent(contentString);
+          service.infoWindow.open(service.map, marker);
           
-          google.maps.event.addListener(infoWindow, 'domready', function() {
+          google.maps.event.addListener(service.infoWindow, 'domready', function() {
             document.getElementById('save-marker').addEventListener('click', function() {
               MarkerService.savePlace(place.reference, place.id, place.name)
               .then(function() {
                 console.log('marker saved');
                 marker.setMap(null);
+                this.removeEventListener('click', arguments.callee, false);
               }, function() {
                 console.log('error');
               });
             });
             document.getElementById('hide-marker').addEventListener('click', function() {
               marker.setMap(null);
+              this.removeEventListener('click', arguments.callee, false);
             });
           });
         });

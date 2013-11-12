@@ -40,6 +40,7 @@ angular.module('GetTogetherApp')
           }
           var contentString = 
             '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
+            '<img src="' + place.icon + '"/><hr>' +
             '<button id="save-marker">Save</button><button id="hide-marker">Hide</button></div>';
           var infoWindow = new google.maps.InfoWindow({
             content: contentString

@@ -2,7 +2,7 @@ angular.module('GetTogetherApp')
 .factory('MarkerService', function($q, SessionService, $rootScope, $timeout){
   var service = {
     savedMarkers: {},
-    savePlace: function(reference, id, name) {
+    savePlace: function(reference, id, name, url) {
       var defer = $q.defer();
       var roomname = SessionService.currentRoom;
       var username = SessionService.sessionUsername;
@@ -35,9 +35,10 @@ angular.module('GetTogetherApp')
       markersRef.on('child_added', function(data) {
         var placeId = data.name();
         var placeName = data.val().name;
-        var reference = data.val().reference;
+        var placeTime = data.val().time;
+        var placeReference = data.val().reference;
 
-        service.places.getDetails({reference: reference},
+        service.places.getDetails({reference: placeReference},
           function(place, status) {
             if (status != google.maps.places.PlacesServiceStatus.OK) {
               return;
@@ -55,6 +56,7 @@ angular.module('GetTogetherApp')
               });
               marker.placeResult = place;
               marker.name = placeName;
+              marker.time = placeTime;
               $timeout(function() {
                 service.savedMarkers[placeId] = marker;
               });
@@ -62,6 +64,16 @@ angular.module('GetTogetherApp')
               google.maps.event.addListener(marker, 'click', service.showInfoWindow);
             }
           });
+      });
+
+      markersRef.on('child_changed', function(data) {
+        var placeId = data.name();
+        var marker = service.savedMarkers[placeId];
+
+        $timeout(function() {
+          marker.name = data.val().name;
+          marker.time = data.val().time;          
+        });
       });
 
       markersRef.on('child_removed', function(data) {
@@ -85,10 +97,19 @@ angular.module('GetTogetherApp')
     },
 
     showInfoWindow: function() {
+      var roomname = SessionService.currentRoom;
       var marker = this;
       var place = marker.placeResult;
+
+      var timeString = '';
+      if(marker.time) {
+        timeString = '<p>Time: ' + marker.time + '</p>';
+      }
       var contentString = 
-        '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
+        '<div id="info-window"><p>' + marker.name + '</p>' +
+        timeString +
+        '<p>' + place.formatted_address.split(",")[0] + '</p>' + 
+        '<img src="' + place.icon + '"/><hr>' +
         '<button id="edit-marker">Edit</button><button id="delete-marker">Delete</button></div>';
       var infoWindow = new google.maps.InfoWindow({
         content: contentString
@@ -100,6 +121,39 @@ angular.module('GetTogetherApp')
       google.maps.event.addListener(infoWindow, 'domready', function() {
         document.getElementById('edit-marker').addEventListener('click', function() {
           console.log('edit marker');
+          infoWindow.close();
+          var editWindow = document.getElementById('edit-window');
+          var editName = document.getElementById('edit-place-name');
+          var editTime = document.getElementById('edit-place-time');
+          var editImg = document.getElementById('edit-place-img');
+          
+          editWindow.className = '';
+          editName.value = marker.name;
+          editImg.src = place.icon;
+          editTime.value = marker.time || '';
+
+          document.getElementById('edit-place-address-1').textContent = place.formatted_address.split(",")[0];
+          document.getElementById('edit-place-address-2').textContent = place.formatted_address.split(",")[1];
+          document.getElementById('edit-place-address-3').textContent = place.formatted_address.split(",")[2];
+
+          document.getElementById('edit-place-cancel').addEventListener('click', function() {
+            editWindow.className = "hidden";
+          });
+          document.getElementById('edit-place-save').addEventListener('click', function() {
+            editWindow.className = "hidden";
+            marker.name = editName.value;
+            marker.time = editTime.value;
+
+            refs.rooms
+              .child(roomname)
+              .child('Places')
+              .child(place.id)
+              .set({
+                name: marker.name,
+                time: marker.time,
+                reference: place.reference
+              });
+          });
         });
         document.getElementById('delete-marker').addEventListener('click', function() {
           service.deleteMarker(marker);

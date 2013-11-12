@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.factory('MarkerService', function($q, $timeout, SessionService, CenterService){
+.factory('MarkerService', function($q, $timeout, SessionService, PanService){
   var service = {
     savedMarkers: {},
     savePlace: function(reference, id, name, url) {
@@ -101,7 +101,7 @@ angular.module('GetTogetherApp')
       var marker = this;
       var place = marker.placeResult;
 
-      CenterService.center(place, service.map);
+      PanService.panInfoWindow(place, service.map);
 
       var timeString = '';
       if(marker.time) {

@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.factory('SearchService', function($q, MarkerService, CenterService){
+.factory('SearchService', function($q, MarkerService, PanService){
   var service = {
     searchMarkers: [],
     autocomplete: function(map) {
@@ -34,7 +34,7 @@ angular.module('GetTogetherApp')
     showInfoWindow: function() {
       var marker = this;
       var place = marker.placeResult;
-      CenterService.center(place, service.map);
+      PanService.panInfoWindow(place, service.map);
 
       var contentString = 
         '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 

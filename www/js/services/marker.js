@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.factory('MarkerService', function($q, SessionService, $rootScope, $timeout){
+.factory('MarkerService', function($q, $timeout, SessionService, CenterService){
   var service = {
     savedMarkers: {},
     savePlace: function(reference, id, name, url) {
@@ -101,6 +101,8 @@ angular.module('GetTogetherApp')
       var marker = this;
       var place = marker.placeResult;
 
+      CenterService.center(place, service.map);
+
       var timeString = '';
       if(marker.time) {
         timeString = '<p>Time: ' + marker.time + '</p>';
@@ -120,7 +122,6 @@ angular.module('GetTogetherApp')
       
       google.maps.event.addListener(infoWindow, 'domready', function() {
         document.getElementById('edit-marker').addEventListener('click', function() {
-          console.log('edit marker');
           infoWindow.close();
           var editWindow = document.getElementById('edit-window');
           var editName = document.getElementById('edit-place-name');
@@ -157,7 +158,6 @@ angular.module('GetTogetherApp')
         });
         document.getElementById('delete-marker').addEventListener('click', function() {
           service.deleteMarker(marker);
-          console.log('delete marker');
         });
       });
     },

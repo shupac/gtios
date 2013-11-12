@@ -33,33 +33,38 @@ angular.module('GetTogetherApp')
     },
     showInfoWindow: function() {
       var marker = this;
-      var place = marker.placeResult;
-      PanService.panInfoWindow(place, service.map);
+      service.places.getDetails({reference: marker.placeResult.reference},
+        function(place, status) {
+          if (status != google.maps.places.PlacesServiceStatus.OK) {
+            return;
+          }
+          PanService.panInfoWindow(place, service.map);
 
-      var contentString = 
-        '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
-        '<img src="' + place.icon + '"/><hr>' +
-        '<button id="save-marker">Save</button><button id="hide-marker">Hide</button></div>';
-      var infoWindow = new google.maps.InfoWindow({
-        content: contentString
-      });
-      
-      infoWindow.open(service.map, marker);
-      
-      google.maps.event.addListener(infoWindow, 'domready', function() {
-        document.getElementById('save-marker').addEventListener('click', function() {
-          MarkerService.savePlace(place.reference, place.id, place.name)
-          .then(function() {
-            console.log('marker saved');
-            marker.setMap(null);
-          }, function() {
-            console.log('error');
+          var contentString = 
+            '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
+            '<img src="' + place.icon + '"/><hr>' +
+            '<button id="save-marker">Save</button><button id="hide-marker">Hide</button></div>';
+          var infoWindow = new google.maps.InfoWindow({
+            content: contentString
+          });
+          
+          infoWindow.open(service.map, marker);
+          
+          google.maps.event.addListener(infoWindow, 'domready', function() {
+            document.getElementById('save-marker').addEventListener('click', function() {
+              MarkerService.savePlace(place.reference, place.id, place.name)
+              .then(function() {
+                console.log('marker saved');
+                marker.setMap(null);
+              }, function() {
+                console.log('error');
+              });
+            });
+            document.getElementById('hide-marker').addEventListener('click', function() {
+              marker.setMap(null);
+            });
           });
         });
-        document.getElementById('hide-marker').addEventListener('click', function() {
-          marker.setMap(null);
-        });
-      });
     },
     clearMarkers: function() {
       for (var i = 0; i < service.searchMarkers.length; i++) {

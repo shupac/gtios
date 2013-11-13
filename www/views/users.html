@@ -1,0 +1,24 @@
+ <div
+  class="users hiddenRight"
+  ng-class="usersClass"
+  ng-swipe-right="usersClass='hiddenRight'">
+  <h1>Users</h1>
+
+  <div class="users-page-container">
+
+    <div class="user-container" ng-repeat="(username, userdata) in users">
+      <div class="target-container">
+        <img 
+          class="target"
+          src="img/map/user.png" 
+          ng-show="userdata.position" 
+          ng-click="centerUser(username)"/>
+      </div>
+      <span class="user-text">{{ username }}: {{ userdata.update }}</span>
+      <hr>
+    </div>
+
+    <h1>Places</h1>
+    <p ng-repeat="marker in markers"><img class="marker-icon" src="img/map/marker-icon.png" />{{ marker.name }}</p>
+  </div>
+</div>

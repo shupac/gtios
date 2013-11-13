@@ -10,8 +10,8 @@ body {
   position: absolute;
   /*background-color: yellow;*/
   top: 20px;
-  left: -320px;
-  /*left: 0;*/
+  /*left: -320px;*/
+  left: 0;
 
   overflow: hidden;
 }
@@ -64,14 +64,6 @@ button {
 
 .gmnoprint, .gm-style-cc {
   display: none;
-}
-
-.map-room {
-  position: absolute;
-  width: 320px;
-  bottom: 0;
-  left: 320px;
-  background-color: white;
 }
 
 .map-div-container {

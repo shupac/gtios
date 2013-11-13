@@ -1,0 +1,22 @@
+  <div class="map-div-container">
+    <div class="map">
+      <div class="map-topbar">
+        <img class="hamburger" src="img/hamburger.png" ng-click="roomsClass='center'" />
+        <img class="user-icon" src="img/multi-user.png" ng-click="usersClass='center'" />
+        <img class="chat-icon" src="img/chat-icon.png" ng-click="chatShow = !chatShow" />
+      </div>
+      
+      <div id="map-canvas">
+      </div>
+    </div>
+
+    <div class="search-container">
+      <form ng-submit="cancelSearch()">
+        <input id="autocomplete" ng-model="searchText" type="text" size="15" placeholder="Search" autocorrect="off" autocapitalize="off"/>
+        <button class="cancel" ng-click="cancelSearch()">Cancel</button>
+      </form>
+      <button ng-click="clearResults()">Clear Search Results</button>
+    </div>
+
+    <div ng-include="'views/chat.html'"></div>
+    <div ng-include="'views/edit.html'"></div>

@@ -20,12 +20,12 @@ angular.module('GetTogetherApp')
     submitCred: function(username, password, type) {
       var url;
       if(type === 'login') {
-        // url = '/login';
-        url = 'http://gettogetherapp.herokuapp.com/login';
+        url = '/login';
+        // url = 'http://gettogetherapp.herokuapp.com/login';
       }
       if(type === 'signup') {
-        // url = '/signup';
-        url = 'http://gettogetherapp.herokuapp.com/signup';
+        url = '/signup';
+        // url = 'http://gettogetherapp.herokuapp.com/signup';
       }
 
       $http({

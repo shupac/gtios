@@ -1,0 +1,14 @@
+<div class="chat" ng-class="{'chat-show': chatShow}">
+  <h1>Chat</h1>
+
+  <div class="chat-messages-container" ng-click="cancelChat()">
+    <ul class="chat-list">
+      <li ng-repeat="message in messages">{{ message.username }}: {{ message.message }}</li>
+    </ul>
+  </div>
+  <div class="chat-send-container">
+    <form ng-submit="chatSend()">
+      <input id="sendChat" type="text" ng-model="chatMessage" size="20" placeholder="Chat" />
+    </form>
+  </div>
+</div>

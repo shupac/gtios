@@ -1,0 +1,33 @@
+<div
+  class="rooms hiddenLeft"
+  ng-class="roomsClass"
+  ng-swipe-left="roomsClass='hiddenLeft'">
+  <div class="menu-header-container">
+    <h1>logged in as {{username}}</h1>
+  </div>
+
+  <div class="topcoat-list">
+    <h3 class="topcoat-list__header">GROUPS</h3>
+    <ul class="topcoat-list__container">
+      <li class="topcoat-list__item" ng-repeat="room in rooms" ng-class="{'topcoat-list__item-selected': room.name == currentRoom }">
+        <span ng-click="joinRoom(room.name)" class="room-name">{{ room.name }}</span>
+        <span ng-click="deleteRoom(room.name)" class="room-leave">Delete</span>
+        <span class="update-toggle">
+          <label class="topcoat-switch">
+            <input type="checkbox" class="topcoat-switch__input" ng-model="room.update" ng-change="toggleUpdate(room)" ng-true-value="live" ng-false-value="last">
+            <span class="topcoat-switch__toggle"></span>
+          </label>
+        </span>
+      </li>
+  </ul>
+  </div>
+
+  <div class="join-create-container">
+    <button ng-click="join()">Join</button>
+    <button ng-click="create()">Create</button>
+  </div>
+
+  <div class="logout-button-container">
+    <button ng-click="logout()">Log Out</button>
+  </div>
+</div>

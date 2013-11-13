@@ -160,7 +160,7 @@
 .topcoat-switch__toggle:before {
   content: 'LIVE';
   color: #454545;
-  background-color: #B9E87A;
+  background-color: #2ecc71;
   right: 15px;
   padding-left: 16px;
 }
@@ -168,7 +168,7 @@
 .topcoat-switch__toggle:after {
   content: 'LAST';
   color: #454545;
-  background-color: #FFD360;
+  background-color: #f39c12;
   left: 15px;
   padding-left: 3px;
 }

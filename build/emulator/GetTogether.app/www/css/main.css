@@ -4,21 +4,185 @@ body {
   color: #333;
 }
 
-#map-canvas {
-  width: 320px;
-  height: 568px;
-  margin: 0px;
-  padding: 0px
+.container {
+  width: 960px;
+  height: 548px;
+  position: absolute;
+  /*background-color: yellow;*/
+  top: 20px;
+  left: -320px;
+  /*left: 0;*/
+
+  overflow: hidden;
 }
 
-#login {
+.login {
+  position: absolute;
+  width: 320px;
+  left: 320px;
+}
+
+.login input {
+  font-size: 20px;
+}
+
+.loginForm {
   padding: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
   margin-top: 200px;
-  font-size: x-large;
 }
 
 button {
-  font-size: x-large;
+  font-size: large;
+}
+
+.rooms, .users{
+  width: 320px;
+  height: 100%;
+  position: absolute;
+  background-color: #e5e9e8;
+}
+
+.rooms {
+  z-index: 4;
+}
+
+.users {
+  z-index: 4;
+}
+
+.hiddenLeft {
+  left: 0;
+}
+
+.hiddenRight {
+  right: 0;
+}
+
+.center {
+  left: 320px;
+}
+
+.gmnoprint, .gm-style-cc {
+  display: none;
+}
+
+.map-room {
+  position: absolute;
+  width: 320px;
+  bottom: 0;
+  left: 320px;
+  background-color: white;
+}
+
+.map-div-container {
+  position: absolute;
+  width: 320px;
+  height: 100%;
+  left: 320px;
+  z-index: 2;
+}
+
+.map {
+  /*background-color: blue;*/
+}
+
+#map-canvas {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.map-topbar {
+  height: 44px;
+  background-color: #e5e9e8;
+}
+
+.hamburger, .user-icon, .chat-icon {
+  position: relative;
+  top: -2px;
+  width: 28px;
+  height: 28px;
+  margin: 10px 15px;
+}
+
+.user-icon {
+  float: right;
+  margin-right: 15px;
+}
+
+.chat-icon {
+  float: right;
+}
+
+.map-room {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.room-leave {
+  float: right;
+}
+
+.menu-header-container {
+  text-align: center;
+}
+
+.logout-button-container {
+  width: 250px;
+  margin: auto;
+}
+
+.chat {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  margin-top: -35px;
+  z-index: 10;
+  background-color: lightgray;
+}
+
+.chat-messages-container {
+  position: absolute;
+  top: 30px;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  padding-bottom: ;
+  overflow: scroll;
+}
+
+.chat-send-container {
+  position: absolute;
+  bottom: 44px;
+}
+
+.chat-list {
+  padding: 0;
+  list-style-type: none;
+  color: #444;
+}
+
+.chat-show {
+  top: 0;
+  margin-top: 44px;
+}
+
+.search-container {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: 3;
+}
+
+input[type="text"] {
+  font-size: 20px;
+}
+
+.cancel {
+
 }

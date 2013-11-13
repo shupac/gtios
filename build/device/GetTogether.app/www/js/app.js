@@ -1,8 +1,13 @@
-var fbRef = new Firebase('https://gettogether.firebaseio.com');
-var usersRef = fbRef.child('users');
-var groupsRef = fbRef.child('groups');
+var refs = {};
+refs.root = new Firebase('https://gettogether.firebaseio.com');
+refs.users = refs.root.child('Users');
+refs.rooms = refs.root.child('Rooms');
 
-angular.module('GetTogetherApp', ['ngRoute', 'ngTouch'])
+var onGoogleReady = function() {
+  angular.bootstrap(document.getElementById("map-canvas"), ['GetTogetherApp.ui-map']);
+};
+
+angular.module('GetTogetherApp', ['ngRoute', 'ngTouch', 'angular-gestures'])
 .config(function($routeProvider, $locationProvider) {
   $routeProvider
   .when('/', {

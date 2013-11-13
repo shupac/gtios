@@ -10,8 +10,8 @@ body {
   position: absolute;
   /*background-color: yellow;*/
   top: 20px;
-  /*left: -320px;*/
-  left: 0;
+  left: -320px;
+  /*left: 0;*/
 
   overflow: hidden;
 }

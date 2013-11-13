@@ -2,8 +2,8 @@ TCordovaLib
 v6
 r1
 cCheck dependencies
-cCpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
 cCpHeader Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
+cCpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
 cCpHeader Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
 cCpHeader Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
 cCpHeader Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
@@ -12,13 +12,13 @@ cCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/getto
 cCpHeader Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
 cCpHeader Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
 cCpHeader Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-cCpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.h
 cCpHeader Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+cCpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.h
 cCpHeader Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-cCpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
 cCpHeader Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
 cCpHeader Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
 cCpHeader Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+cCpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
 cCpHeader Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
 cCpHeader Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h
 cCpHeader Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
@@ -913,7 +913,7 @@ s3202384
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd8b84a1db925b841^570a6d1db925b841^---0#1#1#--18"Check dependencies36"006EF554-1150-4B1C-83AE-93617013D948-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies47abf233fe33b841^87df1134fe33b841^---0#1#1#--18"Check dependencies36"5B17444B-7618-4161-BDFE-0C0C2B5C5A24-
 
 CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s405111541.037453
@@ -1744,14 +1744,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compil
 bB0E731A4-A392-460D-8ED3-EA04D8E29C12
 
 CCpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.h
-s405125405.440502
-e405125405.443170
+s406060596.086277
+e406060596.088848
 r1
 xCpHeader
 xClasses/CDV.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.h118"CpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.haf09711db925b841^17a0711db925b841^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.h0034f4c8ddffdf42^915"CpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"BC4B6C43-694D-43AD-AA9D-81ADAF3B6E03-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.h118"CpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.hce331634fe33b841^4ddc1634fe33b841^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.h0034fc88ddffdf42^915"CpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDV.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"9882DD99-7756-4FC3-A3BF-4D0843CE1B11-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDV.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDV.h
 s405054953.036934
@@ -1764,14 +1764,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Copy /U
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-s405125405.441865
-e405125405.443609
+s406060596.087852
+e406060596.094278
 r1
 xCpHeader
 xClasses/CDVAvailability.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h142"CpHeader Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.hda39711db925b841^ccd3711db925b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h0034f4c8ddffdf42^951"CpHeader Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"BA8BDBFF-7821-427D-8EAE-E44F09F43F20-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h142"CpHeader Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h7c9e1734fe33b841^f0dc1b34fe33b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h0034fc88ddffdf42^951"CpHeader Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"265D7CC9-2079-4D1C-A392-FCA8A3E532D2-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVAvailability.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
 s405054953.037264
@@ -1784,14 +1784,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-s405125405.440691
-e405125405.443368
+s406060596.084795
+e406060596.087574
 r1
 xCpHeader
 xClasses/CDVCommandDelegate.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h148"CpHeader Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h6000711db925b841^7ba4711db925b841^---0#0#1#-19%DVTDocumentLocation2@117"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h0034f4c8ddffdf42^960"CpHeader Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"D19F250A-65A8-463F-8CAD-029E21195EBC-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h148"CpHeader Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h821a1634fe33b841^04ca1634fe33b841^---0#0#1#-19%DVTDocumentLocation2@117"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h0034fc88ddffdf42^960"CpHeader Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"0EAA9B76-F084-4358-824A-031E307581E8-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVCommandDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
 s405054953.035028
@@ -1804,14 +1804,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-s405125405.446990
-e405125405.449911
+s406060596.094524
+e406060596.097653
 r1
 xCpHeader
 xClasses/CDVCommandDelegateImpl.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h156"CpHeader Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.hc1e0721db925b841^4e0d741db925b841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h0034f4c8ddffdf42^972"CpHeader Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"1EA1B790-0B3D-4DAA-9178-9430080452CC-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h156"CpHeader Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.he44b1834fe33b841^25221c34fe33b841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h0034fc88ddffdf42^972"CpHeader Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"C6587281-8673-4960-BF4E-DF4BD47401A2-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVCommandDelegateImpl.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
 s405054953.040869
@@ -1824,14 +1824,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-s405125405.446248
-e405125405.449323
+s406060596.093152
+e406060596.097694
 r1
 xCpHeader
 xClasses/CDVCommandQueue.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h142"CpHeader Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h315f721db925b841^8a1f731db925b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h0034f4c8ddffdf42^951"CpHeader Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"7E3BE6AB-3632-42B2-BAC9-1A7BC96360A7-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h142"CpHeader Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h52b61834fe33b841^3b6e1c34fe33b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h0034fc88ddffdf42^951"CpHeader Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"4C36E675-82A3-4D57-AE3B-FB95F5528E86-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVCommandQueue.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
 s405054953.040644
@@ -1844,14 +1844,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
-s405125405.450435
-e405125405.452284
+s406060596.099057
+e406060596.102675
 r1
 xCpHeader
 xClasses/CDVConfigParser.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h142"CpHeader Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h8b6c731db925b841^4b56751db925b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h0034f4c8ddffdf42^951"CpHeader Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"13044E3C-BE79-44F9-9CF3-2F07F9656931-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h142"CpHeader Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h8a761934fe33b841^93ab1c34fe33b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h0034fc88ddffdf42^951"CpHeader Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"D8E853E1-4516-48EE-84B1-BA5EC82F28BF-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVConfigParser.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
 s405054953.045141
@@ -1864,14 +1864,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-s405125405.435390
-e405125405.437183
+s406060596.079164
+e406060596.082283
 r1
 xCpHeader
 xClasses/CDVDebug.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h128"CpHeader Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.hacaa6f1db925b841^c1fe6f1db925b841^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h0034f4c8ddffdf42^930"CpHeader Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"F42BE912-C411-4902-9CAF-7D968CAA8BD1-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h128"CpHeader Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h25961434fe33b841^61361534fe33b841^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h0034fc88ddffdf42^930"CpHeader Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"0954E65A-6857-417F-A5F6-2889F266C9FB-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVDebug.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
 s405054953.031446
@@ -1884,14 +1884,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-s405125405.430719
-e405125405.434683
+s406060596.071800
+e406060596.075641
 r1
 xCpHeader
 xClasses/CDVInvokedUrlCommand.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h152"CpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.hfc726e1db925b841^ea3f6f1db925b841^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h00dc9145e7eadf42^966"CpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"4BB3E53C-C907-4AA6-96E1-40AB62830187-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h152"CpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h15901234fe33b841^130f1434fe33b841^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h00d0b6a657efdf42^966"CpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"9E255E5D-DE72-4EB1-B273-A7DCBB10555B-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVInvokedUrlCommand.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
 s405054953.026880
@@ -1904,14 +1904,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-s405125405.451420
-e405125405.457295
+s406060596.101458
+e406060596.104387
 r1
 xCpHeader
 xClasses/CDVJSON.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h126"CpHeader Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.hd524741db925b841^116f751db925b841^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h0034f4c8ddffdf42^927"CpHeader Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"93384524-EE47-4B64-801D-6538B1178E03-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h126"CpHeader Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.hf0181a34fe33b841^9be71c34fe33b841^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h0034fc88ddffdf42^927"CpHeader Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"ED31F719-ED7D-431E-AF00-6A0386A0369B-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVJSON.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
 s405054953.047725
@@ -1924,14 +1924,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-s405125405.442848
-e405125405.445222
+s406060596.093649
+e406060596.100292
 r1
 xCpHeader
 xClasses/CDVLocalStorage.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h142"CpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h508f711db925b841^d90a721db925b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h0034f4c8ddffdf42^951"CpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"C5BFB8D3-3CE8-4026-94C1-D55D7CEF96B6-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h142"CpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.hd0251834fe33b841^68961c34fe33b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h0034fc88ddffdf42^951"CpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"7B8016ED-1310-4A00-B523-CEEEF4D59190-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVLocalStorage.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
 s405054953.037610
@@ -1944,14 +1944,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-s405125405.435100
-e405125405.436943
+s406060596.077912
+e406060596.082266
 r1
 xCpHeader
 xClasses/CDVPlugin.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h130"CpHeader Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.hcf876f1db925b841^9ed06f1db925b841^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h0034f4c8ddffdf42^933"CpHeader Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"0C334325-8530-42AD-8799-6680F243156D-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h130"CpHeader Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.hf54b1434fe33b841^bf2c1534fe33b841^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h0034fc88ddffdf42^933"CpHeader Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"D644D15F-2EE7-4A2A-84D3-480F9FB0EA93-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVPlugin.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
 s405054953.030747
@@ -1964,14 +1964,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-s405125405.432237
-e405125405.434529
+s406060596.075897
+e406060596.080252
 r1
 xCpHeader
 xClasses/CDVPluginResult.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h142"CpHeader Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.hc1c56e1db925b841^c47a6f1db925b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h0034f4c8ddffdf42^951"CpHeader Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"2EB94294-C388-4A8F-8AE0-FFEDDFE2266D-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h142"CpHeader Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h61891334fe33b841^4b721434fe33b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h0034fc88ddffdf42^951"CpHeader Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"A2963811-36FD-433A-8B3B-3FFE0B83AB93-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVPluginResult.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
 s405054953.028165
@@ -1984,14 +1984,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-s405125405.448567
-e405125405.451177
+s406060596.098847
+e406060596.106649
 r1
 xCpHeader
 xClasses/CDVScreenOrientationDelegate.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h168"CpHeader Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h043a731db925b841^1b46751db925b841^---0#0#1#-19%DVTDocumentLocation2@127"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h0034f4c8ddffdf42^990"CpHeader Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"840EA2CA-C04F-4673-A258-F24F9E28F6F1-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h168"CpHeader Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.hbdac1934fe33b841^fe0a1d34fe33b841^---0#0#1#-19%DVTDocumentLocation2@127"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h0034fc88ddffdf42^990"CpHeader Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"415B3E34-BBF2-4B48-BCE6-3C11123B2BD3-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVScreenOrientationDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
 s405054953.044861
@@ -2004,14 +2004,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h
-s405125405.447071
-e405125405.449778
+s406060596.097321
+e406060596.102689
 r1
 xCpHeader
 xClasses/CDVShared.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h130"CpHeader Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.hea91721db925b841^5932731db925b841^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h0034f4c8ddffdf42^933"CpHeader Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"5CC3FEA6-4D9E-450C-A2F1-4E7D6A76B544-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h130"CpHeader Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.haf941934fe33b841^0dc21c34fe33b841^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h0034fc88ddffdf42^933"CpHeader Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"1C992CA7-8369-4D4C-A484-8373E952BED3-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVShared.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVShared.h
 s405054953.041753
@@ -2024,14 +2024,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-s405125405.453189
-e405125405.457183
+s406060596.106612
+e406060596.108452
 r1
 xCpHeader
 xClasses/CDVTimer.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h128"CpHeader Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.hd978741db925b841^ba67751db925b841^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h0034f4c8ddffdf42^930"CpHeader Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"4A2EEFFE-91C2-4BD8-B9E2-3AFA0B986420-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h128"CpHeader Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h8d7b1b34fe33b841^2c4a1d34fe33b841^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h0034fc88ddffdf42^930"CpHeader Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"15278458-7909-4D93-8BB7-57C19119D782-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVTimer.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
 s405054953.060004
@@ -2044,14 +2044,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-s405125405.438526
-e405125405.440264
+s406060596.083852
+e406060596.087889
 r1
 xCpHeader
 xClasses/CDVURLProtocol.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h140"CpHeader Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.ha968701db925b841^8940711db925b841^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h0034f4c8ddffdf42^948"CpHeader Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"9D777CA7-BB9C-4D3F-BC9F-56B7B16D958A-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h140"CpHeader Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.ha4a61534fe33b841^f9d71634fe33b841^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h0034fc88ddffdf42^948"CpHeader Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"8DF3F907-1E7D-4888-AE95-EAAAA43AF7F3-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVURLProtocol.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
 s405054953.033442
@@ -2064,14 +2064,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
-s405125405.452722
-e405125405.457428
+s406060596.106552
+e406060596.108868
 r1
 xCpHeader
 xClasses/CDVUserAgentUtil.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h144"CpHeader Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h3f52741db925b841^c977751db925b841^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h0034f4c8ddffdf42^954"CpHeader Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"56BB7FB8-9CEB-44D5-9920-B7005CBFAE75-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h144"CpHeader Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.hc6891b34fe33b841^37531d34fe33b841^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h0034fc88ddffdf42^954"CpHeader Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"50548571-75D0-45A5-B8FC-87257B10BFF6-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVUserAgentUtil.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
 s405054953.059287
@@ -2084,14 +2084,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-s405125405.438879
-e405125405.440903
+s406060596.083987
+e406060596.087446
 r1
 xCpHeader
 xClasses/CDVViewController.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h146"CpHeader Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h5f7d701db925b841^bb48711db925b841^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h0034f4c8ddffdf42^957"CpHeader Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"FEE423C2-1F1B-4220-8721-FE6D240C4CD8-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h146"CpHeader Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.hc6a61534fe33b841^43911634fe33b841^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h0034fc88ddffdf42^957"CpHeader Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"EC246D4A-599D-41A5-8C49-D274A55248CD-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVViewController.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
 s405054953.034299
@@ -2104,14 +2104,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
-s405125405.451765
-e405125405.454682
+s406060596.104191
+e406060596.106283
 r1
 xCpHeader
 xClasses/CDVWebViewDelegate.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h148"CpHeader Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h22c2731db925b841^8d5e751db925b841^---0#0#1#-19%DVTDocumentLocation2@117"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h0034f4c8ddffdf42^960"CpHeader Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"87AB408D-2D7A-4692-B9E0-6672C5D07CAF-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h148"CpHeader Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h04ca1a34fe33b841^d1051d34fe33b841^---0#0#1#-19%DVTDocumentLocation2@117"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h0034fc88ddffdf42^960"CpHeader Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"0914EE19-4F0D-4CE5-BAEF-8B295195FE9D-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVWebViewDelegate.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
 s405054953.056029
@@ -2124,14 +2124,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-s405125405.437952
-e405125405.440684
+s406060596.080680
+e406060596.083880
 r1
 xCpHeader
 xClasses/CDVWhitelist.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h136"CpHeader Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.hbd54701db925b841^014c711db925b841^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h0034f4c8ddffdf42^942"CpHeader Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"284B1118-9145-412C-A005-16C69D37C9B3-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h136"CpHeader Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.ha8c51434fe33b841^1a6d1534fe33b841^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h0034fc88ddffdf42^942"CpHeader Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"D6F583BE-76A0-4ED3-8999-B46CBA546239-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/CDVWhitelist.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
 s405054953.032765
@@ -2144,14 +2144,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-s405125405.444578
-e405125405.446473
+s406060596.090753
+e406060596.092818
 r1
 xCpHeader
 xClasses/NSArray+Comparisons.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h150"CpHeader Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h5af1711db925b841^4913731db925b841^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h0034f4c8ddffdf42^963"CpHeader Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"07D8CA0C-7026-4F96-83BF-59E2215D7BE8-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h150"CpHeader Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h215a1734fe33b841^077c1a34fe33b841^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h0034fc88ddffdf42^963"CpHeader Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"2857E77F-F553-47C2-B45C-59DEA44579F5-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/NSArray+Comparisons.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
 s405054953.040486
@@ -2164,14 +2164,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-s405125405.431842
-e405125405.434316
+s406060596.074584
+e406060596.079233
 r1
 xCpHeader
 xClasses/NSData+Base64.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h138"CpHeader Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h5ebd6e1db925b841^d1586f1db925b841^---0#0#1#-19%DVTDocumentLocation2@112"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h0034f4c8ddffdf42^945"CpHeader Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"AB939935-0B23-4533-A335-B85C9A137BE9-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h138"CpHeader Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h14781334fe33b841^a5691434fe33b841^---0#0#1#-19%DVTDocumentLocation2@112"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h0034fc88ddffdf42^945"CpHeader Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"3F87C109-49A8-4762-93C7-E4F1071CEA20-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/NSData+Base64.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
 s405054953.027098
@@ -2184,14 +2184,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-s405125405.430729
-e405125405.434502
+s406060596.071657
+e406060596.074676
 r1
 xCpHeader
 xClasses/NSDictionary+Extensions.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h158"CpHeader Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.hd1786e1db925b841^dc656f1db925b841^---0#0#1#-19%DVTDocumentLocation2@122"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h0034f4c8ddffdf42^975"CpHeader Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"1BCCC9F5-D39C-471D-AFE8-50179F895426-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h158"CpHeader Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h49d51234fe33b841^25071434fe33b841^---0#0#1#-19%DVTDocumentLocation2@122"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h0034fc88ddffdf42^975"CpHeader Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"D67412AF-E18E-4886-AD3A-CDD2F1B5E137-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/NSDictionary+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
 s405054953.026740
@@ -2204,14 +2204,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-s405125405.436878
-e405125405.439502
+s406060596.079471
+e406060596.081649
 r1
 xCpHeader
 xClasses/NSMutableArray+QueueAdditions.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h170"CpHeader Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h6807701db925b841^c26a701db925b841^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h0034f4c8ddffdf42^993"CpHeader Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"F43C8237-A99C-4DF6-BB62-20470D0509E5-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h170"CpHeader Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.hc8971434fe33b841^31261534fe33b841^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h0034fc88ddffdf42^993"CpHeader Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"9CFF780D-E6F4-4FD6-8540-5CDAEBBAC778-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
 s405054953.031891
@@ -2224,14 +2224,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CCpHeader Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-s405125405.443848
-e405125405.445335
+s406060596.090012
+e406060596.093441
 r1
 xCpHeader
 xClasses/UIDevice+Extensions.h
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h150"CpHeader Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h17bb711db925b841^2b4d721db925b841^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h0034f4c8ddffdf42^963"CpHeader Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"1B3FAA58-ACCC-45D1-A6EA-40DA49E20EA1-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Copy /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h150"CpHeader Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.ha88c1734fe33b841^01a71b34fe33b841^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h0034fc88ddffdf42^963"CpHeader Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/include/Cordova36"61F2E5EA-80E2-41C8-90F0-8E8CB145EB93-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CCpHeader Classes/UIDevice+Extensions.h /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
 s405054953.038451
@@ -2244,15 +2244,15 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy /
 b8CF43E19-D3A9-4AAD-B4EA-6A03D19ECC9E
 
 CLibtool /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/libCordova.a normal i386
-s405125405.466325
-e405125405.511719
+s406060596.120632
+e406060596.151541
 r1
 xLibtool
 x/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/libCordova.a
 xnormal
 xi386
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Libtool /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/libCordova.a normal i386106"Libtool /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/libCordova.a normal i386cb84771db925b841^4a07831db925b841^---0#0#1#--1259"Libtool /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/libCordova.a normal i386    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator -filelist /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/Cordova.LinkFileList -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/libCordova.a36"A535D4E6-0642-4094-B014-C9A850DF35F1-
-bBD459E1D-3B82-49F2-A81B-541309ADF68A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Libtool /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/libCordova.a normal i386106"Libtool /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/libCordova.a normal i38687141f34fe33b841^73d62734fe33b841^---0#0#1#--1259"Libtool /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/libCordova.a normal i386    cd /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/hongxuliu/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/hongxuliu/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator -filelist /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/Cordova.LinkFileList -o /Users/hongxuliu/dropbox/gettogether/_mobile/platforms/ios/build/emulator/libCordova.a36"AB30D536-92A6-478F-83E0-33AB32F51128-
+bC59CBF7E-1E90-4DD2-8DB7-B5FECE255B28
 
 CLibtool /Users/hongxuliu/dropbox/gettogether/mobile/platforms/ios/build/emulator/libCordova.a normal i386
 s405054953.070059

@@ -1,0 +1,29 @@
+#edit-window {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 60px;
+  bottom: 60px;
+
+  background-color: white;
+  
+  border: 2px solid black;
+  border-radius: 10px;
+
+  padding: 10px;
+
+  z-index: 8;
+}
+
+.hidden {
+  display: none;
+}
+
+.edit-address {
+  line-height: 20%;
+}
+
+.edit-button-container {
+  position: absolute;
+  bottom: 10px;
+}

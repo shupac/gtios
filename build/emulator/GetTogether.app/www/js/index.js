@@ -16,6 +16,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+var handleOpenURL = function(url) {
+    window.openParams = {};
+    openParams.roomInvite = url.split("?")[1];
+};
+
 var app = {
     // Application Constructor
     initialize: function() {

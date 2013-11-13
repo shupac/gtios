@@ -103,7 +103,6 @@ angular.module('GetTogetherApp')
   $scope.centerUser = function(username) {
     var user = SessionService.usersList[username];
     var map = MapService.map;
-    console.log(user);
     if(user.position) {
       PanService.centerByUser(user.position, map);
     }

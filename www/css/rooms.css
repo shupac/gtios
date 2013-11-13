@@ -1,39 +1,42 @@
 
 .topcoat-list {
-  border-top: 1px solid #333434;
-  border-bottom: 1px solid #616363;
-  background-color: #454646;
+  border-top: 1px solid #9daca9;
+  border-bottom: 1px solid #fff;
+  background-color: #e5e9e8;
 }
 
 .topcoat-list__header {
   padding: 4px 20px;
+  margin: 0;
+  text-align: center;
   font-size: 0.9em;
-  font-weight: 400;
-  background-color: #3f4041;
-  color: #c6c8c8;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.1);
-  border-top: 1px solid rgba(255,255,255,0.1);
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-weight: 500;
+  background-color: #d2d6d6;
+  color: #454545;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.23);
 }
 
 .topcoat-list__container {
+  margin: 0;
   padding: 0;
   list-style-type: none;
-  border-top: 1px solid #333434;
-  color: #c6c8c8;
+  border-top: 1px solid #9daca9;
+  color: #454545;
 }
 
 .topcoat-list__item {
   padding: 1.25rem;
-  border-top: 1px solid #616363;
-  border-bottom: 1px solid #333434;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #9daca9;
 
   /*background-color: #6B6B6B;*/
 }
 
 .topcoat-list__item-selected {
   border-top: 1px solid rgba(0,0,0,0.05);
-  background-color: #455;
+  background-color: #D1E9E0;
 }
 
 .update-toggle {
@@ -44,6 +47,7 @@
 
 .topcoat-switch {
   position: relative;
+  top: 2px;
   display: inline-block;  
   padding: 0 1.25rem;
   border-radius: 5px;
@@ -113,7 +117,7 @@
   /*border-radius: 5px;*/
   color: #454545;
   /*background-color: inherit;*/
-  background-color: #454646; /* color of toggle switch */
+  background-color: #e5e9e8; /* color of toggle switch */
   z-index: 2;
 
 
@@ -139,6 +143,7 @@
 .topcoat-switch__toggle:before,
 .topcoat-switch__toggle:after {
   position: absolute;
+  top: 1px;
   
   width: 3rem;
 
@@ -154,16 +159,16 @@
 
 .topcoat-switch__toggle:before {
   content: 'LIVE';
-  color: white;
-  background-color: #388F0F;
+  color: #454545;
+  background-color: #B9E87A;
   right: 15px;
-  padding-left: 15px;
+  padding-left: 16px;
 }
 
 .topcoat-switch__toggle:after {
   content: 'LAST';
-  color: white;
-  background-color: #EE8700;
+  color: #454545;
+  background-color: #FFD360;
   left: 15px;
   padding-left: 3px;
 }

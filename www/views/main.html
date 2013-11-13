@@ -9,13 +9,10 @@
     ng-swipe-left="roomsClass='hiddenLeft'">
     <div class="menu-header-container">
       <h1>logged in as {{username}}</h1>
-      <div class="logout-button-container">
-        <button ng-click="logout()">Log Out</button>
-      </div>
     </div>
 
     <div class="topcoat-list">
-      <h3 class="topcoat-list__header">Groups</h3>
+      <h3 class="topcoat-list__header">GROUPS</h3>
       <ul class="topcoat-list__container">
         <li class="topcoat-list__item" ng-repeat="room in rooms" ng-class="{'topcoat-list__item-selected': room.name == currentRoom }">
           <span ng-click="join(room.name)" class="room-name">{{ room.name }}</span>
@@ -44,6 +41,10 @@
         <input type="text" class="newRoomName" ng-model="newRoom.name" placeholder="roomname" />
         <input type="submit" value="Create"></input>
       </form>
+    </div>
+
+    <div class="logout-button-container">
+      <button ng-click="logout()">Log Out</button>
     </div>
   </div>
 
@@ -75,7 +76,7 @@
   <div class="map-div-container">
     <div class="map">
       <div class="map-topbar">
-        <img class="hamburger" src="img/hamburger_light.svg" ng-click="roomsClass='center'" />
+        <img class="hamburger" src="img/hamburger.png" ng-click="roomsClass='center'" />
         <img class="user-icon" src="img/multi-user.png" ng-click="usersClass='center'" />
         <img class="chat-icon" src="img/chat-icon.png" ng-click="chatShow = !chatShow" />
       </div>

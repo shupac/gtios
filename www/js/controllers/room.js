@@ -60,6 +60,15 @@ angular.module('GetTogetherApp')
     // );
   };
 
+  $scope.toggleUpdate = function(room) {
+    SessionService.syncUpdateType(room.name, room.update);
+    MapService.storeCurrentPosition(room.name, room.update);
+
+    if(room.name === SessionService.currentRoom && room.update === 'last') {
+      RoomService.terminateRoomSession();
+    }
+  };
+
   $scope.deleteRoom = function(roomname) {
     RoomService.deleteRoom(roomname)
     .then(function() {

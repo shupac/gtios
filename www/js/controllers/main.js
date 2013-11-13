@@ -11,33 +11,8 @@ angular.module('GetTogetherApp')
     $scope.chatMessage = "";
   };
 
-  $scope.search = function() {
-    console.log($scope.searchText);
-    MapService.search($scope.searchText);
-    $scope.searchText = "";
-  };
-
-  $scope.cancelSearch = function() {
-    $scope.searchText = "";
-    document.getElementById('autocomplete').blur();
-  };
-
   $scope.cancelChat = function() {
     document.getElementById('sendChat').blur();
-  };
-
-  $scope.clearResults = function() {
-    SearchService.clearMarkers();
-  };
-
-  $scope.toggleUpdate = function(room) {
-    SessionService.syncUpdateType(room.name, room.update);
-    MapService.storeCurrentPosition(room.name, room.update);
-
-    // console.log(room.name, SessionService.currentRoom, room.update);
-    if(room.name === SessionService.currentRoom && room.update === 'last') {
-      RoomService.terminateRoomSession();
-    }
   };
 
   $scope.centerUser = function(username) {

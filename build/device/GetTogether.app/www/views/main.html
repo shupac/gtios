@@ -15,7 +15,7 @@
       <h3 class="topcoat-list__header">GROUPS</h3>
       <ul class="topcoat-list__container">
         <li class="topcoat-list__item" ng-repeat="room in rooms" ng-class="{'topcoat-list__item-selected': room.name == currentRoom }">
-          <span ng-click="join(room.name)" class="room-name">{{ room.name }}</span>
+          <span ng-click="joinRoom(room.name)" class="room-name">{{ room.name }}</span>
           <span ng-click="deleteRoom(room.name)" class="room-leave">Delete</span>
           <span class="update-toggle">
             <label class="topcoat-switch">
@@ -27,20 +27,9 @@
     </ul>
     </div>
 
-    <div>
-      <form ng-submit="join(joinRoom.name)">
-        </p>Join a room</p>
-        <input type="text" class="joinRoom" ng-model="joinRoom.name" placeholder="roomname" />
-        <input type="submit" value="Join"></input>
-      </form>
-    </div>
-
-    <div>
-      <form ng-submit="createRoom(newRoom.name)">
-        <p>Create a room</p>
-        <input type="text" class="newRoomName" ng-model="newRoom.name" placeholder="roomname" />
-        <input type="submit" value="Create"></input>
-      </form>
+    <div class="join-create-container">
+      <button ng-click="join()">Join</button>
+      <button ng-click="create()">Create</button>
     </div>
 
     <div class="logout-button-container">

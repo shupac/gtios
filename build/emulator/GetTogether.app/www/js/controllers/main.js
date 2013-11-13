@@ -34,24 +34,58 @@ angular.module('GetTogetherApp')
     .then(
       function(roomname){
         $scope.roomsClass = 'hiddenLeft';
-        $scope.joinRoom = {name: ""};
       }, 
       function() {
-        console.log('Roomname taken');
+        navigator.notification.alert(
+          "The group '" + roomname + "' has already been taken. Please choose a different group name",
+          $scope.joinRoom
+        );
       }
     );
   };
 
-  $scope.join = function(roomname) {
+  $scope.joinRoom = function(roomname) {
     roomname = roomname.toLowerCase();
     RoomService.joinRoom(roomname)
     .then(
       function() {
         $scope.roomsClass = 'hiddenLeft';
-        $scope.joinRoom = {name: ""}; 
-      }, function() {
-        console.log('room does not exist');
-      });
+      }, 
+      function() {
+        navigator.notification.alert(
+          "The group '" + roomname + "' does not exist. Please select a different group",
+          null
+        );
+      }
+    );
+  };
+
+  $scope.join = function() {
+    // navigator.notification.prompt(
+    //   'Enter the group name',
+    //   function(result) {
+    //     if(result.buttonIndex === 1) {
+    //       $scope.joinRoom(result.input1);
+    //     }
+    //   },
+    //   'Join Group',
+    //   ['Join','Cancel'],
+    //   'public'
+    // );
+  };
+
+  $scope.create = function() {
+    // navigator.notification.prompt(
+    //   'Enter the group name',
+    //   function(result) {
+    //     if(result.buttonIndex === 1) {
+    //       $scope.createRoom(result.input1);
+    //     }
+    //   },
+    //   'Create Group',
+    //   ['Create','Cancel'],
+    //   'new'
+    // );
   };
 
   $scope.deleteRoom = function(roomname) {

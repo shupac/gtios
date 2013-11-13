@@ -11,7 +11,7 @@
     <ul class="topcoat-list__container">
       <li class="topcoat-list__item" ng-repeat="room in rooms" ng-class="{'topcoat-list__item-selected': room.name == currentRoom }">
         <span ng-click="joinRoom(room.name)" class="room-name">{{ room.name }}</span>
-        <span ng-click="deleteRoom(room.name)" class="room-leave">Delete</span>
+        <span ng-click="deleteRoom(room.name)" class="room-delete">Delete</span>
         <span class="update-toggle">
           <label class="topcoat-switch">
             <input type="checkbox" class="topcoat-switch__input" ng-model="room.update" ng-change="toggleUpdate(room)" ng-true-value="live" ng-false-value="last">

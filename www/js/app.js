@@ -25,4 +25,11 @@ angular.module('GetTogetherApp', ['ngRoute', 'ngTouch', 'angular-gestures'])
   .otherwise({
     redirectTo: '/'
   });
+})
+.run(function($rootScope, $location, SessionService) {
+  $rootScope.$on("$routeChangeStart", function(evt, next, current) {
+    if (!SessionService.isLoggedIn() && next.controller !== "SignupCtrl") {
+      $location.path('/login');
+    }
+  });
 });

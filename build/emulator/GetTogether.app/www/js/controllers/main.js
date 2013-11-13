@@ -18,8 +18,8 @@ angular.module('GetTogetherApp')
   $scope.login = function(username, password){
     SessionService.login(username.toLowerCase(), password);
   };
-  // $scope.login('hackreactor', 'test');
-  $scope.login('shu', 'test');
+  $scope.login('hackreactor', 'test');
+  // $scope.login('shu', 'test');
 })
 .controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService, SearchService, MarkerService, PanService){
   
@@ -42,22 +42,17 @@ angular.module('GetTogetherApp')
     );
   };
 
-  $scope.join = function() {
-    navigator.notification.confirm('Join a Group', null);
+  $scope.join = function(roomname) {
+    roomname = roomname.toLowerCase();
+    RoomService.joinRoom(roomname)
+    .then(
+      function() {
+        $scope.roomsClass = 'hiddenLeft';
+        $scope.joinRoom = {name: ""}; 
+      }, function() {
+        console.log('room does not exist');
+      });
   };
-
-
-  // $scope.join = function(roomname) {
-  //   roomname = roomname.toLowerCase();
-  //   RoomService.joinRoom(roomname)
-  //   .then(
-  //     function() {
-  //       $scope.roomsClass = 'hiddenLeft';
-  //       $scope.joinRoom = {name: ""}; 
-  //     }, function() {
-  //       console.log('room does not exist');
-  //     });
-  // };
 
   $scope.deleteRoom = function(roomname) {
     RoomService.deleteRoom(roomname)

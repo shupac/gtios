@@ -21,7 +21,7 @@ angular.module('GetTogetherApp')
   $scope.login('hackreactor', 'test');
   // $scope.login('shu', 'test');
 })
-.controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService, SearchService, MarkerService){
+.controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService, SearchService, MarkerService, PanService){
   
   // prevent page scrolling
   document.addEventListener('touchmove', function(e) {
@@ -97,6 +97,15 @@ angular.module('GetTogetherApp')
     // console.log(room.name, SessionService.currentRoom, room.update);
     if(room.name === SessionService.currentRoom && room.update === 'last') {
       RoomService.terminateRoomSession();
+    }
+  };
+
+  $scope.centerUser = function(username) {
+    var user = SessionService.usersList[username];
+    var map = MapService.map;
+    console.log(user);
+    if(user.position) {
+      PanService.centerByUser(user.position, map);
     }
   };
 

@@ -22,3 +22,13 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+.target {
+  width: 20px;
+  height: 20px;
+}
+
+.marker-icon {
+  width: 20px;
+  height: 20px;
+}

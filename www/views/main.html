@@ -60,7 +60,7 @@
         <div class="target-container">
           <img 
             class="target"
-            src="img/map/target.png" 
+            src="img/map/user.png" 
             ng-show="userdata.position" 
             ng-click="centerUser(username)"/>
         </div>
@@ -69,7 +69,7 @@
       </div>
 
       <h1>Places</h1>
-      <p ng-repeat="marker in markers">{{ marker.name }}</p>
+      <p ng-repeat="marker in markers"><img class="marker-icon" src="img/map/marker-icon.png" />{{ marker.name }}</p>
     </div>
   </div>
 

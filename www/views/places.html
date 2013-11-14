@@ -1,4 +1,6 @@
-<div class="places-container">
+<div 
+  class="places-container"
+  ng-controller="PlaceCtrl">
   <h1>Places</h1>
-  <p ng-repeat="marker in markers"><img class="marker-icon" src="img/marker-icon.png" />{{ marker.name }}</p>
+  <p ng-repeat="place in places"><img class="marker-icon" src="img/marker-icon.png" />{{ place.name }}</p>
 </div>

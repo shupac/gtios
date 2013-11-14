@@ -13,28 +13,28 @@ body {
   /*left: -320px;*/
   left: 0;
 
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
-
+.tab-container {
+  width: 320px;
+  height: 500px;
+  position: fixed;
+  top: 0;
+  left: 640px;
+  z-index: 5;
+}
 
 button {
   font-size: large;
 }
 
-.rooms, .users{
+.rooms {
   width: 320px;
   height: 100%;
   position: absolute;
   background-color: #e5e9e8;
-}
-
-.rooms {
-  z-index: 4;
-}
-
-.users {
-  z-index: 4;
+  z-index: 10;
 }
 
 .hiddenLeft {
@@ -47,18 +47,6 @@ button {
 
 .menu-header-container {
   text-align: center;
-}
-
-
-
-.chat {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 100%;
-  margin-top: -35px;
-  z-index: 10;
-  background-color: lightgray;
 }
 
 input[type="text"] {

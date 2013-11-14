@@ -1,46 +1,32 @@
 angular.module('GetTogetherApp')
-.controller('MainCtrl', function($scope, SessionService, MapService, RoomService, ChatService, SearchService, MarkerService, PanService){
-  
+.controller('MainCtrl', function($scope, SessionService){
   // prevent page scrolling
   document.addEventListener('touchmove', function(e) {
     e.preventDefault();
   }, false);
 
-  $scope.chatSend = function() {
-    ChatService.sendMessage($scope.chatMessage);
-    $scope.chatMessage = "";
-  };
+  $scope.toggleUsers = function() {
+    $scope.showPlaces = false;
+    $scope.showChat = false;
+    $scope.showUsers = !$scope.showUsers;
+  }
 
-  $scope.cancelChat = function() {
-    document.getElementById('sendChat').blur();
-  };
+  $scope.togglePlaces = function() {
+    $scope.showUsers = false;
+    $scope.showChat = false;
+    $scope.showPlaces = !$scope.showPlaces;
+  }
 
-  $scope.centerUser = function(username) {
-    var user = SessionService.usersList[username];
-    var map = MapService.map;
-    if(user.position) {
-      PanService.centerByUser(user.position, map);
-    }
-  };
+  $scope.toggleChat = function() {
+    $scope.showUsers = false;
+    $scope.showPlaces = false;
+    $scope.showChat = !$scope.showChat;
+  }
 
-  // Getting session variables
   $scope.username = SessionService.sessionUsername;
-
-  $scope.$watch(function() {return SessionService.usersList;}, function(users) {
-    $scope.users = users;
-  });
-
-  $scope.$watch(function() {return ChatService.messages;}, function(messages) {
-    $scope.messages = messages;
-  });
-
-  $scope.$watch(function() {return MarkerService.savedMarkers;}, function(markers) {
-    $scope.markers = markers;
-  });
-
+  
   // If user is not in a room, show the room login panel
   if(SessionService.currentRoom === null) {
     $scope.roomsClass = 'center';
   }
-
 });

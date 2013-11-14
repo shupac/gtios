@@ -2,10 +2,11 @@
 
   <div ng-include="'views/rooms.html'"></div>
   <div ng-include="'views/map.html'"></div>
-  <div class="map-popup-container" ng-include="template.url"></div>
-<!-- 
-  <div ng-include="'views/users.html'"></div>
-  <div ng-include="'views/places.html'"></div>
-  <div ng-include="'views/chat.html'"></div>
- -->
+
+  <div class="tab-container">
+    <div ng-include="'views/users.html'" ng-show="showUsers"></div>
+    <div ng-include="'views/places.html'" ng-show="showPlaces"></div>
+    <div ng-include="'views/chat.html'" ng-show="showChat"></div>
+  </div>
+
 </div>

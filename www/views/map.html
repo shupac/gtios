@@ -4,8 +4,10 @@
   <div class="map">
     <div class="map-topbar">
       <img class="hamburger" src="img/hamburger.png" ng-click="roomsClass='center'" />
-      <img class="user-icon" src="img/multi-user.png" />
-      <img class="chat-icon" src="img/chat-icon.png" />
+    
+      <img class="chat-icon" src="img/marker-icon.png" ng-click="togglePlaces()" />
+      <img class="user-icon" src="img/multi-user.png" ng-click="toggleUsers()" />
+      <img class="chat-icon" src="img/chat-icon.png" ng-click="toggleChat()" />
     </div>
     
     <div id="map-canvas">

@@ -1,7 +1,9 @@
-<div class="users-container">
+<div 
+  class="users-container"
+  ng-controller="UserCtrl">
   <h1>Users</h1>
+  <div class="user" ng-repeat="(username, userdata) in users">
 
-  <div class="user-container" ng-repeat="(username, userdata) in users">
     <div class="target-container">
       <img 
         class="target"

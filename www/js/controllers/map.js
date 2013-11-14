@@ -1,7 +1,7 @@
 angular.module('GetTogetherApp')
 .controller('MapCtrl', function($scope, MapService, SearchService) {
   $scope.cancelSearch = function() {
-    SearchService.clearAutocomplete();
+    // SearchService.autcomplete();
   };
 
   $scope.clearResults = function() {

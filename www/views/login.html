@@ -1,11 +1,12 @@
 <div
   class="login-container">
-  <form class="loginForm" ng-hide="signedIn">
-    <input autofocus="autofocus" type="text" name="username" ng-model="userLogin.username" placeholder="Username" autocorrect="off" autocapitalize="off">
+  <div class="login-blank" ng-click="input.blur()"></div>
+  <form class="login-form" ng-hide="signedIn">
+    <input type="text" name="username" ng-model="userLogin.username" placeholder="Username" autocorrect="off" autocapitalize="off">
     <input type="password" name="password" ng-model="userLogin.password" placeholder="Password">
     <div>
-      <button class="topcoat-button login-button" ng-click="login(userLogin.username, userLogin.password)">Login</button>
-      <button class="topcoat-button--cta signup-button" ng-click="signup(userLogin.username, userLogin.password)">Sign Up</button>
+      <button class="topcoat-button--cta login-button" ng-click="login(userLogin.username, userLogin.password)">Login</button>
+      <button class="topcoat-button signup-button" ng-click="signup(userLogin.username, userLogin.password)">Sign Up</button>
     </div>
   </form>
 </div>

@@ -1,6 +1,7 @@
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-overflow-scrolling: touch;
 }
 
 .index-container {

@@ -15,7 +15,7 @@ angular.module('GetTogetherApp')
         service.displayMap(position);
         service.currentPosition = position;
         service.storeCurrentPosition();
-        SearchService.autocomplete(service.map);
+        SearchService.initAutocomplete(service.map);
         service.watchPosition();
       })
       .then(function() {

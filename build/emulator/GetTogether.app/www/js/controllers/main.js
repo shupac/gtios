@@ -26,6 +26,11 @@ angular.module('GetTogetherApp')
   };
 
   $scope.panel = {};
+  $scope.input = {
+    blur: function() {
+      document.activeElement.blur();
+    }
+  };
 
   $scope.username = SessionService.sessionUsername;
   

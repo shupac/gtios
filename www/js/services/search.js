@@ -11,37 +11,34 @@ angular.module('GetTogetherApp')
       origin: new google.maps.Point(0,0),
       anchor: new google.maps.Point(6, 6)
     },
-    autocomplete: function(map) {
+    initAutocomplete: function(map) {
       service.map = map;
       service.places = new google.maps.places.PlacesService(map);
       var input = document.getElementById('autocomplete');
-      var autocomplete = new google.maps.places.Autocomplete(input);
-      autocomplete.bindTo('bounds', map);
-
-      var onPlaceChanged = function() {
-        service.clearMarkers();
-        var place = autocomplete.getPlace();
-        if (place.geometry) {
-          var focusMarker = new google.maps.Marker({
-            position: place.geometry.location,
-            icon: service.icon,
-            animation: google.maps.Animation.DROP
-          });
-          focusMarker.placeResult = place;
-          service.searchMarkers.push(focusMarker);
-          focusMarker.setMap(map);
-          google.maps.event.addListener(focusMarker, 'click', service.showInfoWindow);
-          map.panTo(place.geometry.location);
-          map.setZoom(15);
-        } else {
-          service.search();
-        }
-        service.clearAutocomplete();
-      };
-
-      google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
+      service.autocomplete = new google.maps.places.Autocomplete(input);
+      service.autocomplete.bindTo('bounds', map);
+      service.autoListener = google.maps.event.addListener(service.autocomplete, 'place_changed', service.onPlaceChanged);
     },
-
+    onPlaceChanged: function() {
+      service.clearMarkers();
+      var place = service.autocomplete.getPlace();
+      if (place.geometry) {
+        var focusMarker = new google.maps.Marker({
+          position: place.geometry.location,
+          icon: service.icon,
+          animation: google.maps.Animation.DROP
+        });
+        focusMarker.placeResult = place;
+        service.searchMarkers.push(focusMarker);
+        focusMarker.setMap(map);
+        google.maps.event.addListener(focusMarker, 'click', service.showInfoWindow);
+        map.panTo(place.geometry.location);
+        map.setZoom(15);
+      } else {
+        service.search();
+      }
+      document.activeElement.blur();
+    },
     search: function() {
       var resultsLimit = 10;
       var searchTerm = document.getElementById('autocomplete').value;
@@ -71,12 +68,6 @@ angular.module('GetTogetherApp')
             setTimeout(dropMarker(i), i * 100);
           }
         }
-      });
-
-
-      var listener = google.maps.event.addListener(service.map, 'center_changed', function() {
-        service.clearAutocomplete();
-        google.maps.event.removeListener(listener);
       });
     },
 
@@ -134,11 +125,9 @@ angular.module('GetTogetherApp')
 
     clearAutocomplete: function() {
       var input = document.getElementById('autocomplete');
-      input.focus();
-      setTimeout(function(){
-        input.value = "";
-        input.blur();
-      }, 0);
+      input.value = "";
+      google.maps.event.removeListener(service.autoListener);
+      service.initAutocomplete(service.map);
     }
   }
   return service;

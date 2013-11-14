@@ -34,7 +34,6 @@ angular.module('GetTogetherApp')
 
   // navigator.notification is defined by phonegap plugin
   // and provides popups for prompt and confirmation dialog boxes
-
   $scope.join = function() {
     navigator.notification.prompt(
       'Enter the group name',

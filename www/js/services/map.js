@@ -89,7 +89,6 @@ angular.module('GetTogetherApp')
           origin: new google.maps.Point(0,0),
           anchor: new google.maps.Point(9, 9)
         };
-        var zIndex = 10;
       } else {
         var icon = {
           url: 'img/map/man-18x32.png',
@@ -97,14 +96,12 @@ angular.module('GetTogetherApp')
           origin: new google.maps.Point(0,0),
           anchor: new google.maps.Point(9, 32)
         };
-        var zIndex = 9;
       }
       var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       var marker = new google.maps.Marker({
         position: pos,
         title: username,
-        icon: icon,
-        zIndex: zIndex
+        icon: icon
       });
 
       var infowindow = new google.maps.InfoWindow({

@@ -1,7 +1,6 @@
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
 }
 
 .container {
@@ -28,14 +27,6 @@ body {
 
 button {
   font-size: large;
-}
-
-.rooms {
-  width: 320px;
-  height: 100%;
-  position: absolute;
-  background-color: #e5e9e8;
-  z-index: 10;
 }
 
 .hiddenLeft {

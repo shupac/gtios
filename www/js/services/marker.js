@@ -47,15 +47,14 @@ angular.module('GetTogetherApp')
               return;
             } else {
               var icon = {
-                url: 'img/map/reddot-18x18.png',
-                size: new google.maps.Size(18, 18),
+                url: 'img/map/marker_small.png',
+                size: new google.maps.Size(12, 20),
                 origin: new google.maps.Point(0,0),
-                anchor: new google.maps.Point(9, 9)
+                anchor: new google.maps.Point(6, 20)
               };
               var marker = new google.maps.Marker({
                 position: place.geometry.location,
-                icon: icon,
-                zIndex: 1,
+                icon: icon
               });
               marker.placeResult = place;
               marker.name = placeName;

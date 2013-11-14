@@ -5,6 +5,12 @@ angular.module('GetTogetherApp')
 .factory('SearchService', function($q, MarkerService, PanService){
   var service = {
     searchMarkers: [],
+    icon: {
+      url: 'img/map/reddot-12x12.png',
+      size: new google.maps.Size(12, 12),
+      origin: new google.maps.Point(0,0),
+      anchor: new google.maps.Point(6, 6)
+    },
     autocomplete: function(map) {
       service.map = map;
       service.places = new google.maps.places.PlacesService(map);
@@ -18,6 +24,7 @@ angular.module('GetTogetherApp')
         if (place.geometry) {
           var focusMarker = new google.maps.Marker({
             position: place.geometry.location,
+            icon: service.icon,
             animation: google.maps.Animation.DROP
           });
           focusMarker.placeResult = place;
@@ -33,6 +40,44 @@ angular.module('GetTogetherApp')
       };
 
       google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
+    },
+
+    search: function() {
+      var resultsLimit = 10;
+      var searchTerm = document.getElementById('autocomplete').value;
+      // var MARKER_PATH = 'https://maps.gstatic.com/intl/en_us/mapfiles/marker_green';
+
+      var dropMarker = function(i) {
+        return function() {
+          service.searchMarkers[i].setMap(service.map);
+        };
+      };
+
+      var query = {
+        bounds: service.map.getBounds(),
+        keyword: searchTerm
+      };
+
+      service.places.radarSearch(query, function(results, status) {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+          for (var i = 0; i < resultsLimit; i++) {
+            service.searchMarkers[i] = new google.maps.Marker({
+              position: results[i].geometry.location,
+              icon: service.icon,
+              animation: google.maps.Animation.DROP
+            });
+            service.searchMarkers[i].placeResult = results[i];
+            google.maps.event.addListener(service.searchMarkers[i], 'click', service.showInfoWindow);
+            setTimeout(dropMarker(i), i * 100);
+          }
+        }
+      });
+
+
+      var listener = google.maps.event.addListener(service.map, 'center_changed', function() {
+        service.clearAutocomplete();
+        google.maps.event.removeListener(listener);
+      });
     },
 
     // Generates info window with place information and option to save the place
@@ -77,6 +122,7 @@ angular.module('GetTogetherApp')
           });
         });
     },
+
     clearMarkers: function() {
       for (var i = 0; i < service.searchMarkers.length; i++) {
         if (service.searchMarkers[i]) {
@@ -85,43 +131,14 @@ angular.module('GetTogetherApp')
       }
       service.searchMarkers = [];
     },
-    search: function() {
-      var resultsLimit = 10;
-      var searchTerm = document.getElementById('autocomplete').value;
-      // var MARKER_PATH = 'https://maps.gstatic.com/intl/en_us/mapfiles/marker_green';
 
-      var dropMarker = function(i) {
-        return function() {
-          service.searchMarkers[i].setMap(service.map);
-        };
-      };
-
-      var query = {
-        bounds: service.map.getBounds(),
-        keyword: searchTerm
-      };
-
-      service.places.radarSearch(query, function(results, status) {
-        if (status == google.maps.places.PlacesServiceStatus.OK) {
-          for (var i = 0; i < resultsLimit; i++) {
-            service.searchMarkers[i] = new google.maps.Marker({
-              position: results[i].geometry.location,
-              animation: google.maps.Animation.DROP
-            });
-            service.searchMarkers[i].placeResult = results[i];
-            google.maps.event.addListener(service.searchMarkers[i], 'click', service.showInfoWindow);
-            setTimeout(dropMarker(i), i * 100);
-          }
-        }
-      });
-    },
     clearAutocomplete: function() {
       var input = document.getElementById('autocomplete');
-      input.blur();    
+      input.focus();
       setTimeout(function(){
         input.value = "";
-        input.focus();
-      },100);
+        input.blur();
+      }, 0);
     }
   }
   return service;

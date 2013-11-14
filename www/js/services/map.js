@@ -29,6 +29,7 @@ angular.module('GetTogetherApp')
       if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           function(position) {
+            position = service.scrubPosition(position);
             defer.resolve(position);
           },
           function(){
@@ -47,16 +48,7 @@ angular.module('GetTogetherApp')
 
       service.watchID = navigator.geolocation.watchPosition(
         function(position) {
-          var coords = {};
-          coords.accuracy = position.coords.accuracy;
-          coords.latitude = position.coords.latitude;
-          coords.longitude = position.coords.longitude;
-
-          var date = Date.now();
-          position = {
-            coords: coords,
-            timestamp: date
-          };
+          position = service.scrubPosition(position);
 
           // stores position for every room that the user is in that has 'live' update method
           service.currentPosition = position;
@@ -73,6 +65,21 @@ angular.module('GetTogetherApp')
           console.log('watchPosition error')
         },{'enableHighAccuracy':true,'timeout':10000,'maximumAge':0}
       );
+    },
+
+    scrubPosition: function(position) {
+      var coords = {};
+      coords.accuracy = position.coords.accuracy;
+      coords.latitude = position.coords.latitude;
+      coords.longitude = position.coords.longitude;
+
+      var date = Date.now();
+      position = {
+        coords: coords,
+        timestamp: date
+      };
+
+      return position;
     },
 
     displayMap: function(position) {

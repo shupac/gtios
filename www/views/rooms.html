@@ -2,7 +2,7 @@
   class="rooms-container"
   ng-controller="RoomCtrl"
   ng-class="{'slideRight': panel.hideRooms}"
-  ng-swipe-right="panel.hideRooms='true'">
+  ng-swipe-right="slidePanel()">
   <div class="menu-header-container">
     <h1>logged in as {{username}}</h1>
   </div>

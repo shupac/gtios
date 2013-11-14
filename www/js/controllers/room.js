@@ -86,6 +86,12 @@ angular.module('GetTogetherApp')
     SessionService.logout();
   };
 
+  $scope.slidePanel = function() {
+    if($scope.currentRoom !== null) {
+      $scope.panel.hideRooms='true';
+    }
+  };
+
   // udpates list of rooms user belongs to
   $scope.$watch(function() {return SessionService.roomsList;}, function(rooms) {
     $scope.rooms = rooms;

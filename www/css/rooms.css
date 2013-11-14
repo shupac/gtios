@@ -37,47 +37,37 @@
   width: 160px;
 }
 .topcoat-button,
-.topcoat-button--quiet,
-.topcoat-button--large,
-.topcoat-button--large--quiet,
 .topcoat-button--cta,
 .topcoat-button--large--cta {
   padding: 0 1.25rem;
   font-size: 16px;
   line-height: 3rem;
   letter-spacing: 1px;
-  color: #c6c8c8;
-  text-shadow: 0 -1px rgba(0,0,0,0.69);
   vertical-align: top;
-  background-color: #595b5b;
-  box-shadow: inset 0 1px #737373;
-  border: 1px solid #333434;
   border-radius: 6px;
 }
 
-.topcoat-button:hover,
-.topcoat-button--quiet:hover,
-.topcoat-button--large:hover,
-.topcoat-button--large--quiet:hover {
+.topcoat-button {
+  color: #c6c8c8;
+  background-color: #595b5b;
+  border: 1px solid #333434;
+  box-shadow: inset 0 1px #737373;
+  text-shadow: 0 -1px rgba(0,0,0,0.69);
+}
+
+.topcoat-button:hover {
   background-color: #626465;
 }
 
 .topcoat-button:focus,
-.topcoat-button--quiet:focus,
-.topcoat-button--quiet:hover:focus,
-.topcoat-button--large:focus,
-.topcoat-button--large--quiet:focus,
-.topcoat-button--large--quiet:hover:focus,
-.topcoat-button--cta:focus,
-.topcoat-button--large--cta:focus {
+.topcoat-button--cta:focus {
   /*border: 1px solid #0036ff;*/
   border: none;
   /*box-shadow: inset 0 1px rgba(255,255,255,0.36), 0 0 0 2px #6fb5f1;*/
   outline: 0;
 }
 
-.topcoat-button:active,
-.topcoat-button--large:active {
+.topcoat-button:active {
   border: 1px solid #333434;
   background-color: #3f4041;
   box-shadow: inset 0 1px rgba(0,0,0,0.05);

@@ -32,43 +32,44 @@ angular.module('GetTogetherApp')
     );
   };
 
-
-  // commented out for browser testing
   // navigator.notification is defined by phonegap plugin
   // and provides popups for prompt and confirmation dialog boxes
 
   $scope.join = function() {
-    // navigator.notification.prompt(
-    //   'Enter the group name',
-    //   function(result) {
-    //     if(result.buttonIndex === 1) {
-    //       $scope.joinRoom(result.input1);
-    //     }
-    //   },
-    //   'Join Group',
-    //   ['Join','Cancel'],
-    //   'public'
-    // );
+    navigator.notification.prompt(
+      'Enter the group name',
+      function(result) {
+        if(result.buttonIndex === 1) {
+          $scope.joinRoom(result.input1);
+        }
+      },
+      'Join Group',
+      ['Join','Cancel'],
+      'public'
+    );
   };
 
   $scope.create = function() {
-    // navigator.notification.prompt(
-    //   'Enter the group name',
-    //   function(result) {
-    //     if(result.buttonIndex === 1) {
-    //       $scope.createRoom(result.input1);
-    //     }
-    //   },
-    //   'Create Group',
-    //   ['Create','Cancel'],
-    //   'new'
-    // );
+    navigator.notification.prompt(
+      'Enter the group name',
+      function(result) {
+        if(result.buttonIndex === 1) {
+          $scope.createRoom(result.input1);
+        }
+      },
+      'Create Group',
+      ['Create','Cancel'],
+      'new'
+    );
   };
 
+  // toggles 'live' vs 'last' update type
+  // updates user's current position in Firebase
   $scope.toggleUpdate = function(room) {
     SessionService.syncUpdateType(room.name, room.update);
     MapService.storeCurrentPosition(room.name, room.update);
 
+    // if toggling from 'live' to 'last' in current room, logs user out of current room
     if(room.name === SessionService.currentRoom && room.update === 'last') {
       RoomService.terminateRoomSession();
     }
@@ -86,6 +87,7 @@ angular.module('GetTogetherApp')
     SessionService.logout();
   };
 
+  // udpates list of rooms user belongs to
   $scope.$watch(function() {return SessionService.roomsList;}, function(rooms) {
     $scope.rooms = rooms;
   });

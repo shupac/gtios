@@ -50,6 +50,7 @@ angular.module('GetTogetherApp')
         console.log('signup error')
       });
     },
+
     logout: function() {
       service.sessionUserID = null;
       service.sessionUsername = null;
@@ -58,12 +59,15 @@ angular.module('GetTogetherApp')
       service.usersList = {};
       $location.path('/login');
     },
-    enterRoom: function(roomname) {
+
+    initialize: function(roomname) {
       service.currentRoom = roomname;
       service.syncUpdateType(roomname, 'live');
       service.updateUsersList();
     },
+
     leaveCurrentRoom: function() {
+      // turns off users list listeners for Firebase updates
       refs.rooms
         .child(service.currentRoom)
         .child('Users')
@@ -74,7 +78,7 @@ angular.module('GetTogetherApp')
       service.currentRoom = null;
     },
 
-    // retrieves list of rooms user belongs to
+    // retrieves list of rooms user belongs to and sets up listeners for Firebase updates
     updateRoomsList: function() {
       service.roomsList = {};
       var username = service.sessionUsername;
@@ -90,7 +94,7 @@ angular.module('GetTogetherApp')
         });
     },
 
-    // retrieve list of users in current room
+    // updates list of users in current room and sets up listeners for Firebase updates
     updateUsersList: function() {
       var defer = $q.defer();
       refs.rooms
@@ -116,18 +120,6 @@ angular.module('GetTogetherApp')
         .child(roomname)
         .remove();
     },
-
-    // addUserToList: function(username) {
-    //   service.usersList.push(username);
-    // },
-
-    // removeUserFromList: function(username) {
-    //   for(var i = 0; i < service.usersList.length; i++) {
-    //     if(service.usersList[i] === username) {
-    //       service.usersList.splice(i, 1);
-    //     }
-    //   }
-    // },
 
     // udpates the udpate property for the room in the user's room list
     syncUpdateType: function(roomname, updateType) {

@@ -2,7 +2,7 @@ angular.module('GetTogetherApp')
 .factory('MapService', function($http, $q, SessionService, $filter, SearchService, MarkerService){
   var service = {
     userMarkers: {},
-    initializeMap: function(roomname) {
+    initialize: function(roomname) {
       service.userMarkers = {};
       navigator.geolocation.clearWatch(service.watchID);
       var mapOptions = {

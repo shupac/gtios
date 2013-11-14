@@ -25,10 +25,12 @@ angular.module('GetTogetherApp')
 
   };
 
+  $scope.panel = {};
+
   $scope.username = SessionService.sessionUsername;
   
   // If user is not in a room, show the room login panel
   if(SessionService.currentRoom === null) {
-    $scope.roomsClass = 'center';
+    $scope.panel.showRooms = true;
   }
 });

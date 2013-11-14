@@ -1,8 +1,8 @@
 <div
-  class="rooms-container hiddenLeft"
+  class="rooms-container"
   ng-controller="RoomCtrl"
-  ng-class="roomsClass"
-  ng-swipe-left="roomsClass='hiddenLeft'">
+  ng-class="{'slideRight': panel.showRooms}"
+  ng-swipe-right="panel.showRooms='false'">
   <div class="menu-header-container">
     <h1>logged in as {{username}}</h1>
   </div>

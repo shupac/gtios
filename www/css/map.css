@@ -2,8 +2,7 @@
   position: absolute;
   width: 320px;
   height: 100%;
-  left: 320px;
-  z-index: 2;
+  z-index: 1;
 }
 
 #map-canvas {

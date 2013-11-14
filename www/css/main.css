@@ -3,13 +3,12 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.container {
-  width: 960px;
+.index-container {
+  width: 640px;
   height: 548px;
   position: absolute;
   /*background-color: yellow;*/
   top: 20px;
-  /*left: -320px;*/
   left: 0;
 
   /*overflow: hidden;*/
@@ -29,12 +28,12 @@ button {
   font-size: large;
 }
 
-.hiddenLeft {
-  left: 0;
+.slideRight {
+  left: 320px;
 }
 
 .center {
-  left: 320px;
+  left: 0;
 }
 
 .menu-header-container {

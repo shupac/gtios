@@ -2,5 +2,15 @@
   class="places-container"
   ng-controller="PlaceCtrl">
   <h1>Places</h1>
-  <p ng-repeat="place in places"><img class="marker-icon" src="img/marker-icon.png" />{{ place.name }}</p>
+  <div class="place" ng-repeat="place in places">
+
+    <div class="locator-icon-container">
+      <img 
+        class="locator-icon"
+        src="img/place-icon.png" 
+        ng-click="centerPlace(place)"/>
+    </div>
+    <span class="location-text">{{ place.name }}</span>
+  </div>
+
 </div>

@@ -6,9 +6,9 @@ angular.module('GetTogetherApp')
       map.panBy(0, -120); // pans map down by -120px
     },
 
-    centerByUser: function(position, map) {
-      var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-      map.setCenter(pos);
+    centerByPosition: function(position, map) {
+      // var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      map.setCenter(position);
       map.setZoom(17);
     }
   };

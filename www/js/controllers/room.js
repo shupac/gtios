@@ -5,7 +5,7 @@ angular.module('GetTogetherApp')
     RoomService.create(roomname)
     .then(
       function(roomname){
-        $scope.roomsClass = 'hiddenLeft';
+        $scope.panel.hideRooms = true;
       }, 
       function() {
         navigator.notification.alert(
@@ -21,7 +21,7 @@ angular.module('GetTogetherApp')
     RoomService.joinRoom(roomname)
     .then(
       function() {
-        $scope.roomsClass = 'hiddenLeft';
+        $scope.panel.hideRooms = true;
       }, 
       function() {
         navigator.notification.alert(
@@ -101,6 +101,6 @@ angular.module('GetTogetherApp')
     joinRoom = openParams.roomInvite;
   }
 
-  $scope.joinRoom(joinRoom);
+  // $scope.joinRoom(joinRoom);
 
 });

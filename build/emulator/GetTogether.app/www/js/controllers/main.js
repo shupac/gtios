@@ -31,6 +31,6 @@ angular.module('GetTogetherApp')
   
   // If user is not in a room, show the room login panel
   if(SessionService.currentRoom === null) {
-    $scope.panel.showRooms = true;
+    $scope.panel.hideRooms = false;
   }
 });

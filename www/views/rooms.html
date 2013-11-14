@@ -1,8 +1,8 @@
 <div
   class="rooms-container"
   ng-controller="RoomCtrl"
-  ng-class="{'slideRight': panel.showRooms}"
-  ng-swipe-right="panel.showRooms='false'">
+  ng-class="{'slideRight': panel.hideRooms}"
+  ng-swipe-right="panel.hideRooms='true'">
   <div class="menu-header-container">
     <h1>logged in as {{username}}</h1>
   </div>
@@ -24,8 +24,8 @@
   </div>
 
   <div class="join-create-container">
-    <button class="topcoat-button join" ng-click="join()">Join</button>
-    <button class="topcoat-button create" ng-click="create()">Create</button>
+    <button class="topcoat-button--cta join" ng-click="join()">Join</button>
+    <button class="topcoat-button--cta create" ng-click="create()">Create</button>
   </div>
 
   <div class="logout-button-container">

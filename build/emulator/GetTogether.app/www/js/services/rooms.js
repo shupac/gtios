@@ -1,38 +1,45 @@
 angular.module('GetTogetherApp')
 .factory('RoomService', function($http, $q, SessionService, MapService, ChatService) {
   var service = {
+    initialize: function(roomname) {
+      SessionService.initialize(roomname); // initializes room session for current room
+      MapService.initialize(roomname); // initializes map for current room
+      ChatService.initialize(); // initializes chat for current room
+    },
     create: function(roomname) {
       var defer = $q.defer();
       var username = SessionService.sessionUsername;
       var newRoomRef = refs.rooms.child(roomname);
       newRoomRef.once('value', function(room) {
+
         // if roomname is not found
         if(room.val() === null) {
           newRoomRef.set({owner: username});
-            SessionService.enterRoom(roomname);
-            MapService.initializeMap(roomname);
-            defer.resolve(roomname);
-            console.log(roomname, 'created');
+          service.initialize(roomname);
+          defer.resolve(roomname);
+          console.log(roomname, 'created');
         } else {
           defer.reject();
         }
       });
       return defer.promise;
     },
+
     joinRoom: function(roomname) {
       var defer = $q.defer();
       var roomRef = refs.rooms.child(roomname);
       var username = SessionService.sessionUsername;
       roomRef.once('value', function(room) {
+
         // if the room exists
         if(room.val() !== null) {
-          if(SessionService.currentRoom) { // If currently in a room, stop listeners and delete chats
+
+          // If currently in a room, terminate current room
+          if(SessionService.currentRoom) {
             service.terminateRoomSession();
-            ChatService.messages = [];
           }
-          SessionService.enterRoom(roomname);
-          MapService.initializeMap(roomname);
-          ChatService.initialize();
+
+          service.initialize(roomname);
           defer.resolve();
           console.log(username, 'entered room:', roomname);
         } else {
@@ -41,14 +48,16 @@ angular.module('GetTogetherApp')
       });
       return defer.promise;
     },
+
     terminateRoomSession: function() {
       currentRoom = SessionService.currentRoom;
-      MapService.stopListeners(currentRoom);
-      ChatService.stopListener(currentRoom);
       MapService.terminateMap(currentRoom);
+      // MapService.stopListeners(currentRoom);
+      ChatService.stopListener(currentRoom);
       ChatService.messages = [];
       SessionService.leaveCurrentRoom();
     },
+
     deleteRoom: function(roomname) {
       var defer = $q.defer();
       var username = SessionService.sessionUsername;
@@ -72,16 +81,6 @@ angular.module('GetTogetherApp')
         }
       });
       return defer.promise;
-    },
-    storePosition: function(position) {
-      var currentRoom = SessionService.currentRoom;
-      var username = SessionService.sessionUsername;
-      refs.rooms
-        .child(currentRoom)
-        .child('Users')
-        .child(username)
-        .child('position')
-        .set({coords: position.coords, timestamp: position.timestamp});
     }
   };
   return service;

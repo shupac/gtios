@@ -2,9 +2,8 @@ angular.module('GetTogetherApp')
 .factory('MapService', function($http, $q, SessionService, $filter, SearchService, MarkerService){
   var service = {
     userMarkers: {},
-    initializeMap: function(roomname) {
+    initialize: function(roomname) {
       service.userMarkers = {};
-      navigator.geolocation.clearWatch(service.watchID);
       var mapOptions = {
         zoom: 13,
         zoomControl: false,
@@ -23,12 +22,13 @@ angular.module('GetTogetherApp')
         service.startListeners(roomname);
       });
     },
+
+    // gets current location and resolves/rejects promise
     getLocation: function() {
       var defer = $q.defer();
       if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           function(position) {
-            position.coords.heading = position.coords.heading || 0;
             defer.resolve(position);
           },
           function(){
@@ -40,6 +40,8 @@ angular.module('GetTogetherApp')
       }
       return defer.promise;
     },
+
+    // watches for updates to user location and resolves/rejects promise
     watchPosition: function() {
       console.log('watchPosition started');
 
@@ -56,7 +58,7 @@ angular.module('GetTogetherApp')
             timestamp: date
           };
 
-          // position.coords.heading = position.coords.heading || 0;
+          // stores position for every room that the user is in that has 'live' update method
           service.currentPosition = position;
           var rooms = SessionService.roomsList;
           for(var key in rooms) {
@@ -72,12 +74,14 @@ angular.module('GetTogetherApp')
         },{'enableHighAccuracy':true,'timeout':10000,'maximumAge':0}
       );
     },
+
     displayMap: function(position) {
       var username = SessionService.sessionUsername;
       var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       service.map.setCenter(pos);
     },
-    displayMarker: function(position, username) {
+
+    displayUserMarker: function(position, username) {
       if(username === SessionService.sessionUsername) {
         var icon = {
           url: 'img/map/bluedot-18x18.png',
@@ -110,9 +114,11 @@ angular.module('GetTogetherApp')
       google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(service.map, marker);
       });
+
       return marker;
     },
 
+    // saves current position to Firebase for the room specified
     storeCurrentPosition: function(roomname, update) {
       var defer = $q.defer();
       var position = service.currentPosition;
@@ -141,9 +147,10 @@ angular.module('GetTogetherApp')
       return defer.promise;
     },
 
+    // starts listeners to watch for changes to position changes for all users in room
     startListeners: function(roomname) {
       // console.log('start listener', roomname);
-      MarkerService.startListeners(service.map);
+      MarkerService.startListeners(service.map); // updates saved place markers
 
       sessionUsersInRoomRef = refs.rooms.child(roomname).child('Users');
       sessionUsersInRoomRef.on('child_added', function(user) {
@@ -154,7 +161,7 @@ angular.module('GetTogetherApp')
           .child('position')
           .once('value', function(position) {
             if(position.val() !== null) {
-              var marker = service.displayMarker(position.val(), username);
+              var marker = service.displayUserMarker(position.val(), username);
               service.userMarkers[username] = marker;
               marker.setMap(service.map);
             }
@@ -168,6 +175,7 @@ angular.module('GetTogetherApp')
           .child(username)
           .child('position')
           .once('value', function(position) {
+            // user has logged out of room
             if(position.val() === null) {
               if(service.userMarkers[username]) {
                 // console.log('Marker removed:', username, 'removed from', roomname);
@@ -175,12 +183,13 @@ angular.module('GetTogetherApp')
               }
               delete service.userMarkers[username];
             } else {
+              // user's position has changed
               var pos = new google.maps.LatLng(position.val().coords.latitude, position.val().coords.longitude);
               if(service.userMarkers[username]) {
                 service.userMarkers[username].setPosition(pos);
                 console.log('Marker updated: ', username, 'in', roomname, $filter('date')(position.val().timestamp, 'mediumTime'));
               } else {
-                var marker = service.displayMarker(position.val(), username);
+                var marker = service.displayUserMarker(position.val(), username);
                 service.userMarkers[username] = marker;
                 marker.setMap(service.map);
               }
@@ -188,7 +197,7 @@ angular.module('GetTogetherApp')
           });
       });
 
-      // user leaves room
+      // user deletes room
       sessionUsersInRoomRef.on('child_removed', function(user) {
         var username = user.name();
         // console.log('Marker removed:', username, 'removed from', roomname);
@@ -224,8 +233,11 @@ angular.module('GetTogetherApp')
       }
     },
     terminateMap: function(roomname) {
+      // clears watchLocation
+      navigator.geolocation.clearWatch(service.watchID); 
       service.stopListeners(roomname);
       service.map = null;
+
       document.getElementById('map-canvas').innerHTML = "";
     }
   };

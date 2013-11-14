@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.controller('LoginCtrl', function($scope, SessionService, $location){
+.controller('LoginCtrl', function($scope, SessionService){
   // $scope.userLogin = {
   //   username: 'Shu',
   //   password: 'test'

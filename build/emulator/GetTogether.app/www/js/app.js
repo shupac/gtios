@@ -1,3 +1,4 @@
+// path definitions for Firebase
 var refs = {};
 refs.root = new Firebase('https://gettogether.firebaseio.com');
 refs.users = refs.root.child('Users');
@@ -27,6 +28,8 @@ angular.module('GetTogetherApp', ['ngRoute', 'ngTouch', 'angular-gestures'])
   });
 })
 .run(function($rootScope, $location, SessionService) {
+  // user authentication redirect
+  // redirects to login unless user is logged in
   $rootScope.$on("$routeChangeStart", function(evt, next, current) {
     if (!SessionService.isLoggedIn() && next.controller !== "SignupCtrl") {
       $location.path('/login');

@@ -6,5 +6,6 @@ angular.module('GetTogetherApp')
 
   $scope.clearResults = function() {
     SearchService.clearMarkers();
+    SearchService.clearAutocomplete();
   };
 });

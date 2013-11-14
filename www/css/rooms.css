@@ -6,13 +6,81 @@
   z-index: 10;
 }
 
+.rooms-container h1 {
+  margin: 15px;
+  color: #c6c8c8;
+}
+
 .room-delete {
   float: right;
 }
 
+.join-create-container {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.join, .create {
+  width: 120px;
+  margin: 0 10px;
+}
+
 .logout-button-container {
-  width: 250px;
-  margin: auto;
+  width: 160px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.logout {
+  width: 160px;
+}
+.topcoat-button,
+.topcoat-button--quiet,
+.topcoat-button--large,
+.topcoat-button--large--quiet,
+.topcoat-button--cta,
+.topcoat-button--large--cta {
+  padding: 0 1.25rem;
+  font-size: 16px;
+  line-height: 3rem;
+  letter-spacing: 1px;
+  color: #c6c8c8;
+  text-shadow: 0 -1px rgba(0,0,0,0.69);
+  vertical-align: top;
+  background-color: #595b5b;
+  box-shadow: inset 0 1px #737373;
+  border: 1px solid #333434;
+  border-radius: 6px;
+}
+
+.topcoat-button:hover,
+.topcoat-button--quiet:hover,
+.topcoat-button--large:hover,
+.topcoat-button--large--quiet:hover {
+  background-color: #626465;
+}
+
+.topcoat-button:focus,
+.topcoat-button--quiet:focus,
+.topcoat-button--quiet:hover:focus,
+.topcoat-button--large:focus,
+.topcoat-button--large--quiet:focus,
+.topcoat-button--large--quiet:hover:focus,
+.topcoat-button--cta:focus,
+.topcoat-button--large--cta:focus {
+  /*border: 1px solid #0036ff;*/
+  border: none;
+  /*box-shadow: inset 0 1px rgba(255,255,255,0.36), 0 0 0 2px #6fb5f1;*/
+  outline: 0;
+}
+
+.topcoat-button:active,
+.topcoat-button--large:active {
+  border: 1px solid #333434;
+  background-color: #3f4041;
+  box-shadow: inset 0 1px rgba(0,0,0,0.05);
 }
 
 .topcoat-list {

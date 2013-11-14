@@ -17,9 +17,9 @@
   <div class="search-container">
     <form ng-submit="cancelSearch()">
       <input id="autocomplete" ng-model="searchText" type="text" size="15" placeholder="Search" autocorrect="off" autocapitalize="off"/>
-      <button class="cancel" ng-click="cancelSearch()">Cancel</button>
+      <button class="cancel" ng-click="cancelSearch()">X</button>
+      <button ng-click="clearResults()">Clear</button>
     </form>
-    <button ng-click="clearResults()">Clear Search Results</button>
   </div>
 
   <div ng-include="'views/edit.html'"></div>

@@ -12,7 +12,14 @@ angular.module('GetTogetherApp')
           $timeout(function() {
             service.messages.push(message.val());
           });
+          service.scrollToBottom();
         });
+    },
+    scrollToBottom: function() {
+      var chatListEl = document.getElementsByClassName('chat-list')[0];
+      setTimeout(function() {
+        chatListEl.scrollTop = chatListEl.scrollHeight;
+      }, 0);
     },
     sendMessage: function(message) {
       var username = SessionService.sessionUsername;

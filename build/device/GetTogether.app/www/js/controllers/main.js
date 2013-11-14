@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.controller('MainCtrl', function($scope, SessionService){
+.controller('MainCtrl', function($scope, SessionService, ChatService){
   // prevent page scrolling
   document.addEventListener('touchmove', function(e) {
     e.preventDefault();
@@ -9,19 +9,21 @@ angular.module('GetTogetherApp')
     $scope.showPlaces = false;
     $scope.showChat = false;
     $scope.showUsers = !$scope.showUsers;
-  }
+  };
 
   $scope.togglePlaces = function() {
     $scope.showUsers = false;
     $scope.showChat = false;
     $scope.showPlaces = !$scope.showPlaces;
-  }
+  };
 
   $scope.toggleChat = function() {
     $scope.showUsers = false;
     $scope.showPlaces = false;
     $scope.showChat = !$scope.showChat;
-  }
+    ChatService.scrollToBottom();
+
+  };
 
   $scope.username = SessionService.sessionUsername;
   

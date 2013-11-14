@@ -1,3 +1,6 @@
+// This service handles the map search functionality
+// It places a marker on the map upon selecting a place from autocomplete list or
+// places 10 markers from search results
 angular.module('GetTogetherApp')
 .factory('SearchService', function($q, MarkerService, PanService){
   var service = {
@@ -31,6 +34,8 @@ angular.module('GetTogetherApp')
 
       google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
     },
+
+    // Generates info window with place information and option to save the place
     showInfoWindow: function() {
       var marker = this;
       service.places.getDetails({reference: marker.placeResult.reference},

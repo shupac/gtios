@@ -2,6 +2,7 @@ angular.module('GetTogetherApp')
 .factory('MarkerService', function($q, $timeout, SessionService, PanService){
   var service = {
     savedMarkers: {},
+    // saves place in Firebase
     savePlace: function(reference, id, name, url) {
       var defer = $q.defer();
       var roomname = SessionService.currentRoom;
@@ -21,6 +22,7 @@ angular.module('GetTogetherApp')
       }
       return defer.promise;
     },
+    // starts listeners for any changes to places in the room
     startListeners: function(map) {
       service.map = map;
       service.places = new google.maps.places.PlacesService(map);

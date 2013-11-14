@@ -114,9 +114,11 @@ angular.module('GetTogetherApp')
       google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(service.map, marker);
       });
+
       return marker;
     },
 
+    // saves current position to Firebase for the room specified
     storeCurrentPosition: function(roomname, update) {
       var defer = $q.defer();
       var position = service.currentPosition;
@@ -145,9 +147,10 @@ angular.module('GetTogetherApp')
       return defer.promise;
     },
 
+    // starts listeners to watch for changes to position changes for all users in room
     startListeners: function(roomname) {
       // console.log('start listener', roomname);
-      MarkerService.startListeners(service.map);
+      MarkerService.startListeners(service.map); // updates saved place markers
 
       sessionUsersInRoomRef = refs.rooms.child(roomname).child('Users');
       sessionUsersInRoomRef.on('child_added', function(user) {
@@ -172,6 +175,7 @@ angular.module('GetTogetherApp')
           .child(username)
           .child('position')
           .once('value', function(position) {
+            // user has logged out of room
             if(position.val() === null) {
               if(service.userMarkers[username]) {
                 // console.log('Marker removed:', username, 'removed from', roomname);
@@ -179,6 +183,7 @@ angular.module('GetTogetherApp')
               }
               delete service.userMarkers[username];
             } else {
+              // user's position has changed
               var pos = new google.maps.LatLng(position.val().coords.latitude, position.val().coords.longitude);
               if(service.userMarkers[username]) {
                 service.userMarkers[username].setPosition(pos);
@@ -192,7 +197,7 @@ angular.module('GetTogetherApp')
           });
       });
 
-      // user leaves room
+      // user deletes room
       sessionUsersInRoomRef.on('child_removed', function(user) {
         var username = user.name();
         // console.log('Marker removed:', username, 'removed from', roomname);

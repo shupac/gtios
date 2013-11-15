@@ -20,6 +20,7 @@ angular.module('GetTogetherApp')
       service.autoListener = google.maps.event.addListener(service.autocomplete, 'place_changed', service.onPlaceChanged);
     },
     onPlaceChanged: function() {
+      var map = service.map;
       service.clearMarkers();
       var place = service.autocomplete.getPlace();
       if (place.geometry) {
@@ -30,7 +31,7 @@ angular.module('GetTogetherApp')
         });
         focusMarker.placeResult = place;
         service.searchMarkers.push(focusMarker);
-        focusMarker.setMap(map);
+        focusMarker.setMap(service.map);
         google.maps.event.addListener(focusMarker, 'click', service.showInfoWindow);
         map.panTo(place.geometry.location);
         map.setZoom(15);
@@ -80,7 +81,7 @@ angular.module('GetTogetherApp')
             return;
           }
           PanService.panInfoWindow(place, service.map);
-
+          console.log('photos', place.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 140}));
           var contentString = 
             '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
             '<img src="' + place.icon + '"/><hr>' +

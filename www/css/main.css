@@ -4,6 +4,14 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+button {
+  font-size: large;
+}
+
+input {
+  font-size: 20px;
+}
+
 .index-container {
   width: 320px;
   height: 548px;
@@ -12,8 +20,13 @@ body {
   top: 20px;
   left: 0;
 
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
+
+
+
+
+
 
 .tab-container {
   position: absolute;
@@ -25,22 +38,18 @@ body {
   z-index:6;
 }
 
-button {
-  font-size: large;
+.tabs {
+  width: 100%;
+  height: 100%;
 }
 
-.slideRight {
-  left: 320px;
+.tab {
+  position: relative;
+  top: 110%;
+  -webkit-transition: top 0.2s;
+  transition: top 0.2s;
 }
 
-.center {
-  left: 0;
-}
-
-.menu-header-container {
-  text-align: center;
-}
-
-input {
-  font-size: 20px;
+.tab-on {
+  top: 0;
 }

@@ -8,7 +8,7 @@ var onGoogleReady = function() {
   angular.bootstrap(document.getElementById("map-canvas"), ['GetTogetherApp.ui-map']);
 };
 
-angular.module('GetTogetherApp', ['ngRoute', 'ngTouch', 'angular-gestures'])
+angular.module('GetTogetherApp', ['ngRoute', 'ngTouch', 'ngAnimate'])
 .config(function($routeProvider, $locationProvider) {
   $routeProvider
   .when('/', {

@@ -4,11 +4,23 @@
   position: absolute;
   background-color: #454646;
   z-index: 2;
+
+  -moz-transition: left 0.2s;
+  -webkit-transition: left 0.2s;
+  transition: left 0.2s;
+}
+
+.slideRight {
+  left: 320px;
 }
 
 .rooms-container h1 {
   margin: 15px;
   color: #c6c8c8;
+}
+
+.menu-header-container {
+  text-align: center;
 }
 
 .room-delete {

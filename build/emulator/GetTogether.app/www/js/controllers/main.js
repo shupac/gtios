@@ -5,9 +5,11 @@ angular.module('GetTogetherApp')
   //   e.preventDefault();
   // }, false);
 
+  $scope.showUsers = false;
+
   $scope.toggleUsers = function() {
-    $scope.showPlaces = false;
-    $scope.showChat = false;
+    // $scope.showPlaces = false;
+    // $scope.showChat = false;
     $scope.showUsers = !$scope.showUsers;
   };
 

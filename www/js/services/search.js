@@ -67,6 +67,8 @@ angular.module('GetTogetherApp')
             service.searchMarkers[i].placeResult = results[i];
             google.maps.event.addListener(service.searchMarkers[i], 'click', service.showInfoWindow);
             setTimeout(dropMarker(i), i * 100);
+            document.getElementById('autocomplete').focus();
+            document.getElementById('autocomplete').blur();
           }
         }
       });

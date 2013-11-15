@@ -30,8 +30,13 @@
         placeholder="Search"
         autocorrect="off"
         autocapitalize="off"/ >
-      <button class="cancel" ng-click="cancelSearch()">X</button>
-      <button ng-show="hasMarkers" ng-click="clearResults()">Clear</button>
+      <button
+        class="cancel"
+        ng-show="searchText"
+        ng-click="cancelSearch()">X</button>
+      <button
+        ng-show="hasMarkers && !searchFocus"
+        ng-click="clearResults()">Clear</button>
     </form>
   </div>
 

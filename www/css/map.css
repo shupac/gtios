@@ -48,3 +48,11 @@
   width: 100%;
   z-index: 3;
 }
+
+.search-container input {
+  font-size: 16px;
+}
+
+.search-container button {
+  font-size: 16px;
+}

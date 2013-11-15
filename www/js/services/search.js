@@ -81,7 +81,11 @@ angular.module('GetTogetherApp')
             return;
           }
           PanService.panInfoWindow(place, service.map);
-          console.log('photos', place.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 140}));
+
+          if(place.photos) {
+            console.log('photos', place.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 140}));
+          }
+
           var contentString = 
             '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
             '<img src="' + place.icon + '"/><hr>' +

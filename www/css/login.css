@@ -21,6 +21,10 @@
   padding: 10px;
 }
 
+.login-form input {
+  font-size: 20px;
+}
+
 .login-button, .signup-button {
   width: 110px;
 }

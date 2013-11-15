@@ -4,14 +4,6 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-button {
-  font-size: large;
-}
-
-input {
-  font-size: 20px;
-}
-
 .index-container {
   width: 320px;
   height: 548px;
@@ -22,11 +14,6 @@ input {
 
   /*overflow: hidden;*/
 }
-
-
-
-
-
 
 .tab-container {
   position: absolute;
@@ -45,9 +32,10 @@ input {
 
 .tab {
   position: relative;
-  top: 110%;
+  top: 100%;
   -webkit-transition: 0.1s linear all;
   transition: 0.1s linear all;
+  z-index: 100;
 }
 
 .tab-on {

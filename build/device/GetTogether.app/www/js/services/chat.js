@@ -18,7 +18,7 @@ angular.module('GetTogetherApp')
     scrollToBottom: function() {
       var chatListEl = document.getElementsByClassName('chat-list')[0];
       setTimeout(function() {
-        // chatListEl.scrollTop = chatListEl.scrollHeight;
+        chatListEl.scrollTop = chatListEl.scrollHeight;
       }, 0);
     },
     sendMessage: function(message) {

@@ -1,6 +1,10 @@
 <div 
   class="map-div-container"
   ng-controller="MapCtrl">
+  <div 
+    class="search-underlay"
+    ng-class="{'search-on': searchFocus}"}>
+  </div>
   <div
     class="map">
     <div class="map-topbar">
@@ -17,9 +21,17 @@
 
   <div class="search-container">
     <form ng-submit="cancelSearch()">
-      <input id="autocomplete" ng-model="searchText" type="text" size="15" placeholder="Search" autocorrect="off" autocapitalize="off"/>
+      <input
+        id="autocomplete"
+        ng-model="searchText"
+        ng-focus="searchFocus=true"
+        ng-blur="searchFocus=false"
+        type="text" size="15"
+        placeholder="Search"
+        autocorrect="off"
+        autocapitalize="off"/ >
       <button class="cancel" ng-click="cancelSearch()">X</button>
-      <button ng-click="clearResults()">Clear</button>
+      <button ng-show="hasMarkers" ng-click="clearResults()">Clear</button>
     </form>
   </div>
 

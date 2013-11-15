@@ -85,32 +85,13 @@ angular.module('GetTogetherApp')
         .child(username)
         .child('Rooms')
         .on('value', function(rooms) {
-        service.roomsList = {};
-          // console.log(rooms.val());
+          service.roomsList = {};
           $timeout(function(){
             for(key in rooms.val()) {
               service.roomsList[key] = {name: key, update: rooms.val()[key].update};
             }
-            // service.roomsList = rooms.val();
-          })
-          // var roomname = room.name();
-          // var updateType = room.val().update;
-          // $timeout(function() {
-          //   service.roomsList[roomname] = {name: roomname, update: updateType};
-          // });
+          });
         });
-
-      // var username = service.sessionUsername;
-      // refs.users
-      //   .child(username)
-      //   .child('Rooms')
-      //   .on('child_added', function(room) {
-      //     var roomname = room.name();
-      //     var updateType = room.val().update;
-      //     $timeout(function() {
-      //       service.roomsList[roomname] = {name: roomname, update: updateType};
-      //     });
-      //   });
     },
 
     // updates list of users in current room and sets up listeners for Firebase updates

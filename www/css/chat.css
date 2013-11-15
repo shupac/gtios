@@ -1,5 +1,5 @@
 .chat-container {
-  position: absolute;;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -9,7 +9,6 @@
   background-color: #e5e9e8;
 }
 
-/*.chat-messages-container {*/
 .chat-list {
   position: absolute;
   top: 30px;

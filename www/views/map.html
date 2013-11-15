@@ -25,17 +25,18 @@
 
   <div ng-include="'views/edit.html'"></div>
 
-  <div class="tab-container">
+  <div class="tab-container" ng-show="showUsers || showPlaces || showChat">
     <div class="tabs">
-      <div class="tab" ng-class="{'tab-on': showUsers}">
-        <div ng-include="'views/users.html'">
+      <div class="tab" ng-show="showUsers" ng-class="{'tab-on': showUsers}">
+        <div ng-include="'views/users.html'"></div>
       </div>
-      <div class="tab" ng-class="{'tab-on': showPlaces}">
-        <div ng-include="'views/places.html'">
+      <div class="tab" ng-show="showPlaces" ng-class="{'tab-on': showPlaces}">
+        <div ng-include="'views/places.html'"></div>
       </div>
       <div class="tab" ng-class="{'tab-on': showChat}">
-        <div ng-include="'views/chat.html'">
+        <div ng-include="'views/chat.html'"></div>
       </div>
+    
     </div>
   </div>
 

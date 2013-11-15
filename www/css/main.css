@@ -46,8 +46,8 @@ input {
 .tab {
   position: relative;
   top: 110%;
-  -webkit-transition: top 0.2s;
-  transition: top 0.2s;
+  -webkit-transition: 0.1s linear all;
+  transition: 0.1s linear all;
 }
 
 .tab-on {

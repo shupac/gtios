@@ -80,18 +80,37 @@ angular.module('GetTogetherApp')
 
     // retrieves list of rooms user belongs to and sets up listeners for Firebase updates
     updateRoomsList: function() {
-      service.roomsList = {};
       var username = service.sessionUsername;
       refs.users
         .child(username)
         .child('Rooms')
-        .on('child_added', function(room) {
-          var roomname = room.name();
-          var updateType = room.val().update;
-          $timeout(function() {
-            service.roomsList[roomname] = {name: roomname, update: updateType};
-          });
+        .on('value', function(rooms) {
+        service.roomsList = {};
+          // console.log(rooms.val());
+          $timeout(function(){
+            for(key in rooms.val()) {
+              service.roomsList[key] = {name: key, update: rooms.val()[key].update};
+            }
+            // service.roomsList = rooms.val();
+          })
+          // var roomname = room.name();
+          // var updateType = room.val().update;
+          // $timeout(function() {
+          //   service.roomsList[roomname] = {name: roomname, update: updateType};
+          // });
         });
+
+      // var username = service.sessionUsername;
+      // refs.users
+      //   .child(username)
+      //   .child('Rooms')
+      //   .on('child_added', function(room) {
+      //     var roomname = room.name();
+      //     var updateType = room.val().update;
+      //     $timeout(function() {
+      //       service.roomsList[roomname] = {name: roomname, update: updateType};
+      //     });
+      //   });
     },
 
     // updates list of users in current room and sets up listeners for Firebase updates
@@ -128,13 +147,7 @@ angular.module('GetTogetherApp')
         .child(username)
         .child('Rooms')
         .child(roomname)
-        .set({update: updateType}, function(error) {
-          if(error) {
-            console.log('error');
-          } else {
-            service.updateRoomsList();
-          }
-        });
+        .set({update: updateType});
     }
   };
   return service;

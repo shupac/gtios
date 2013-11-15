@@ -83,7 +83,7 @@ angular.module('GetTogetherApp')
           PanService.panInfoWindow(place, service.map);
 
           if(place.photos) {
-            console.log('photos', place.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 140}));
+            console.log('photos', place.photos[0].getUrl({'maxWidth': 160, 'maxHeight': 120}));
           }
 
           var contentString = 
@@ -96,7 +96,7 @@ angular.module('GetTogetherApp')
             delete service.infoWindow;
           }
           
-          service.infoWindow = new google.maps.InfoWindow({maxWidth: 150});
+          service.infoWindow = new google.maps.InfoWindow({maxWidth: 180});
           service.infoWindow.setContent(contentString);
           service.infoWindow.open(service.map, marker);
           

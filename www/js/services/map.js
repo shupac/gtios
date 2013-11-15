@@ -125,6 +125,9 @@ angular.module('GetTogetherApp')
     // saves current position to Firebase for the room specified
     storeCurrentPosition: function(roomname, update) {
       var defer = $q.defer();
+      if(!service.currentPosition) {
+        return;
+      }
       var position = service.currentPosition;
       roomname = roomname || SessionService.currentRoom;
 
@@ -234,6 +237,8 @@ angular.module('GetTogetherApp')
           .set({
             update: 'logged out'
           });
+
+        SessionService.syncUpdateType(room.name, 'logged out');
       }
     },
     terminateMap: function(roomname) {

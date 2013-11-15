@@ -4,6 +4,15 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+input {
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  -webkit-appearance:none;
+}
+
 .index-container {
   width: 320px;
   height: 548px;
@@ -12,7 +21,7 @@ body {
   top: 20px;
   left: 0;
 
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .tab-container {
@@ -33,6 +42,7 @@ body {
 .tab {
   position: relative;
   top: 100%;
+  -webkit-transform: translate3d(0px,0px,0px);
   -webkit-transition: 0.1s linear all;
   transition: 0.1s linear all;
   z-index: 100;

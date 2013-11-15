@@ -38,7 +38,7 @@ angular.module('GetTogetherApp')
       } else {
         service.search();
       }
-      document.activeElement.blur();
+      // document.getElementsByClassName('search-underlay')[0].('search-on');
     },
     search: function() {
       var resultsLimit = 10;
@@ -67,8 +67,6 @@ angular.module('GetTogetherApp')
             service.searchMarkers[i].placeResult = results[i];
             google.maps.event.addListener(service.searchMarkers[i], 'click', service.showInfoWindow);
             setTimeout(dropMarker(i), i * 100);
-            document.getElementById('autocomplete').focus();
-            document.getElementById('autocomplete').blur();
           }
         }
       });
@@ -134,7 +132,7 @@ angular.module('GetTogetherApp')
       var input = document.getElementById('autocomplete');
       input.value = "";
       google.maps.event.removeListener(service.autoListener);
-      service.initAutocomplete(service.map);
+      service.initAutocomplete(service.map)
     }
   }
   return service;

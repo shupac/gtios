@@ -1,12 +1,12 @@
 .chat-container {
   margin: 10px;
-  padding: 10px;
   padding-bottom: 30px;
   background-color: #e5e9e8;
 }
 
 .chat-list {
-  height: 383px;
+  margin: 10px;
+  height: 403px;
   overflow: auto;
 }
 

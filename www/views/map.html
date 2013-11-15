@@ -3,7 +3,7 @@
   ng-controller="MapCtrl">
   <div 
     class="search-underlay"
-    ng-class="{'search-on': searchFocus}"}>
+    ng-class="{'search-on': searchFocus}">
   </div>
   <div
     class="map">
@@ -19,21 +19,24 @@
     </div>
   </div>
 
-  <div class="search-container">
+  <div class="search-container" ng-init="searchFocus=false">
     <form ng-submit="cancelSearch()">
       <input
         id="autocomplete"
         ng-model="searchText"
         ng-focus="searchFocus=true"
-        ng-blur="searchFocus=false"
         type="text" size="15"
         placeholder="Search"
         autocorrect="off"
         autocapitalize="off"/ >
+  <!--       <span
+          class="clear-search-text"
+          ng-show="searchFocus && searchText"
+          ng-click="clearSearchText()">Clear Text</span> -->
       <button
         class="cancel"
-        ng-show="searchText"
-        ng-click="cancelSearch()">X</button>
+        ng-show="searchFocus"
+        ng-click="cancelSearch()">Cancel</button>
       <button
         ng-show="hasMarkers && !searchFocus"
         ng-click="clearResults()">Clear</button>

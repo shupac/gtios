@@ -9,7 +9,7 @@ angular.module('GetTogetherApp')
     centerByPosition: function(position, map) {
       // var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       map.setCenter(position);
-      map.setZoom(17);
+      map.setZoom(16);
     }
   };
   return service;

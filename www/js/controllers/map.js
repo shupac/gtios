@@ -35,6 +35,10 @@ angular.module('GetTogetherApp')
     // SearchService.clearAutocomplete();
   };
 
+  $scope.showCurrentPos = function() {
+    MapService.showCurrentPosition();
+  };
+
   $scope.$watch(function() {return SearchService.searchMarkers.length !== 0;}, function(hasMarkers) {
     $scope.hasMarkers = hasMarkers;
   });

@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.factory('MapService', function($http, $q, SessionService, $filter, SearchService, MarkerService){
+.factory('MapService', function($http, $q, $filter, SessionService, SearchService, MarkerService, PanService){
   var service = {
     userMarkers: {},
     initialize: function(roomname) {
@@ -120,6 +120,11 @@ angular.module('GetTogetherApp')
       });
 
       return marker;
+    },
+
+    showCurrentPosition: function() {
+      var pos = new google.maps.LatLng(service.currentPosition.coords.latitude, service.currentPosition.coords.longitude);
+      PanService.centerByPosition(pos, service.map);
     },
 
     // saves current position to Firebase for the room specified

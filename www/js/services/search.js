@@ -38,7 +38,8 @@ angular.module('GetTogetherApp')
             namePre: namePre,
             nameMatched: nameMatched,
             namePost: namePost,
-            address: address
+            address: address,
+            reference: prediction.reference
           });
         }
         $timeout(function() {
@@ -99,7 +100,6 @@ angular.module('GetTogetherApp')
       service.places.radarSearch(query, function(results, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
           for (var i = 0; i < resultsLimit; i++) {
-            console.log(results[i]);
             service.searchMarkers[i] = new google.maps.Marker({
               position: results[i].geometry.location,
               icon: service.icon,

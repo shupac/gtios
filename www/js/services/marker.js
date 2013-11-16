@@ -47,7 +47,7 @@ angular.module('GetTogetherApp')
               return;
             } else {
               var icon = {
-                url: 'img/map/marker_small.png',
+                url: 'img/map/marker_small_green.png',
                 size: new google.maps.Size(12, 20),
                 origin: new google.maps.Point(0,0),
                 anchor: new google.maps.Point(6, 20)

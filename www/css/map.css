@@ -67,6 +67,7 @@
   font-size: 20px;
   background-color: white;
   border: none;
+  cursor: pointer;
 }
 
 .clear-search-term {
@@ -101,12 +102,8 @@
   margin-top: 35px;
 }
 
-/*.gm-style-iw{
-  width: 200px;
-}*/
-
-#info-window {
-  width: 180px;
+.search-prediction {
+  cursor: pointer;
 }
 
 .current-arrow {
@@ -116,4 +113,9 @@
   left: 10px;
   bottom: 60px;
   z-index: 3;
+  cursor: pointer;
+}
+
+#info-window {
+  width: 180px;
 }

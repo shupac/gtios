@@ -20,7 +20,7 @@
   </div>
 
   <div class="search-container" ng-init="searchFocus=false">
-    <form ng-submit="cancelSearch()">
+    <form ng-submit="search()">
       <input
         id="autocomplete"
         ng-model="searchText"
@@ -33,10 +33,10 @@
           class="clear-search-text"
           ng-show="searchFocus && searchText"
           ng-click="clearSearchText()">Clear Text</span> -->
-      <button
+<!--       <button
         class="cancel"
         ng-show="searchFocus"
-        ng-click="cancelSearch()">Cancel</button>
+        ng-click="cancelSearch()">Cancel</button> -->
       <button
         ng-show="hasMarkers && !searchFocus"
         ng-click="clearResults()">Clear</button>

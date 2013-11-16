@@ -14,10 +14,10 @@ angular.module('GetTogetherApp')
     initAutocomplete: function(map) {
       service.map = map;
       service.places = new google.maps.places.PlacesService(map);
-      var input = document.getElementById('autocomplete');
-      service.autocomplete = new google.maps.places.Autocomplete(input);
-      service.autocomplete.bindTo('bounds', map);
-      service.autoListener = google.maps.event.addListener(service.autocomplete, 'place_changed', service.onPlaceChanged);
+      // var input = document.getElementById('autocomplete');
+      // service.autocomplete = new google.maps.places.Autocomplete(input);
+      // service.autocomplete.bindTo('bounds', map);
+      // service.autoListener = google.maps.event.addListener(service.autocomplete, 'place_changed', service.onPlaceChanged);
     },
     onPlaceChanged: function() {
       var map = service.map;
@@ -40,9 +40,9 @@ angular.module('GetTogetherApp')
       }
       // document.getElementsByClassName('search-underlay')[0].('search-on');
     },
-    search: function() {
+    search: function(searchTerm) {
       var resultsLimit = 10;
-      var searchTerm = document.getElementById('autocomplete').value;
+      // var searchTerm = document.getElementById('autocomplete').value;
       // var MARKER_PATH = 'https://maps.gstatic.com/intl/en_us/mapfiles/marker_green';
 
       var dropMarker = function(i) {
@@ -120,6 +120,7 @@ angular.module('GetTogetherApp')
     },
 
     clearMarkers: function() {
+      console.log(service.searchMarkers);
       for (var i = 0; i < service.searchMarkers.length; i++) {
         if (service.searchMarkers[i]) {
           service.searchMarkers[i].setMap(null);
@@ -129,10 +130,10 @@ angular.module('GetTogetherApp')
     },
 
     clearAutocomplete: function() {
-      var input = document.getElementById('autocomplete');
-      input.value = "";
-      google.maps.event.removeListener(service.autoListener);
-      service.initAutocomplete(service.map)
+      // var input = document.getElementById('autocomplete');
+      // input.value = "";
+      // // google.maps.event.removeListener(service.autoListener);
+      // service.initAutocomplete(service.map)
     }
   }
   return service;

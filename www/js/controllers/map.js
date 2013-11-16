@@ -9,6 +9,11 @@ angular.module('GetTogetherApp')
     SearchService.clearAutocomplete();
   };
 
+  $scope.search = function() {
+    console.log($scope.searchText);
+    SearchService.search($scope.searchText);
+  }
+
   $scope.cancelSearch = function() {
     $scope.searchFocus = false;
     $scope.input.blur();

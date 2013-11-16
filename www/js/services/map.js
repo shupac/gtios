@@ -1,8 +1,9 @@
 angular.module('GetTogetherApp')
-.factory('MapService', function($http, $q, $filter, SessionService, SearchService, MarkerService, PanService){
+.factory('MapService', function($q, $filter, SessionService, SearchService, MarkerService, PanService){
   var service = {
     userMarkers: {},
     initialize: function(roomname) {
+      var defer = $q.defer();
       service.userMarkers = {};
       var mapOptions = {
         zoom: 13,
@@ -12,7 +13,10 @@ angular.module('GetTogetherApp')
       service.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
       service.getLocation()
       .then(function(position) {
-        service.displayMap(position);
+        service.displayMap(position)
+        .then(function() {
+          defer.resolve();
+        });
         service.currentPosition = position;
         service.storeCurrentPosition();
         SearchService.initAutocomplete(service.map);
@@ -21,6 +25,7 @@ angular.module('GetTogetherApp')
       .then(function() {
         service.startListeners(roomname);
       });
+      return defer.promise;
     },
 
     // gets current location and resolves/rejects promise
@@ -83,9 +88,14 @@ angular.module('GetTogetherApp')
     },
 
     displayMap: function(position) {
+      var defer = $q.defer();
       var username = SessionService.sessionUsername;
       var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       service.map.setCenter(pos);
+      google.maps.event.addListenerOnce(service.map, 'tilesloaded', function() {
+        defer.resolve();
+      });
+      return defer.promise;
     },
 
     displayUserMarker: function(position, username) {

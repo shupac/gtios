@@ -21,9 +21,8 @@ angular.module('GetTogetherApp')
     RoomService.joinRoom(roomname)
     .then(
       function() {
-        setTimeout(function() {
+
           $scope.panel.hideRooms = true;
-        }, 200);
       }, 
       function() {
         navigator.notification.alert(

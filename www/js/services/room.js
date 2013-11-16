@@ -2,9 +2,14 @@ angular.module('GetTogetherApp')
 .factory('RoomService', function($http, $q, SessionService, MapService, ChatService) {
   var service = {
     initialize: function(roomname) {
+      var defer = $q.defer();
       SessionService.initialize(roomname); // initializes room session for current room
-      MapService.initialize(roomname); // initializes map for current room
+      MapService.initialize(roomname)
+      .then(function() {
+        defer.resolve();
+      }); // initializes map for current room
       ChatService.initialize(); // initializes chat for current room
+      return defer.promise;
     },
     create: function(roomname) {
       var defer = $q.defer();
@@ -39,8 +44,10 @@ angular.module('GetTogetherApp')
             service.terminateRoomSession();
           }
 
-          service.initialize(roomname);
-          defer.resolve();
+          service.initialize(roomname)
+          .then(function() {
+            defer.resolve();
+          });
           console.log(username, 'entered room:', roomname);
         } else {
           defer.reject();

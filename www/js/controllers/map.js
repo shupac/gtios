@@ -32,7 +32,6 @@ angular.module('GetTogetherApp')
   $scope.hideAll = function() {
     SearchService.clearMarkers();
     $scope.searchTerm = '';
-    // SearchService.clearAutocomplete();
   };
 
   $scope.showCurrentPos = function() {

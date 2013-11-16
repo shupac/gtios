@@ -9,8 +9,8 @@
         class="search-prediction"
         ng-repeat="prediction in predictions"
         ng-click="displayPlace(prediction)">
-        {{ prediction.description }}
-        {{ prediction.matched_substrings }}
+        {{ prediction.namePre }}<span class="prediction-matched-term">{{ prediction.nameMatched }}</span>{{ prediction.namePost }}
+        <div class="prediction-address">{{ prediction.address }}</div>
       </li>
     </ul>
   </div>

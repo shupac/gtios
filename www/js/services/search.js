@@ -16,19 +16,35 @@ angular.module('GetTogetherApp')
       service.map = map;
       service.places = new google.maps.places.PlacesService(map);
       service.predictions = new google.maps.places.AutocompleteService();
-      // var input = document.getElementById('autocomplete');
-      // service.autocomplete = new google.maps.places.Autocomplete(input);
-      // service.autocomplete.bindTo('bounds', map);
-      // service.autoListener = google.maps.event.addListener(service.autocomplete, 'place_changed', service.onPlaceChanged);
     },
     getQueryPredictions: function(searchTerm) {
       var callback = function(predictionResults) {
-        console.log(predictionResults);
+        service.predictionResults = [];
+        for(var i = 0; i < predictionResults.length; i++) {
+          var prediction = predictionResults[i];
+          var str = prediction.description;
+          var matchedIndex = prediction.matched_substrings[0].offset;
+          var matchedLength = prediction.matched_substrings[0].length;
+          var splitStr = str.split(',');
+          
+          var name = splitStr.shift();
+          var namePre = name.substring(0, matchedIndex);
+          var nameMatched = name.substring(matchedIndex, matchedIndex + matchedLength);
+          var namePost = name.substring(matchedIndex + matchedLength);
+// debugger
+          splitStr.pop();
+          var address = splitStr.join(',');
+          service.predictionResults.push({
+            namePre: namePre,
+            nameMatched: nameMatched,
+            namePost: namePost,
+            address: address
+          });
+        }
         $timeout(function() {
-          service.predictionResults = predictionResults;
+          // service.predictionResults = predictionResults;
         });
       };
-// debugger
       service.predictions.getQueryPredictions({
         input: searchTerm,
         bounds: service.map.getBounds()
@@ -155,13 +171,6 @@ angular.module('GetTogetherApp')
         }
       }
       service.searchMarkers = [];
-    },
-
-    clearAutocomplete: function() {
-      // var input = document.getElementById('autocomplete');
-      // input.value = "";
-      // // google.maps.event.removeListener(service.autoListener);
-      // service.initAutocomplete(service.map)
     }
   }
   return service;

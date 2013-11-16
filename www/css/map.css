@@ -99,10 +99,18 @@
 }
 
 .search-predictions-list {
-  margin-top: 35px;
+  margin-top: 45px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .search-prediction {
+  margin: 10px;
+  padding-left: 25px;
+  background-image: url('../img/search-icon.png');
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+  font-weight: 300;
   cursor: pointer;
 }
 
@@ -140,4 +148,14 @@
 
 .map-loading div {
   margin: 10px; 
+}
+
+.prediction-matched-term {
+  font-weight: bold;
+}
+
+.prediction-address {
+  margin-top: 3px;
+  font-size: 12px;
+  color: gray;
 }

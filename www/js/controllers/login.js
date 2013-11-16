@@ -11,6 +11,6 @@ angular.module('GetTogetherApp')
   $scope.login = function(username, password){
     SessionService.login(username.toLowerCase(), password);
   };
-  $scope.login('hackreactor', 'test');
+  // $scope.login('hackreactor', 'test');
   // $scope.login('shu', 'test');
 });

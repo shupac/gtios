@@ -2,7 +2,7 @@
 // It places a marker on the map upon selecting a place from autocomplete list or
 // places 10 markers from search results
 angular.module('GetTogetherApp')
-.factory('SearchService', function($q, MarkerService, PanService){
+.factory('SearchService', function($q, $timeout, MarkerService, PanService){
   var service = {
     searchMarkers: [],
     icon: {
@@ -46,7 +46,7 @@ angular.module('GetTogetherApp')
       // var MARKER_PATH = 'https://maps.gstatic.com/intl/en_us/mapfiles/marker_green';
 
       var dropMarker = function(i) {
-        return function() {
+        return function() { 
           service.searchMarkers[i].setMap(service.map);
         };
       };
@@ -65,6 +65,7 @@ angular.module('GetTogetherApp')
               animation: google.maps.Animation.DROP
             });
             service.searchMarkers[i].placeResult = results[i];
+            $timeout(function(){});
             google.maps.event.addListener(service.searchMarkers[i], 'click', service.showInfoWindow);
             setTimeout(dropMarker(i), i * 100);
           }
@@ -120,7 +121,6 @@ angular.module('GetTogetherApp')
     },
 
     clearMarkers: function() {
-      console.log(service.searchMarkers);
       for (var i = 0; i < service.searchMarkers.length; i++) {
         if (service.searchMarkers[i]) {
           service.searchMarkers[i].setMap(null);

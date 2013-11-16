@@ -5,29 +5,28 @@ angular.module('GetTogetherApp')
     document.activeElement.blur();
   }, false); 
   
-  $scope.clearSearchText = function() {
-    SearchService.clearAutocomplete();
+  $scope.clearSearchTerm = function() {
+
   };
 
-  $scope.search = function() {
-    console.log($scope.searchText);
-    SearchService.search($scope.searchText);
+  $scope.search = function(searchTerm) {
+    console.log('search', searchTerm);
+    SearchService.search(searchTerm);
+    $scope.searchFocus = false;
+    $scope.input.blur();
   }
 
   $scope.cancelSearch = function() {
     $scope.searchFocus = false;
     $scope.input.blur();
-    // setTimeout(function() {
-    // });
     if(!$scope.hasMarkers) {
-    // SearchService.clearAutocomplete();
-      $scope.searchText = '';
+      $scope.searchTerm = '';
     }
   };
 
   $scope.clearResults = function() {
     SearchService.clearMarkers();
-    SearchService.clearAutocomplete();
+    // SearchService.clearAutocomplete();
   };
 
   $scope.$watch(function() {return SearchService.searchMarkers.length !== 0;}, function(hasMarkers) {

@@ -20,8 +20,8 @@ button {
   width: 400px;
   height: 826px;
   left: 200px;
-  padding-top: 125px;
-  padding-left: 40px;
+  /*padding-top: 125px;*/
+  /*padding-left: 40px;*/
   background-image: url('../img/iphone5white.png');
   /*background-color: white;*/
 }

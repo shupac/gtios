@@ -92,3 +92,7 @@
 .search-underlay-on {
   z-index: 2;
 }
+
+.search-predictions-list {
+  margin-top: 35px;
+}

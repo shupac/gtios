@@ -121,7 +121,7 @@ angular.module('GetTogetherApp')
         delete service.infoWindow;
       }
 
-      service.infoWindow = new google.maps.InfoWindow({maxWidth: 180});
+      service.infoWindow = new google.maps.InfoWindow({maxWidth: 200});
       service.infoWindow.setContent(contentString);
       service.infoWindow.open(service.map, marker);
 

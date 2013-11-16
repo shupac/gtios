@@ -4,6 +4,7 @@
 angular.module('GetTogetherApp')
 .factory('SearchService', function($q, $timeout, MarkerService, PanService){
   var service = {
+    predictionResults: [],
     searchMarkers: [],
     icon: {
       url: 'img/map/reddot-12x12.png',
@@ -14,10 +15,24 @@ angular.module('GetTogetherApp')
     initAutocomplete: function(map) {
       service.map = map;
       service.places = new google.maps.places.PlacesService(map);
+      service.predictions = new google.maps.places.AutocompleteService();
       // var input = document.getElementById('autocomplete');
       // service.autocomplete = new google.maps.places.Autocomplete(input);
       // service.autocomplete.bindTo('bounds', map);
       // service.autoListener = google.maps.event.addListener(service.autocomplete, 'place_changed', service.onPlaceChanged);
+    },
+    getQueryPredictions: function(searchTerm) {
+      var callback = function(predictionResults) {
+        console.log(predictionResults);
+        $timeout(function() {
+          service.predictionResults = predictionResults;
+        });
+      };
+// debugger
+      service.predictions.getQueryPredictions({
+        input: searchTerm,
+        bounds: service.map.getBounds()
+      }, callback);
     },
     onPlaceChanged: function() {
       var map = service.map;
@@ -84,7 +99,7 @@ angular.module('GetTogetherApp')
           PanService.panInfoWindow(place, service.map);
 
           if(place.photos) {
-            console.log('photos', place.photos[0].getUrl({'maxWidth': 160, 'maxHeight': 120}));
+            console.log('photos', place.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 120}));
           }
 
           var contentString = 

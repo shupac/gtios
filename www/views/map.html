@@ -4,6 +4,15 @@
   <div 
     class="search-underlay"
     ng-class="{'search-underlay-on': searchFocus}">
+    <ul class="search-predictions-list">
+      <li
+        class="search-predictions"
+        ng-repeat="prediction in predictions"
+        ng-click="displayPlace(prediction)">
+        {{ prediction.description }}
+        {{ prediction.matched_substrings }}
+      </li>
+    </ul>
   </div>
   <div
     class="map">

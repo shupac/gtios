@@ -3,10 +3,10 @@ angular.module('GetTogetherApp')
   // prevent page scrolling
   document.getElementsByClassName('search-underlay')[0].addEventListener('touchmove', function(e) {
     document.activeElement.blur();
-  }, false); 
-  
-  $scope.clearSearchTerm = function() {
+  }, false);
 
+  $scope.displayPlace = function(prediction) {
+    console.log(prediction);
   };
 
   $scope.search = function(searchTerm) {
@@ -31,5 +31,18 @@ angular.module('GetTogetherApp')
 
   $scope.$watch(function() {return SearchService.searchMarkers.length !== 0;}, function(hasMarkers) {
     $scope.hasMarkers = hasMarkers;
+  });
+
+  $scope.$watch('searchTerm', function(searchTerm) {
+    console.log('search');
+    if(MapService.map && searchTerm) {
+      SearchService.getQueryPredictions(searchTerm);
+    } else {
+      $scope.predictions = [];
+    }
+  });
+
+  $scope.$watch(function() {return SearchService.predictionResults;}, function(predictions) {
+    $scope.predictions = predictions;
   });
 });

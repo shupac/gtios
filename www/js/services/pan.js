@@ -3,7 +3,7 @@ angular.module('GetTogetherApp')
   var service = {
     panInfoWindow: function(place, map) {
       map.setCenter(place.geometry.location);
-      map.panBy(0, -120); // pans map down by -120px
+      map.panBy(0, -140); // pans map down by -120px
     },
 
     centerByPosition: function(position, map) {

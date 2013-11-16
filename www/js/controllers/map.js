@@ -7,25 +7,31 @@ angular.module('GetTogetherApp')
 
   $scope.displayPlace = function(prediction) {
     console.log(prediction);
+    SearchService.displayPlace(prediction);
+    $scope.cleanupSearch();
   };
 
   $scope.search = function(searchTerm) {
     console.log('search', searchTerm);
     SearchService.search(searchTerm);
-    $scope.searchFocus = false;
-    $scope.input.blur();
-  }
+    $scope.cleanupSearch();
+  };
 
   $scope.cancelSearch = function() {
-    $scope.searchFocus = false;
-    $scope.input.blur();
+    $scope.cleanupSearch();
     if(!$scope.hasMarkers) {
       $scope.searchTerm = '';
     }
   };
 
-  $scope.clearResults = function() {
+  $scope.cleanupSearch = function() {
+    $scope.searchFocus = false;
+    $scope.input.blur();
+  };
+
+  $scope.hideAll = function() {
     SearchService.clearMarkers();
+    $scope.searchTerm = '';
     // SearchService.clearAutocomplete();
   };
 
@@ -34,7 +40,6 @@ angular.module('GetTogetherApp')
   });
 
   $scope.$watch('searchTerm', function(searchTerm) {
-    console.log('search');
     if(MapService.map && searchTerm) {
       SearchService.getQueryPredictions(searchTerm);
     } else {

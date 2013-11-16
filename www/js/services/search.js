@@ -31,7 +31,6 @@ angular.module('GetTogetherApp')
           var namePre = name.substring(0, matchedIndex);
           var nameMatched = name.substring(matchedIndex, matchedIndex + matchedLength);
           var namePost = name.substring(matchedIndex + matchedLength);
-// debugger
           splitStr.pop();
           var address = splitStr.join(',');
           service.predictionResults.push({

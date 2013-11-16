@@ -6,7 +6,6 @@ angular.module('GetTogetherApp')
   }, false);
 
   $scope.displayPlace = function(prediction) {
-    console.log(prediction);
     SearchService.displayPlace(prediction);
     $scope.cleanupSearch();
   };

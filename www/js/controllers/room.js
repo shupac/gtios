@@ -17,12 +17,13 @@ angular.module('GetTogetherApp')
   };
 
   $scope.joinRoom = function(roomname) {
+    $scope.mapLoading = true;
     roomname = roomname.toLowerCase();
     RoomService.joinRoom(roomname)
     .then(
       function() {
-
-          $scope.panel.hideRooms = true;
+        $scope.panel.hideRooms = true;
+        $scope.mapLoading = false;
       }, 
       function() {
         navigator.notification.alert(
@@ -108,6 +109,6 @@ angular.module('GetTogetherApp')
     joinRoom = openParams.roomInvite;
   }
 
-  $scope.joinRoom(joinRoom);
+  // $scope.joinRoom(joinRoom);
 
 });

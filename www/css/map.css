@@ -97,6 +97,10 @@
   margin-top: 35px;
 }
 
-.gm-style-iw{
+/*.gm-style-iw{
   width: 200px;
+}*/
+
+#info-window {
+  width: 180px;
 }

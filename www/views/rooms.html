@@ -15,7 +15,13 @@
         <span ng-click="deleteRoom(room.name)" class="room-delete">Delete</span>
         <span class="update-toggle">
           <label class="topcoat-switch">
-            <input type="checkbox" class="topcoat-switch__input" ng-model="room.update" ng-change="toggleUpdate(room)" ng-true-value="live" ng-false-value="last">
+            <input 
+              type="checkbox" 
+              class="topcoat-switch__input" 
+              ng-model="room.update" 
+              ng-change="toggleUpdate(room)" 
+              ng-true-value="live" 
+              ng-false-value="last">
             <span class="topcoat-switch__toggle"></span>
           </label>
         </span>

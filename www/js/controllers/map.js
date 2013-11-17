@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.controller('MapCtrl', function($scope, MapService, SearchService) {
+.controller('MapCtrl', function($scope, $rootScope, MapService, SearchService) {
   // prevent page scrolling
   document.getElementsByClassName('search-underlay')[0].addEventListener('touchmove', function(e) {
     document.activeElement.blur();

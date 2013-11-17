@@ -5,129 +5,6 @@
   z-index: 1;
 }
 
-#map-canvas {
-  position: absolute;
-  top: 44px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.map-topbar {
-  height: 44px;
-  background-color: #454646;
-  padding: 0 10px;
-}
-
-.hamburger, .user-icon, .chat-icon, .place-icon {
-  position: relative;
-  top: -2px;
-  width: 28px;
-  height: 28px;
-  margin: 10px 5px;
-}
-
-.user-icon, .place-icon, .chat-icon {
-  float: right;
-}
-
-.map-room {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.gmnoprint, .gm-style-cc {
-  display: none;
-}
-
-.search-container {
-  position: absolute;
-  top: 50px;
-  width: 100%;
-  z-index: 3;
-}
-
-.search-container form {
-  display: inline;
-}
-
-.search-container input {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  border: none;
-  -webkit-appearance: none;
-}
-
-.search-container button {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.clear-search-term {
-  position: absolute;
-  left: 180px;
-  background: none;
-}
-
-.cancel-search {
-  float: right;
-}
-
-.search-underlay {
-  position: absolute;
-  top: 44px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: beige;
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition: 0.25s linear all;
-  transition: 0.25s linear all;
-}
-
-.search-underlay-on {
-  opacity: 1;
-  z-index: 2;
-}
-
-.search-predictions-list {
-  margin-top: 45px;
-  padding: 0;
-  list-style-type: none;
-}
-
-.search-prediction {
-  margin: 10px;
-  padding-left: 25px;
-  background-image: url('../img/search-icon.png');
-  background-repeat: no-repeat;
-  background-position: 0px 3px;
-  font-weight: 300;
-  cursor: pointer;
-}
-
-.current-arrow {
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  left: 10px;
-  bottom: 60px;
-  z-index: 3;
-  cursor: pointer;
-}
-
-#info-window {
-  width: 180px;
-}
-
 .map-loading {
   width: 100px;
   height: 75px;
@@ -155,12 +32,35 @@
   height: 30px;
 }
 
-.prediction-matched-term {
-  font-weight: bold;
+#map-canvas {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.prediction-address {
-  margin-top: 3px;
-  font-size: 12px;
-  color: gray;
+.map-room {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.gmnoprint, .gm-style-cc {
+  display: none;
+}
+
+.current-arrow {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 10px;
+  bottom: 60px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#info-window {
+  width: 180px;
 }

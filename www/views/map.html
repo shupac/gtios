@@ -1,19 +1,7 @@
 <div 
   class="map-div-container"
   ng-controller="MapCtrl">
-  <div 
-    class="search-underlay"
-    ng-class="{'search-underlay-on': searchFocus}">
-    <ul class="search-predictions-list">
-      <li
-        class="search-prediction"
-        ng-repeat="prediction in predictions"
-        ng-click="displayPlace(prediction)">
-        {{ prediction.namePre }}<span class="prediction-matched-term">{{ prediction.nameMatched }}</span>{{ prediction.namePost }}
-        <div class="prediction-address">{{ prediction.address }}</div>
-      </li>
-    </ul>
-  </div>
+
   <div
     class="map">
     <div class="map-topbar">
@@ -33,45 +21,63 @@
       ng-hide="searchFocus" />
   </div>
 
-  <div class="search-container" ng-init="searchFocus=false">
-    <form ng-submit="search(searchTerm)">
-      <input
-        id="autocomplete"
-        ng-model="searchTerm"
-        ng-focus="searchFocus=true"
-        type="text" size="15"
-        placeholder="Search"
-        autocorrect="off"
-        autocapitalize="off"/ >
-    </form>
-    <button
-      class="clear-search-term"
-      ng-show="searchFocus && searchTerm.length"
-      ng-click="searchTerm=''">X</button>
-    <button
-      class="cancel-search"
-      ng-show="searchFocus"
-      ng-click="cancelSearch()">Cancel</button>
-    <button
-      class="clear-results"
-      ng-show="hasMarkers && !searchFocus"
-      ng-click="hideAll()">Hide All</button>
-  </div>
-
-  <div ng-include="'views/edit.html'"></div>
-
   <div class="tab" ng-show="showUsers" ng-class="{'tab-on': showUsers}">
     <div ng-include="'views/users.html'"></div>
   </div>
-
   <div class="tab" ng-show="showPlaces" ng-class="{'tab-on': showPlaces}">
     <div ng-include="'views/places.html'"></div>
   </div>
-
   <div class="tab" ng-class="{'tab-on': showChat}">
     <div ng-include="'views/chat.html'"></div>
   </div>
 
+
+<!-- **************** Search ****************** -->
+  <div
+    class="search-container"
+    ng-init="searchFocus=false"
+    ng-class="{'search-container-gray': searchFocus}">
+    <div class="search-form-container">
+      <form ng-submit="search(searchTerm)">
+        <input
+          id="autocomplete"
+          ng-model="searchTerm"
+          ng-focus="searchFocus=true"
+          type="text" size="15"
+          placeholder="Search"
+          autocorrect="off"
+          autocapitalize="off"/ >
+      </form>
+      <button
+        class="clear-search-term"
+        ng-show="searchFocus && searchTerm.length"
+        ng-click="searchTerm=''">x</button>
+    </div>
+      <button
+        class="cancel-search"
+        ng-show="searchFocus"
+        ng-click="cancelSearch()">Cancel</button>
+      <button
+        class="hide-all"
+        ng-show="hasMarkers && !searchFocus"
+        ng-click="hideAll()">Hide All</button>
+  </div>
+
+  <div 
+    class="search-underlay"
+    ng-class="{'search-underlay-on': searchFocus}">
+    <ul class="search-predictions-list">
+      <li
+        class="search-prediction"
+        ng-repeat="prediction in predictions"
+        ng-click="displayPlace(prediction)">
+        {{ prediction.namePre }}<span class="prediction-matched-term">{{ prediction.nameMatched }}</span>{{ prediction.namePost }}
+        <div class="prediction-address">{{ prediction.address }}</div>
+      </li>
+    </ul>
+  </div>
+
+  <div ng-include="'views/edit.html'"></div>
 </div>
 
 

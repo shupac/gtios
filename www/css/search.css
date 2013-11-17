@@ -1,0 +1,115 @@
+.search-container {
+  position: absolute;
+  top: 44px;
+  width: 100%;
+  z-index: 3;
+  -webkit-transition: 'background-color' 0.25s;
+  transition: 'background-color' 0.25s;
+}
+
+.search-container-gray {
+  background-color: #ddd;
+  box-shadow: 0 1px 2px 0 #aaa;
+}
+
+.search-form-container {
+  width: 190px;
+  height: 25px;
+  margin: 5px;
+  margin-right: 0;
+  padding-top: 7px;
+  padding-left: 35px;
+  padding-right: 5px;
+
+  border-radius: 3px;
+  background-image: url('../img/search-icon.png');
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+  background-color: white;
+  display: inline-block;
+
+  box-shadow: 0 1px 2px 0 #aaa inset;
+}
+
+.search-container form {
+  display: inline;
+}
+
+.search-container input {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  border: none;
+  -webkit-appearance: none;
+}
+
+.search-container input:focus {
+  outline-width: 0;
+}
+
+.search-container button {
+  padding: 0;
+  font-size: 16px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button.clear-search-term {
+  float: right;
+  background: none;
+}
+
+.cancel-search, .hide-all {
+  width: 75px;
+  height: 32px;
+  margin: 5px 5px 0 0;
+  float: right;
+  border-radius: 3px;
+  font-weight: 300;
+}
+
+.search-underlay {
+  position: absolute;
+  top: 44px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: beige;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.search-underlay-on {
+  opacity: 1;
+  z-index: 2;
+}
+
+.search-predictions-list {
+  margin-top: 45px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.search-prediction {
+  margin: 10px;
+  margin-left: 14px;
+  padding-left: 25px;
+  background-image: url('../img/search-icon.png');
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.prediction-matched-term {
+  font-weight: bold;
+}
+
+.prediction-address {
+  margin-top: 3px;
+  font-size: 12px;
+  color: gray;
+}

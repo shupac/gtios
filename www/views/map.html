@@ -10,7 +10,7 @@
     <img class="user-icon" src="img/multi-user.png" ng-click="toggleUsers()" />
   </div>
 
-  <div class="map-container">
+  <div class="map-container" ng-click="hideTabs()">
     <div id="map-canvas"></div>
     <img 
       class="current-arrow" 
@@ -19,27 +19,16 @@
       ng-hide="searchFocus" />
   </div>
 
-  <!-- <div ng-include="'users_places.html'"></div> -->
-
-  <!-- <div class="tab" ng-show="showUsers" ng-class="{'tab-on': showUsers}">
+  <div class="tab-users-places" ng-class="{'tab-users-places-on': showUsers}">
     <div ng-include="'views/users.html'"></div>
   </div>
-  <div class="tab" ng-show="showPlaces" ng-class="{'tab-on': showPlaces}">
+
+  <div class="tab-users-places" ng-class="{'tab-users-places-on': showPlaces}">
     <div ng-include="'views/places.html'"></div>
   </div>
- -->
-  <div class="tabs-container">
-    <div class="state">
-      show users: {{ showUsers }}
-    </div>
 
-    <div class="tab-users-places" ng-class="{'tab-users-places-on': showUsers || showPlaces}">
-      <div ng-include="'views/users_places.html'"></div>
-    </div>
-
-    <div class="tab-chat" ng-class="{'tab-chat-on': showChat}">
-      <div ng-include="'views/chat.html'"></div>
-    </div>
+  <div class="tab-chat" ng-class="{'tab-chat-on': showChat}">
+    <div ng-include="'views/chat.html'"></div>
   </div>
 
 <!-- **************** Search ****************** -->

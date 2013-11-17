@@ -1,19 +1,17 @@
 <div 
-  class="map-div-container"
+  class="map-page-container"
   ng-controller="MapCtrl">
 
-  <div
-    class="map">
-    <div class="map-topbar">
-      <img class="hamburger" src="img/hamburger.png" ng-click="panel.hideRooms=!panel.hideRooms" />
+  <div class="map-topbar">
+    <img class="hamburger" src="img/hamburger.png" ng-click="panel.hideRooms=!panel.hideRooms" />
 
-      <img class="chat-icon" src="img/chat-icon.png" ng-click="toggleChat()" />
-      <img class="place-icon" src="img/place-icon.png" ng-click="togglePlaces()" />
-      <img class="user-icon" src="img/multi-user.png" ng-click="toggleUsers()" />
-    </div>
-    
-    <div id="map-canvas">
-    </div>
+    <img class="chat-icon" src="img/chat-icon.png" ng-click="toggleChat()" />
+    <img class="place-icon" src="img/place-icon.png" ng-click="togglePlaces()" />
+    <img class="user-icon" src="img/multi-user.png" ng-click="toggleUsers()" />
+  </div>
+
+  <div class="map-container">
+    <div id="map-canvas"></div>
     <img 
       class="current-arrow" 
       src="img/current_arrow.png"
@@ -21,7 +19,7 @@
       ng-hide="searchFocus" />
   </div>
 
-  <div ng-include="'users_places.html'"></div>
+  <!-- <div ng-include="'users_places.html'"></div> -->
 
   <!-- <div class="tab" ng-show="showUsers" ng-class="{'tab-on': showUsers}">
     <div ng-include="'views/users.html'"></div>
@@ -30,11 +28,19 @@
     <div ng-include="'views/places.html'"></div>
   </div>
  -->
+  <div class="tabs-container">
+    <div class="state">
+      show users: {{ showUsers }}
+    </div>
 
-  <div class="tab-chat" ng-class="{'tab-on': showChat}">
-    <div ng-include="'views/chat.html'"></div>
+    <div class="tab-users-places" ng-class="{'tab-users-places-on': showUsers || showPlaces}">
+      <div ng-include="'views/users_places.html'"></div>
+    </div>
+
+    <div class="tab-chat" ng-class="{'tab-chat-on': showChat}">
+      <div ng-include="'views/chat.html'"></div>
+    </div>
   </div>
-
 
 <!-- **************** Search ****************** -->
   <div

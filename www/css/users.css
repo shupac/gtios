@@ -1,7 +1,7 @@
 .users-container, .places-container {
   background-color: #e5e9e8;
   padding: 15px;
-  z-index: 10;
+  z-index: 4;
 }
 
 .user, .place {

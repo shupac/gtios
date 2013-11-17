@@ -1,4 +1,4 @@
-.map-div-container {
+.map-page-container {
   position: absolute;
   width: 320px;
   height: 100%;
@@ -38,6 +38,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  /*display: none;*/
 }
 
 .map-room {

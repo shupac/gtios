@@ -1,5 +1,6 @@
 <div
-  class="users-places-container">
+  class="users-places-container"
+  ng-class="{'tab-places-on': showPlaces}">
   <div 
     class="users-container"
     ng-controller="UserCtrl">
@@ -15,9 +16,7 @@
       </div>
       <span class="location-text">{{ username }}: {{ userdata.update }}</span>
     </div>
-  </div>
-
-<!--   <div 
+  </div><div 
     class="places-container"
     ng-controller="PlaceCtrl">
     <h1>Places</h1>
@@ -31,5 +30,5 @@
       </div>
       <span class="location-text">{{ place.name }}</span>
     </div>
-  </div> -->
+  </div>
 </div>

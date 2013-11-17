@@ -9,6 +9,8 @@
   -moz-transition: left 0.2s;
   -webkit-transition: left 0.2s;
   transition: left 0.2s;
+
+  display: none;
 }
 
 .slideRight {

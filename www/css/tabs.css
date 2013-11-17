@@ -1,3 +1,7 @@
+.tab-chat, .tab-users-places {
+  margin-top: 44px;
+}
+
 .tab-chat {
   position: absolute;
   top: 100%;
@@ -25,6 +29,49 @@
   top: 0;
 }
 
-.tab-chat, .tab-users-places {
-  margin-top: 44px;
+.users-places-container {
+  width: 640px;
+  background-color: blue;
+  -webkit-transform: translate3d(0px,0px,0px);
+  -webkit-transition: 0.15s linear all;
+  transition: 0.15s linear all;
+}
+
+.tab-places-on {
+  margin-left: -320px;
+  -webkit-transform: translate3d(0px,0px,0px);
+  -webkit-transition: 0.15s linear all;
+  transition: 0.15s linear all;
+}
+
+.users-container, .places-container {
+  width: 320px;
+  background-color: #e5e9e8;
+  z-index: 4;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user, .place {
+  width: 100%;
+  height: 30px;
+  margin-top: 6px;
+}
+
+.location-text {
+  position: relative;
+  top: 1px;
+}
+
+.locator-icon-container {
+  width: 20px;
+  height: 20px;
+
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.locator-icon {
+  width: 20px;
+  height: 20px;
 }

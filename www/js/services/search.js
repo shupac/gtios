@@ -81,7 +81,7 @@ angular.module('GetTogetherApp')
       return defer.promise;
     },
     search: function(searchTerm) {
-      var resultsLimit = 10;
+      var resultsLimit = 3;
       // var searchTerm = document.getElementById('autocomplete').value;
       // var MARKER_PATH = 'https://maps.gstatic.com/intl/en_us/mapfiles/marker_green';
 
@@ -152,6 +152,11 @@ angular.module('GetTogetherApp')
             console.log('marker saved');
             marker.setMap(null);
             this.removeEventListener('click', arguments.callee, false);
+            for(var i = 0; i < service.searchMarkers.length; i++) {
+              if(marker === service.searchMarkers[i]) {
+                service.searchMarkers.splice(i, 1);
+              }
+            }
           }, function() {
             console.log('error');
           });
@@ -159,6 +164,12 @@ angular.module('GetTogetherApp')
         document.getElementById('hide-marker').addEventListener('click', function() {
           marker.setMap(null);
           this.removeEventListener('click', arguments.callee, false);
+          for(var i = 0; i < service.searchMarkers.length; i++) {
+            if(marker === service.searchMarkers[i]) {
+              service.searchMarkers.splice(i, 1);
+            }
+          }
+          $timeout(function(){});
         });
       });
     },

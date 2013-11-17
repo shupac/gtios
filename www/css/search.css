@@ -29,6 +29,7 @@
   background-position: 8px 8px;
   background-color: white;
   display: inline-block;
+  box-shadow: 0 0px 2px 0 #aaa;
 }
 
 .search-form-container-focus {

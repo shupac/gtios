@@ -1,0 +1,40 @@
+<div class="tab" ng-show="showUsers" ng-class="{'tab-on': showUsers}">
+  <div ng-include="'views/users_places.html'"></div>
+</div>
+<div class="tab" ng-show="showPlaces" ng-class="{'tab-on': showPlaces}">
+  <div ng-include="'views/places.html'"></div>
+</div>
+
+<!-- <div 
+  class="users-container"
+  ng-controller="UserCtrl">
+  <h1>Users</h1>
+  <div class="user" ng-repeat="(username, userdata) in users">
+
+    <div class="locator-icon-container">
+      <img 
+        class="locator-icon"
+        src="img/user-icon.png" 
+        ng-show="userdata.position" 
+        ng-click="centerUser(username)"/>
+    </div>
+    <span class="location-text">{{ username }}: {{ userdata.update }}</span>
+  </div>
+</div>
+
+<div 
+  class="places-container"
+  ng-controller="PlaceCtrl">
+  <h1>Places</h1>
+  <div class="place" ng-repeat="place in places">
+
+    <div class="locator-icon-container">
+      <img 
+        class="locator-icon"
+        src="img/place-icon.png" 
+        ng-click="centerPlace(place)"/>
+    </div>
+    <span class="location-text">{{ place.name }}</span>
+  </div>
+
+</div> -->

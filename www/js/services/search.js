@@ -129,7 +129,7 @@ angular.module('GetTogetherApp')
       PanService.panInfoWindow(place, service.map);
 
       if(place.photos) {
-        console.log('photos', place.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 120}));
+        console.log('photos', place.photos[0].getUrl({'maxWidth': 180, 'maxHeight': 120}));
       }
 
       var contentString = 

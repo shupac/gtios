@@ -11,7 +11,7 @@ angular.module('GetTogetherApp')
   };
 
   $scope.search = function(searchTerm) {
-    console.log('search', searchTerm);
+    SearchService.clearMarkers();
     SearchService.search(searchTerm);
     $scope.cleanupSearch();
   };

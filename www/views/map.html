@@ -43,7 +43,7 @@
           id="autocomplete"
           ng-model="searchTerm"
           ng-focus="searchFocus=true"
-          type="text" size="15"
+          type="text" size="20"
           placeholder="Search"
           autocorrect="off"
           autocapitalize="off"/ >
@@ -51,7 +51,7 @@
       <button
         class="clear-search-term"
         ng-show="searchFocus && searchTerm.length"
-        ng-click="searchTerm=''">x</button>
+        ng-click="searchTerm=''"></button>
     </div>
       <button
         class="cancel-search"

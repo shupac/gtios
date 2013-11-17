@@ -56,8 +56,13 @@
 }
 
 .search-container button.clear-search-term {
+  width: 20px;
+  height: 20px;
   float: right;
   background: none;
+  background-image: url('../img/x.png');
+  background-repeat: no-repeat;
+  background-position: 3px 4px;
 }
 
 .cancel-search, .hide-all {
@@ -88,7 +93,7 @@
 }
 
 .search-predictions-list {
-  margin-top: 45px;
+  margin-top: 50px;
   padding: 0;
   list-style-type: none;
 }

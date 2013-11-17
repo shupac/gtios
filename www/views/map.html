@@ -37,7 +37,9 @@
     class="search-container"
     ng-init="searchFocus=false"
     ng-class="{'search-container-gray': searchFocus}">
-    <div class="search-form-container">
+    <div 
+      class="search-form-container"
+      ng-class="{'search-form-container-focus': searchFocus}">
       <form ng-submit="search(searchTerm)">
         <input
           id="autocomplete"

@@ -81,7 +81,7 @@ angular.module('GetTogetherApp')
       return defer.promise;
     },
     search: function(searchTerm) {
-      var resultsLimit = 3;
+      var resultsLimit = 10;
       // var searchTerm = document.getElementById('autocomplete').value;
       // var MARKER_PATH = 'https://maps.gstatic.com/intl/en_us/mapfiles/marker_green';
 

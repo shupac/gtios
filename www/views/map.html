@@ -1,7 +1,7 @@
 <div
   class="map-page-container"
   ng-controller="MapCtrl">
-  <div ng-controller="TabCtrl">
+  <div class="map-main-container" ng-controller="TabCtrl">
     <div class="map-topbar">
       <img class="hamburger" src="img/hamburger.png" ng-click="panel.hideRooms=!panel.hideRooms" />
 
@@ -27,9 +27,21 @@
       </div>
     </div>
 
-    <div class="tab-chat" ng-class="{'tab-chat-on': showChat}">
-      <div ng-include="'views/chat.html'"></div>
+    <div 
+      class="tab-chat" 
+      ng-class="{'tab-chat-on': showChat}" 
+      ng-include="'views/chat.html'">
     </div>
+
+    <div
+      class="chat-bottom"
+      ng-click="toggleChat()">
+      <div class="new-chat" ng-class="{'new-chat-on': newMessage}">
+        {{ newMessage.username }}:
+        {{ newMessage.message }}
+      </div>
+    </div>
+
   </div>
 
 <!-- **************** Search ****************** -->
@@ -81,10 +93,4 @@
 
   <div ng-include="'views/edit.html'"></div>
 
-  <div class="chat-bottom">
-    <div class="new-chat" ng-class="{'new-chat-on': newMessage}">
-      {{ newMessage.username }}:
-      {{ newMessage.message }}
-    </div>
-  </div>
 </div>

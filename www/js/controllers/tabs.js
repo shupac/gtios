@@ -16,6 +16,7 @@ angular.module('GetTogetherApp')
     $scope.showUsers = false;
     $scope.showPlaces = false;
     $scope.showChat = !$scope.showChat;
+    $scope.newMessage = null;
     ChatService.scrollToBottom();
   };
 
@@ -23,4 +24,14 @@ angular.module('GetTogetherApp')
     $scope.showUsers = false;
     $scope.showPlaces = false;
   };
+
+  $scope.$watch(function() {return ChatService.newMessage;}, function(newMessage) {
+    $scope.newMessage = newMessage;
+    if($scope.timeout) {
+      clearTimeout($scope.timeout);
+    }
+    $scope.timeout = setTimeout(function() {
+      $scope.newMessage = null;
+    }, 5000);
+  });
 });

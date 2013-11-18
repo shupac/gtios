@@ -15,14 +15,6 @@ angular.module('GetTogetherApp')
               service.newMessage = message.val();
             }
           });
-          if(service.timeout) {
-            clearTimeout(service.timeout);
-          }
-          service.timeout = setTimeout(function() {
-            $timeout(function() {
-              service.newMessage = null;
-            });
-          }, 5000);
           service.scrollToBottom();
         });
     },
@@ -33,6 +25,9 @@ angular.module('GetTogetherApp')
       }, 0);
     },
     sendMessage: function(message) {
+      if(!message) {
+        return;
+      }
       var username = SessionService.sessionUsername;
       var roomname = SessionService.currentRoom;
       refs.rooms

@@ -52,8 +52,4 @@ angular.module('GetTogetherApp')
   $scope.$watch(function() {return SearchService.predictionResults;}, function(predictions) {
     $scope.predictions = predictions;
   });
-
-  $scope.$watch(function() {return ChatService.newMessage;}, function(newMessage) {
-    $scope.newMessage = newMessage;
-  });
 });

@@ -36,7 +36,8 @@ angular.module('GetTogetherApp')
       clearTimeout($scope.timeout);
     }
     $scope.timeout = setTimeout(function() {
-      $scope.newMessage = null;
+      $scope.$apply($scope.newMessage = null);
+      console.log('null');
     }, 5000);
   });
 });

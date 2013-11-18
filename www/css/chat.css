@@ -86,3 +86,21 @@
 .chat-send-form input:focus {
   outline-width: 0;
 }
+
+.new-chat {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  background-color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  z-index: 5;
+
+  -webkit-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+}
+
+.new-chat-on {
+  bottom: 0;
+}

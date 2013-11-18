@@ -38,8 +38,15 @@
       ng-click="toggleChat()"
       ng-init="enableChat=false">
       <div class="new-chat" ng-class="{'new-chat-on': newMessage}">
-        {{ newMessage.username }}:
-        {{ newMessage.message }}
+        <div 
+          class="chat-message-username">
+          {{ newMessage.username }}
+        </div>
+        <div
+         class="chat-message-text"
+         ng-class="{'chat-message-text-self': message.username == username}">
+          {{ newMessage.message }}
+        </div>
       </div>
     </div>
 

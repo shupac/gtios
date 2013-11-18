@@ -33,20 +33,5 @@ button {
   position: relative;
   top: 20px;
   left: 0;
-  overflow: hidden;
-}
-
-.new-chat {
-  position: absolute;
-  width: 100%;
-  bottom: -20px;
-  background-color: lightgray;
-  font-size: 16px;
-
-  -webkit-transition: 0.1s linear all;
-  transition: 0.1s linear all;
-}
-
-.new-chat-on {
-  bottom: 0;
+  /*overflow: hidden;*/
 }

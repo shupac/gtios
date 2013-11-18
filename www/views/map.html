@@ -82,7 +82,7 @@
   <div ng-include="'views/edit.html'"></div>
 
   <div class="chat-bottom">
-    <div class="chat-recent-message" ng-show="newMessage">
+    <div class="new-chat" ng-class="{'new-chat-on': newMessage}">
       {{ newMessage.username }}:
       {{ newMessage.message }}
     </div>

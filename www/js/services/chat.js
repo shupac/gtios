@@ -11,12 +11,14 @@ angular.module('GetTogetherApp')
         .on('child_added', function(message) {
           $timeout(function() {
             service.messages.push(message.val());
-            console.log(message.val());
             if(message.val().username !== username) {
               service.newMessage = message.val();
             }
           });
-          setTimeout(function() {
+          if(service.timeout) {
+            clearTimeout(service.timeout);
+          }
+          service.timeout = setTimeout(function() {
             $timeout(function() {
               service.newMessage = null;
             });

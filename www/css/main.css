@@ -36,10 +36,17 @@ button {
   overflow: hidden;
 }
 
-.chat-bottom {
+.new-chat {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: -20px;
   background-color: lightgray;
   font-size: 16px;
+
+  -webkit-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+}
+
+.new-chat-on {
+  bottom: 0;
 }

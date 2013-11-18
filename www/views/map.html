@@ -80,4 +80,11 @@
   </div>
 
   <div ng-include="'views/edit.html'"></div>
+
+  <div class="chat-bottom">
+    <div class="chat-recent-message" ng-show="newMessage">
+      {{ newMessage.username }}:
+      {{ newMessage.message }}
+    </div>
+  </div>
 </div>

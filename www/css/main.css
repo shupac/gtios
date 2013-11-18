@@ -35,3 +35,11 @@ button {
   left: 0;
   overflow: hidden;
 }
+
+.chat-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: lightgray;
+  font-size: 16px;
+}

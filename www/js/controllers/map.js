@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.controller('MapCtrl', function($scope, $rootScope, MapService, SearchService) {
+.controller('MapCtrl', function($scope, $rootScope, SessionService, MapService, SearchService, ChatService) {
   // prevent page scrolling
   document.getElementsByClassName('search-underlay')[0].addEventListener('touchmove', function(e) {
     document.activeElement.blur();
@@ -51,5 +51,9 @@ angular.module('GetTogetherApp')
 
   $scope.$watch(function() {return SearchService.predictionResults;}, function(predictions) {
     $scope.predictions = predictions;
+  });
+
+  $scope.$watch(function() {return ChatService.newMessage;}, function(newMessage) {
+    $scope.newMessage = newMessage;
   });
 });

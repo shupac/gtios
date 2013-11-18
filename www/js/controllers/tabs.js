@@ -1,6 +1,5 @@
 angular.module('GetTogetherApp')
-.controller('TabCtrl', function($scope, SessionService, ChatService) {
-  $scope.username = SessionService.sessionUsername;
+.controller('TabCtrl', function($scope, ChatService) {
   $scope.toggleUsers = function() {
     $scope.showPlaces = false;
     $scope.showChat = false;
@@ -19,6 +18,9 @@ angular.module('GetTogetherApp')
     $scope.showChat = !$scope.showChat;
     $scope.newMessage = null;
     ChatService.scrollToBottom();
+    setTimeout(function() {
+      $scope.enableChat = !$scope.enableChat;
+    }, 400);
   };
 
   $scope.hideTabs = function() {
@@ -27,7 +29,9 @@ angular.module('GetTogetherApp')
   };
 
   $scope.$watch(function() {return ChatService.newMessage;}, function(newMessage) {
-    $scope.newMessage = newMessage;
+    if(!$scope.showChat) {
+      $scope.newMessage = newMessage;
+    }
     if($scope.timeout) {
       clearTimeout($scope.timeout);
     }

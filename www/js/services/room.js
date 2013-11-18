@@ -59,7 +59,6 @@ angular.module('GetTogetherApp')
     terminateRoomSession: function() {
       currentRoom = SessionService.currentRoom;
       MapService.terminateMap(currentRoom);
-      // MapService.stopListeners(currentRoom);
       ChatService.stopListener(currentRoom);
       ChatService.messages = [];
       SessionService.leaveCurrentRoom();

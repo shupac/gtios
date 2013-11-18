@@ -35,7 +35,8 @@
 
     <div
       class="chat-bottom"
-      ng-click="toggleChat()">
+      ng-click="toggleChat()"
+      ng-init="enableChat=false">
       <div class="new-chat" ng-class="{'new-chat-on': newMessage}">
         {{ newMessage.username }}:
         {{ newMessage.message }}

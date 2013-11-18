@@ -84,6 +84,7 @@ angular.module('GetTogetherApp')
   }
 
   $scope.logout = function() {
+    RoomService.terminateRoomSession();
     MapService.logout();
     SessionService.logout();
   };

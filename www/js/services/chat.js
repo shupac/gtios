@@ -41,6 +41,7 @@ angular.module('GetTogetherApp')
         .child(roomname)
         .child('Messages')
         .off();
+      console.log('chat off');
     }
   };
   return service;

@@ -10,6 +10,17 @@ angular.module('GetTogetherApp')
     $scope.toggleUsers();
   };
 
+  $scope.sendInvite = function(username) {
+    console.log(username);
+    $scope.inviteUsername = '';
+    $scope.showInvite = false;
+  };
+
+  $scope.cancelInvite = function() {
+    $scope.inviteUsername = '';
+    $scope.showInvite = false;
+  };
+
   $scope.$watch(function() {return SessionService.usersList;}, function(users) {
     $scope.users = users;
   });

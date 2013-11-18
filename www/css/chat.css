@@ -68,7 +68,6 @@
   position: relative;
   width: 268px;
   height: 30px;
-  /*padding: 0 5px;*/
   background-color: white;
   border: 1px solid #bbb;
   border-radius: 3px;
@@ -76,8 +75,8 @@
 
 .chat-send-form input {
   position: absolute;
-  left: 5px;
-  right: 5px;
+  left: 2px;
+  right: 2px;
   font-size: 16px;
   border: none;
   -webkit-appearance: none;

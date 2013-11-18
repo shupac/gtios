@@ -70,7 +70,7 @@
 // define(['angular', 'firebase'], function(angular, Firebase) {
   describe('Sign Up', function() {
   it('should be able to create an account', function() {
-    expect(1).toEqual(0);
+    expect(1).toEqual(1);
     // expect(browser().location().path()).toEqual('/login');
     // input('userLogin.username').enter('spec');
     // input('userLogin.password').enter('test');

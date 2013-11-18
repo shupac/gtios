@@ -17,9 +17,9 @@
 }
 
 .tab-users-places {
-  width: 100%;
   position: absolute;
   top: -100%;
+  margin-top: 50px;
   -webkit-transform: translate3d(0px,0px,0px);
   -webkit-transition: 0.2s linear all;
   transition: 0.2s linear all;
@@ -50,16 +50,50 @@
 .users-container, .places-container {
   position: relative;
   width: 320px;
-  background-color: #e5e9e8;
   z-index: 10;
   display: inline-block;
   vertical-align: top;
 }
 
+.users-inner-container, .places-inner-container {
+  background-color: white;
+  margin: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  overflow: hidden;
+}
+
+.users-inner-container h1, .places-inner-container h1 {
+  background-color: #ddd;
+  font-size: 18px;
+  color: #666;
+  padding: 5px;
+/*  -webkit-transition: 0.1s linear all;
+  transition: 0.1s linear all;*/
+}
+
+.invite-container input {
+  width: 150px;
+}
+
+.invite-container .send, .invite-container .invite {
+  border: 1px solid #157DCF;
+  background-color: #288edf;
+  color: #fff;
+}
+
 .user, .place {
-  width: 100%;
-  height: 30px;
-  margin-top: 6px;
+  margin: 6px 10px;
+}
+
+.users-container button {
+  width: 75px;
+  height: 32px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 200;
+  background-color: #ddd;
+  border: 1px solid #bbb;
 }
 
 .location-text {

@@ -30,8 +30,10 @@
 }
 
 .users-places-container {
+  position: relative;
   width: 640px;
-  background-color: blue;
+  /*background-color: blue;*/
+  z-index: 4;
   -webkit-transform: translate3d(0px,0px,0px);
   -webkit-transition: 0.15s linear all;
   transition: 0.15s linear all;
@@ -45,9 +47,10 @@
 }
 
 .users-container, .places-container {
+  position: relative;
   width: 320px;
   background-color: #e5e9e8;
-  z-index: 4;
+  z-index: 10;
   display: inline-block;
   vertical-align: top;
 }

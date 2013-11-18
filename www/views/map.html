@@ -1,34 +1,35 @@
-<div 
+<div
   class="map-page-container"
   ng-controller="MapCtrl">
+  <div ng-controller="TabCtrl">
+    <div class="map-topbar">
+      <img class="hamburger" src="img/hamburger.png" ng-click="panel.hideRooms=!panel.hideRooms" />
 
-  <div class="map-topbar">
-    <img class="hamburger" src="img/hamburger.png" ng-click="panel.hideRooms=!panel.hideRooms" />
+      <img class="chat-icon" src="img/chat-icon.png" ng-click="toggleChat()" />
+      <img class="place-icon" src="img/place-icon.png" ng-click="togglePlaces()" />
+      <img class="user-icon" src="img/multi-user.png" ng-click="toggleUsers()" />
+    </div>
 
-    <img class="chat-icon" src="img/chat-icon.png" ng-click="toggleChat()" />
-    <img class="place-icon" src="img/place-icon.png" ng-click="togglePlaces()" />
-    <img class="user-icon" src="img/multi-user.png" ng-click="toggleUsers()" />
-  </div>
+    <div class="map-container" ng-click="hideTabs()">
+      <div id="map-canvas"></div>
+      <img 
+        class="current-arrow" 
+        src="img/current_arrow.png"
+        ng-click="showCurrentPos()"
+        ng-hide="searchFocus" />
+    </div>
 
-  <div class="map-container" ng-click="hideTabs()">
-    <div id="map-canvas"></div>
-    <img 
-      class="current-arrow" 
-      src="img/current_arrow.png"
-      ng-click="showCurrentPos()"
-      ng-hide="searchFocus" />
-  </div>
+    <div class="tab-users-places" ng-class="{'tab-users-places-on': showUsers || showPlaces}">
+      <div
+        ng-include="'views/users_places.html'"
+        class="users-places-container"
+        ng-class="{'tab-places-on': showPlaces}">
+      </div>
+    </div>
 
-  <div class="tab-users-places" ng-class="{'tab-users-places-on': showUsers || showPlaces}">
-    <div ng-include="'views/users_places.html'"></div>
-  </div>
-
-<!--   <div class="tab-users-places" ng-class="{'tab-users-places-on': showPlaces}">
-    <div ng-include="'views/places.html'"></div>
-  </div> -->
-
-  <div class="tab-chat" ng-class="{'tab-chat-on': showChat}">
-    <div ng-include="'views/chat.html'"></div>
+    <div class="tab-chat" ng-class="{'tab-chat-on': showChat}">
+      <div ng-include="'views/chat.html'"></div>
+    </div>
   </div>
 
 <!-- **************** Search ****************** -->
@@ -80,6 +81,3 @@
 
   <div ng-include="'views/edit.html'"></div>
 </div>
-
-
-

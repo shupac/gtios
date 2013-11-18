@@ -1,5 +1,5 @@
 angular.module('GetTogetherApp')
-.controller('MapCtrl', function($scope) {
+.controller('TabCtrl', function($scope, ChatService) {
   $scope.toggleUsers = function() {
     $scope.showPlaces = false;
     $scope.showChat = false;

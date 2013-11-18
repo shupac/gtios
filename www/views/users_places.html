@@ -1,34 +1,30 @@
-<div
-  class="users-places-container"
-  ng-class="{'tab-places-on': showPlaces}">
-  <div 
-    class="users-container"
-    ng-controller="UserCtrl">
-    <h1>Users</h1>
-    <div class="user" ng-repeat="(username, userdata) in users">
+<div 
+  class="users-container"
+  ng-controller="UserCtrl">
+  <h1>Users</h1>
+  <div class="user" ng-repeat="(username, userdata) in users">
 
-      <div class="locator-icon-container">
-        <img 
-          class="locator-icon"
-          src="img/user-icon.png" 
-          ng-show="userdata.position" 
-          ng-click="centerUser(username)"/>
-      </div>
-      <span class="location-text">{{ username }}: {{ userdata.update }}</span>
+    <div class="locator-icon-container">
+      <img 
+        class="locator-icon"
+        src="img/user-icon.png" 
+        ng-show="userdata.position" 
+        ng-click="centerUser(username)"/>
     </div>
-  </div><div 
-    class="places-container"
-    ng-controller="PlaceCtrl">
-    <h1>Places</h1>
-    <div class="place" ng-repeat="place in places">
+    <span class="location-text">{{ username }}: {{ userdata.update }}</span>
+  </div>
+</div><div 
+  class="places-container"
+  ng-controller="PlaceCtrl">
+  <h1>Places</h1>
+  <div class="place" ng-repeat="place in places">
 
-      <div class="locator-icon-container">
-        <img 
-          class="locator-icon"
-          src="img/place-icon.png" 
-          ng-click="centerPlace(place)"/>
-      </div>
-      <span class="location-text">{{ place.name }}</span>
+    <div class="locator-icon-container">
+      <img 
+        class="locator-icon"
+        src="img/place-icon.png" 
+        ng-click="centerPlace(place)"/>
     </div>
+    <span class="location-text">{{ place.name }}</span>
   </div>
 </div>

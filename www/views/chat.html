@@ -4,11 +4,24 @@
   <h1>Chat</h1>
 
   <ul class="chat-list" ng-click="cancelChat()">
-    <li class="chat-message" ng-repeat="message in messages">{{ message.username }}: {{ message.message }}</li>
+    <li 
+      class="chat-message" 
+      ng-class="{'chat-message-self': message.username == username}"
+      ng-repeat="message in messages">
+      <div 
+        class="chat-message-username">
+        {{ message.username }}
+      </div>
+      <div
+       class="chat-message-text"
+       ng-class="{'chat-message-text-self': message.username == username}">
+        {{ message.message }}
+      </div>
+    </li>
   </ul>
 
   <div class="chat-send-container">
-    <form ng-submit="chatSend()">
+    <form class="chat-send-form-container" ng-submit="chatSend()">
       <input id="sendChat" type="text" ng-model="chatMessage" size="20" placeholder="Chat" />
     </form>
   </div>

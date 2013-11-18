@@ -10,6 +10,11 @@ angular.module('GetTogetherApp')
     $scope.cleanupSearch();
   };
 
+  $scope.focusSearch = function() {
+    document.getElementById('autocomplete').focus();
+    $scope.searchFocus = true;
+  };
+
   $scope.search = function(searchTerm) {
     SearchService.clearMarkers();
     SearchService.search(searchTerm);

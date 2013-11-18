@@ -51,7 +51,8 @@
     ng-class="{'search-container-gray': searchFocus}">
     <div 
       class="search-form-container"
-      ng-class="{'search-form-container-focus': searchFocus}">
+      ng-class="{'search-form-container-focus': searchFocus}"
+      ng-click="focusSearch()">
       <form ng-submit="search(searchTerm)">
         <input
           id="autocomplete"

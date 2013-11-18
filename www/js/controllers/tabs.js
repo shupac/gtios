@@ -1,5 +1,6 @@
 angular.module('GetTogetherApp')
-.controller('TabCtrl', function($scope, ChatService) {
+.controller('TabCtrl', function($scope, SessionService, ChatService) {
+  $scope.username = SessionService.sessionUsername;
   $scope.toggleUsers = function() {
     $scope.showPlaces = false;
     $scope.showChat = false;

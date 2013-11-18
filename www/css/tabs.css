@@ -6,7 +6,7 @@
   position: absolute;
   width: 100%;
   top: 100%;
-  -webkit-transform: translate3d(0px,0px,0px);
+  /*-webkit-transform: translate3d(0px,0px,0px);*/
   -webkit-transition: 0.2s linear all;
   transition: 0.2s linear all;
   z-index: 4;

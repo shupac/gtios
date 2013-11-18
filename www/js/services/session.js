@@ -6,6 +6,7 @@ angular.module('GetTogetherApp')
     currentRoom: null,
     roomsList: {}, // list of rooms or 'groups' user belongs to
     usersList: {}, // list of users in the current room upon entering room
+    invitesList: [],
     isLoggedIn: function() {
       return !!service.sessionUserID;
     },
@@ -41,6 +42,7 @@ angular.module('GetTogetherApp')
           service.sessionUserID = data.id;
           service.sessionUsername = username;
           service.updateRoomsList();
+          service.listenForInvites();
           $location.path('/');
         } else {
           console.log(data.message);
@@ -52,6 +54,7 @@ angular.module('GetTogetherApp')
     },
 
     logout: function() {
+      service.stopListenForInvites();
       service.sessionUserID = null;
       service.sessionUsername = null;
       service.currentRoom = null;
@@ -129,6 +132,43 @@ angular.module('GetTogetherApp')
         .child('Rooms')
         .child(roomname)
         .set({update: updateType});
+    },
+
+    invite: function(username, message) {
+      var inviteRef = refs.users
+        .child(username)
+        .child('Invites')
+        .child(service.currentRoom);
+
+      inviteRef.once('value', function(invite) {
+        if(invite.val()) {
+          console.log('user already invited');
+          return;
+        }
+        inviteRef.set({
+          invitedBy: service.sessionUsername,
+          roomname: service.currentRoom,
+          message: message,
+          show: true
+        });
+      });
+    },
+
+    listenForInvites: function() {
+      refs.users
+        .child(service.sessionUsername)
+        .child('Invites')
+        .on('child_added', function(invite) {
+          console.log(invite.val());
+          service.invitesList.push(invite.val());
+        });
+    },
+
+    stopListenForInvites: function() {
+      refs.users
+        .child(service.sessionUsername)
+        .child('Invites')
+        .off();
     }
   };
   return service;

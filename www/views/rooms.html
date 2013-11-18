@@ -26,7 +26,17 @@
           </label>
         </span>
       </li>
-  </ul>
+    </ul>
+  </div>
+
+  <div class="topcoat-list">
+    <h3 class="topcoat-list__header">Invites</h3>
+    <ul class="topcoat-list__container">
+      <li class="topcoat-list__item" ng-repeat="invite in invites">
+        <span ng-click="joinRoom(invite.roomname)" class="room-name">{{ room.name }}</span>
+        <span ng-click="deleteInvite(invite.roomname)" class="room-delete">Delete</span>
+      </li>
+    </ul>
   </div>
 
   <div class="join-create-container">
@@ -44,4 +54,10 @@
     <div>Loading Map</div>
     <img class="spinner" src="img/spinner.gif" />
   </div>
+
+<!--   <div
+    class="confirm-invite"
+    ng-show="newInvite">
+    <div>New Invite</div> -->
+
 </div>

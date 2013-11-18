@@ -84,7 +84,9 @@ angular.module('GetTogetherApp')
   }
 
   $scope.logout = function() {
-    RoomService.terminateRoomSession();
+    if(SessionService.currentRoom) {
+      RoomService.terminateRoomSession();
+    }
     MapService.logout();
     SessionService.logout();
   };
@@ -95,6 +97,10 @@ angular.module('GetTogetherApp')
     }
   };
 
+  $scope.confirmInvite = function(invite) {
+
+  }
+
   // udpates list of rooms user belongs to
   $scope.$watch(function() {return SessionService.roomsList;}, function(rooms) {
     $scope.rooms = rooms;
@@ -104,12 +110,17 @@ angular.module('GetTogetherApp')
     $scope.currentRoom = currentRoom;
   });
 
+  $scope.$watch(function() {return SessionService.invitesList;}, function(invites) {
+    $scope.invites = invites;
+    // debugger
+  });
+
   var joinRoom = 'public';
   
   if(window.openParams) {
     joinRoom = openParams.roomInvite;
   }
 
-  $scope.joinRoom(joinRoom);
+  // $scope.joinRoom(joinRoom);
 
 });

@@ -23,9 +23,11 @@
         ng-hide="showInvite">Invite</button>
       <div 
         ng-show="showInvite">
-        <input          
-          ng-model="inviteUsername" 
-          placeholder="Username"/>
+        <form ng-submit="sendInvite(inviteUsername)">
+          <input          
+            ng-model="inviteUsername" 
+            placeholder="Username"/>
+        </form>
         <div>
           <button class="send" ng-click="sendInvite(inviteUsername)">Send</button>
           <button class="cancel" ng-click="cancelInvite()">Cancel</button>

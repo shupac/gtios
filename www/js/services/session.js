@@ -6,7 +6,7 @@ angular.module('GetTogetherApp')
     currentRoom: null,
     roomsList: {}, // list of rooms or 'groups' user belongs to
     usersList: {}, // list of users in the current room upon entering room
-    invitesList: [],
+    invitesList: {},
     isLoggedIn: function() {
       return !!service.sessionUserID;
     },
@@ -68,6 +68,7 @@ angular.module('GetTogetherApp')
       service.currentRoom = roomname;
       service.syncUpdateType(roomname, 'live');
       service.updateUsersList();
+      service.deleteInvite(roomname);
     },
 
     leaveCurrentRoom: function() {
@@ -163,11 +164,23 @@ angular.module('GetTogetherApp')
           $timeout(function() {
             var inviteRoom = invite.val().roomname;
             if(!service.roomsList[inviteRoom]) {
-              service.invitesList.push(invite.val());
+              service.invitesList[inviteRoom] = invite.val();
+            } else { 
               console.log('user already belongs to room');
             }
           });
         });
+    },
+
+    deleteInvite: function(roomname) {
+      if(service.invitesList[roomname]) {
+        delete service.invitesList[roomname];
+      }
+      refs.users
+        .child(service.sessionUsername)
+        .child('Invites')
+        .child(roomname)
+        .remove();
     },
 
     stopListenForInvites: function() {

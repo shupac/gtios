@@ -97,9 +97,9 @@ angular.module('GetTogetherApp')
     }
   };
 
-  $scope.confirmInvite = function(invite) {
-
-  }
+  $scope.deleteInvite = function(roomname) {
+    SessionService.deleteInvite(roomname);
+  };
 
   // udpates list of rooms user belongs to
   $scope.$watch(function() {return SessionService.roomsList;}, function(rooms) {

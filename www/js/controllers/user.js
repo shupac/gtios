@@ -16,11 +16,13 @@ angular.module('GetTogetherApp')
     SessionService.invite(username, message);
     $scope.inviteUsername = '';
     $scope.showInvite = false;
+    $scope.input.blur();
   };
 
   $scope.cancelInvite = function() {
     $scope.inviteUsername = '';
     $scope.showInvite = false;
+    $scope.input.blur();
   };
 
   $scope.$watch(function() {return SessionService.usersList;}, function(users) {

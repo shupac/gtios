@@ -52,8 +52,9 @@
 }
 
 .join, .create {
-  width: 120px;
-  margin: 0 10px;
+  width: 100px;
+  height: 45px;
+  margin: 0 15px;
 }
 
 .username-header {
@@ -72,13 +73,13 @@
 
 .logout {
   width: 160px;
+  line-height: 3rem;
 }
 .topcoat-button,
 .topcoat-button--cta,
 .topcoat-button--large--cta {
   padding: 0 1.25rem;
   font-size: 16px;
-  line-height: 3rem;
   letter-spacing: 1px;
   vertical-align: top;
   border-radius: 6px;

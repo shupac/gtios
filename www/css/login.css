@@ -39,6 +39,7 @@
 
 .login-button, .signup-button {
   width: 110px;
+  line-height: 3rem;
 }
 
 .topcoat-button--cta {

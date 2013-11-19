@@ -57,4 +57,13 @@ angular.module('GetTogetherApp')
   $scope.$watch(function() {return SearchService.predictionResults;}, function(predictions) {
     $scope.predictions = predictions;
   });
+
+  $scope.$watch(function() {return SessionService.invitesList;}, function(invites) {
+    if(invites === {}) {
+      $scope.invites = false;
+    } else {
+      $scope.invites = true;
+    }
+  });
+
 });

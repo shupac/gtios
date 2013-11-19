@@ -37,6 +37,6 @@ angular.module('GetTogetherApp')
     }
     $scope.timeout = setTimeout(function() {
       $scope.$apply($scope.newMessage = null);
-    }, 1000);
+    }, 5000);
   });
 });

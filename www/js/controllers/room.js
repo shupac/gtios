@@ -111,8 +111,8 @@ angular.module('GetTogetherApp')
   });
 
   $scope.$watch(function() {return SessionService.invitesList;}, function(invites) {
+    console.log(invites);
     $scope.invites = invites;
-    // debugger
   });
 
   var joinRoom = 'public';

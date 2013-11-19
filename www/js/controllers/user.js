@@ -11,7 +11,7 @@ angular.module('GetTogetherApp')
   };
 
   $scope.sendInvite = function(username) {
-    console.log(username);
+    username = username.toLowerCase();
     var message = "Invited to " + SessionService.currentRoom;
     SessionService.invite(username, message);
     $scope.inviteUsername = '';

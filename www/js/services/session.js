@@ -60,6 +60,7 @@ angular.module('GetTogetherApp')
       service.currentRoom = null;
       service.roomsList = {};
       service.usersList = {};
+      service.invites = [];
       $location.path('/login');
     },
 
@@ -159,8 +160,13 @@ angular.module('GetTogetherApp')
         .child(service.sessionUsername)
         .child('Invites')
         .on('child_added', function(invite) {
-          console.log(invite.val());
-          service.invitesList.push(invite.val());
+          $timeout(function() {
+            var inviteRoom = invite.val().roomname;
+            if(!service.roomsList[inviteRoom]) {
+              service.invitesList.push(invite.val());
+              console.log('user already belongs to room');
+            }
+          });
         });
     },
 

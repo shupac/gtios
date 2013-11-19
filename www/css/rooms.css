@@ -3,6 +3,7 @@
   height: 100%;
   position: absolute;
   background-color: #454646;
+  text-align: center;
   z-index: 2;
 
   -webkit-transform: translate3d(0px,0px,0px);
@@ -12,6 +13,21 @@
   /*display: none;*/
 }
 
+.logo-small {
+  width: 280px;
+  height: 80px;
+  margin: auto;
+  margin-top: 30px;
+  /*position: absolute;*/
+  /*top: 100px;*/
+  /*left: 50%;*/
+  /*margin-left: -50px;*/
+  /*background-color: white;*/
+  background: url('../img/logobanner.png');
+  background-size: 280px;
+  background-repeat:no-repeat;
+}
+
 .slideRight {
   left: 320px;
 }
@@ -19,6 +35,7 @@
 .rooms-container h1 {
   margin: 15px;
   color: #c6c8c8;
+  font-size: 18px;
 }
 
 .menu-header-container {
@@ -37,6 +54,12 @@
 .join, .create {
   width: 120px;
   margin: 0 10px;
+}
+
+.username-header {
+  width: 320px;
+  position: absolute;
+  bottom: 70px;
 }
 
 .logout-button-container {
@@ -91,6 +114,7 @@
   border-top: 1px solid #333434;
   border-bottom: 1px solid #616363;
   background-color: #454646;
+  text-align: left;
 }
 
 .topcoat-list__header {

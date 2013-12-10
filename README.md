@@ -1,4 +1,4 @@
-Get Together: find people. find places.
+<h1>Get Together</h1>
 ![image](http://shupac.io/gettogether/images/screenshots.jpg)
 Get Together simplifies the process of planning social gatherings and meeting up with friends. The Get Together app allows you to see where your friends are on a map in real-time, search for places to meet up, and save and comment on places of interest.
 

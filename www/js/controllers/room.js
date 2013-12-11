@@ -120,6 +120,6 @@ angular.module('GetTogetherApp')
     joinRoom = openParams.roomInvite;
   }
 
-  // $scope.joinRoom(joinRoom);
+  // $scope.joinRoom('friends');
 
 });

@@ -136,3 +136,44 @@ button.cancel-search {
   font-size: 12px;
   color: gray;
 }
+
+.popup-bar {
+  /*height: 42px;*/
+  text-align:center;
+  /*background-color: #ddd;*/
+  /*margin-top: -10px;*/
+}
+
+.gm-style-iw {
+  text-align: center;
+}
+
+.popup-bar button.blue {
+  border: 1px solid #157DCF;
+  background-color: #288edf;
+  color: #fff;
+  font-size: 14px;
+}
+
+.popup-bar button.gray {
+  background-color: #ddd;
+  border: 1px solid #bbb;
+}
+
+.popup-bar button {
+  width: 75px;
+  height: 32px;
+  margin: 5px 5px 0 0;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.place-name {
+  font-weight: 400;
+}
+
+#info-window {
+  margin-top: -14px;
+}
+

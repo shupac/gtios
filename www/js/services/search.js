@@ -129,13 +129,15 @@ angular.module('GetTogetherApp')
       PanService.panInfoWindow(place, service.map);
 
       if(place.photos) {
-        console.log('photos', place.photos[0].getUrl({'maxWidth': 180, 'maxHeight': 120}));
+        // console.log('photos', place.photos[0].getUrl({'maxWidth': 180, 'maxHeight': 120}));
+        var photoUrl = place.photos[0].getUrl({'maxWidth': 180, 'maxHeight': 120});
       }
 
       var contentString = 
-        '<div id="info-window"><p>' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
-        '<img src="' + place.icon + '"/><hr>' +
-        '<div><button id="save-marker">Save</button><button id="hide-marker">Hide</button></div></div>';
+        '<div id="info-window"><p class="place-name">' + place.name + '</p><p>' + place.formatted_address.split(",")[0] + '</p>' + 
+        // '<img src="' + place.icon + '"/><hr>' +
+        '<img src="' + photoUrl + '"/>' +
+        '<div class="popup-bar"><button id="save-marker" class="blue">Save</button><button id="hide-marker" class="gray">Hide</button></div></div>';
 
       if(service.infoWindow) {
         service.infoWindow.close();

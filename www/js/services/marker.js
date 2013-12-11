@@ -109,12 +109,18 @@ angular.module('GetTogetherApp')
         timeString = '<p>Time: ' + marker.time + '</p>';
       }
 
+      if(place.photos) {
+        // console.log('photos', place.photos[0].getUrl({'maxWidth': 180, 'maxHeight': 120}));
+        var photoUrl = place.photos[0].getUrl({'maxWidth': 180, 'maxHeight': 120});
+      }
+
       var contentString = 
         '<div id="info-window"><p>' + marker.name + '</p>' +
         timeString +
         '<p>' + place.formatted_address.split(",")[0] + '</p>' + 
-        '<img src="' + place.icon + '"/><hr>' +
-        '<button id="edit-marker">Edit</button><button id="delete-marker">Delete</button></div>';
+        // '<img src="' + place.icon + '"/><hr>' +
+        '<img src="' + photoUrl + '"/>' +
+        '<div class="popup-bar"><button id="edit-marker" class="blue">Edit</button><button id="delete-marker" class="gray">Delete</button></div></div>';
 
       if(service.infoWindow) {
         service.infoWindow.close();

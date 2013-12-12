@@ -18,9 +18,9 @@ angular.module('GetTogetherApp')
     $scope.showChat = !$scope.showChat;
     $scope.newMessage = null;
     ChatService.scrollToBottom();
-    setTimeout(function() {
+    // setTimeout(function() {
       $scope.enableChat = !$scope.enableChat;
-    }, 400);
+    // }, 400);
   };
 
   $scope.hideTabs = function() {
